@@ -21,39 +21,39 @@ public sealed partial class CCVars
     ///     A direct multiplier on how violent space wind is.
     /// </summary>
     public static readonly CVarDef<float> SpaceWindStrengthMultiplier =
-        CVarDef.Create("atmos.space_wind_strength_multiplier", 1f, CVar.SERVERONLY);
+        CVarDef.Create("atmos.space_wind_strength_multiplier", 0.25f, CVar.SERVERONLY);
 
     /// <summary>
     ///     The maximum Force (in Newtons) that may be applied to an object by atmospheric pressure differences.
     ///     Useful to prevent clipping through objects.
     /// </summary>
     public static readonly CVarDef<float> SpaceWindMaxForce =
-        CVarDef.Create("atmos.space_wind_max_force", 200f, CVar.SERVERONLY);
+        CVarDef.Create("atmos.space_wind_max_force", 50f, CVar.SERVERONLY);
 
     /// <summary>
     ///     The maximum angular velocity that space wind can spin objects at while throwing them. This one is mostly for fun.
     /// </summary>
     public static readonly CVarDef<float> SpaceWindMaxAngularVelocity =
-        CVarDef.Create("atmos.space_wind_max_angular_velocity", 3f, CVar.SERVERONLY);
+        CVarDef.Create("atmos.space_wind_max_angular_velocity", 2f, CVar.SERVERONLY);
 
     /// <summary>
     ///     The amount of time (in seconds) for space wind to knock down a player character if they are subjected to space wind.
     /// </summary>
     public static readonly CVarDef<float> SpaceWindKnockdownTime =
-        CVarDef.Create("atmos.space_wind_knockdown_time", 0.75f, CVar.SERVERONLY);
+        CVarDef.Create("atmos.space_wind_knockdown_time", 3f, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether monstermos tile equalization is enabled.
     /// </summary>
     public static readonly CVarDef<bool> MonstermosEqualization =
-        CVarDef.Create("atmos.monstermos_equalization", true, CVar.SERVERONLY);
+        CVarDef.Create("atmos.monstermos_equalization", false, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether monstermos explosive depressurization is enabled.
     ///     Needs <see cref="MonstermosEqualization"/> to be enabled to work.
     /// </summary>
     public static readonly CVarDef<bool> MonstermosDepressurization =
-        CVarDef.Create("atmos.monstermos_depressurization", true, CVar.SERVERONLY);
+        CVarDef.Create("atmos.monstermos_depressurization", false, CVar.SERVERONLY);
 
     /// <summary>
     ///     Whether monstermos explosive depressurization will rip tiles..
