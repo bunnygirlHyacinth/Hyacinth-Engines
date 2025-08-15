@@ -42,6 +42,8 @@
       components:
         - type: PsionicInsulation
         - type: Mindbroken
+        - type: Condemned # adding this since they have to soul to give // GDS
+          soulOwnedNotDevil: true
     - !type:TraitAddArmor # add psionic invul
       damageModifierSets:
       - PsionicDamageInvul

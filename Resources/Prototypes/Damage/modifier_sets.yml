@@ -212,10 +212,10 @@
     Poison: 1
 
 - type: damageModifierSet
-  id: Zombie #Blunt resistant and immune to biological threats, but can be hacked apart and burned
+  id: Zombie #Blunt resistant and immune to biological threats, but can be hacked apart and burned // this is dumb shoot zombies in the head 1million times
   coefficients:
     Blunt: 0.6
-    Piercing: 0.8
+    Piercing: 0.95 # nerf zombies i hate them
     Cold: 0.3
     Heat: 1.25
     Poison: 0.0

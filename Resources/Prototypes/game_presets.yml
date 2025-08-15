@@ -6,7 +6,7 @@
   showInVote: true # secret # DeltaV - Me when the survival. Used for periapsis.
   description: survival-description
   rules:
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler
   - RampingStationEventScheduler
   - SpaceTrafficControlEventScheduler
   - SpaceTrafficControlFriendlyEventScheduler
@@ -51,7 +51,7 @@
   name: irregular-title
   description: irregular-description
   rules:
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler
   - IrregularStationEventScheduler
   - SpaceTrafficControlEventScheduler
   - SpaceTrafficControlFriendlyEventScheduler
@@ -65,7 +65,7 @@
   name: irregular-extended-title
   description: irregular-extended-description
   rules:
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler
   - IrregularExtendedStationEventScheduler
   - SpaceTrafficControlEventScheduler
   - SpaceTrafficControlFriendlyEventScheduler
