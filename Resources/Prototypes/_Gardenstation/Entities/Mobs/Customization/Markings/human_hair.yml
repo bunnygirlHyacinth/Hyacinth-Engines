@@ -1,4 +1,4 @@
-- type: marking
+﻿- type: marking
   id: HumanHairTankGirl
   bodyPart: Hair
   markingCategory: Hair
@@ -21,6 +21,8 @@
   sprites:
   - sprite: _Gardenstation/Mobs/Customization/human_hair.rsi
     state: scenehairbase
+  - sprite: _Gardenstation/Mobs/Customization/human_hair.rsi
+    state: scenehairhighlights
 
 - type: marking
   id: HumanHairSceneGrlMid
@@ -29,6 +31,8 @@
   sprites:
   - sprite: _Gardenstation/Mobs/Customization/human_hair.rsi
     state: scenehairmid
+  - sprite: _Gardenstation/Mobs/Customization/human_hair.rsi
+    state: scenehairhighlights
 
 - type: marking
   id: HumanHairSceneGrlLong
@@ -37,6 +41,8 @@
   sprites:
   - sprite: _Gardenstation/Mobs/Customization/human_hair.rsi
     state: scenehairlong
+  - sprite: _Gardenstation/Mobs/Customization/human_hair.rsi
+    state: scenehairhighlights
 
 - type: marking
   id: HumanHairSillyGirl
