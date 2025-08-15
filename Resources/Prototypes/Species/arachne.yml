@@ -49,6 +49,12 @@
     LeftHand:
       points: 6
       required: false
+    Underwear:
+      points: 2 # GDS - we added bodyhair here this is temp till we have a new category
+      required: false
+    Undershirt:
+      points: 2 # GDS - we added bodyhair here this is temp till we have a new category
+      required: false
 
 
 - type: speciesBaseSprites

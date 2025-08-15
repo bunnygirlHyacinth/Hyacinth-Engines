@@ -1,10 +1,42 @@
-﻿- type: marking
+- type: marking
   id: HumanHairTankGirl
   bodyPart: Hair
   markingCategory: Hair
   sprites:
   - sprite: _Gardenstation/Mobs/Customization/human_hair.rsi
     state: tankgirl
+
+- type: marking
+  id: HumanHairLumpMullet
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/human_hair.rsi
+    state: lumpmullet
+
+- type: marking
+  id: HumanHairSceneGrlShort
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/human_hair.rsi
+    state: scenehairbase
+
+- type: marking
+  id: HumanHairSceneGrlMid
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/human_hair.rsi
+    state: scenehairmid
+
+- type: marking
+  id: HumanHairSceneGrlLong
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/human_hair.rsi
+    state: scenehairlong
 
 - type: marking
   id: HumanHairSillyGirl

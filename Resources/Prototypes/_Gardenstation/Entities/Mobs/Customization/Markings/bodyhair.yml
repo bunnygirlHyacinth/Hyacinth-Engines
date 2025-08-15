@@ -1,0 +1,119 @@
+- type: marking
+  id: HairHigh
+  bodyPart: Underwear
+  markingCategory: Underwear
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin, Arachne, Lamia, Tajaran, Thaven] # Delta V - Felinid, Oni, Vulpkanin; Einstein Engines - Tajaran
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/body_hair.rsi
+    state: hairhigh
+
+- type: marking
+  id: HairLow
+  bodyPart: Underwear
+  markingCategory: Underwear
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin, Arachne, Lamia, Tajaran, Thaven] # Delta V - Felinid, Oni, Vulpkanin; Einstein Engines - Tajaran
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/body_hair.rsi
+    state: hairlow
+
+- type: marking
+  id: HairBig
+  bodyPart: Underwear
+  markingCategory: Underwear
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin, Arachne, Lamia, Tajaran, Thaven] # Delta V - Felinid, Oni, Vulpkanin; Einstein Engines - Tajaran
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/body_hair.rsi
+    state: hairbig
+
+- type: marking
+  id: HairHairy
+  bodyPart: Underwear
+  markingCategory: Underwear
+  speciesRestriction: [Dwarf, Human, Arachnid, Felinid, Oni, Vulpkanin, Arachne, Lamia, Tajaran, Thaven] # Delta V - Felinid, Oni, Vulpkanin; Einstein Engines - Tajaran
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/body_hair.rsi
+    state: hairhairy
+
+- type: marking
+  id: HairChest
+  bodyPart: Undershirt
+  markingCategory: Undershirt
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Diona, Moth, Harpy, Tajaran, Oni, Felinid, Chitinid, IPC, Vulpkanin, Shadowkin, Arachne]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/body_hair.rsi
+    state: hairchest
+
+- type: marking
+  id: HairUnder
+  bodyPart: Undershirt
+  markingCategory: Undershirt
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Diona, Moth, Harpy, Tajaran, Oni, Felinid, Chitinid, IPC, Vulpkanin, Shadowkin, Arachne]
+  coloring:
+    default:
+      type:
+        !type:SimpleColoring
+        color: "#FFFFFF"
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/body_hair.rsi
+    state: hairunder
+
+- type: marking
+  id: HairArmLeft
+  bodyPart: LArm
+  markingCategory: LeftArm
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Diona, Moth, Harpy, Tajaran, Oni, Felinid, Chitinid, IPC, Vulpkanin, Shadowkin, Arachne]
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/body_hair.rsi
+    state: hairarm_l
+
+- type: marking
+  id: HairArmRight
+  bodyPart: RArm
+  markingCategory: RightArm
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Diona, Moth, Harpy, Tajaran, Oni, Felinid, Chitinid, IPC, Vulpkanin, Shadowkin, Arachne]
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/body_hair.rsi
+    state: hairarm_r
+
+- type: marking
+  id: HairLegLeft
+  bodyPart: LLeg
+  markingCategory: LeftLeg
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Diona, Moth, Harpy, Tajaran, Oni, Felinid, Chitinid, IPC, Vulpkanin, Shadowkin, Arachne]
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/body_hair.rsi
+    state: hairleg-l
+
+- type: marking
+  id: HairLegRight
+  bodyPart: RLeg
+  markingCategory: RightLeg
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Diona, Moth, Harpy, Tajaran, Oni, Felinid, Chitinid, IPC, Vulpkanin, Shadowkin, Arachne]
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/body_hair.rsi
+    state: hairleg-r

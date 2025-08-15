@@ -42,6 +42,12 @@
       points: 6
       required: true
       defaultMarkings: [ PointyEarsUpwards ]
+    Underwear:
+      points: 2 # GDS - we added bodyhair here this is temp till we have a new category
+      required: false
+    Undershirt:
+      points: 2 # GDS - we added bodyhair here this is temp till we have a new category
+      required: false
     Snout:
       points: 2
       required: false
