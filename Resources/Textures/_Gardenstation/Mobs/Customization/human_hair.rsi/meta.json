@@ -7,6 +7,22 @@
         {
             "name": "tankgirl",
             "directions": 4
+        },
+        {
+            "name": "lumpmullet",
+            "directions": 4
+        },
+        {
+            "name": "scenehairbase",
+            "directions": 4
+        },
+        {
+            "name": "scenehairmid",
+            "directions": 4
+        },
+        {
+            "name": "scenehairlong",
+            "directions": 4
         }
     ]
 }

@@ -1,0 +1,51 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "sprited by bunnygirlHyacinth",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "hairhigh",
+            "directions": 4
+        },
+        {
+            "name": "hairlow",
+            "directions": 4
+        },
+        {
+            "name": "hairbig",
+            "directions": 4
+        },
+        {
+            "name": "hairhairy",
+            "directions": 4
+        },
+        {
+            "name": "hairchest",
+            "directions": 4
+        },
+        {
+            "name": "hairunder",
+            "directions": 4
+        },
+        {
+            "name": "hairarm_l",
+            "directions": 4
+        },
+        {
+            "name": "hairarm_r",
+            "directions": 4
+        },
+        {
+            "name": "hairlegs_r",
+            "directions": 4
+        },
+        {
+            "name": "hairlegs_l",
+            "directions": 4
+        }
+    ]
+}

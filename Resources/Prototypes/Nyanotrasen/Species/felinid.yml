@@ -38,6 +38,12 @@
       points: 1
       required: true
       defaultMarkings: [ FelinidEarsBasic ]
+    Underwear:
+      points: 2 # GDS - we added bodyhair here this is temp till we have a new category
+      required: false
+    Undershirt:
+      points: 2 # GDS - we added bodyhair here this is temp till we have a new category
+      required: false
     Chest:
       points: 1
       required: false
