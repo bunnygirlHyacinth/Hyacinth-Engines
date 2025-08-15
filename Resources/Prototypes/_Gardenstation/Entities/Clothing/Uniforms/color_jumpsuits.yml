@@ -1,7 +1,7 @@
 ﻿- type: entity
   parent: [ ClothingUniformBase, ClothingUniformFoldableBase ]
   id: ClothingUniformJumpsuitCorpoTripps
-  name: streetkid cargowear
+  name: streetkid cargos
   description: a sleeveless turtleneck and roomy cargopants... The chain doesnt really attach to anything but you think it makes you look tight as fuck
   components:
   - type: Sprite
@@ -41,6 +41,47 @@
 
 - type: entity
   parent: [ ClothingUniformBase, ClothingUniformFoldableBase ]
+  id: ClothingUniformJumpsuitLogiTripps
+  name: deckhand cargowear
+  description: a sleeveless turtleneck and roomy cargopants... Perfect for unloading crates and carrying bounties!
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/corpo_tripps.rsi
+    layers:
+    - state: icon
+      color: "#b18644"
+    - state: icon
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#b18644"
+      - state: inhand-left
+      right:
+      - state: inhand-right
+        color: "#b18644"
+      - state: inhand-right
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/corpo_tripps.rsi
+    clothingVisuals:
+      jumpsuit:
+      - state: equipped-INNERCLOTHING
+        color: "#b18644"
+      - state: folded-equipped-INNERCLOTHING
+  - type: Storage
+    grid:
+    - 0,0,3,1
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+
+- type: entity
+  parent: [ ClothingUniformBase, ClothingUniformFoldableBase ]
   id: ClothingUniformJumpsuitNTTripps
   name: NanoTrasen Cargowear
   description: a sleeveless turtleneck and roomy cargopants... A small nametag is in the pocket... Whos Morpheus?
@@ -50,17 +91,17 @@
     layers:
     - state: icon
       color: "#3d4f66"
-  #    - state: trinkets-icon
+    - state: icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-      #        color: "#b3b3b3"
-      #      - state: trinkets-inhand-left
+        color: "#3d4f66"
+      - state: inhand-left
       right:
       - state: inhand-right
-  #        color: "#b3b3b3"
-  #      - state: trinkets-inhand-right
+        color: "#3d4f66"
+      - state: inhand-right
   - type: Clothing
     sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/corpo_tripps.rsi
     clothingVisuals:
@@ -91,17 +132,17 @@
     layers:
     - state: icon
       color: "#7a6347"
-  #    - state: trinkets-icon
+    - state: icon
   - type: Item
     inhandVisuals:
       left:
       - state: inhand-left
-      #        color: "#b3b3b3"
-      #      - state: trinkets-inhand-left
+        color: "#7a6347"
+      - state: inhand-left
       right:
       - state: inhand-right
-  #        color: "#b3b3b3"
-  #      - state: trinkets-inhand-right
+        color: "#7a6347"
+      - state: inhand-right
   - type: Clothing
     sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/corpo_tripps.rsi
     clothingVisuals:

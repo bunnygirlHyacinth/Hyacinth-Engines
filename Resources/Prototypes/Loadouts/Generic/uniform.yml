@@ -2560,7 +2560,7 @@
       lifepaths:
         - WarVet
 
-# Solarian Aliance Uniforms
+# Solarian Alliance Uniforms // gd i fixed a typo cause it made me mad
 - type: loadout
   id: ClothingUniformJumpsuitSolArmyService
   category: Uniform
@@ -2693,3 +2693,21 @@
     - !type:CharacterLifepathRequirement
       lifepaths:
         - WarVet
+
+#this is stuff we added // GDS
+
+- type: loadout
+  id: ClothingUniformJumpsuitCorpoTripps
+  category: Uniform
+  cost: 5 # free pockets man we dont play with tiders putting contra in their jorts
+  canBeHeirloom: true
+  exclusive: true
+  items:
+  - ClothingUniformJumpsuitCorpoTripps
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutUniformsCivilian
+  - !type:CharacterDepartmentRequirement
+    inverted: true
+    departments:
+    - Command

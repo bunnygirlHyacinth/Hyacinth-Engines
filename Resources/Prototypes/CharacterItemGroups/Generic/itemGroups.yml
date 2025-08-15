@@ -403,3 +403,5 @@
       id: ClothingUniformJumpsuitSolNavySailor
     - type: loadout
       id: ClothingUniformJumpsuitSolServiceWhite
+    - type: loadout # GDS :)
+      id: ClothingUniformJumpsuitCorpoTripps
