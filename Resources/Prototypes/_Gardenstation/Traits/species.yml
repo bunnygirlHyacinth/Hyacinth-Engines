@@ -1,0 +1,95 @@
+﻿#ipc junk
+- type: trait # ipc take barotrauma because they are aircooled in-lore? this just lets them go in space and stuff without the heatdamage (which can be offset with a coat btw)
+  id: IPCPressureSealedChassis
+  category: Physical
+  points: -4
+  functions:
+    - !type:TraitAddComponent
+      components:
+      - type: PressureImmunity
+  requirements:
+  - !type:CharacterLogicOrRequirement
+    requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+      - IPC
+    - !type:CharacterTraitRequirement
+      traits:
+      - Shell
+
+#- type: trait
+#  id: IPCCrewViewer # someone else finish this one . it dont work
+#  category: Physical
+#  points: -5
+#  functions:
+#    - !type:TraitAddComponent
+#      components:
+#        - type: UserInterface
+#          interfaces:
+#            enum.CrewMonitoringUIKey.Key:
+#              type: CrewMonitoringBoundUserInterface
+#        - type: IntrinsicUI
+#          uis:
+#            enum.CrewMonitoringUIKey.Key:
+#              toggleAction: ActionAGhostShowCrewMonitoring
+#        - type: CrewMonitoringConsole
+#        - type: DeviceNetwork
+#          deviceNetId: Wireless
+#          receiveFrequencyId: CrewMonitor
+#        - type: WirelessNetworkConnection
+#          range: 300
+#  requirements:
+#  - !type:CharacterLogicOrRequirement
+#    requirements:
+#    - !type:CharacterSpeciesRequirement
+#      species:
+#      - IPC
+#    - !type:CharacterTraitRequirement
+#      traits:
+#      - Shell
+#  - !type:CharacterDepartmentRequirement
+#    departments:
+#    - Security
+#    - Command
+#    - Dignitary
+
+#- type: trait
+#  id: IPCRemoteCamera # this shit dont work man idk what im doing
+#  category: Physical
+#  points: -3
+#  functions:
+#  - !type:TraitAddComponent
+#    components:
+#        - type: DeviceNetwork
+#          deviceNetId: Wired
+#          receiveFrequencyId: SurveillanceCamera
+#          transmiteFrequencyId: SurveillanceCamera
+#        - type: SurveillanceCamera
+#          networkSet: true
+#        - type: Eye
+#        - type: WirelessNetworkConnection
+#          range: 215
+#        - type: SurveillanceCameraMicrophone
+#          blacklist:
+#            components:
+#            - SurveillanceCamera
+#            - SurveillanceCameraMonitor
+#            - RadioSpeaker
+#        - type: ActiveListener
+#          range: 10
+#        - type: StationAiVision
+#          range: 4
+#  requirements:
+#  - !type:CharacterLogicOrRequirement
+#    requirements:
+#    - !type:CharacterSpeciesRequirement
+#      species:
+#      - IPC
+#    - !type:CharacterTraitRequirement
+#      traits:
+#      - Shell
+#  - !type:CharacterDepartmentRequirement
+#    departments:
+#    - Security
+#    - Command
+#    - Dignitary
