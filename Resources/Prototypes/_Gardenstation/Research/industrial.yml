@@ -1,0 +1,12 @@
+﻿- type: technology
+  id: EngiVisors
+  name: research-technology-engineer-visors
+  icon:
+    sprite: _Gardenstation/Clothing/Eyes/engihi_tech_visor.rsi
+    state: icon
+  discipline: Industrial
+  tier: 1
+  cost: 3500
+  recipeUnlocks:
+  - ClothingEyesHighTechEngiVisor
+  - ClothingEyesHudDiagnosticTray

@@ -1,0 +1,54 @@
+﻿- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesHudDiagnosticTray
+  name: electrician's hud
+  description: A modified diagnostic hud equipped with a t-ray scanner radar pack.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Eyes/tray_scanner_hud.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Eyes/tray_scanner_hud.rsi
+  - type: TrayScanner
+  - type: ShowHealthBars
+    damageContainers:
+    - Inorganic
+    - Silicon
+    - SiliconUnshielded
+  - type: ClothingGrantComponent
+    component:
+      - type: GenericVisualizer
+        visuals:
+          enum.TrayScannerVisual.Visual:
+            base:
+              Equipped: { state: tray-on }
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesHighTechEngiVisor
+  name: hardlight maintenance visor
+  description: A cutting edge hardlight display capable of showing diagnostics, and functioning as a t-ray scanner. It even has flare dampening- fancy!
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Eyes/engihi_tech_visor.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Eyes/engihi_tech_visor.rsi
+    clothingVisuals:
+      eyes:
+      - state: equipped-EYES
+      - state: equipped-EYES-unshaded
+        shader: unshaded
+  - type: TrayScanner
+  - type: EyeProtection
+  - type: ShowHealthBars
+    damageContainers:
+    - Inorganic
+    - Silicon
+    - SiliconUnshielded
+    - StructuralInorganic
+  - type: ClothingGrantComponent
+    component:
+    - type: GenericVisualizer
+      visuals:
+        enum.TrayScannerVisual.Visual:
+          base:
+            Equipped: { state: tray-on }

@@ -227,7 +227,7 @@
   - type: IdentityBlocker
     coverage: EYES
 
-#Make a scanner category when these actually function and we get the trayson
+#Make a scanner category when these actually function and we get the trayson // GDS haha beat you to it gardenrulz
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesThermal

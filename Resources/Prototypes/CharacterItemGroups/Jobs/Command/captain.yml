@@ -126,6 +126,8 @@
       id: LoadoutCaptainOuterTrench
     - type: loadout
       id: LoadoutCaptainOuterDogi
+    - type: loadout
+      id: LoadoutCommandCapOuterWinterTrench
 
 - type: characterItemGroup
   id: LoadoutCaptainShoes

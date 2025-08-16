@@ -449,6 +449,8 @@
     - EnergyCautery
     - AdvancedRetractor
     - VehicleWheelchairFolded # Goobstation
+    - ClothingEyesHudDiagnosticTray # GDS
+    - ClothingEyesHighTechEngiVisor # GDS
   - type: EmagLatheRecipes
     emagDynamicRecipes:
     - BoxBeanbag
@@ -653,6 +655,8 @@
     - SMESAdvancedMachineCircuitboard
     - BaseComputerModularCircuitBoard # Arcadis - Modular Computer System
     - DiskBurnerMachineCircuitboard # Arcadis - Modular Computer System
+    - ClothingEyesHighTechEngiVisor # GDS
+    - ClothingEyesHudDiagnosticTray # GDS
   - type: EmagLatheRecipes
     emagDynamicRecipes:
     - ShuttleGunDusterCircuitboard
