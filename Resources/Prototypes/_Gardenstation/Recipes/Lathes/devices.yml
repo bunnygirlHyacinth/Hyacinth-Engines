@@ -1,0 +1,22 @@
+﻿- type: latheRecipe
+  id: ClothingEyesHudDiagnosticTray
+  result: ClothingEyesHudDiagnosticTray
+  category: Tools
+  completetime: 2
+  materials:
+    Plastic: 200
+    Glass: 150
+    Silver: 100
+    Gold: 100
+
+- type: latheRecipe
+  id: ClothingEyesHighTechEngiVisor
+  result: ClothingEyesHighTechEngiVisor
+  category: Tools
+  completetime: 3
+  materials:
+    Plastic: 200
+    Glass: 150
+    Silver: 100
+    Gold: 100
+    Plasma: 150
