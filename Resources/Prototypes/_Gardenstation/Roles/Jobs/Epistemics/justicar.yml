@@ -29,6 +29,8 @@
       employers:
         - NanoTrasen
         - ZengHuPharmaceuticals
+        - PMCG # military background is a thing for psi-enforcers.
+        - ZavodskoiInterstellar
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
   startingGear: JusticarGear

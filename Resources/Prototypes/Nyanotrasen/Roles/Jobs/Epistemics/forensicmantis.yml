@@ -26,6 +26,8 @@
       employers:
       - NanoTrasen
       - ZengHuPharmaceuticals
+      - ZavodskoiInterstellar # GDS // military background for psi-enforcers
+      - PMCG # GDS
     - !type:CharacterItemGroupRequirement
       group: TraitsCasterType
   startingGear: ForensicMantisGear

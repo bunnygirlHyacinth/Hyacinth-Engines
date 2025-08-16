@@ -23,3 +23,32 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+
+- type: entity
+  parent: [ClothingOuterCoatCapTrench]
+  id: ClothingOuterCoatCaptainWinterArmor
+  name: captain's armored winter coat
+  description: A beautifully lined fur coat and accompanying europan-styled carapace chestplate. Perfect for enjoying the view on glacier!
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/captain_armor_winter.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/captain_armor_winter.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.5
+        Piercing: 0.5 # higher piercing cause the carapace underneath
+        Heat: 0.45
+        Caustic: 0.75 # 2nd corporate war saw widespread use of caustic munition on europa- any armor that wouldve been used there is built to resist it more. this is a parade piece so not as much as others
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: GroupExamine
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
