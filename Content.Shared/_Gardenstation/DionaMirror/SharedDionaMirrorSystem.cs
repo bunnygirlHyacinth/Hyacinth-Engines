@@ -2,6 +2,7 @@ using Content.Shared.DoAfter;
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Interaction;
+using Content.Shared.Species.Components;
 using Content.Shared.UserInterface;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
@@ -28,6 +29,7 @@ public abstract class SharedDionaMirrorSystem : EntitySystem
         if (!UISystem.TryOpenUi(mirror.Owner, DionaMirrorUiKey.Key, args.User))
             return;
 
+
         UpdateInterface(mirror, args.Target.Value, mirror);
     }
 
@@ -37,7 +39,7 @@ public abstract class SharedDionaMirrorSystem : EntitySystem
             return;
 
         DebugTools.Assert(component.Target != null && Exists(component.Target));
-
+        DebugTools.Assert(HasComp<PrunableComponent>(component.Target));
         if (!_interaction.InRangeUnobstructed(uid, component.Target.Value))
             args.Result = BoundUserInterfaceRangeResult.Fail;
     }

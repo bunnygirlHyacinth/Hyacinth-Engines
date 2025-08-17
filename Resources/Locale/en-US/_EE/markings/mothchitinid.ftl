@@ -145,7 +145,7 @@ marking-MothChitinidRArmRadiant = Chitinid Right Arm (Radiant)
 marking-MothChitinidChestToxic-toxic_chest = Chest
 marking-MothChitinidChestToxic = Chitinid Chest (Toxic)
 
-marking-MothChitinidHeadToxic-toxic_head = Head 
+marking-MothChitinidHeadToxic-toxic_head = Head
 marking-MothChitinidHeadToxic = Chitinid Head (Toxic)
 
 marking-MothChitinidLLegToxic-toxic_l_leg = Left Leg

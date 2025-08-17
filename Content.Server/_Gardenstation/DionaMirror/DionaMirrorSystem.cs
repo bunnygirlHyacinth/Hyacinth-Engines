@@ -44,11 +44,13 @@ public sealed class DionaMirrorSystem : SharedDionaMirrorSystem
 
     private void OnDionaMirrorSelect(EntityUid uid, DionaMirrorComponent component, DionaMirrorSelectMessage message)
     {
-        if (component.Target is not { } target || !HasComp<NymphComponent>(uid))
+        if (component.Target is not { } target)
             return;
 
         _doAfterSystem.Cancel(component.DoAfter);
         component.DoAfter = null;
+        if (!HasComp<PrunableComponent>(component.Target))
+            return;
 
         var doAfter = new DionaMirrorSelectDoAfterEvent()
         {
@@ -72,6 +74,9 @@ public sealed class DionaMirrorSystem : SharedDionaMirrorSystem
 
     private void OnSelectSlotDoAfter(EntityUid uid, DionaMirrorComponent component, DionaMirrorSelectDoAfterEvent args)
     {
+        if (!HasComp<PrunableComponent>(component.Target))
+            return;
+
         if (args.Handled || args.Target == null || args.Cancelled)
             return;
 
@@ -108,7 +113,9 @@ public sealed class DionaMirrorSystem : SharedDionaMirrorSystem
 
     private void OnTryDionaMirrorChangeColor(EntityUid uid, DionaMirrorComponent component, DionaMirrorChangeColorMessage message)
     {
-        if (component.Target is not { } target || !HasComp<NymphComponent>(uid))
+        if (component.Target is not { } target)
+            return;
+        if (!HasComp<PrunableComponent>(component.Target))
             return;
 
         _doAfterSystem.Cancel(component.DoAfter);
@@ -133,6 +140,8 @@ public sealed class DionaMirrorSystem : SharedDionaMirrorSystem
     }
     private void OnChangeColorDoAfter(EntityUid uid, DionaMirrorComponent component, DionaMirrorChangeColorDoAfterEvent args)
     {
+        if (!HasComp<PrunableComponent>(component.Target))
+            return;
         if (args.Handled || args.Target == null || args.Cancelled)
             return;
 
@@ -170,9 +179,10 @@ public sealed class DionaMirrorSystem : SharedDionaMirrorSystem
 
     private void OnTryDionaMirrorRemoveSlot(EntityUid uid, DionaMirrorComponent component, DionaMirrorRemoveSlotMessage message)
     {
-        if (component.Target is not { } target || !HasComp<NymphComponent>(uid))
+        if (component.Target is not { } target)
             return;
-
+        if (!HasComp<PrunableComponent>(component.Target))
+            return;
         _doAfterSystem.Cancel(component.DoAfter);
         component.DoAfter = null;
 
@@ -196,6 +206,8 @@ public sealed class DionaMirrorSystem : SharedDionaMirrorSystem
 
     private void OnRemoveSlotDoAfter(EntityUid uid, DionaMirrorComponent component, DionaMirrorRemoveSlotDoAfterEvent args)
     {
+        if (!HasComp<PrunableComponent>(component.Target))
+            return;
         if (args.Handled || args.Target == null || args.Cancelled)
             return;
 
@@ -233,6 +245,8 @@ public sealed class DionaMirrorSystem : SharedDionaMirrorSystem
     private void OnTryDionaMirrorAddSlot(EntityUid uid, DionaMirrorComponent component, DionaMirrorAddSlotMessage message)
     {
         if (component.Target == null)
+            return;
+        if (!HasComp<PrunableComponent>(component.Target))
             return;
 
         _doAfterSystem.Cancel(component.DoAfter);

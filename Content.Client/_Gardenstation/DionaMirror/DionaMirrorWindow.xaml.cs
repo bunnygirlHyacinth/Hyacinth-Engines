@@ -74,13 +74,10 @@ public sealed partial class DionaMirrorWindow : DefaultWindow
         HeadTopPicker.UpdateData(state.HeadTop, state.Species, state.HeadTopSlotTotal);
         HeadSidePicker.UpdateData(state.HeadSide, state.Species, state.HeadSideSlotTotal);
         OverlayPicker.UpdateData(state.Overlay, state.Species, state.OverlaySlotTotal);
-        /*
-         *if (!HairPicker.Visible && !FacialHairPicker.Visible)
-         *         {
-         *             AddChild(new Label { Text = Loc.GetString("magic-mirror-component-activate-user-has-no-hair") });
-         *         }
-         *
-         */
 
+         if (!FacePicker.Visible && !HeadPicker.Visible && !HeadTopPicker.Visible && !HeadSidePicker.Visible && !OverlayPicker.Visible)
+                  {
+                      AddChild(new Label { Text = Loc.GetString("diona-mirror-component-activate-user-is-not-diona") });
+                  }
     }
 }

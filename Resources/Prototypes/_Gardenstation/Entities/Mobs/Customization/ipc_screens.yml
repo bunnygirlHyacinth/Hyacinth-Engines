@@ -1,0 +1,10 @@
+- type: marking
+  speciesRestriction: [ IPC ]
+  id: ScreenBored
+  bodyPart: Face
+  markingCategory: Face
+  shaders:
+    ipc_screen_bored: unshaded
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/ipc_screens.rsi
+    state: ipc_screen_bored

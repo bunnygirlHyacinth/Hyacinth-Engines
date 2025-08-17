@@ -98,6 +98,7 @@
     soundsId: DionaBodyEmotes
   - type: IgnoreKudzu
   - type: IgniteOnHeatDamage
+  - type: Prunable
     fireStacks: 1
     threshold: 12
   - type: GibAction
