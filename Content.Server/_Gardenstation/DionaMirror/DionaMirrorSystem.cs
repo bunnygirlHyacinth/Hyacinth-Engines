@@ -49,8 +49,6 @@ public sealed class DionaMirrorSystem : SharedDionaMirrorSystem
 
         _doAfterSystem.Cancel(component.DoAfter);
         component.DoAfter = null;
-        if (!HasComp<PrunableComponent>(component.Target))
-            return;
 
         var doAfter = new DionaMirrorSelectDoAfterEvent()
         {
@@ -74,9 +72,6 @@ public sealed class DionaMirrorSystem : SharedDionaMirrorSystem
 
     private void OnSelectSlotDoAfter(EntityUid uid, DionaMirrorComponent component, DionaMirrorSelectDoAfterEvent args)
     {
-        if (!HasComp<PrunableComponent>(component.Target))
-            return;
-
         if (args.Handled || args.Target == null || args.Cancelled)
             return;
 
@@ -115,8 +110,6 @@ public sealed class DionaMirrorSystem : SharedDionaMirrorSystem
     {
         if (component.Target is not { } target)
             return;
-        if (!HasComp<PrunableComponent>(component.Target))
-            return;
 
         _doAfterSystem.Cancel(component.DoAfter);
         component.DoAfter = null;
@@ -140,8 +133,7 @@ public sealed class DionaMirrorSystem : SharedDionaMirrorSystem
     }
     private void OnChangeColorDoAfter(EntityUid uid, DionaMirrorComponent component, DionaMirrorChangeColorDoAfterEvent args)
     {
-        if (!HasComp<PrunableComponent>(component.Target))
-            return;
+
         if (args.Handled || args.Target == null || args.Cancelled)
             return;
 
@@ -181,8 +173,7 @@ public sealed class DionaMirrorSystem : SharedDionaMirrorSystem
     {
         if (component.Target is not { } target)
             return;
-        if (!HasComp<PrunableComponent>(component.Target))
-            return;
+
         _doAfterSystem.Cancel(component.DoAfter);
         component.DoAfter = null;
 
@@ -206,8 +197,7 @@ public sealed class DionaMirrorSystem : SharedDionaMirrorSystem
 
     private void OnRemoveSlotDoAfter(EntityUid uid, DionaMirrorComponent component, DionaMirrorRemoveSlotDoAfterEvent args)
     {
-        if (!HasComp<PrunableComponent>(component.Target))
-            return;
+
         if (args.Handled || args.Target == null || args.Cancelled)
             return;
 
@@ -245,8 +235,6 @@ public sealed class DionaMirrorSystem : SharedDionaMirrorSystem
     private void OnTryDionaMirrorAddSlot(EntityUid uid, DionaMirrorComponent component, DionaMirrorAddSlotMessage message)
     {
         if (component.Target == null)
-            return;
-        if (!HasComp<PrunableComponent>(component.Target))
             return;
 
         _doAfterSystem.Cancel(component.DoAfter);

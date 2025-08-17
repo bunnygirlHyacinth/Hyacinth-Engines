@@ -25,7 +25,8 @@ public abstract class SharedDionaMirrorSystem : EntitySystem
     {
         if (!args.CanReach || args.Target == null)
             return;
-
+        if (!HasComp<PrunableComponent>(args.Target))
+            return;
         if (!UISystem.TryOpenUi(mirror.Owner, DionaMirrorUiKey.Key, args.User))
             return;
 
@@ -37,9 +38,7 @@ public abstract class SharedDionaMirrorSystem : EntitySystem
     {
         if (args.Result == BoundUserInterfaceRangeResult.Fail)
             return;
-
         DebugTools.Assert(component.Target != null && Exists(component.Target));
-        DebugTools.Assert(HasComp<PrunableComponent>(component.Target));
         if (!_interaction.InRangeUnobstructed(uid, component.Target.Value))
             args.Result = BoundUserInterfaceRangeResult.Fail;
     }
