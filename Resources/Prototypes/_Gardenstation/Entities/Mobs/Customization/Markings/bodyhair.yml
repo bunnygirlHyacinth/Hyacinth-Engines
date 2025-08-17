@@ -107,7 +107,7 @@
   speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Diona, Moth, Harpy, Tajaran, Oni, Felinid, Chitinid, IPC, Vulpkanin, Shadowkin, Arachne]
   sprites:
   - sprite: _Gardenstation/Mobs/Customization/body_hair.rsi
-    state: hairleg-l
+    state: hairlegs-l
 
 - type: marking
   id: HairLegRight
@@ -116,4 +116,4 @@
   speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, SlimePerson, Diona, Moth, Harpy, Tajaran, Oni, Felinid, Chitinid, IPC, Vulpkanin, Shadowkin, Arachne]
   sprites:
   - sprite: _Gardenstation/Mobs/Customization/body_hair.rsi
-    state: hairleg-r
+    state: hairlegs-r
