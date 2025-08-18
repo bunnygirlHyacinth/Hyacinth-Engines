@@ -1,0 +1,169 @@
+﻿- type: entity
+  name: captain's rapier
+  parent: [ BaseSword, BaseCommandContraband ]
+  id: CaptainRapier
+  description: A very traditional parade rapier designed for the captain of the station.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Weapons/Melee/captain_rapier.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -15
+    attackRate: .8
+    range: 1.8
+    soundHit:
+      path: /Audio/SimpleStation14/Weapons/Melee/rapierhit.ogg
+    damage:
+      types:
+        Slash: 5
+        Piercing: 15
+    clickPartDamageMultiplier: 3
+    heavyPartDamageMultiplier: 2.5
+    heavyRateModifier: 1.25
+    lightRangeModifier: 1.25
+    heavyDamageBaseModifier: 1
+    heavyStaminaCost: 2.5
+    maxTargets: 4
+    angle: 30
+    animation: WeaponArcThrust
+  - type: DamageOtherOnHit
+    staminaCost: 5
+  - type: EmbeddableProjectile
+  - type: EmbedPassiveDamage
+  - type: ThrowingAngle
+    angle: 225
+  - type: Reflect
+    reflectProb: .3
+    spread: 65
+  - type: Item
+    size: Normal
+    sprite: _Gardenstation/Objects/Weapons/Melee/captain_rapier.rsi
+  - type: Tag
+    tags:
+    - CaptainRapier
+  - type: DisarmMalus
+    malus: 0.225
+  - type: SentienceTarget
+    flavorKind: station-event-random-sentience-flavor-inanimate
+    weight: 0.02 # 5,000 times less likely than 1 regular animal
+  - type: FrenchAccent
+  - type: SolutionContainerManager # poison tipped rapier?? its peak??? the bastard noble has no honor????
+    solutions:
+      melee:
+        maxVol: 2
+  - type: MeleeChemicalInjector
+    solution: melee
+  - type: RefillableSolution
+    solution: melee
+  - type: InjectableSolution
+    solution: melee
+  - type: SolutionInjectOnEmbed
+    transferAmount: 2
+    solution: melee
+  - type: SolutionTransfer
+    maxTransferAmount: 2
+
+- type: entity
+  name: blue shield officer's vibro-rapier #shitcode sorry
+  parent: [ CaptainRapier, BlueshieldMace ]
+  id: BsoVibroRapier
+  description: A platinum rapier hilt fitted with a high-tech vibroblade, quite common to see used by inner-spindle aristocracy and their bodyguards.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Weapons/Melee/bso_vibrorapier.rsi
+    layers:
+    - state: icon-off
+      map: [ "enum.ToggleVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: { state: icon }
+          False: { state: icon-off }
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/Machines/button.ogg
+      params:
+        volume: -3
+    soundDeactivate:
+      collection: sparks
+      params:
+        volume: -4
+    soundFailToActivate:
+      path: /Audio/Machines/button.ogg
+      params:
+        variation: 0.250
+  - type: ItemToggleMeleeWeapon
+    activatedDamage:
+      types:
+        Heat: 3
+        Shock: 2 # the blade conducts a small amount of power from the built-in reactor ?? idk. just flavor.
+        Slash: 15
+        Piercing: 20
+    ignoreResistances: true
+    activatedSoundOnSwing: # vibrosword go wrrrrrrm
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        volume: -3
+    activatedSoundOnHit:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        volume: -3
+    activatedSoundOnHitNoDamage:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        variation: 0.250
+        volume: -10
+  - type: MeleeWeapon
+    wideAnimationRotation: -15
+    attackRate: .9 # do you enjoy hurting other people?
+    range: 1.8
+    soundHit:
+      path: /Audio/Weapons/Melee/rapierhit.ogg # turning on the kill mode makes the disabled sound stop working and i dont know why
+      params:
+        volume: 2
+    damage:
+      types:
+        Slash: 5
+        Piercing: 15
+    clickPartDamageMultiplier: 3
+    heavyPartDamageMultiplier: 2.5
+    heavyRateModifier: 1.25
+    lightRangeModifier: 1.25
+    heavyDamageBaseModifier: 1
+    heavyStaminaCost: 1.5
+    maxTargets: 5
+    angle: 40
+    animation: WeaponArcThrust
+  - type: DamageOtherOnHit
+    staminaCost: 5
+  - type: EmbeddableProjectile
+  - type: EmbedPassiveDamage
+  - type: ThrowingAngle
+    angle: 225
+  - type: Reflect # make this have .4 unpowered and .9 powered
+    reflectProb: .9 # fuck all life
+    spread: 40
+  - type: Item
+    size: Normal
+    sprite: _Gardenstation/Objects/Weapons/Melee/bso_vibrorapier.rsi
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 1000
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 500 # i dont even want this to have a battery but it just doesnt work unless i do it like this so i mite kms instead
+  - type: Tag
+    tags:
+    - BsoRapier
+  - type: DisarmMalus
+    malus: 0.125
+  - type: MeleeSpeech # DO NOT RESIST! DO NOT RESIST!! DO NOT RESIST!!!
+  - type: ActivatableUI
+    key: enum.MeleeSpeechUiKey.Key
+    verbOnly: true
+  - type: Actions
+  - type: UserInterface
+    interfaces:
+      enum.MeleeSpeechUiKey.Key:
+        type: MeleeSpeechBoundUserInterface

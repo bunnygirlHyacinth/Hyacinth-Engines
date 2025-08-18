@@ -33,6 +33,8 @@
       id: LoadoutBSORifleBRDIR25
     - type: loadout
       id: LoadoutBSOTerminus
+    - type: loadout
+      id: LoadoutBSOVibroRapierSheath # GDS added <3
 
 #- type: characterItemGroup
 #  id: LoadoutJOBEyes

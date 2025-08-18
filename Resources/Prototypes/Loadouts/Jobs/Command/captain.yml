@@ -56,6 +56,18 @@
   items:
     - ClothingBeltSheathFilled
 
+- type: loadout # gds added // get noble as fuck bro.
+  id: LoadoutCaptainRapierSheath
+  category: JobsCommandCaptain
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutCaptainBelt
+  - !type:CharacterJobRequirement
+    jobs:
+    - Captain
+  items:
+  - ClothingBeltCapRapierSheathFilled
 # Ears
 
 # Equipment

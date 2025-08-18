@@ -198,6 +198,22 @@
   items:
     - Terminus
 
+- type: loadout
+  id: LoadoutBSOVibroRapierSheath
+  category: JobsCommandBlueshieldOfficer
+  cost: 0 # make this cost more later if its abused idk. melee builds should be unpunished because guns hurt you.
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutBlueshieldOfficerPrimary
+  - !type:CharacterJobRequirement
+    jobs:
+    - BlueshieldOfficer
+  - !type:CharacterAgeRequirement
+    min: 21
+  items:
+  - ClothingBeltBsoVibroRapierSheathFilled
 # Eyes
 
 # Gloves
