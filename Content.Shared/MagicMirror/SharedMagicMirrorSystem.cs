@@ -5,7 +5,6 @@ using Content.Shared.Interaction;
 using Content.Shared.UserInterface;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
-
 namespace Content.Shared.MagicMirror;
 
 public abstract class SharedMagicMirrorSystem : EntitySystem

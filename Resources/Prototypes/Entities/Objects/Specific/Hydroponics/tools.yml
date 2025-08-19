@@ -69,6 +69,24 @@
       path: /Audio/_Shitmed/Medical/Surgery/retractor1.ogg
     endSound:
       path: /Audio/_Shitmed/Medical/Surgery/retractor2.ogg
+  # Gardenstation Change
+  - type: DionaMirror
+    requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+      - Diona
+    addSlotTime: 5
+    removeSlotTime: 5
+    selectSlotTime: 5
+    changeSlotTime: 5
+  - type: ActivatableUI
+    key: enum.DionaMirrorUiKey.Key
+    inHandsOnly: true
+    requireActiveHand: true
+  - type: UserInterface
+    interfaces:
+      enum.DionaMirrorUiKey.Key:
+        type: DionaMirrorBoundUserInterface
 
 - type: entity
   name: scythe
