@@ -21,7 +21,7 @@
         Psionic: 0.3
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ ClothingHeadBase, TranslatorPoweredBase ]
   id: ClothingHeadHatBSODuelistHat
   name: blueshield's parade hat
   description: A large feathered hat made specially for use by officers in tradeband circles. This one comes with a language skillsoft.
@@ -34,8 +34,12 @@
     modifier: 0.8
   - type: ClothingModifyStunTime
     modifier: 0.8
-  - type: LanguageKnowledge
-    speaks:
+  - type: HandheldTranslator
+    spoken:
+    - TauCetiBasic
     - Tradeband
-    understands:
+    understood:
+    - TauCetiBasic
     - Tradeband
+    requires:
+    - TauCetiBasic

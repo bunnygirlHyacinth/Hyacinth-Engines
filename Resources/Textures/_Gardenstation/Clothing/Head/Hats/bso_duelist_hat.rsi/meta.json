@@ -11,6 +11,9 @@
             "name": "icon"
         },
         {
+            "name": "translator"
+        },
+        {
             "name": "equipped-HELMET",
             "directions": 4
         },
