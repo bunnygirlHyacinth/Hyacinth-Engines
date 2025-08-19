@@ -1,0 +1,15 @@
+﻿- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckMantleBsoParadeMantle
+  name: blueshield's parade mantle
+  description: An ornate silken mantle made specially for blueshield officers. The interior is lined with durathread- perfect for a duelist.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Neck/bso_duelist_mantle.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Neck/bso_duelist_mantle.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+        Piercing: 0.95

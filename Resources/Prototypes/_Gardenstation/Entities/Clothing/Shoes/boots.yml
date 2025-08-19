@@ -12,3 +12,18 @@
     modifier: 0.8
   - type: ClothingModifyStunTime
     modifier: 0.8
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingShoesBootsBSOParadeBoots
+  name: blueshield's dress boots
+  description: A finely crafted pair of leather riding boots, they feel incredibly light!
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Shoes/Boots/bso_duelist_boots.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Shoes/Boots/bso_duelist_boots.rsi
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.8
+  - type: ClothingModifyStunTime
+    modifier: 0.8

@@ -74,8 +74,6 @@
         whitelist:
           tags:
           - BsoRapier
-    sprite: _Gardenstation/Clothing/Belt/bso_rapier_sheath.rsi
-    state: sheath-rapier-equipped-BELT
   - type: Appearance
   - type: ClothingSlowOnDamageModifier
     modifier: 0.8
