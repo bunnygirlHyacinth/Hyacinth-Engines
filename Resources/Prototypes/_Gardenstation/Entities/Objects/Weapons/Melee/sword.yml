@@ -65,9 +65,9 @@
 
 - type: entity
   name: blue shield officer's vibro-rapier #shitcode sorry
-  parent: [ CaptainRapier, BlueshieldMace ]
+  parent: [ BaseSword, BaseCommandContraband, BlueshieldMace ]
   id: BsoVibroRapier
-  description: A platinum rapier hilt fitted with a high-tech vibroblade, quite common to see used by inner-spindle aristocracy and their bodyguards.
+  description: A platinum rapier hilt fitted with a high-tech vibroblade, quite common to see used by inner-spindle aristocracy and their bodyguards. A reflex trainer is fitted in its grip.
   components:
   - type: Sprite
     sprite: _Gardenstation/Objects/Weapons/Melee/bso_vibrorapier.rsi
@@ -80,6 +80,9 @@
         enum.ToggleVisuals.Layer:
           True: { state: icon }
           False: { state: icon-off }
+  - type: Reflect # make this have .4 unpowered and .9 powered
+    reflectProb: .9 # fuck all life
+    spread: 30
   - type: ItemToggle
     soundActivate:
       path: /Audio/Machines/button.ogg
@@ -135,15 +138,20 @@
     maxTargets: 5
     angle: 40
     animation: WeaponArcThrust
+  - type: StaminaDamageOnHit
+    damage: 5
+    overtime: 5
+    sound: /Audio/Weapons/egloves.ogg
+  - type: StaminaDamageOnCollide
+    damage: 5
+    overtime: 5
+    sound: /Audio/Weapons/egloves.ogg
   - type: DamageOtherOnHit
     staminaCost: 5
   - type: EmbeddableProjectile
   - type: EmbedPassiveDamage
   - type: ThrowingAngle
     angle: 225
-  - type: Reflect # make this have .4 unpowered and .9 powered
-    reflectProb: .9 # fuck all life
-    spread: 40
   - type: Item
     size: Normal
     sprite: _Gardenstation/Objects/Weapons/Melee/bso_vibrorapier.rsi
@@ -152,7 +160,7 @@
     startingCharge: 1000
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 500 # i dont even want this to have a battery but it just doesnt work unless i do it like this so i mite kms instead
+    autoRechargeRate: 300 # i dont even want this to have a battery but it just doesnt work unless i do it like this so i mite kms instead
   - type: Tag
     tags:
     - BsoRapier

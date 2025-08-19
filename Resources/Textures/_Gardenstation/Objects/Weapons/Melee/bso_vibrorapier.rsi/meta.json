@@ -8,17 +8,13 @@
     },
     "states": [
         {
-            "name": "icon"
-        },
-        {
             "name": "icon-off"
         },
         {
-            "name": "off-inhand-left",
-            "directions": 4
+            "name": "icon"
         },
         {
-            "name": "off-inhand-right",
+            "name": "on-inhand-left",
             "directions": 4
         },
         {
@@ -26,7 +22,11 @@
             "directions": 4
         },
         {
-            "name": "on-inhand-left",
+            "name": "off-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "off-inhand-right",
             "directions": 4
         }
     ]
