@@ -1,0 +1,36 @@
+﻿- type: entity
+  parent: ClothingShoesBase
+  id: ClothingMagicalGirlCorpoBoots
+  name: Corporate MagiBoots
+  description: Seeing these on you makes your heart swell with hope!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Shoes/Modsuits/magicalgirlcco.rsi
+    layers:
+    - state: boots
+    - state: boots-sealed
+      visible: false
+      map: [ "sealed" ]
+  - type: Clothing
+    equipSound: /Audio/Magic/ethereal_enter.ogg
+    unequipSound: /Audio/Magic/ethereal_exit.ogg
+    slots: [ feet ]
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: SealableClothing
+    sealUpPopup: sealable-clothing-seal-up-boots
+    sealDownPopup: sealable-clothing-seal-down-boots
+  - type: ToggleClothing
+    action: ActionToggleMagboots
+  - type: Magboots
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.4
+  - type: ClothingModifyStunTime
+    modifier: 0.4
+  - type: SealableClothingVisuals
+    visualLayers:
+      shoes:
+      - state: equipped-FEET-sealed
