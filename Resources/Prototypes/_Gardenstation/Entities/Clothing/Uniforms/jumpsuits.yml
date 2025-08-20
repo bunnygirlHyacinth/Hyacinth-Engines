@@ -12,3 +12,14 @@
     modifiers:
       coefficients:
         Psionic: 0.6
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBSOParadeUniform
+  name: blueshield's parade uniform
+  description: A finely tailored suit made specially for any officers stationed in aristocratic courts. The lace is itchy...
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/bso_duelist_uniform.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/bso_duelist_uniform.rsi

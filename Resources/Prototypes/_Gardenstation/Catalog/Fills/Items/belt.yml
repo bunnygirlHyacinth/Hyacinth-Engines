@@ -1,0 +1,19 @@
+﻿- type: entity
+  id: ClothingBeltCapRapierSheathFilled
+  parent: ClothingBeltCapRapier
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - CaptainRapier
+
+- type: entity
+  id: ClothingBeltBsoVibroRapierSheathFilled
+  parent: ClothingBeltBsoVibroRapier
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - BsoVibroRapier

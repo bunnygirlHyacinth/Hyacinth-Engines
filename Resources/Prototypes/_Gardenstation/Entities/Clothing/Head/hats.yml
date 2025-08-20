@@ -19,3 +19,27 @@
         Radiation: 0.9
         Holy: 0.9
         Psionic: 0.3
+
+- type: entity
+  parent: [ ClothingHeadBase, TranslatorPoweredBase ]
+  id: ClothingHeadHatBSODuelistHat
+  name: blueshield's parade hat
+  description: A large feathered hat made specially for use by officers in tradeband circles. This one comes with a language skillsoft.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Head/Hats/bso_duelist_hat.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Head/Hats/bso_duelist_hat.rsi
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.8
+  - type: ClothingModifyStunTime
+    modifier: 0.8
+  - type: HandheldTranslator
+    spoken:
+    - TauCetiBasic
+    - Tradeband
+    understood:
+    - TauCetiBasic
+    - Tradeband
+    requires:
+    - TauCetiBasic

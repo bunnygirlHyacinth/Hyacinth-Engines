@@ -198,9 +198,39 @@
   items:
     - Terminus
 
+- type: loadout
+  id: LoadoutBSOVibroRapierSheath
+  category: JobsCommandBlueshieldOfficer
+  cost: 0 # make this cost more later if its abused idk. melee builds should be unpunished because guns hurt you.
+  canBeHeirloom: true
+  guideEntry: SecurityWeapons
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutBlueshieldOfficerPrimary
+  - !type:CharacterJobRequirement
+    jobs:
+    - BlueshieldOfficer
+  - !type:CharacterAgeRequirement
+    min: 21
+  items:
+  - ClothingBeltBsoVibroRapierSheathFilled
 # Eyes
 
 # Gloves
+
+- type: loadout
+  id: LoadoutClothingBlueshieldDressGloves
+  category: JobsCommandBlueshieldOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutBlueshieldOfficerGloves
+  - !type:CharacterJobRequirement
+    jobs:
+    - BlueshieldOfficer
+  items:
+  - ClothingHandsGlovesBSODuelistLace
 
 # Head
 - type: loadout
@@ -245,9 +275,37 @@
   items:
     - ClothingHeadHatCowboyBlueshield
 
+- type: loadout # GDS added
+  id: LoadoutClothingBlueshieldDuelistHat
+  category: JobsCommandBlueshieldOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutBlueshieldOfficerHats
+  - !type:CharacterJobRequirement
+    jobs:
+    - BlueshieldOfficer
+  items:
+  - ClothingHeadHatBSODuelistHat
+
 # Id
 
 # Neck
+
+- type: loadout # GDS added
+  id: LoadoutClothingBlueshieldParadeMantle
+  category: JobsCommandBlueshieldOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutBlueshieldOfficerNeck
+  - !type:CharacterJobRequirement
+    jobs:
+    - BlueshieldOfficer
+  items:
+  - ClothingNeckMantleBsoParadeMantle
 
 # Mask
 
@@ -352,6 +410,20 @@
 
 # Shoes
 
+- type: loadout # GDS added
+  id: LoadoutClothingUniformBootsBlueshieldOfficerDressBoots
+  category: JobsCommandBlueshieldOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutBlueshieldOfficerShoes
+  - !type:CharacterJobRequirement
+    jobs:
+    - BlueshieldOfficer
+  items:
+  - ClothingShoesBootsBSOParadeBoots
+
 # Uniforms
 - type: loadout
   id: LoadoutClothingUniformJumpskirtBlueshieldOfficer
@@ -380,3 +452,17 @@
         - BlueshieldOfficer
   items:
     - ClothingUniformJumpsuitBlueshieldOfficer
+
+- type: loadout # GDS added
+  id: LoadoutClothingUniformJumpsuitBlueshieldOfficerDuelist
+  category: JobsCommandBlueshieldOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutBlueshieldOfficerUniforms
+  - !type:CharacterJobRequirement
+    jobs:
+    - BlueshieldOfficer
+  items:
+  - ClothingUniformJumpsuitBSOParadeUniform

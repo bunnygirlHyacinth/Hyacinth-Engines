@@ -80,3 +80,23 @@
     interfaces:
       enum.MeleeSpeechUiKey.Key:
         type: MeleeSpeechBoundUserInterface     # attack finish
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesBSODuelistLace
+  name: blueshield's parade gauntlets
+  description: A pair of leather gauntlets reinforced with plastitanium plates. The lace is kind of itchy...
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Hands/Gloves/bso_duelist_gloves.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Hands/Gloves/bso_duelist_gloves.rsi
+  - type: Insulated # leather is not conductive . YOU DUMBASS!!
+  - type: Armor
+    modifiers:
+      coefficients:
+        Slash: 0.95
+  - type: FingerprintMask
+  - type: Fiber
+    fibermaterial: fibers-leather
+    fibercolor: fibers-blue

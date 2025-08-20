@@ -11,3 +11,74 @@
   - type: Storage
     grid:
     - 0,0,15,1
+
+- type: entity
+  parent: [ClothingBeltBase, ClothingSlotBase, BaseCommandContraband]
+  id: ClothingBeltCapRapier
+  name: captain's rapier sheath
+  description: An ornate sheath designed to hold an officer's foil.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Belt/captain_rapier_sheath.rsi
+    state: sheath
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Belt/captain_rapier_sheath.rsi
+  - type: Item
+    size: Large
+  - type: ItemSlots
+    slots:
+      item:
+        name: Rapier
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/SimpleStation14/Items/Handling/sword_sheath.ogg
+        ejectSound: /Audio/SimpleStation14/Items/Handling/sword_unsheath.ogg
+        whitelist:
+          tags:
+          - CaptainRapier
+  - type: ItemMapper
+    mapLayers:
+      sheath-rapier:
+        whitelist:
+          tags:
+          - CaptainRapier
+  - type: Appearance
+
+- type: entity
+  parent: [ClothingBeltBase, ClothingSlotBase, BaseCommandContraband]
+  id: ClothingBeltBsoVibroRapier
+  name: blueshield officer's rapier sheath
+  description: Live by the sword, die by the sword. Honor has no place among dead men.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Belt/bso_rapier_sheath.rsi
+    state: sheath
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Belt/bso_rapier_sheath.rsi
+  - type: Item
+    size: Large
+  - type: ItemSlots
+    slots:
+      item:
+        name: Rapier
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/SimpleStation14/Items/Handling/sword_sheath.ogg
+        ejectSound: /Audio/SimpleStation14/Items/Handling/sword_unsheath.ogg
+        whitelist:
+          tags:
+          - BsoRapier
+  - type: ItemMapper
+    mapLayers:
+      sheath-rapier:
+        whitelist:
+          tags:
+          - BsoRapier
+  - type: Appearance
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.8
+  - type: ClothingModifyStunTime # die on your feet
+    modifier: 0.8
+  - type: Reflect # belt has a reflex trainer or something? idfk this is the only way to give passive deflect on that stupid sword i can think of
+    reflectProb: .4 # fuck all life
+    spread: 30

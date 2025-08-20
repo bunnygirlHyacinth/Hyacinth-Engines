@@ -21,6 +21,8 @@
   items:
     - type: loadout
       id: LoadoutCaptainSwordSheath
+    - type: loadout
+      id: LoadoutCaptainRapierSheath # GDS added <3
 
 #- type: characterItemGroup
 #  id: LoadoutCaptainEars

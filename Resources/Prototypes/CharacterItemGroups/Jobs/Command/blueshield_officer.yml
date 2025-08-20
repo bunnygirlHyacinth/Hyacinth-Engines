@@ -33,16 +33,21 @@
       id: LoadoutBSORifleBRDIR25
     - type: loadout
       id: LoadoutBSOTerminus
+    - type: loadout
+      id: LoadoutBSOVibroRapierSheath # GDS added <3
 
 #- type: characterItemGroup
 #  id: LoadoutJOBEyes
 #  maxItems: 1
 #  items:
 #
-#- type: characterItemGroup
-#  id: LoadoutJOBGloves
-#  maxItems: 1
-#  items:
+
+- type: characterItemGroup # GDS added
+  id: LoadoutBlueshieldOfficerGloves
+  maxItems: 1
+  items:
+  - type: loadout
+    id: LoadoutClothingBlueshieldDressGloves
 
 - type: characterItemGroup
   id: LoadoutBlueshieldOfficerHats
@@ -54,17 +59,21 @@
       id: LoadoutClothingBlueshieldBeretOfficer
     - type: loadout
       id: LoadoutClothingBlueshieldCowboyHat
+    - type: loadout # GDS added
+      id: LoadoutClothingBlueshieldDuelistHat
 
 #- type: characterItemGroup
 #  id: LoadoutJOBId
 #  maxItems: 1
 #  items:
 #
-#- type: characterItemGroup
-#  id: LoadoutJOBNeck
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup # GDS added
+  id: LoadoutBlueshieldOfficerNeck
+  maxItems: 1
+  items:
+  - type: loadout
+    id: LoadoutClothingBlueshieldParadeMantle
+
 #- type: characterItemGroup
 #  id: LoadoutJOBMask
 #  maxItems: 1
@@ -89,10 +98,12 @@
     - type: loadout
       id: LoadoutClothingBlueshieldArmoredCoat
 
-#- type: characterItemGroup
-#  id: LoadoutJOBShoes
-#  maxItems: 1
-#  items:
+- type: characterItemGroup #GDS added
+  id: LoadoutBlueshieldOfficerShoes
+  maxItems: 1
+  items:
+  - type: loadout
+    id: ClothingUniformBootsBlueshieldOfficerDressBoots
 
 - type: characterItemGroup
   id: LoadoutBlueshieldOfficerUniforms
@@ -102,3 +113,5 @@
       id: LoadoutClothingUniformJumpskirtBlueshieldOfficer
     - type: loadout
       id: LoadoutClothingUniformJumpsuitBlueshieldOfficer
+    - type: loadout # GDS added
+      id: LoadoutClothingUniformJumpsuitBlueshieldOfficerDuelist
