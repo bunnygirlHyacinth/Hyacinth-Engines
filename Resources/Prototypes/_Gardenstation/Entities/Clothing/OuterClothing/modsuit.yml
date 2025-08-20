@@ -1,0 +1,51 @@
+﻿- type: entity
+  parent: ClothingOuterBase
+  id: ClothingMagicalGirlCorpoChestplate
+  name: Corporate MagiDress
+  description: Never let their efforts be in vain.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: AllowSuitStorage
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/Modsuits/magicalgirlcco.rsi
+    layers:
+    - state: chestplate
+    - state: chestplate-sealed
+      visible: false
+      map: [ "sealed" ]
+  - type: Clothing
+    equipSound: /Audio/Magic/ethereal_enter.ogg
+    unequipSound: /Audio/Magic/ethereal_exit.ogg
+    slots: [ outerClothing ]
+  - type: ClothingSpeedModifier
+    walkModifier: 1.1
+    sprintModifier: 1.1
+  - type: SealableClothing
+    sealUpPopup: sealable-clothing-seal-up-chestplate
+    sealDownPopup: sealable-clothing-seal-down-chestplate
+  - type: SealableClothingVisuals
+    visualLayers:
+      outerClothing:
+      - state: equipped-OUTERCLOTHING-sealed
+        shader: unshaded
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.4
+        Heat: 0.4
+        Radiation: 0.001
+        Caustic: 0.4
+        Holy: 0.4
+        Psionic: 0.4
+        #Soul: eventually this will be real with actual magical girls the crew can play/roll roundstart (and the antags that deal it)
+  - type: ComponentToggler
+    components:
+    - type: PressureProtection
+      highPressureMultiplier: 0.3
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.1
+      coolingCoefficient: 0.1

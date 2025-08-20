@@ -1,0 +1,56 @@
+﻿# this is specifically for the magical girls soulgem necklace were gonna make. rn this is a test version so expect SHIT
+- type: entity
+  parent: [Clothing, ContentsExplosionResistanceBase]
+  id: ClothingMagicalGirlCorpo
+  name: Corporate Pendant
+  description: Remember this and take it to heart- Kindness sometimes leads to even greater tragedy.
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Neck/Modsuits/magicalgirlcco.rsi
+    layers:
+    - state: pendant
+    - state: pendant-sealed
+      visible: false
+      map: [ "sealed" ]
+  - type: Item
+    size: Small
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - neck
+  - type: Storage
+    grid:
+    - 0,0,6,3
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+      toggleable-clothing: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.ToggleClothingUiKey.Key:
+        type: ToggleableClothingBoundUserInterface
+  - type: UseDelay
+    delay: 0.1
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: ToggleableClothing
+    requiredSlot: neck
+    blockUnequipWhenAttached: true
+    replaceCurrentClothing: true
+    clothingPrototypes:
+      head: ClothingMagicalGirlCorpoHelmet
+      gloves: ClothingMagicalGirlCorpoGauntlets
+      outerClothing: ClothingMagicalGirlCorpoChestplate
+      shoes: ClothingMagicalGirlCorpoBoots
+  - type: DoAfter
+  - type: SealableClothingControl
+  - type: SealableClothingVisuals
+    visualLayers:
+      back:
+      - state: equipped-NECK-sealed
+        shader: unshaded

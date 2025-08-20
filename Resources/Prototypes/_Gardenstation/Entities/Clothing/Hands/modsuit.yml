@@ -1,0 +1,31 @@
+﻿- type: entity
+  parent: ClothingHandsBase
+  id: ClothingMagicalGirlCorpoGauntlets
+  name: Corporate MagiGloves
+  description: Ask yourself this- Whats better, doing nothing or doing something?
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Hands/Modsuits/magicalgirlcco.rsi
+    layers:
+    - state: gauntlets
+    - state: gauntlets-sealed
+      visible: false
+      map: [ "sealed" ]
+  - type: Clothing
+    equipSound: /Audio/Magic/ethereal_enter.ogg
+    unequipSound: /Audio/Magic/ethereal_exit.ogg
+    slots: [ gloves ]
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-modular
+    fiberColor: fibers-black
+  - type: FingerprintMask
+  - type: SealableClothing
+    sealUpPopup: sealable-clothing-seal-up-gauntlets
+    sealDownPopup: sealable-clothing-seal-down-gauntlets
+  - type: SealableClothingVisuals
+    visualLayers:
+      gloves:
+      - state: equipped-HAND-sealed
