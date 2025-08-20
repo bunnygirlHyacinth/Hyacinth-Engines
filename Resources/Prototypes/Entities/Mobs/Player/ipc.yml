@@ -39,10 +39,12 @@
   - type: MobState
     allowedStates:
       - Alive
+      - Critical
       - Dead
   - type: MobThresholds
     thresholds:
       0: Alive
+      119: Critical #if you're going to check if the ipc is above the crit threshold there needs to be a crit threshold :whimsy:
       120: Dead
     stateAlertDict:
       Alive: BorgHealth
