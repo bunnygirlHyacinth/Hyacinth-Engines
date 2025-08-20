@@ -58,6 +58,9 @@ mood-effect-TraitSanguine = I have nothing to worry about. I'm sure everything w
 mood-effect-HeirloomSecure = My heirloom is safe, and with it the memories of the ones before me.
 mood-effect-HeirloomLost = I can't seem to find my heirloom, how will the past be safe now?
 
+# Psionics
+mood-effect-EldritchHorror = I have seen too much... I- I CAN'T TAKE IT ANYMORE!!!
+
 # Addictions
 mood-effect-LotoTranscendence =
     I CAN SEE ALL THAT IS, ALL THAT WILL EVER BE, AND ALL THAT EVER WAS. ALL OF CREATION HAS OPENED TO MY MIND!

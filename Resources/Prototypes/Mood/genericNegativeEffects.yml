@@ -59,3 +59,9 @@
   id: HeirloomNeutral
   moodChange: -5
   category: Heirloom
+
+# Psionic // GDS ADDED
+
+- type: moodEffect
+  id: EldritchHorror
+  moodChange: -1000

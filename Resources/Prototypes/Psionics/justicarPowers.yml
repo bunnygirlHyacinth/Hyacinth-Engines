@@ -41,6 +41,39 @@
 #  - !type:ChemVomit
 #    conditions: PsionicallyInsulated
 
+- type: psionicPower
+  id: WhisperTruthPower
+  name: Whisper Truth
+  powerCategories:
+  - Mentalic
+  - Dangerous
+  initializeFunctions:
+  - !type:AddPsionicActions
+    actions:
+    - ActionWhisperTruth
+  - !type:AddPsionicPowerComponents
+    components:
+    - type: WhisperTruthPower
+  - !type:PsionicFeedbackPopup
+  - !type:PsionicFeedbackSelfChat
+    feedbackMessage: Such terrible things there are in this world.
+  - !type:PsionicModifyGlimmer
+    glimmerModifier: 2.5
+  - !type:AddPsionicAssayFeedback
+    assayFeedback: I have seen something I can never turn back from. Its Broken. Its Broken. Its Broken. Its Broken.
+  - !type:AddPsionicStatSources
+    amplificationModifier: 1
+  removalFunctions:
+  - !type:RemovePsionicActions
+  - !type:RemovePsionicPowerComponents
+    components:
+    - type: WhisperTruthPower
+  - !type:RemovePsionicStatSources
+  - !type:RemoveAssayFeedback
+    assayFeedback: Something horrible has been revealed to me...
+
+# ACTIONS --- ORGANIZE THESE GOOD PLEASE <33
+
 - type: entity
   id: ActionPsionicAssault
   name: Psionic Assault
@@ -57,3 +90,20 @@
           - PsionicInsulation
           - Mindbroken
       event: !type:PsionicAssaultPowerActionEvent
+
+- type: entity
+  id: ActionWhisperTruth
+  name: Whisper Truth
+  description: There are some things left better unsaid.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityTargetAction
+    icon: Interface/VerbIcons/telegnosis.png
+    useDelay: 30
+    range: 5
+    itemIconStyle: BigAction
+    blacklist:
+      components:
+      - PsionicInsulation
+      - Mindbroken
+    event: !type:WhisperTruthPowerActionEvent
