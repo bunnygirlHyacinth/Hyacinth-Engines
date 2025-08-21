@@ -65,7 +65,7 @@
     eyes: ClothingEyesHudMedical
     head: ClothingHeadHatBeretCorpsman
     id: CorpsmanPDA
-    ears: ClothingHeadsetBrigmedic
+    ears: ClothingHeadsetAltCorpsman
     belt: ClothingBeltCorpsmanWebbingFilled
   storage:
     back:

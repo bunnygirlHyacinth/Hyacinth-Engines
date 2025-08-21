@@ -206,4 +206,20 @@
     sprite: Clothing/Ears/Headsets/science.rsi
   - type: Clothing
     sprite: Clothing/Ears/Headsets/science.rsi
+
+- type: entity
+  parent: [ClothingHeadsetAlt, BaseCommandContraband]
+  id: ClothingHeadsetAltCorpsman #really brigmedic but shut upr....
+  name: Corpsman over-ear headset
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyMedical
+      - EncryptionKeySecurity  
+      - EncryptionKeyCommon
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/security.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/security.rsi
 # Gardenstation end
