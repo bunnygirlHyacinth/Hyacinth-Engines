@@ -209,7 +209,7 @@
 
 - type: entity
   parent: [ClothingHeadsetAlt, BaseCommandContraband]
-  id: ClothingHeadsetAltCorpsman
+  id: ClothingHeadsetAltCorpsman #really brigmedic but shut upr....
   name: Corpsman over-ear headset
   components:
   - type: ContainerFill
