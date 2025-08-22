@@ -1,0 +1,56 @@
+﻿- type: Interaction
+  id: Lick
+  parent: [BaseGlobal, BaseHands]
+  priority: -2
+  #icon: /Textures/Interface/Actions/hug.png
+  delay: 0.7
+  range: {max: 1}
+  hideByRequirement: true
+  requirement:
+    !type:MobStateRequirement
+    inverted: true
+  action:
+    !type:MoodAction
+    effect: BeingLicked
+  effectSuccess:
+    popup: Obvious
+    sound: {path: /Audio/_Gardenstation/Effects/Interactions/lick.ogg}
+
+- type: Interaction
+  id: Kiss
+  parent: [BaseGlobal, BaseHands]
+  priority: -1
+  delay: 0.4
+  range: {max: 1}
+  hideByRequirement: true
+  requirement:
+    !type:MobStateRequirement
+    inverted: true
+  action:
+    !type:MoodAction
+    effect: BeingKissed
+  effectSuccess:
+    popup: Obvious
+    sound: {path: /Audio/_Gardenstation/Effects/Interactions/kissfunnyfx.ogg}
+
+- type: Interaction
+  id: Slap
+  parent: [BaseGlobal, BaseHands]
+  priority: 2
+  delay: 0.1
+  range: {max: 1}
+  hideByRequirement: true
+  requirement:
+    !type:MobStateRequirement
+    inverted: true
+  action:
+    !type:ComplexAction
+    actions:
+    - !type:ModifyHealthAction
+      damage:
+        types: {Blunt: 5}
+    - !type:MoodAction
+      effect: BeingSlapped
+    effectSuccess:
+      popup: Obvious
+      sound: { path: /Audio/Melee/punch1.ogg }
