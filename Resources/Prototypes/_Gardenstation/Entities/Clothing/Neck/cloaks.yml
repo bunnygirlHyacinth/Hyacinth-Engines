@@ -1,0 +1,29 @@
+﻿- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakSisterCloak
+  name: umbral cloak
+  description: A large cloak, the fabric seems to be soaked in blood- yet leaves no stain when you touch it...
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Neck/Cloaks/sister_cloak.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Neck/Cloaks/sister_cloak.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.5
+        Caustic: 0.65 # some psionic powers will deal caustic eventually ?
+        Radiation: 0.6
+        Psionic: 0.5 # sisters are the nukie commander equiv. for the coven. they should be tough
+        Holy: 0.7 # theyre close to... something...
+  - type: PressureProtection # theyre really supposed to be some other bullshit
+    highPressureMultiplier: 0.01
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection # they shouldnt ever have hardsuits
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.01
+  - type: ExplosionResistance
+    damageCoefficient: 0.5

@@ -1,0 +1,26 @@
+﻿- type: entity
+  parent: [ClothingOuterArmorBasic, AllowSuitStorageClothing]
+  id: ClothingOuterSisterDervishRegalia
+  name: Dervish regalia
+  description: Each ring that makes up these golden chains are inscribed with intricate sigils
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/Misc/dervish_regalia.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/OuterClothing/Misc/dervish_regalia.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.75 # more bulletproof than normal kevlar/flak vests - shell armor
+        Heat: 0.75
+        Caustic: 0.75 # the things you see on europa. Never Forget Those Frozen Fields.
+        Radiation: 0.75
+        Psionic: 0.75
+        Holy: 0.75 # someone forgot to charge their crystal lole - see you in the badplace BUDDY
+  - type: ExplosionResistance
+    damageCoefficient: 0.80
+  - type: TemperatureProtection # they shouldnt ever have hardsuits
+    heatingCoefficient: 0.01
+    coolingCoefficient: 0.01

@@ -10,8 +10,7 @@
     sprite: _Gardenstation/Clothing/Mask/white_morpheus.rsi
   - type: Clothing
     sprite: _Gardenstation/Clothing/Mask/white_morpheus.rsi
-    equipDelay: 15
-    unequipDelay: 1200
+  - type: Unremoveable
   - type: IngestionBlocker
     blockSmokeIngestion: true
   - type: BreathMask

@@ -1,0 +1,17 @@
+﻿- type: entity
+  parent: ClothingShoesBootsMagAdv
+  id: ClothingShoesSisterFootwraps
+  name: umbral footwraps
+  description: A yard of fabric, used to cover the feet. The cloth feels... strange...
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Shoes/Wraps/sister_footwraps.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Shoes/Wraps/sister_footwraps.rsi
+  - type: ClothingSlowOnDamageModifier # theyre magic bro
+    modifier: 0.6
+  - type: ClothingModifyStunTime
+    modifier: 0.6
+  - type: FootstepVolumeModifier # again, magic
+    sprintVolumeModifier: -10
+    walkVolumeModifier: -10

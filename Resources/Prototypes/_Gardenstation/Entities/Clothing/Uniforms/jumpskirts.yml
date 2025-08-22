@@ -1,0 +1,16 @@
+﻿- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtSisterWraps
+  name: sister's skirts
+  description: A set of bloodred wrappings, paired with a belt of gold hoops.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Jumpskirt/sister_wraps.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Jumpskirt/sister_wraps.rsi
+  - type: Unremoveable
+  - type: Armor
+    modifiers:
+      coefficients:
+        Psionic: 0.7
+        Holy: 0.6

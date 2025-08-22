@@ -1,0 +1,49 @@
+﻿- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHelmetOspreyHelmet
+  name: Visage of Yd'Ssath
+  description: 'Sightless one bless us, guide your Sisters hand to what deeds you may need done- Bring us Sight Unseen'
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Head/Helmets/sister_mask.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Head/Helmets/sister_mask.rsi
+  - type: PointLight
+    color: "#FFFFFF"
+    radius: 1.5
+    energy: 5.5
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.7
+        Piercing: 0.5
+        Heat: 0.6
+        Psionic: 0.6
+        Holy: 0.6
+  - type: FlashSoundSuppression
+  - type: FlashImmunity
+  - type: EyeProtection
+  - type: IdentityBlocker
+  - type: NightVision
+    isActive: true
+    isEquipment: true
+    toggleAction: null
+    activateSound: null
+    deactivateSound: null
+    color: Pink
+  - type: ThermalVision
+    isEquipment: true
+    pulseTime: 2
+    toggleAction: PulseThermalVision
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+    - Inorganic
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+  - type: ClothingGrantComponent
+    component:
+    - type: BreathingImmunity
+    - type: PressureImmunity

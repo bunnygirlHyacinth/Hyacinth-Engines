@@ -100,3 +100,35 @@
   - type: Fiber
     fibermaterial: fibers-leather
     fibercolor: fibers-blue
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesSisterHands
+  name: umbral beads
+  description: Peculiar crystal beads often seen used as a psionic focus in ritual. These are accompanied with a strange cloth arm wrap.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Hands/Gloves/sister_hands.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Hands/Gloves/sister_hands.rsi
+  - type: Insulated # maaaagic
+  - type: StaminaDamageOnHit
+    damage: 8 # cause fuck you bro
+  - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 0.8
+    damage:
+      types:
+        Holy: 10
+        Psionic: 15
+    soundHit:
+      collection: Punch
+    animation: WeaponArcFist
+    mustBeEquippedToUse: True
+  - type: Unremoveable
+  - type: ClothingGrantComponent # really i want this to be an emag-like but i dont wanna deal with the consequence of that rn
+    component:
+      - type: Prying
+        speedModifier: 1.5
+        pryPowered: true
+        useSound: /Audio/Items/jaws_pry.ogg
