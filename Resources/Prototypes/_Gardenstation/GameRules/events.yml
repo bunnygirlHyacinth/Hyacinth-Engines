@@ -11,3 +11,13 @@
     minimumGlimmer: 350
     maximumGlimmer: 1000
 
+- type: entity
+  id: GlimmerSoloVisageSpawn # make this a different thing later
+  parent: BaseGlimmerSignaturesEvent
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: GlimmerMobRule
+    mobPrototype: RandomHumanoidSpawnerSisterVisage
+  - type: GlimmerEvent
+    minimumGlimmer: 700
+    maximumGlimmer: 1000

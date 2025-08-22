@@ -72,7 +72,7 @@
   - Vox # they die instantly
   - Arachnid # spiders scare me
   - Oni # not psionic
-  - PlasmaMan # they die instantly
+  - Plasmaman # they die instantly
   - IPC # not psionic
   components:
   - type: RandomHumanoidAppearance
@@ -81,8 +81,15 @@
     name: Umbral Dervish
     description: You are a Dervish of the Umbral Path. You have come to punish those who have put their hands in places they do not belong.
     rules: Follow the word of the Coven and your elder Sisters no matter what. Do not let the brutish ones take you alive. Walk the golden path Yd'Ssath has laid before you.
+#    mindRoles:
+#     - MindRoleLoneDervish
     raffle:
       settings: short
+#  - type: AntagRandomObjectives - not done yet
+#    maxDifficulty: 3
+#    sets:
+#    - maxPicks: 3
+#      groups: UmbralSisterObjectiveGroupSolo
   - type: GhostTakeoverAvailable
   - type: Loadout
     prototypes: [ SisterDervishGearSolo ]
@@ -106,6 +113,45 @@
     nameSegments:
     - names_golem
 
+- type: randomHumanoidSettings
+  id: SisterVisage
+  randomizeName: false
+  parent: SisterDervish
+  speciesBlacklist: # figure out how to make this a girls club later too. no boys allowed in my awesome cult.
+  - Shadowkin # there is a solarian saying
+  - Monkey
+  - Kobold
+  - Abductor
+  - Diona # they cant wear the shoes. sorry bub maybe next cult.
+  - Vox # they die instantly
+  - Arachnid # spiders scare me
+  - Oni # not psionic
+  - Plasmaman # they die instantly
+  - IPC # not psionic
+  components:
+  - type: GhostRole
+    name: The Visage of Yd'Ssath
+    description: You are the hand of Yd'Ssath- blessed be her name. Carry out her will. Open the floodgates and bring glimmer to the eyes of all life.
+    rules: You are the hand of Yd'Ssath- blessed be her name. Carry out her will. Suffer not the brutish ones to live.
+  - type: Loadout
+    prototypes: [ SisterVisageGear ]
+  - type: Psionic
+    powerSlots: 12
+    baselinePowerCost: 40
+    nextPowerCost: 20
+    removable: false
+    roller: true
+  - type: InnatePsionicPowers
+    powersToAdd:
+    - PsionicAssaultPower
+    - PsionicInvisibilityPower
+    - PowerOverwhelming
+    - HealingWordPower
+    - XenoglossyPower
+    - PsychognomyPower
+    - TelepathyPower
+    - DarkSwapPower
+
 # SPAWNERS
 
 - type: entity
@@ -124,6 +170,22 @@
   - type: RandomHumanoidSpawner
     settings: SisterDervish
 
+- type: entity
+  id: RandomHumanoidSpawnerSisterVisage
+  name: The Visage of Yd'Ssath
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: _Gardenstation/Clothing/Head/Helmets/sister_mask.rsi
+    state: icon
+  - type: RandomMetadata
+    randomizeName: false
+    nameSegments:
+    - golem
+  - type: GhostRoleAntagSpawner
+  - type: RandomHumanoidSpawner
+    settings: SisterVisage
+
 # GEAR
 
 - type: startingGear
@@ -139,3 +201,17 @@
     belt: OspreySickle
     pocket1: FoodOusianaDustBowl
     pocket2: ShardCrystalPink
+
+- type: startingGear
+  id: SisterVisageGear
+  equipment:
+    head: ClothingHeadHelmetOspreyHelmet
+    back: OspreyStaff
+    jumpsuit: ClothingUniformJumpskirtSisterWraps
+    neck: ClothingNeckCloakSisterCloak
+    shoes: ClothingShoesSisterFootwraps
+    eyes: ClothingEyeSisterDervishBlindfold
+    gloves: ClothingHandsGlovesSisterHands
+    belt: OspreySickle
+    pocket1: FoodOusianaDustBowl
+    pocket2: BlinkBook
