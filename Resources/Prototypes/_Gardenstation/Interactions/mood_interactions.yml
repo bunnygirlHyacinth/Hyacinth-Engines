@@ -10,7 +10,6 @@
     !type:MobStateRequirement
     inverted: true
   action:
-    # TODO: this should pull the target closer or sumth, but I need to code that action first
     !type:MoodAction
     effect: BeingLicked
   effectSuccess:
@@ -28,7 +27,6 @@
     !type:MobStateRequirement
     inverted: true
   action:
-    # TODO: this should pull the target closer or sumth, but I need to code that action first
     !type:MoodAction
     effect: BeingKissed
   effectSuccess:
