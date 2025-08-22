@@ -39,6 +39,9 @@
     Head:
       points: 5
       required: false
+    Face: # garden added
+      points: 6
+      required: false #
     HeadTop:
       points: 1
       required: false
