@@ -37,6 +37,12 @@ mood-effect-Dead = You are dead.
 
 mood-effect-BeingHugged = Hugs are nice.
 
+mood-effect-BeingKissed = Smooch! But maybe not at work...
+
+mood-effect-BeingLicked = Kinda weird but ok I guess.
+
+mood-effect-BeingSlapped = Ouch! I can't believe they did that!
+
 mood-effect-BeingPet = Someone pet me!
 
 mood-effect-ArcadePlay = I had fun playing an interesting arcade game.

@@ -1,3 +1,4 @@
+#interactions // GDS
 - type: moodEffect
   id: BeingHugged
   moodChange: 3
@@ -9,6 +10,20 @@
   moodChange: 3
   timeout: 120
   category: PositiveInteraction
+
+- type: moodEffect
+  id: BeingKissed
+  moodChange: 5
+  timeout: 120
+  category: PositiveInteraction
+
+- type: moodEffect
+  id: BeingLicked
+  moodChange: 1
+  timeout: 120
+  category: PositiveInteraction
+
+#
 
 - type: moodEffect
   id: ArcadePlay

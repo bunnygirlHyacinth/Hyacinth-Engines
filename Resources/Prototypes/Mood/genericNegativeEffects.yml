@@ -44,6 +44,10 @@
   id: Dead
   moodChange: -1000
 
+- type: moodEffect
+  id: Slapped
+  moodChange: -4
+
 # Surgery
 - type: moodEffect
   id: SurgeryPain
