@@ -2,7 +2,7 @@
   parent: ClothingEyesBase
   id: ClothingEyeSisterDervishBlindfold
   name: umbral blindfold
-  description: May Nar'Sie guide you through the darkness and shield you from the light
+  description: May Yd'Ssath guide you through the darkness and shield you from the light
   components:
   - type: Sprite
     sprite: Clothing/Eyes/Misc/blindfold.rsi
