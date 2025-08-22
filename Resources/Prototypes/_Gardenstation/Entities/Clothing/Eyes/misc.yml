@@ -1,0 +1,30 @@
+﻿- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyeSisterDervishBlindfold
+  name: umbral blindfold
+  description: May Yd'Ssath guide you through the darkness and shield you from the light
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Misc/blindfold.rsi
+    state: icon
+  - type: Clothing
+    sprite: Clothing/Eyes/Misc/blindfold.rsi
+  - type: Unremoveable
+  - type: FlashImmunity
+  - type: EyeProtection
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: NightVision
+    isActive: true
+    isEquipment: true
+    toggleAction: null
+    activateSound: null
+    deactivateSound: null
+    color: Pink
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+    - Inorganic
+  - type: ShowHealthIcons
+    damageContainers:
+    - Biological

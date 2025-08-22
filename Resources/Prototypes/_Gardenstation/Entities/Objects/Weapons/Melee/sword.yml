@@ -62,7 +62,7 @@
     solution: melee
   - type: SolutionTransfer
     maxTransferAmount: 2
-
+#bso rapier - change this later to be less messy
 - type: entity
   name: blue shield officer's vibro-rapier #shitcode sorry
   parent: [ BaseSword, BaseCommandContraband, BlueshieldMace ]
@@ -175,3 +175,52 @@
     interfaces:
       enum.MeleeSpeechUiKey.Key:
         type: MeleeSpeechBoundUserInterface
+
+#osprey kopesh
+- type: entity
+  name: umbral kopesh
+  parent: BaseSword
+  id: OspreyKopesh
+  description: A ceremonial weapon often seen in ritual within psionic circles
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Weapons/Melee/osprey_kopesh.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: .8
+    range: 1.6
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+    damage:
+      types:
+        Slash: 15
+        Psionic: 10
+    clickPartDamageMultiplier: 3
+    heavyPartDamageMultiplier: 2.5
+    heavyRateModifier: 1.25
+    lightRangeModifier: 1.25
+    heavyDamageBaseModifier: 1
+    heavyStaminaCost: 2.5
+    maxTargets: 7
+    angle: 80
+  - type: DamageOtherOnHit
+    staminaCost: 5
+  - type: EmbeddableProjectile
+  - type: EmbedPassiveDamage
+  - type: ThrowingAngle
+    angle: 225
+  - type: Reflect
+    reflectProb: .2
+    spread: 20
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _Gardenstation/Objects/Weapons/Melee/osprey_kopesh.rsi
+    slots:
+    - Back
+    - Belt
+  - type: DisarmMalus
+  - type: SentienceTarget
+    flavorKind: station-event-random-sentience-flavor-inanimate
+    weight: 0.02 # 5,000 times less likely than 1 regular animal

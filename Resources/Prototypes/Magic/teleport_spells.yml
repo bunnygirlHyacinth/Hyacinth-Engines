@@ -5,7 +5,7 @@
   components:
   - type: WorldTargetAction
     useDelay: 10
-    range: 16 # default examine-range.
+    range: 30 #GDS i made this larger for later stuff with seekers
     # ^ should probably add better validation that the clicked location is on the users screen somewhere,
     sound: !type:SoundPathSpecifier
       path: /Audio/Magic/blink.ogg

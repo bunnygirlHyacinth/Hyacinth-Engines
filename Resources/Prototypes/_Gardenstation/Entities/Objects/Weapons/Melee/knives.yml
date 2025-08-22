@@ -1,0 +1,34 @@
+﻿- type: entity
+  parent: BaseKnife
+  id: OspreySickle
+  name: umbral sickle
+  description: A special sickle used as a psionic focus by the Coven in their rituals.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Weapons/Melee/anti_psychic_sickle.rsi
+    state: icon
+  - type: Item
+    sprite: _Gardenstation/Objects/Weapons/Melee/anti_psychic_sickle.rsi
+    storedSprite:
+      state: icon
+      sprite: _Gardenstation/Objects/Weapons/Melee/anti_psychic_sickle.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Objects/Weapons/Melee/anti_psychic_sickle.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: Tag
+    tags:
+    - ForensicBeltEquip
+  - type: MeleeWeapon
+    attackRate: .6666
+    damage:
+      types:
+        Slash: 10
+        Holy: 5
+        Psionic: 15
+  - type: StaminaDamageOnHit
+    damage: 5
+  - type: Reflect
+    reflectProb: .1 # teehee
+    spread: 5 # fuck all life

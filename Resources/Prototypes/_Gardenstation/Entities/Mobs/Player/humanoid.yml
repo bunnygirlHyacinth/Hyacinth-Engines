@@ -1,4 +1,5 @@
-﻿- type: randomHumanoidSettings
+﻿#gimp
+- type: randomHumanoidSettings
   id: CargoGimp
   randomizeName: true
   parent: EventHumanoidMindShielded
@@ -17,6 +18,9 @@
        raffle:
          settings: short
      - type: GhostTakeoverAvailable
+     - type: AutoImplant
+       implants:
+       - DeathAcidifierImplant
      - type: Loadout
        prototypes: [ CargoGimpGear ]
      - type: RandomMetadata
@@ -50,3 +54,164 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestCargoGimp
     pocket1: AppraisalTool
+
+# umbral path
+
+# URISTS
+
+- type: randomHumanoidSettings
+  id: SisterDervish
+  randomizeName: false
+  parent: EventHumanoid
+  speciesBlacklist: # figure out how to make this a girls club later too. no boys allowed in my awesome cult.
+  - Shadowkin # there is a solarian saying
+  - Monkey
+  - Kobold
+  - Abductor
+  - Diona # they cant wear the shoes. sorry bub maybe next cult.
+  - Vox # they die instantly
+  - Arachnid # spiders scare me
+  - Oni # not psionic
+  - Plasmaman # they die instantly
+  - IPC # not psionic
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    name: Umbral Dervish
+    description: You are a Dervish of the Umbral Path. You have come to punish those who have put their hands in places they do not belong.
+    rules: Follow the word of the Coven and your elder Sisters no matter what. Do not let the brutish ones take you alive. Walk the golden path Yd'Ssath has laid before you.
+#    mindRoles:
+#     - MindRoleLoneDervish
+    raffle:
+      settings: short
+#  - type: AntagRandomObjectives - not done yet
+#    maxDifficulty: 3
+#    sets:
+#    - maxPicks: 3
+#      groups: UmbralSisterObjectiveGroupSolo
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [ SisterDervishGearSolo ]
+  - type: AutoImplant
+    implants:
+    - DeathAcidifierImplant # turn this into some other bullshit later idkaaay
+  - type: Psionic
+    powerSlots: 3
+    baselinePowerCost: 75
+    nextPowerCost: 75
+    removable: false
+    roller: true
+  - type: InnatePsionicPowers
+    powersToAdd:
+    - NoosphericZapPower
+    - PsionicInvisibilityPower
+    - TelepathyPower
+    - DarkSwapPower
+  # - ScrambleCipherPower - finish this for justicar first :P
+  - type: RandomMetadata
+    nameSegments:
+    - names_golem
+
+- type: randomHumanoidSettings
+  id: SisterVisage
+  randomizeName: false
+  parent: SisterDervish
+  speciesBlacklist: # figure out how to make this a girls club later too. no boys allowed in my awesome cult.
+  - Shadowkin # there is a solarian saying
+  - Monkey
+  - Kobold
+  - Abductor
+  - Diona # they cant wear the shoes. sorry bub maybe next cult.
+  - Vox # they die instantly
+  - Arachnid # spiders scare me
+  - Oni # not psionic
+  - Plasmaman # they die instantly
+  - IPC # not psionic
+  components:
+  - type: GhostRole
+    name: The Visage of Yd'Ssath
+    description: You are the hand of Yd'Ssath- blessed be her name. Carry out her will. Open the floodgates and bring glimmer to the eyes of all life.
+    rules: You are the hand of Yd'Ssath- blessed be her name. Carry out her will. Suffer not the brutish ones to live.
+  - type: Loadout
+    prototypes: [ SisterVisageGear ]
+  - type: Psionic
+    powerSlots: 12
+    baselinePowerCost: 40
+    nextPowerCost: 20
+    removable: false
+    roller: true
+  - type: InnatePsionicPowers
+    powersToAdd:
+    - PsionicAssaultPower
+    - PsionicInvisibilityPower
+    - PowerOverwhelming
+    - HealingWordPower
+    - XenoglossyPower
+    - PsychognomyPower
+    - TelepathyPower
+    - DarkSwapPower
+
+# SPAWNERS
+
+- type: entity
+  id: RandomHumanoidSpawnerSisterDervish
+  name: Umbral Dervish
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: _Gardenstation/Clothing/Head/Hats/dervish_circlet.rsi
+    state: icon
+  - type: RandomMetadata
+    randomizeName: false
+    nameSegments:
+    - golem
+  - type: GhostRoleAntagSpawner
+  - type: RandomHumanoidSpawner
+    settings: SisterDervish
+
+- type: entity
+  id: RandomHumanoidSpawnerSisterVisage
+  name: The Visage of Yd'Ssath
+  components:
+  - type: Sprite
+    netsync: false
+    sprite: _Gardenstation/Clothing/Head/Helmets/sister_mask.rsi
+    state: icon
+  - type: RandomMetadata
+    randomizeName: false
+    nameSegments:
+    - golem
+  - type: GhostRoleAntagSpawner
+  - type: RandomHumanoidSpawner
+    settings: SisterVisage
+
+# GEAR
+
+- type: startingGear
+  id: SisterDervishGearSolo
+  equipment:
+    head: ClothingHeadHatSisterDervishCirclet
+    back: OspreyKopesh
+    jumpsuit: ClothingUniformJumpskirtSisterWraps
+    shoes: ClothingShoesSisterFootwraps
+    eyes: ClothingEyeSisterDervishBlindfold
+    gloves: ClothingHandsGlovesSisterHands
+    outerClothing: ClothingOuterSisterDervishRegalia
+    belt: OspreySickle
+    pocket1: FoodOusianaDustBowl
+    pocket2: ShardCrystalPink
+
+- type: startingGear
+  id: SisterVisageGear
+  equipment:
+    head: ClothingHeadHelmetOspreyHelmet
+    back: OspreyStaff
+    jumpsuit: ClothingUniformJumpskirtSisterWraps
+    neck: ClothingNeckCloakSisterCloak
+    shoes: ClothingShoesSisterFootwraps
+    eyes: ClothingEyeSisterDervishBlindfold
+    gloves: ClothingHandsGlovesSisterHands
+    belt: OspreySickle
+    pocket1: FoodOusianaDustBowl
+    pocket2: BlinkBook

@@ -43,3 +43,25 @@
     - Tradeband
     requires:
     - TauCetiBasic
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatSisterDervishCirclet
+  name: umbral circlet
+  description: A golden circlet with a strange red gem. It seems to pulse in response to your thoughts
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Head/Hats/dervish_circlet.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Head/Hats/dervish_circlet.rsi
+  - type: Armor # if its too much just remove everything but rads and holy idk
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Caustic: 0.9
+        Radiation: 0.9
+        Holy: 0.9
+        Psionic: 0.8
