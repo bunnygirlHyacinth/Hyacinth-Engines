@@ -51,6 +51,9 @@
     Face: # garden added
       points: 6
       required: false #
+    Chest: # GDS added
+      points: 6
+      required: false #
     Tail:
       points: 1
       required: true
