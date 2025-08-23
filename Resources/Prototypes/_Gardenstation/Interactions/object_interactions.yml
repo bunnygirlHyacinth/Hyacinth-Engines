@@ -1,0 +1,21 @@
+﻿- type: Interaction
+  id: KissObject
+  parent: [BaseHands, BaseGlobal]
+  priority: -13
+  delay: 0.4
+  action:
+    !type:NoOpAction
+  effectSuccess:
+    popup: Obvious
+    sound: {path: /Audio/_Gardenstation/Effects/Interactions/kissfunnyfx.ogg}
+
+- type: Interaction
+  id: LickObject
+  parent: [BaseHands, BaseGlobal]
+  priority: -14
+  delay: 0.7
+  action:
+    !type:NoOpAction
+  effectSuccess:
+    popup: Obvious
+    sound: {path: /Audio/_Gardenstation/Effects/Interactions/lick.ogg}
