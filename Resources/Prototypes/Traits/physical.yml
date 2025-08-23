@@ -862,7 +862,7 @@
 - type: trait
   id: ThermographicVision
   category: Physical
-  points: -4
+  points: -2 # idk man it kinda just sucks rn. if we reinstate the passive nightvision regalis had then mb we bump it up but otherwise its just a shitty flashlight/iseeyou button. plus you can hear ppl thru walls so why does it matter anyways. lets just remove the trait and also footsteps and localchat
   requirements:
     - !type:CharacterJobRequirement
       inverted: true
