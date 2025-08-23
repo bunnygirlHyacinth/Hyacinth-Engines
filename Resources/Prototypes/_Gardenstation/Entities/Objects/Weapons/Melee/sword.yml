@@ -99,7 +99,6 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Heat: 3
         Shock: 2 # the blade conducts a small amount of power from the built-in reactor ?? idk. just flavor.
         Slash: 15
         Piercing: 15
@@ -127,7 +126,6 @@
         volume: 2
     damage:
       types:
-        Slash: 5
         Piercing: 15
     clickPartDamageMultiplier: 1.5
     heavyPartDamageMultiplier: 1
