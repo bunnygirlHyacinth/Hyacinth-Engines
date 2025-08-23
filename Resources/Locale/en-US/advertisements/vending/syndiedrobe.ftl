@@ -1,3 +1,4 @@
+advertisement-syndiedrobe-0 = You can leave feedback about the convenience of the form by sending a request to our Taipan hotline, the main thing is not to the wrong number!
 advertisement-syndiedrobe-1 = Brand new outfits!
 advertisement-syndiedrobe-2 = Roof-top outfits for any occasion!
 advertisement-syndiedrobe-3 = Being a scoundrel can be stylish.
@@ -28,9 +29,8 @@ advertisement-syndiedrobe-27 = Do you want to cause a panic at the station just 
 advertisement-syndiedrobe-28 = Our suits are moisture-resistant, which means you can not be afraid to get dirty with blood!
 advertisement-syndiedrobe-29 = The best in the galaxy!
 advertisement-syndiedrobe-30 = What could be better than the smell of our uniform in the morning?
-advertisement-syndiedrobe-31 = You can leave feedback about the convenience of the form by sending a request to our Taipan hotline, the main thing is not to the wrong number!
+thankyou-syndiedrobe-0 = Enjoy your murderfest!
 thankyou-syndiedrobe-1 = Put it to good use!
 thankyou-syndiedrobe-2 = Death to NT!
 thankyou-syndiedrobe-3 = Show them the power of style.
 thankyou-syndiedrobe-4 = Happy killing!
-thankyou-syndiedrobe-5 = Enjoy your murderfest!
