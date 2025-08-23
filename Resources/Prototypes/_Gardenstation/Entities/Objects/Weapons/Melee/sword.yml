@@ -81,7 +81,7 @@
           True: { state: icon }
           False: { state: icon-off }
   - type: Reflect # make this have .4 unpowered and .9 powered
-    reflectProb: .5 # fuck all life
+    reflectProb: .7 # fuck all life
     spread: 30
   - type: ItemToggle
     soundActivate:
@@ -99,9 +99,9 @@
   - type: ItemToggleMeleeWeapon
     activatedDamage:
       types:
-        Shock: 2 # the blade conducts a small amount of power from the built-in reactor ?? idk. just flavor.
-        Slash: 15
-        Piercing: 15
+        Shock: 5 # the blade conducts a small amount of power from the built-in reactor ?? idk. just flavor.
+        Slash: 5
+        Piercing: 20
     ignoreResistances: true
     activatedSoundOnSwing: # vibrosword go wrrrrrrm
       path: /Audio/Weapons/eblademiss.ogg
@@ -132,7 +132,7 @@
     heavyRateModifier: 1.25
     lightRangeModifier: 1.25
     heavyDamageBaseModifier: 1.1
-    heavyStaminaCost: 5
+    heavyStaminaCost: 10
     maxTargets: 5
     angle: 40
     animation: WeaponArcThrust
@@ -158,7 +158,7 @@
     startingCharge: 1000
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 50 # i dont even want this to have a battery but it just doesnt work unless i do it like this so i mite kms instead
+    autoRechargeRate: 45 # i dont even want this to have a battery but it just doesnt work unless i do it like this so i mite kms instead
   - type: Tag
     tags:
     - BsoRapier
