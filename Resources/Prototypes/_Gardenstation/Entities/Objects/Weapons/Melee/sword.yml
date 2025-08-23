@@ -81,7 +81,7 @@
           True: { state: icon }
           False: { state: icon-off }
   - type: Reflect # make this have .4 unpowered and .9 powered
-    reflectProb: .9 # fuck all life
+    reflectProb: .5 # fuck all life
     spread: 30
   - type: ItemToggle
     soundActivate:
@@ -119,7 +119,7 @@
         volume: -10
   - type: MeleeWeapon
     wideAnimationRotation: -15
-    attackRate: .4 # do you enjoy hurting other people?
+    attackRate: .8 # do you enjoy hurting other people?
     range: 1.8
     soundHit:
       path: /Audio/Weapons/Melee/rapierhit.ogg # turning on the kill mode makes the disabled sound stop working and i dont know why
