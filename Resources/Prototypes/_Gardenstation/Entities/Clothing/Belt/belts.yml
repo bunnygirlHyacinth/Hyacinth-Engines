@@ -79,6 +79,3 @@
     modifier: 0.8
   - type: ClothingModifyStunTime # die on your feet
     modifier: 0.8
-  - type: Reflect # belt has a reflex trainer or something? idfk this is the only way to give passive deflect on that stupid sword i can think of
-    reflectProb: .4 # fuck all life
-    spread: 30

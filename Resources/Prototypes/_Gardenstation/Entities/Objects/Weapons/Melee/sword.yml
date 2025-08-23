@@ -102,7 +102,7 @@
         Heat: 3
         Shock: 2 # the blade conducts a small amount of power from the built-in reactor ?? idk. just flavor.
         Slash: 15
-        Piercing: 20
+        Piercing: 15
     ignoreResistances: true
     activatedSoundOnSwing: # vibrosword go wrrrrrrm
       path: /Audio/Weapons/eblademiss.ogg
@@ -119,7 +119,7 @@
         volume: -10
   - type: MeleeWeapon
     wideAnimationRotation: -15
-    attackRate: .9 # do you enjoy hurting other people?
+    attackRate: .4 # do you enjoy hurting other people?
     range: 1.8
     soundHit:
       path: /Audio/Weapons/Melee/rapierhit.ogg # turning on the kill mode makes the disabled sound stop working and i dont know why
@@ -129,12 +129,12 @@
       types:
         Slash: 5
         Piercing: 15
-    clickPartDamageMultiplier: 3
-    heavyPartDamageMultiplier: 2.5
+    clickPartDamageMultiplier: 1.5
+    heavyPartDamageMultiplier: 1
     heavyRateModifier: 1.25
     lightRangeModifier: 1.25
-    heavyDamageBaseModifier: 1
-    heavyStaminaCost: 1.5
+    heavyDamageBaseModifier: 1.1
+    heavyStaminaCost: 5
     maxTargets: 5
     angle: 40
     animation: WeaponArcThrust
@@ -160,7 +160,7 @@
     startingCharge: 1000
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 300 # i dont even want this to have a battery but it just doesnt work unless i do it like this so i mite kms instead
+    autoRechargeRate: 50 # i dont even want this to have a battery but it just doesnt work unless i do it like this so i mite kms instead
   - type: Tag
     tags:
     - BsoRapier
