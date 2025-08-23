@@ -1,4 +1,5 @@
-﻿advertisement-boozeomat-1 = I hope nobody asks me for a bloody cup o' tea...
+advertisement-boozeomat-0 = A toast for progress!
+advertisement-boozeomat-1 = I hope nobody asks me for a bloody cup o' tea...
 advertisement-boozeomat-2 = Alcohol is humanity's friend. Would you abandon a friend?
 advertisement-boozeomat-3 = Quite delighted to serve you!
 advertisement-boozeomat-4 = Is nobody thirsty on this station?
@@ -16,8 +17,6 @@ advertisement-boozeomat-15 = Best quality booze since 2053!
 advertisement-boozeomat-16 = Award-winning wine!
 advertisement-boozeomat-17 = Maximum alcohol!
 advertisement-boozeomat-18 = Man loves beer.
-advertisement-boozeomat-19 = A toast for progress!
+thankyou-boozeomat-0 = Please enjoy your drink!
 thankyou-boozeomat-1 = Please drink responsibly!
 thankyou-boozeomat-2 = Please drink un-responsibly!
-thankyou-boozeomat-3 = Please enjoy your drink!
-

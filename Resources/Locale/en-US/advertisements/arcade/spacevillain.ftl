@@ -1,3 +1,4 @@
+advertisement-space-villain-0 = I hunger!
 advertisement-space-villain-1 = Are you a bad enough dude to beat this game?
 advertisement-space-villain-2 = Beat the bad guy; win a prize!
 advertisement-space-villain-3 = FIGHT ME!
@@ -12,8 +13,8 @@ advertisement-space-villain-11 = CHALLENGE ME!
 advertisement-space-villain-12 = FEAR ME!
 advertisement-space-villain-13 = Do you dare to face me in battle!?
 advertisement-space-villain-14 = Beware, I live!
-advertisement-space-villain-15 = I hunger!
 
+thankyou-space-villain-0 = Come back here and fight me!
 thankyou-space-villain-1 = And where do you think you're going, punk?
 thankyou-space-villain-2 = Is that all you've got?
 thankyou-space-villain-3 = This fight isn't over!
@@ -25,4 +26,4 @@ thankyou-space-villain-8 = Run, coward!
 thankyou-space-villain-9 = You never stood a chance.
 thankyou-space-villain-10 = Care for a rematch?
 thankyou-space-villain-11 = Fight me again!
-thankyou-space-villain-12 = Come back here and fight me!
+
