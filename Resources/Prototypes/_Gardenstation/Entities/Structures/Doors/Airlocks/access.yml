@@ -1,0 +1,8 @@
+﻿- type: entity
+  parent: HighSecDoor
+  id: AirlockJusticarHighSecLocked
+  suffix: Justicar, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsJusticar ]
