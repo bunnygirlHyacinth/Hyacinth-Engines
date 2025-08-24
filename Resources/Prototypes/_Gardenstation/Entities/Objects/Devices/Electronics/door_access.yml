@@ -1,0 +1,7 @@
+﻿- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsJusticar
+  suffix: Justicar, Locked
+  components:
+  - type: AccessReader
+    access: [["Justicar"]]

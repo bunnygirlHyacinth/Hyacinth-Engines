@@ -3,7 +3,7 @@
   mapName: 'Northway'
   mapPath: /Maps/northway.yml
   minPlayers: 0
-  maxPlayers: 25
+  maxPlayers: 30
   stations:
     Northway:
       stationProto: StandardNanotrasenStationNoShuttles
@@ -23,6 +23,7 @@
             BlueshieldOfficer: [ 1, 1] # gardenstation added/enabled
             HospitalityDirector: [ 1, 1 ] #Added by Impstation, ported by Gardenstation
             Bartender: [ 1, 1 ]
+            Magistrate: [ 1, 1 ] # gds added
             Botanist: [ 1, 1 ]
             Chef: [ 1 , 1 ]
             Clown: [ 1, 1 ]
@@ -36,18 +37,23 @@
             AtmosphericTechnician: [ 1, 2]
             StationEngineer: [ 2, 2 ]
             TechnicalAssistant: [ 2, 2 ]
+            SeniorEngineer: [ 1, 2 ] # gds
           #medical
             ChiefMedicalOfficer: [ 1, 1 ]
-            Chemist: [ 1, 1 ]
+            Chemist: [ 1, 2 ]
             MedicalDoctor: [ 2, 2 ]
             MedicalIntern: [ 2, 2 ]
-            Paramedic: [ 1, 1 ]
+            Paramedic: [ 1, 2 ]
+            Psychologist: [ 1, 1 ]
+            SeniorPhysician: [ 1, 2 ]
           #science
             ResearchDirector: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
             Scientist: [ 2, 2 ]
             ResearchAssistant: [ 2, 2 ]
             Justicar: [ 1,1 ] # gardenstation added
+            SeniorResearcher: [ 1, 1 ] #gds
+            ForensicMantis: [ 1, 1 ] #gds
           #security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
@@ -55,6 +61,8 @@
             SecurityOfficer: [ 2, 2 ]
             SecurityCadet: [ 1, 2 ]
             Prisoner: [ 1, 2 ]
+            SeniorOfficer: [ 2, 2 ] # gds
+            Lawyer: [ 1, 2 ]
           #supply
             Quartermaster: [ 1, 1 ]
             MailCarrier: [ 1, 1 ]
