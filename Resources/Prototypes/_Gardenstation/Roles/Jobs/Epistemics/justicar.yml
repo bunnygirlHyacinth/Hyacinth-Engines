@@ -41,12 +41,13 @@
   access:
   - Research
   - Security # coordination with mantis and sec to punish psishitters and conduct mindbreaking
+  - Armory # temporarily just for now smiles
   #- Brig # this is temp till we start mapping in a special justicar brig
   - Maintenance
-  - Armory #temp will we add justicar access to mapping items uauughhhh...
   - Mantis
   - Chapel
   - Justicar # this isnt actually a real access yet lol 7-19-25 4:15 tell me when it is - added high sec door for this. make the locker soon you dip.
+
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ] # any epi psiwarriors need to be shielded otherwise secCHUDS wont ever fucking listen to them
