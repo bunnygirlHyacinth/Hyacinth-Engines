@@ -72,6 +72,36 @@
   - !type:RemoveAssayFeedback
     assayFeedback: Something horrible has been revealed to me...
 
+- type: psionicPower
+  id: ScrambleCipherPower
+  name: scramble cipher
+  powerCategories:
+  - Mentalic
+  initializeFunctions:
+  - !type:AddPsionicActions
+    actions:
+    - ActionScrambleCipher
+  - !type:AddPsionicPowerComponents
+    components:
+    - type: ScrambleCipherPower
+  - !type:PsionicFeedbackPopup
+  - !type:PsionicFeedbackSelfChat
+    feedbackMessage: acveu vaue nafkrhgb.
+  - !type:PsionicModifyGlimmer
+    glimmerModifier: 1
+  - !type:AddPsionicAssayFeedback
+    assayFeedback: aveerb gtht ja bma fngdgtyabj.
+  - !type:AddPsionicStatSources
+    amplificationModifier: 1
+  removalFunctions:
+  - !type:RemovePsionicActions
+  - !type:RemovePsionicPowerComponents
+    components:
+    - type: ScrambleCipherPower
+  - !type:RemovePsionicStatSources
+  - !type:RemoveAssayFeedback
+    assayFeedback: aweurvr  arbhrn murrmramrlw.
+
 # ACTIONS --- ORGANIZE THESE GOOD PLEASE <33
 
 - type: entity
@@ -107,3 +137,20 @@
       - PsionicInsulation
       - Mindbroken
     event: !type:WhisperTruthPowerActionEvent
+
+- type: entity
+  id: ActionScrambleCipher
+  name: scramble cipher recitation
+  description: scramble your psyche to prevent outside intervention
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityTargetAction
+    icon: Interface/Actions/eyeclose.png
+    useDelay: 15
+    range: 5
+    itemIconStyle: BigAction
+    blacklist:
+      components:
+      - PsionicInsulation
+      - Mindbroken
+    event: !type:ScrambleCipherPowerActionEvent
