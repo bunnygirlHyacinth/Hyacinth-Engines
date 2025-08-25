@@ -4,8 +4,8 @@ meta:
   engineVersion: 260.2.0
   forkId: ""
   forkVersion: ""
-  time: 08/24/2025 06:42:54
-  entityCount: 5116
+  time: 08/24/2025 08:18:12
+  entityCount: 5114
 maps:
 - 1
 grids:
@@ -1441,14 +1441,6 @@ entities:
     - type: NavMap
     - type: BecomesStation
       id: Northway
-- proto: AccessConfigurator
-  entities:
-  - uid: 4512
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -38.22395,-16.340153
-      parent: 2
 - proto: ActionToggleInternals
   entities:
   - uid: 4
@@ -2257,22 +2249,6 @@ entities:
     - type: Transform
       pos: -28.5,-2.5
       parent: 2
-- proto: AirlockCommand
-  entities:
-  - uid: 4405
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -26.5,8.5
-      parent: 2
-- proto: AirlockCommandGlassLocked
-  entities:
-  - uid: 4404
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -24.5,7.5
-      parent: 2
 - proto: AirlockCommandLocked
   entities:
   - uid: 70
@@ -2372,7 +2348,7 @@ entities:
       pos: -33.5,-28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -19147.145
+      secondsUntilStateChange: -19440.3
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2384,7 +2360,7 @@ entities:
       pos: -35.5,-28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -19083.844
+      secondsUntilStateChange: -19377
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2637,7 +2613,7 @@ entities:
       pos: -8.5,-14.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -26621.287
+      secondsUntilStateChange: -26914.443
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2710,6 +2686,20 @@ entities:
     - type: Transform
       pos: -22.5,-0.5
       parent: 2
+- proto: AirlockHospitalityDirectorLocked
+  entities:
+  - uid: 4404
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -24.5,7.5
+      parent: 2
+  - uid: 4405
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -26.5,8.5
+      parent: 2
 - proto: AirlockHydroGlassLocked
   entities:
   - uid: 137
@@ -2744,7 +2734,7 @@ entities:
       pos: -22.5,-25.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -19108.877
+      secondsUntilStateChange: -19402.033
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -10658,6 +10648,14 @@ entities:
       rot: 3.141592653589793 rad
       pos: -21.5,-35.5
       parent: 2
+- proto: CandleBlackInfinite
+  entities:
+  - uid: 4481
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -38.51272,-15.470614
+      parent: 2
 - proto: CargoPalletSell
   entities:
   - uid: 1382
@@ -11473,16 +11471,6 @@ entities:
     - type: Transform
       pos: -16.524805,16.514212
       parent: 2
-- proto: ClothingOuterCoatJusticarFur
-  entities:
-  - uid: 4482
-    components:
-    - type: Transform
-      pos: -39.105568,-16.197775
-      parent: 2
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
 - proto: ClothingOuterHardsuitBasic
   entities:
   - uid: 1493
@@ -11516,13 +11504,6 @@ entities:
     components:
     - type: Transform
       pos: -38.57094,-1.8675623
-      parent: 2
-- proto: ClothingOuterJusticarPsychalRig
-  entities:
-  - uid: 4483
-    components:
-    - type: Transform
-      pos: -39.512466,-14.57017
       parent: 2
 - proto: ClothingOuterVestCargo
   entities:
@@ -12420,7 +12401,7 @@ entities:
       pos: -40.5,-15.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -3551.588
+      secondsUntilStateChange: -3844.7441
       state: Opening
   - uid: 4579
     components:
@@ -12765,13 +12746,6 @@ entities:
       linearDamping: 0
       canCollide: False
     - type: InsideEntityStorage
-- proto: Dresser
-  entities:
-  - uid: 4481
-    components:
-    - type: Transform
-      pos: -38.5,-14.5
-      parent: 2
 - proto: DresserCaptainFilled
   entities:
   - uid: 1621
@@ -12832,6 +12806,9 @@ entities:
   entities:
   - uid: 5100
     components:
+    - type: MetaData
+      desc: Looks weird. Tastes good. Mildly psychoactive... But thats besides the point...
+      name: shimmering blood
     - type: Transform
       pos: -5.0178556,20.721762
       parent: 2
@@ -22868,7 +22845,7 @@ entities:
       pos: -39.5,-1.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -20799.342
+      secondsUntilStateChange: -21092.498
       state: Opening
   - uid: 2733
     components:
@@ -22883,7 +22860,7 @@ entities:
       pos: -39.5,-3.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -8426.941
+      secondsUntilStateChange: -8720.098
       state: Opening
 - proto: HydroponicsToolClippers
   entities:
@@ -23551,6 +23528,13 @@ entities:
     components:
     - type: Transform
       pos: -2.5,-7.5
+      parent: 2
+- proto: LockerJusticarFilled
+  entities:
+  - uid: 4482
+    components:
+    - type: Transform
+      pos: -38.5,-14.5
       parent: 2
 - proto: LockerMedicalFilled
   entities:
@@ -24680,14 +24664,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: -36.5,-26.5
       parent: 2
-- proto: PlasmaWindoorSecureArmoryLocked
-  entities:
-  - uid: 5073
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -38.5,-22.5
-      parent: 2
 - proto: PlasmaWindoorSecureCommandLocked
   entities:
   - uid: 2882
@@ -24695,6 +24671,32 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -8.5,-20.5
+      parent: 2
+- proto: PlasmaWindoorSecureJusticarLocked
+  entities:
+  - uid: 4483
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -38.5,-22.5
+      parent: 2
+  - uid: 4495
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -36.5,-19.5
+      parent: 2
+  - uid: 4496
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -36.5,-20.5
+      parent: 2
+  - uid: 4510
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -36.5,-21.5
       parent: 2
 - proto: PlasmaWindoorSecureSecurityLocked
   entities:
@@ -27140,12 +27142,6 @@ entities:
         359:
         - - Pressed
           - Toggle
-  - uid: 4510
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -38.617287,-16.204517
-      parent: 2
 - proto: ResearchAndDevelopmentServer
   entities:
   - uid: 3259
@@ -28654,6 +28650,11 @@ entities:
       parent: 2
 - proto: SpawnPointMagistrate
   entities:
+  - uid: 4494
+    components:
+    - type: Transform
+      pos: -16.5,-15.5
+      parent: 2
   - uid: 5044
     components:
     - type: Transform
@@ -34538,24 +34539,6 @@ entities:
     - type: Transform
       pos: -38.5,-22.5
       parent: 2
-  - uid: 4494
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -36.5,-21.5
-      parent: 2
-  - uid: 4495
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -36.5,-20.5
-      parent: 2
-  - uid: 4496
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -36.5,-19.5
-      parent: 2
 - proto: WindoorSecureSalvageLocked
   entities:
   - uid: 4258
@@ -34602,7 +34585,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -6740.8433
+      secondsUntilStateChange: -7033.9995
       state: Opening
 - proto: WindoorSecureScienceLocked
   entities:

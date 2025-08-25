@@ -1,0 +1,18 @@
+﻿- type: entity
+  id: LockerJusticarFilled
+  suffix: Filled
+  parent: LockerJusticar
+  components:
+  - type: StorageFill
+    contents:
+    - id: AntiMindControlDevice
+    - id: BoxZiptie
+    - id: SpectralLocatorEmpty # commune with the dead bro
+    # Spare change of clothes
+    - id: ClothingOuterJusticarPsychalRig
+    - id: ClothingOuterCoatJusticarFur
+    - id: ClothingEyesGlassesSunglasses
+    # Insulative headgear
+    - id: ClothingHeadTinfoil
+    - id: ClothingHeadCage
+      amount: 3

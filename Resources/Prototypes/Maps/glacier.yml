@@ -45,20 +45,21 @@
           ServiceWorker: [ 2, 3 ]
           Janitor: [ 2, 2 ]
           Mime: [ 1, 1 ]
+          Boxer: [ 2,2 ]
         #engineering
-          SeniorEngineer: [ 1, 1 ]
+          SeniorEngineer: [ 2, 2 ]
           AtmosphericTechnician: [ 1, 2 ]
           StationEngineer: [ 2, 3 ]
           TechnicalAssistant: [ 2, 2 ]
         #medical
-          SeniorPhysician: [ 1, 1 ]
+          SeniorPhysician: [ 2, 2 ]
           Chemist: [ 1, 2 ]
           Paramedic: [ 1, 2 ]
           Psychologist: [ 1, 1 ]
           MedicalDoctor: [ 2, 3 ]
           MedicalIntern: [ 2, 2 ]
         #science
-          SeniorResearcher: [ 1, 1 ]
+          SeniorResearcher: [ 2, 2 ]
           Chaplain: [ 1, 1 ]
           ForensicMantis: [ 1, 1 ]
           Scientist: [ 2, 3 ]
@@ -66,7 +67,7 @@
           Librarian: [ 1, 1 ]
           Justicar: [ 1,1 ] # gardenstation added
         #security
-          SeniorOfficer: [ 1, 1 ]
+          SeniorOfficer: [ 2, 2 ]
           Warden: [ 1, 1 ]
           Detective: [ 1, 1 ]
           SecurityOfficer: [ 4, 5 ] # gardenstation - increased limit

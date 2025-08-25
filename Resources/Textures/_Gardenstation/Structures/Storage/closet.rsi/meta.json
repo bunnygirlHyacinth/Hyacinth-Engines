@@ -1,0 +1,40 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "reskinned rd closet by tgstation, generic and weld sprites borrowed from goob",
+    "size": {
+        "x": 32,
+        "y": 32 },
+    "states": [
+        {
+            "name": "justicar"
+        },
+        {
+            "name": "justicar_door"
+        },
+        {
+            "name": "justicar_open"
+        },
+        {
+            "name": "generic"
+        },
+        {
+            "name": "generic_door"
+        },
+        {
+            "name": "generic_open"
+        },
+        {
+            "name": "generic_icon"
+        },
+        {
+            "name": "welded"
+        },
+        {
+            "name": "unlocked"
+        },
+        {
+            "name": "locked"
+        }
+    ]
+}

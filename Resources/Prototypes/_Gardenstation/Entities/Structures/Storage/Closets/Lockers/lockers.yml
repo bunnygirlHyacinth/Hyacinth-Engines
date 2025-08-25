@@ -1,0 +1,15 @@
+﻿- type: entity
+  id: LockerJusticar
+  parent: LockerBaseSecure
+  name: Justicar's locker
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Structures/Storage/closet.rsi
+  - type: AccessReader
+    access: [["Justicar"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: justicar
+    stateDoorOpen: justicar_open
+    stateDoorClosed: justicar_door
+

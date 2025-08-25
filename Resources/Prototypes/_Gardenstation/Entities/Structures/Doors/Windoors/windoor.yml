@@ -1,0 +1,21 @@
+﻿- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureJusticarLocked
+  suffix: Justicar, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsJusticar ]
+  - type: Wires
+    layoutId: AirlockArmory
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecureJusticarLocked
+  suffix: Justicar, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsJusticar ]
+  - type: Wires
+    layoutId: AirlockArmory
