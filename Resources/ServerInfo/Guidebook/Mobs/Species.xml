@@ -12,8 +12,9 @@
   <GuideEntityEmbed Entity="MobMoth" Caption="Moth Person"/>
   <GuideEntityEmbed Entity="MobOni" Caption="Oni"/>
   <GuideEntityEmbed Entity="MobReptilian" Caption="Reptilian"/>
-  <GuideEntityEmbed Entity="MobSlimePerson" Caption="Slime Person"/>
+  <GuideEntityEmbed Entity="MobRodentiaDummy" Caption="Rodentia" Scale="3"/>
   <GuideEntityEmbed Entity="MobShadowkinDummy" Caption="Shadowkin"/>
+  <GuideEntityEmbed Entity="MobSlimePerson" Caption="Slime Person"/>
   <GuideEntityEmbed Entity="MobThaven" Caption="Thaven"/>
   </Box>
   <Box>
