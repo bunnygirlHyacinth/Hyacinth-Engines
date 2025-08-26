@@ -45,3 +45,19 @@
     slots:
     - Snout
     - Hair
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingMaskClownNose
+  name: clown nose
+  description: Honk! Oh... They... They dont actually squeak... Daww....
+  components:
+  - type: Item
+    size: Tiny
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Mask/clown_nose.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Mask/clown_nose.rsi
+  - type: HideLayerClothing
+    slots:
+    - Snout

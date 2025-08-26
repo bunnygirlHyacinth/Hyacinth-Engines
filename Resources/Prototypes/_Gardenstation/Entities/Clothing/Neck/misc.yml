@@ -1,0 +1,10 @@
+﻿- type: entity
+  parent: [ClothingNeckBase]
+  id: ClothingNeckRuffles
+  name: clown ruffles
+  description: A ruffled neckpiece often seen used in theatric circles
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Neck/Misc/pagliacci_ruffles.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Neck/Misc/pagliacci_ruffles.rsi

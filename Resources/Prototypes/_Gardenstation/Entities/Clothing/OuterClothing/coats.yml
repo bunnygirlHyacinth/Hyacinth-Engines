@@ -52,3 +52,60 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, ClothingOuterStorageBase]
+  id: ClothingOuterCoatHatchetmanJersey
+  name: hatchet jersey
+  description: An old jersey. Theres a tiny man holding a hatchet on the front...
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/hatchetman_jersey.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/hatchetman_jersey.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: GroupExamine
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
+
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, ClothingOuterStorageBase]
+  id: ClothingOuterCoatRiddleboxJersey
+  name: clown jersey
+  description: An old jersey. Theres a wicked looking clown on the front...
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/riddlebox_jersey.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/riddlebox_jersey.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: GroupExamine
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
+
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, ClothingOuterStorageBase]
+  id: ClothingOuterCoatPagliacci
+  name: Pagliacci coat
+  description: The coat of a great clown...
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/pagliacci_coat.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/pagliacci_coat.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: GroupExamine
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1

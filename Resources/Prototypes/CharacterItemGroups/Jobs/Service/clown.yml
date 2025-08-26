@@ -35,11 +35,13 @@
 #  maxItems: 1
 #  items:
 #
-#- type: characterItemGroup
-#  id: LoadoutClownHead
-#  maxItems: 1
-#  items:
-#
+- type: characterItemGroup # GDS
+  id: LoadoutClownHead
+  maxItems: 1
+  items:
+    - type: loadout
+      id: LoadoutHeadHatClownPagliacci #
+
 #- type: characterItemGroup
 #  id: LoadoutClownId
 #  maxItems: 1
@@ -51,6 +53,8 @@
   items:
     - type: loadout
       id: LoadoutServiceClownBedsheetClown
+    - type: loadout # GDS
+      id: LoadoutServiceClownPagliacciRuffles #
 
 - type: characterItemGroup
   id: LoadoutClownMask
@@ -58,6 +62,10 @@
   items:
     - type: loadout
       id: LoadoutServiceClownMaskSexy
+    - type: loadout # GDS
+      id: LoadoutServiceClownMask
+    - type: loadout
+      id: LoadoutServiceClownNose #
 
 - type: characterItemGroup
   id: LoadoutClownOuter
@@ -67,6 +75,12 @@
       id: LoadoutServiceClownOuterWinter
     - type: loadout
       id: LoadoutServiceClownOuterClownPriest
+    - type: loadout # GDS
+      id: LoadoutServiceClownOuterHatchetman #
+    - type: loadout
+      id: LoadoutServiceClownOuterRiddlebox #
+    - type: loadout
+      id: LoadoutServiceClownOuterPagliacci #
 
 - type: characterItemGroup
   id: LoadoutClownShoes
@@ -83,3 +97,5 @@
       id: LoadoutServiceClownOutfitJester
     - type: loadout
       id: LoadoutServiceClownOutfitJesterAlt
+    - type: loadout
+      id: LoadoutServiceClownOutfitPagliacci # GDS
