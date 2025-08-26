@@ -65,3 +65,23 @@
         Radiation: 0.9
         Holy: 0.9
         Psionic: 0.8
+
+- type: entity
+  parent: [ ClothingHeadBase, TranslatorPoweredBase ]
+  id: ClothingHeadHatPagliacci
+  name: Pagliacci hat
+  description: A pom-pom decorated hat to complete the costume! This one has a tradeband translator built in- for truly authentic commedia dell'arte!
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Head/Hats/pagliacci_hat.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Head/Hats/pagliacci_hat.rsi
+  - type: HandheldTranslator
+    spoken:
+    - TauCetiBasic
+    - Tradeband
+    understood:
+    - TauCetiBasic
+    - Tradeband
+    requires:
+    - TauCetiBasic

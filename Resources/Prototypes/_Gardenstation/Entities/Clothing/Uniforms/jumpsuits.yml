@@ -23,3 +23,14 @@
     sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/bso_duelist_uniform.rsi
   - type: Clothing
     sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/bso_duelist_uniform.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPagliacci
+  name: Pagliacci pants
+  description: A pair of pants to go with that coat! The suspenders are really convenient!
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/pagliacci_uniform.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/pagliacci_uniform.rsi

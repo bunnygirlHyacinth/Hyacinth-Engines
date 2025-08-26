@@ -60,6 +60,22 @@
 
 # Head
 
+- type: loadout
+  id: LoadoutHeadHatClownPagliacci
+  category: JobsServiceClown
+  cost: 1
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutClownHead
+  - !type:CharacterJobRequirement
+    jobs:
+    - Clown
+  items:
+  - ClothingHeadHatPagliacci
+
 # Id
 
 # Neck
@@ -79,6 +95,22 @@
   items:
     - BedsheetClown
 
+- type: loadout
+  id: LoadoutServiceClownPagliacciRuffles
+  category: JobsServiceClown
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutClownNeck
+  - !type:CharacterJobRequirement
+    jobs:
+    - Clown
+  items:
+  - ClothingNeckRuffles
+
 # Mask
 - type: loadout
   id: LoadoutServiceClownMaskSexy
@@ -95,6 +127,38 @@
         - Clown
   items:
     - ClothingMaskSexyClown
+
+- type: loadout
+  id: LoadoutServiceClownMask
+  category: JobsServiceClown
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutClownMask
+  - !type:CharacterJobRequirement
+    jobs:
+    - Clown
+  items:
+  - ClothingMaskClown
+
+- type: loadout
+  id: LoadoutServiceClownNose
+  category: JobsServiceClown
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutClownMask
+  - !type:CharacterJobRequirement
+    jobs:
+    - Clown
+  items:
+  - ClothingMaskClownNose
 
 # Outer
 
@@ -129,6 +193,52 @@
         - Clown
   items:
     - ClothingOuterClownPriest
+
+- type: loadout
+  id: LoadoutServiceClownOuterPagliacci
+  category: JobsServiceClown
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutClownOuter
+  - !type:CharacterJobRequirement
+    jobs:
+    - Clown
+  items:
+  - ClothingOuterCoatPagliacci
+
+- type: loadout # GET DOOOOOOOOWNNN WITH THAA CLOWN!!!!!!!!!!!!
+  id: LoadoutServiceClownOuterHatchetman
+  category: JobsServiceClown
+  cost: 1
+  exclusive: true
+  canBeHeirloom: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutClownOuter
+  - !type:CharacterJobRequirement
+    jobs:
+    - Clown
+  items:
+  - ClothingOuterCoatHatchetmanJersey
+
+- type: loadout
+  id: LoadoutServiceClownOuterRiddlebox
+  category: JobsServiceClown
+  cost: 1
+  exclusive: true
+  canBeHeirloom: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutClownOuter
+  - !type:CharacterJobRequirement
+    jobs:
+    - Clown
+  items:
+  - ClothingOuterCoatRiddleboxJersey
 
 # Shoes
 - type: loadout
@@ -183,3 +293,19 @@
     - ClothingUniformJumpsuitJesterAlt
     - ClothingHeadHatJesterAlt
     - ClothingShoesJester
+
+- type: loadout
+  id: LoadoutServiceClownOutfitPagliacci
+  category: JobsServiceClown
+  cost: 0
+  exclusive: true
+  customColorTint: true
+  canBeHeirloom: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutClownUniforms
+  - !type:CharacterJobRequirement
+    jobs:
+    - Clown
+  items:
+    - ClothingUniformJumpsuitPagliacci

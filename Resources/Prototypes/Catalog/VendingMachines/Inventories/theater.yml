@@ -123,6 +123,9 @@
     ClothingMaskClown: 2
     ClothingShoesClown: 2
     ClothingUniformJumpsuitClown: 2
+    ClothingOuterCoatHatchetmanJersey: 1 # WOOP WOOP!!
+    ClothingOuterCoatRiddleboxJersey: 1 # gds
+    ClothingMaskClownNose: 2 # gds added
     RubberStampClown: 1
     ClothingBackpackMime: 2
     ClothingBackpackSatchelMime: 2
@@ -133,6 +136,9 @@
     ClothingUniformJumpskirtMime: 2
     ClothingBeltSuspendersRed: 2
     RubberStampMime: 1
+    ClothingUniformJumpsuitPagliacci: 2 # GDS
+    ClothingOuterCoatPagliacci: 2 # GDS
+    ClothingNeckRuffles: 2 # GDS
   contrabandInventory:
     ClothingHeadHatMimesoftFlipped: 1
     BarberScissors: 1

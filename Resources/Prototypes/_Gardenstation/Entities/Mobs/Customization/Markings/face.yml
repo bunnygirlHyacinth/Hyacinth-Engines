@@ -1,0 +1,17 @@
+﻿- type: marking
+  id: 2Dope
+  bodyPart: Face
+  markingCategory: Face
+  speciesRestriction: [Dwarf, Human, SlimePerson, Felinid, Oni, Harpy, Reptilian, Vulpkanin, Arachne, Lamia, Tajaran, Tajaran]
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/clown_paint.rsi
+    state: 2dope
+
+- type: marking
+  id: violent
+  bodyPart: Face
+  markingCategory: Face
+  speciesRestriction: [Dwarf, Human, SlimePerson, Felinid, Oni, Harpy, Reptilian, Vulpkanin, Arachne, Lamia, Tajaran, Tajaran]
+  sprites:
+  - sprite: _Gardenstation/Mobs/Customization/clown_paint.rsi
+    state: violent
