@@ -109,3 +109,63 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, ClothingOuterStorageBase]
+  id: ClothingOuterCoatHatchetmanJerseyCursed
+  name: hatchet jersey
+  description: An old jersey. Theres a tiny man holding a hatchet on the front... It has a wicked aura....
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/hatchetman_jersey.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/hatchetman_jersey.rsi
+  - type: AddAccentClothing
+    accent: ReplacementAccent
+    replacement: juggalo
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.7
+        Caustic: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: GroupExamine
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
+
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, ClothingOuterStorageBase]
+  id: ClothingOuterCoatRiddleboxJerseyCursed
+  name: clown jersey
+  description: An old jersey. Theres a wicked looking clown on the front... Somethings off about this one...
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/riddlebox_jersey.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/riddlebox_jersey.rsi
+  - type: AddAccentClothing
+    accent: ReplacementAccent
+    replacement: juggalo
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.7
+        Heat: 0.7
+        Caustic: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: GroupExamine
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
