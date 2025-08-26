@@ -2,7 +2,7 @@
   id: ScarEyeRight
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Human, Dwarf, Felinid, Harpy, Oni, Arachne, Lamia, Tajaran] # Delta V - Felinid, Oni, Harpy; Einstein Engines - Tajaran
+  speciesRestriction: [Human, Dwarf, Felinid, Harpy, Oni, Rodentia, Arachne, Lamia, Tajaran] # Delta V - Felinid, Oni, Harpy, Rodentia; Einstein Engines - Tajaran
   followSkinColor: true
   sprites:
   - sprite: Mobs/Customization/scars.rsi
@@ -12,7 +12,7 @@
   id: ScarEyeLeft
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Human, Dwarf, Felinid, Harpy, Oni, Arachne, Lamia, Tajaran] # Delta V - Felinid, Oni, Harpy; Einstein Engines - Tajaran
+  speciesRestriction: [Human, Dwarf, Felinid, Harpy, Oni, Rodentia, Arachne, Lamia, Tajaran] # Delta V - Felinid, Oni, Harpy, Rodentia; Einstein Engines - Tajaran
   followSkinColor: true
   sprites:
   - sprite: Mobs/Customization/scars.rsi

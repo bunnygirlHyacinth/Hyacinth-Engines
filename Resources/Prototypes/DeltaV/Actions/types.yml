@@ -1,3 +1,23 @@
+# SPDX-FileCopyrightText: 2024 Memeji <greyalphawolf7@gmail.com>
+# SPDX-FileCopyrightText: 2024 Memeji Dankiri <39416235+Memeji@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 VMSolidus <evilexecutive@gmail.com>
+# SPDX-FileCopyrightText: 2025 Rosycup <178287475+Rosycup@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 sleepyyapril <123355664+sleepyyapril@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 sleepyyapril <flyingkarii@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later AND MIT
+
+- type: entity
+  id: ActionOpenMouthStorage
+  name: Open cheek storage
+  description: Allows you to store items in your cheeks.
+  components:
+  - type: InstantAction
+    itemIconStyle: BigAction
+    priority: -10
+    icon: _DV/Interface/Actions/mouthStorageOpen.png
+    event: !type:OpenStorageImplantEvent
+
 - type: entity
   id: ActionChitzite
   name: Cough Up Chitzite
@@ -7,6 +27,6 @@
     charges: 0
     enabled: false
     maxCharges: 1
-    icon: { sprite: DeltaV/Objects/Specific/Species/chitinid.rsi, state: chitzite }
+    icon: { sprite: _DV/Objects/Specific/Species/chitinid.rsi, state: chitzite }
     useDelay: 300
     event: !type:ChitziteActionEvent

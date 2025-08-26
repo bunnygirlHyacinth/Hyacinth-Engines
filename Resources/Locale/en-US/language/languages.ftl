@@ -87,6 +87,9 @@ language-Chittin-description =
     A language consisting of clicks, buzzes, and some variety of harsh insect sounds.
     Most of what makes up their speech comes from their antennae, making it a near-impossible language for those without to learn.
 
+language-Rodentian-name = Rodentian
+trait-description-Rodentian =  A language mostly consisting of squeaks spoken by Rodentia if all shapes and sizes.
+
 language-Xeeplian-name = Xeeplian
 language-Xeeplian-description =
     Our language is highly advanced, efficient and to the point.
