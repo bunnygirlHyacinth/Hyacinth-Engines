@@ -15,7 +15,7 @@ namespace Content.Server.Abilities.Psionics
         [Dependency] private readonly StunSystem _stunSystem = default!;
         [Dependency] private readonly StatusEffectsSystem _statusEffectsSystem = default!;
         [Dependency] private readonly VomitSystem _vomitSystem = default!;
-        [Dependency] private readonly MoodAction _moodAction = default!;
+        //[Dependency] private readonly MoodAction _moodAction = default!;
 
     public override void Initialize()
         {
