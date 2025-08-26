@@ -123,6 +123,9 @@
     Underwear:
       points: 2 # FLOOF CHANGE
       required: false
+    Overlay:
+      points: 4
+      required: false
 
 - type: humanoidBaseSprite
   id: MobRodentiaHead
