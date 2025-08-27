@@ -1,2 +1,2 @@
-﻿marking-2dope= Dope paint
+﻿marking-2dope = Dope paint
 marking-violent = Violent paint
