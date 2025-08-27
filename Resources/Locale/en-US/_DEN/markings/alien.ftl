@@ -8,6 +8,9 @@ marking-AlienAntennaSide-alien_antenna_side=Antennae
 marking-AlienAntennaSingle=Alien Antenna (Single)
 marking-AlienAntennaSingle-alien_antenna_single=Antenna
 
+marking-AlienAntennaTop=Alien Antenna (Double, Top)
+marking-AlienAntenna-alien_antenna_double_top=Antennae
+
 # Eyes
 marking-AlienEyes=Alien Eyes
 marking-AlienEyes-eyes_alien=Eyes
