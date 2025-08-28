@@ -1,40 +1,40 @@
-﻿- type: trait
-  id: BurnerArm
-  category: Physical
-  points: -8
-  requirements:
-  - !type:CharacterLogicOrRequirement
-    requirements:
+﻿#- type: trait
+#  id: BurnerArm
+#  category: Physical
+#  points: -8
+#  requirements:
+#  - !type:CharacterLogicOrRequirement
+#    requirements:
 #    - !type:CharacterJobRequirement // for now this is more open just cause nobody plays magistrate lol
 #      jobs:
 #      - BlueshieldOfficer
-    - !type:CharacterDepartmentRequirement
-      departments:
-      - Security
-      - Command
-      - Dignitary
-  - !type:CharacterTraitRequirement # no doubling up wags my finger
-    inverted: true
-    traits:
-    - BionicPryArm
-    - BionicArm
-  - !type:CharacterSpeciesRequirement
-    inverted: true
-    species:
-    - Xelthia # this would fall off
-  functions:
-  - !type:TraitCyberneticLimbReplacement
-    removeBodyPart: Arm
-    partSymmetry: Left
-    protoId: BurnerArmLeftArm
-    slotId: "left arm"
-  - !type:TraitCyberneticLimbReplacement
-    removeBodyPart: Arm
-    partSymmetry: Right
-    protoId: BurnerArmRightArm
-    slotId: "right arm"
-  - !type:TraitPushDescription
-    descriptionExtensions:
-    - description: The skin on their arms has an incredibly smooth texture. A warm glow seems to emanate from within them...
-      fontSize: 12
-      requireDetailRange: true
+#    - !type:CharacterDepartmentRequirement
+#      departments:
+#      - Security
+#      - Command
+#      - Dignitary
+#  - !type:CharacterTraitRequirement # no doubling up wags my finger
+#    inverted: true
+#    traits:
+#    - BionicPryArm
+#    - BionicArm
+#  - !type:CharacterSpeciesRequirement
+#    inverted: true
+#    species:
+#    - Xelthia # this would fall off
+#  functions:
+#  - !type:TraitCyberneticLimbReplacement
+#    removeBodyPart: Arm
+#    partSymmetry: Left
+#    protoId: BurnerArmLeftArm
+#    slotId: "left arm"
+#  - !type:TraitCyberneticLimbReplacement
+#    removeBodyPart: Arm
+#    partSymmetry: Right
+#    protoId: BurnerArmRightArm
+#    slotId: "right arm"
+#  - !type:TraitPushDescription
+#    descriptionExtensions:
+#    - description: The skin on their arms has an incredibly smooth texture. A warm glow seems to emanate from within them...
+#      fontSize: 12
+#      requireDetailRange: true
