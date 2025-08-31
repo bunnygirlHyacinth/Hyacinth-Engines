@@ -146,6 +146,8 @@
           amount: 2 #Delta-V Double the masks
         - id: ClothingShoesBootsMagSec
           amount: 2
+        - id: ClothingModsuitControlSquire #temp till we have selectors
+          amount: 2
   - type: AccessReader
     access: [["Security"]]
 

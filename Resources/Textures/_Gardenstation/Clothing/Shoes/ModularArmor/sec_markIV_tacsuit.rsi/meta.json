@@ -1,0 +1,18 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "combat boots sprite made by @ninruB#7795, tweaked by bunnygirlHyacinth",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "boots"
+        },
+        {
+            "name": "equipped-FEET",
+            "directions": 4
+        }
+    ]
+}

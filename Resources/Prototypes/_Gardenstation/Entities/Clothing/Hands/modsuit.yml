@@ -1,4 +1,5 @@
-﻿- type: entity
+﻿#cco magicalgirls
+- type: entity
   parent: ClothingHandsBase
   id: ClothingMagicalGirlCorpoGauntlets
   name: Corporate MagiGloves
@@ -29,3 +30,47 @@
     visualLayers:
       gloves:
       - state: equipped-HAND-sealed
+
+#secsuit
+- type: entity
+  parent: ClothingModsuitGauntletsStandard
+  id: ClothingModsuitHandsSquire
+  name: Squire modsuit gloves
+  description: A pair of reinforced gloves, perfect for playing with stunbatons!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Hands/Modsuits/secoff_modsuit.rsi
+    layers:
+    - state: gauntlets
+    - state: gauntlets-sealed
+      visible: false
+      map: [ "sealed" ]
+  - type: Clothing
+    equipSound: /Audio/Mecha/mechmove03.ogg
+    unequipSound: /Audio/Mecha/mechmove03.ogg
+    slots: [ gloves ]
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-modular
+    fiberColor: fibers-black
+  - type: FingerprintMask
+  - type: SealableClothing
+    sealUpPopup: sealable-clothing-seal-up-gauntlets
+    sealDownPopup: sealable-clothing-seal-down-gauntlets
+  - type: SealableClothingVisuals
+    visualLayers:
+      gloves:
+      - state: equipped-HAND-sealed
+
+- type: entity
+  parent: ClothingModsuitHandsSquire
+  id: ClothingModsuitHandsHOS
+  name: Centurion hardsuit modgloves
+  description: A pair of heavy carapace gauntlets. Now you can perfect your judo throw AND work out at the same time!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Hands/Modsuits/secoff_modsuit.rsi

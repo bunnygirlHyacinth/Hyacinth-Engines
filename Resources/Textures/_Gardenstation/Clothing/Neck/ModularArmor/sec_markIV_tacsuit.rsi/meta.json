@@ -1,0 +1,18 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "resprited by bunnygirlHyacinth, pauldron icon taken from Aurora.3",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "pauldron"
+        },
+        {
+            "name": "equipped-NECK",
+            "directions": 4
+        }
+    ]
+}

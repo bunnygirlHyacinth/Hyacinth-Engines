@@ -1,0 +1,9 @@
+﻿- type: entityTable
+  id: FillHeadOfSecurityModsuit
+  table: !type:AllSelector
+    children:
+    - id: ClothingMaskGasSwat
+    - id: ClothingModsuitControlHOS # DeltaV - ClothingOuterHardsuitSecurityRed replaced in favour of head of security's advanced combat hardsuit.
+    - id: ClothingShoesBootsMagSec
+    - id: JetpackSecurityFilled
+    - id: OxygenTankFilled

@@ -1,0 +1,52 @@
+﻿- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesStrider
+  name: pointed sunglasses
+  description: Go beyond impossible and kick reason to the curb!
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Eyes/strider_special.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Eyes/strider_special.rsi
+  - type: MeleeWeapon
+    attackRate: 1.5
+    damage:
+      types:
+        Blunt: 7
+
+
+- type: entity
+  parent: ClothingEyesGlassesStrider
+  id: ClothingEyesGlassesStriderShielded
+  name: bro shades
+  description: I'm glad someone has good taste.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Eyes/strider_special.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Eyes/strider_special.rsi
+  - type: Item
+  - type: FlashImmunity
+  - type: EyeProtection
+  ##[color=#f2a400]\[color=##f2a400\] for text desc
+
+- type: entity
+  parent: [ ClothingEyesGlassesStriderShielded, ShowSecurityIcons ]
+  id: ClothingEyesGlassesStriderSec
+  name: ultimate secglasses
+  description: Be true to your heart.
+  components:
+    - type: Sprite
+      sprite: _Gardenstation/Clothing/Eyes/strider_special.rsi
+      state: icon-alt
+    - type: Clothing
+      sprite: _Gardenstation/Clothing/Eyes/strider_special.rsi
+      equippedPrefix: alt
+    - type: Item
+      heldPrefix: alt
+    - type: MeleeWeapon
+      damage:
+        types:
+          Slash: 10

@@ -1,0 +1,46 @@
+﻿# type: entity
+#  id: ModsuitPlatingExternalSecurity
+#  parent: PartModsuit
+#  name: MOD security external plating
+#  description: A part used in MOD construction.
+#  components:
+#  - type: Sprite
+#    state: _Gardenstation/Objects/Specific/Robotics/modsuit_parts.rsi
+#    layers:
+#      state: security-plating
+#  - type: Icon
+#    state: _Gardenstation/Objects/Specific/Robotics/modsuit_parts.rsi
+#    layers:
+#      state: security-plating
+#  - type: PhysicalComposition
+#    materialComposition:
+#      Steel: 120
+#      Glass: 67
+#      Plasma: 24
+#  - type: Tag
+#    tags:
+#    - ModsuitPart
+#    - ModsuitPlatingExternal
+
+#- type: entity
+#  id: ModsuitCoreSecurity
+#  parent: PartModsuit
+#  name: MOD standard core
+#  description: Growing in the most lush, fertile areas of the planet Sprout, there is a crystal known as the Heartbloom. These rare, organic piezoelectric crystals are of incredible cultural significance to the artist castes of the Ethereals, owing to their appearance; which is exactly similar to that of an Ethereal's heart. Which one you have in your suit is unclear, but either way, it's been repurposed to be an internal power source for a Modular Outerwear Device.
+#  components:
+#  - type: Sprite
+#    state: _Gardenstation/Objects/Specific/Robotics/modsuit_parts.rsi
+#    layers:
+#      state: mod-core-security
+#  - type: Icon
+#    state: _Gardenstation/Objects/Specific/Robotics/modsuit_parts.rsi
+#    layers:
+#      state: mod-core-security
+#  - type: Tag
+#    tags:
+#    - ModsuitPart
+#    - ModsuitCore
+#  - type: PhysicalComposition
+#    materialComposition:
+#      Plasma: 150
+#      Glass: 65

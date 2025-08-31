@@ -1,0 +1,187 @@
+﻿# TCAF - LIGHT INFANTRY // eventually i want to be able to slot in armor pieces to the "kit" so its like, actually modular armor. idk. at some point there wont even be a kit and just a rig you slot stuff into
+- type: entity
+  parent: [Clothing, ContentsExplosionResistanceBase]
+  id: ClothingTCAFMaintKitLite
+  name: TCAF carapace maintenance kit
+  description: A light infantry maintenance kit, has enough space for a standard folding IAR and basic 3-day kit
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Back/ModularArmor/tcaf_infantry_modulite.rsi
+    layers:
+    - state: icon
+  - type: Item
+    size: Huge
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+  - type: Storage
+    grid:
+    - 0,0,4,3
+    maxItemSize: Large
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+      toggleable-clothing: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.ToggleClothingUiKey.Key:
+        type: ToggleableClothingBoundUserInterface
+  - type: UseDelay
+    delay: 2
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: ToggleableClothing
+    requiredSlot: back
+    blockUnequipWhenAttached: true
+    replaceCurrentClothing: false
+    clothingPrototypes:
+      neck: ClothingTCAFModuLitePauldron
+      gloves: ClothingTCAFModuLiteGauntlets
+      outerClothing: ClothingTCAFModuLiteChestplate
+      shoes: ClothingTCAFModuLiteBoots
+  - type: DoAfter
+  - type: EmitsSoundOnMove
+    soundCollection:
+      collection: FootstepTacticalWebbing
+      params:
+        volume: -10
+    distanceWalking: 2
+    distanceSprinting: 3
+
+#  CHESTPLATE
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingTCAFModuLiteChestplate
+  name: TCAF light infantry carapace
+  description: A sturdy plasteel carapace, designed for light infantry rifle squads.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: AllowSuitStorage
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/ModularArmor/tcaf_infantry_modulite.rsi
+    layers:
+    - state: chestplate
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/OuterClothing/ModularArmor/tcaf_infantry_modulite.rsi
+    layers:
+      -state: equipped-OUTERCLOTHING
+    equipSound: /Audio/Items/Equip/toolbelt_equip.ogg
+    unequipSound: /Audio/Items/jumpsuit_equip.ogg
+    slots: [ outerClothing ]
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9 # big chest plate. not hardsuit heavy though
+    sprintModifier: 0.9
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.7
+        Piercing: 0.6 # made for bullets - solarians use antiquated weapons because theyre weird conservatives and think lead is a cultural export or some shit
+        Heat: 0.8 # i lied because actually i think solarian shitlasers would be really funny. they shoot green beams or something idk
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+# HANDS
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingTCAFModuLiteGauntlets
+  name: TCAF light infantry gauntlets
+  description: Sturdy plasteel gauntlets with a soft leather inlay. The gloves are reinforced with durathread.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Hands/ModularArmor/tcaf_infantry_modulite.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Hands/ModularArmor/tcaf_infantry_modulite.rsi
+    layers:
+      -state: equipped-HAND
+    equipSound: /Audio/Items/jumpsuit_equip.ogg
+    unequipSound: /Audio/Items/Equip/toolbelt_equip.ogg
+    slots: [ gloves ]
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-brown
+  - type: Armor # probably nerf soon but its fine since its like military grade or whatever the fuck idk
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+
+# NECK/SHOULDER - add senior stripe versions eventually with better protection idk
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingTCAFModuLitePauldron
+  name: TCAF light infantry pauldron
+  description: Two plasteel carapaces to protect your neck and upper arms. The leather straps are a little itchy...
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Neck/ModularArmor/tcaf_infantry_modulite.rsi
+    layers:
+    - state: pauldron
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Neck/ModularArmor/tcaf_infantry_modulite.rsi
+    layers:
+      -state: equipped-NECK
+    equipSound: /Audio/Items/Equip/toolbelt_equip.ogg
+    unequipSound: /Audio/Items/jumpsuit_equip.ogg
+    slots: [ neck ]
+  - type: Armor # probably nerf soon but its fine since its like military grade or whatever the fuck idk
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.85 # the leather is reinforced with durathread and resistant to slashing ( think kevlar but not )
+        Piercing: 0.9
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+# LEG/BOOT
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingTCAFModuLiteBoots
+  name: TCAF carapace kneepads
+  description: Plasteel carapaces to protect your knees. The boots are really comfy!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Shoes/ModularArmor/tcaf_infantry_modulite.rsi
+    layers:
+    - state: boots
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Shoes/ModularArmor/tcaf_infantry_modulite.rsi
+    layers:
+      -state: equipped-FEET
+    equipSound: /Audio/Items/Equip/toolbelt_equip.ogg
+    unequipSound: /Audio/Items/jumpsuit_equip.ogg
+    slots: [ feet ]
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95 # the leather is stiff or something idk
+    sprintModifier: 0.95
+  - type: Armor # probably nerf soon but its fine since its like military grade or whatever the fuck idk
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.8
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.9

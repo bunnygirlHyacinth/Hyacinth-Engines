@@ -1,0 +1,41 @@
+﻿{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "sprited by bunnygirlHyacinth",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    },
+    {
+      "name": "icon-alt"
+    },
+    {
+      "name": "equipped-EYES",
+      "directions": 4
+    },
+    {
+      "name": "alt-equipped-EYES",
+      "directions": 4
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "alt-inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "alt-inhand-right",
+      "directions": 4
+    }
+  ]
+}

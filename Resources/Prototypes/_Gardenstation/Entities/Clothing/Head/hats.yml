@@ -85,3 +85,15 @@
     - Tradeband
     requires:
     - TauCetiBasic
+
+- type: entity
+  parent: [ ClothingHeadBase ]
+  id: ClothingHeadHatTCAFofficerdresscapblue
+  name: TCAF officer cap
+  description: An officers hat with the bieselite torch of liberty adorning the front, often seen worn by ranking officers of the TCAF.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Head/Hats/tcaf_officerdress_cap.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Head/Hats/tcaf_officerdress_cap.rsi
+

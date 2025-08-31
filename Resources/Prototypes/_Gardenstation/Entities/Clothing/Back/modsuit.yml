@@ -1,0 +1,53 @@
+﻿- type: entity
+  parent: [ClothingModsuitStandard]
+  id: ClothingModsuitControlSquire
+  name: Squire modsuit control
+  description: A special modular suit control containing parts for a security-grade modsuit.
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Back/Modsuits/secoff_modsuit.rsi
+  - type: ToggleableClothing
+    requiredSlot: back
+    blockUnequipWhenAttached: true
+    replaceCurrentClothing: true
+    clothingPrototypes:
+      head: ClothingModsuitHelmetSquire
+      gloves: ClothingModsuitHandsSquire
+      outerClothing: ClothingModsuitChestSquire
+      shoes: ClothingModsuitSquireBoots
+  - type: SealableClothingVisuals
+    visualLayers:
+      back:
+      - state: equipped-BACKPACK-sealed
+        shader: unshaded
+  - type: Construction
+    graph: Modsuit
+    node: security
+
+- type: entity
+  parent: [ClothingModsuitStandard]
+  id: ClothingModsuitControlHOS
+  name: Centurion modsuit control
+  description: A special modular suit control containing parts for a military-grade parade modsuit.
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Back/Modsuits/hos_modsuit.rsi
+  - type: ToggleableClothing
+    requiredSlot: back
+    blockUnequipWhenAttached: true
+    replaceCurrentClothing: true
+    clothingPrototypes:
+      head: ClothingModsuitHelmetHOS
+      gloves: ClothingModsuitHandsHOS
+      outerClothing: ClothingModsuitChestHOS
+      shoes: ClothingModsuitHOSboots
+  - type: SealableClothingVisuals
+    visualLayers:
+      back:
+      - state: equipped-BACKPACK-sealed
+        shader: unshaded
+  - type: Construction
+    graph: Modsuit
+    node: headsecurity

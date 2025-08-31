@@ -375,6 +375,7 @@
     - id: ClothingShoesBootsMagSec
     - id: JetpackSecurityFilled
     - id: OxygenTankFilled
+    - id: ClothingModsuitControlHOS # added this as a temp thing till we add the suit selector
 
 # No hardsuit locker
 - type: entity
