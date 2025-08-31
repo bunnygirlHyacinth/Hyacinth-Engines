@@ -202,17 +202,23 @@
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
 
+#- type: entity
+#  parent: [ClothingOuterFoldableBaseOpened, ClothingNeckBase]
+#  id: ClothingOuterCoatTCAFGeneralCoatOpened
+#  name: TCAF officer coat
+#  components:
+#  - type: Sprite
+#    sprite: _Gardenstation/Clothing/OuterClothing/Coats/tcaf_general_coat.rsi
+#    layers:
+#      state: icon-open
+#  - type: Clothing
+#    sprite: _Gardenstation/Clothing/OuterClothing/Coats/tcaf_general_coat.rsi
+#    slots:
+#    - OUTERCLOTHING
+#    - NECK
+
 - type: entity
-  parent: [ClothingOuterFoldableBaseOpened, ClothingOuterCoatTCAFGeneralCoat]
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatTCAFGeneralCoat]
   id: ClothingOuterCoatTCAFGeneralCoatOpened
   name: TCAF officer coat
-  components:
-  - type: Sprite
-    sprite: _Gardenstation/Clothing/OuterClothing/Coats/tcaf_general_coat.rsi
-    layers:
-      state: icon-open
-  - type: Clothing
-    sprite: _Gardenstation/Clothing/OuterClothing/Coats/tcaf_general_coat.rsi
-    slots:
-    - OUTERCLOTHING
-    - NECK
+  suffix: Opened
