@@ -34,3 +34,51 @@
     visualLayers:
       shoes:
       - state: equipped-FEET-sealed
+
+- type: entity
+  parent: [ ClothingModsuitBootsStandard, BaseIntegratedManeuveringThrusters ]
+  id: ClothingModsuitSquireBoots
+  name: Squire modsuit boots
+  description: Robust boots for a robust officer, these have thrusters for low-grav combat as well!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Shoes/Modsuits/secoff_modsuit.rsi
+    layers:
+    - state: icon
+    - state: boots-sealed
+      visible: false
+      map: [ "sealed" ]
+  - type: Clothing
+    equipSound: /Audio/Mecha/mechmove03.ogg
+    unequipSound: /Audio/Mecha/mechmove03.ogg
+    slots: [ feet ]
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: SealableClothing
+    sealUpPopup: sealable-clothing-seal-up-boots
+    sealDownPopup: sealable-clothing-seal-down-boots
+  - type: ToggleClothing
+    action: ActionToggleMagboots
+  - type: Magboots
+  - type: SealableClothingVisuals
+    visualLayers:
+      shoes:
+      - state: equipped-FEET-sealed
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.8
+  - type: ClothingModifyStunTime
+    modifier: 0.8
+
+- type: entity
+  parent: ClothingModsuitSquireBoots
+  id: ClothingModsuitHOSboots
+  name: Centurion hardsuit modboots
+  description: Robust boots for THE robust officer. Now go kick some asss!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Shoes/Modsuits/hos_modsuit.rsi

@@ -1,0 +1,19 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Bulletproof armor sprite Taken from https://github.com/ParadiseSS13/Paradise, tweaked by bunnygirlHyacinth",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "chestplate"
+        },
+        {
+            "name": "equipped-OUTERCLOTHING",
+            "directions": 4
+        }
+
+    ]
+}

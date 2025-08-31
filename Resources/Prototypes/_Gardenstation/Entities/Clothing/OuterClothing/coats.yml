@@ -169,3 +169,50 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+
+- type: entity
+  parent: [ ClothingOuterCoatCapTrench, ClothingOuterStorageFoldableBase, ClothingNeckBase ]
+  id: ClothingOuterCoatTCAFGeneralCoat
+  name: TCAF officer coat
+  description: A heavy coat decorated with gold fittings and lined with durathread.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/tcaf_general_coat.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/tcaf_general_coat.rsi
+    slots:
+    - OUTERCLOTHING
+    - NECK
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.5
+        Piercing: 0.5 # lined with durathread, kevlar inlay. Generals should try to not get assassinated probably?
+        Heat: 0.5
+        Caustic: 0.6
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: GroupExamine
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
+
+- type: entity
+  parent: [ClothingOuterFoldableBaseOpened, ClothingOuterCoatTCAFGeneralCoat]
+  id: ClothingOuterCoatTCAFGeneralCoatOpened
+  name: TCAF officer coat
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/tcaf_general_coat.rsi
+    layers:
+      state: icon-open
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/tcaf_general_coat.rsi
+    slots:
+    - OUTERCLOTHING
+    - NECK

@@ -1,0 +1,188 @@
+﻿# BELTKIT
+- type: entity
+  parent: [Clothing, ContentsExplosionResistanceBase]
+  id: ClothingMKIVTacSuitDuffle
+  name: modular tacsuit field kit
+  description: A large duffle bag clipped to a brace, its filled up with spares and repair kits for the armor... Not much space left for other stuff...
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Belt/ModularArmor/sec_markIV_tacsuit.rsi
+    layers:
+    - state: icon
+  - type: Item
+    size: Huge
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - belt
+  - type: Storage
+    grid:
+    - 0,0,3,2
+    maxItemSize: Large
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+      toggleable-clothing: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.ToggleClothingUiKey.Key:
+        type: ToggleableClothingBoundUserInterface
+  - type: UseDelay
+    delay: 2
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: ToggleableClothing
+    requiredSlot: belt
+    blockUnequipWhenAttached: true
+    replaceCurrentClothing: false
+    clothingPrototypes:
+      neck: ClothingMKIVTacSuitArms
+      head: ClothingMKIVTacSuitHelmet
+      outerClothing: ClothingMKIVTacSuitChest
+      shoes: ClothingMKIVTacSuitBoots
+  - type: DoAfter
+  - type: EmitsSoundOnMove
+    soundCollection:
+      collection: FootstepTacticalWebbing
+      params:
+        volume: -10
+    distanceWalking: 2
+    distanceSprinting: 3
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+
+# CHEST
+
+- type: entity
+  parent: ClothingOuterBase
+  id: ClothingMKIVTacSuitChest
+  name: Mk. IV tacsuit vest
+  description: A robust armor vest designed for use in high-impact, station-side combat.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: AllowSuitStorage
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/ModularArmor/sec_markIV_tacsuit.rsi
+    layers:
+    - state: chestplate
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/OuterClothing/ModularArmor/sec_markIV_tacsuit.rsi
+    layers:
+      -state: equipped-OUTERCLOTHING
+    equipSound: /Audio/Items/Equip/toolbelt_equip.ogg
+    unequipSound: /Audio/Items/jumpsuit_equip.ogg
+    slots: [ outerClothing ]
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9 # heavy tacsuit
+    sprintModifier: 0.8
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.6 # more bulletproof
+        Heat: 0.7
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+# NECK
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingMKIVTacSuitArms
+  name: Mk. IV tacsuit armgaurds
+  description: A set of durathread and plasteel reinforced armgaurds- perfect for testing out those riot batons!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Neck/ModularArmor/sec_markIV_tacsuit.rsi
+    layers:
+    - state: pauldron
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Neck/ModularArmor/sec_markIV_tacsuit.rsi
+    layers:
+      -state: equipped-NECK
+    equipSound: /Audio/Items/Equip/toolbelt_equip.ogg
+    unequipSound: /Audio/Items/jumpsuit_equip.ogg
+    slots: [ neck ]
+  - type: Armor # probably nerf soon but its fine since its like military grade or whatever the fuck idk
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.85 # the leather is reinforced with durathread and resistant to slashing ( think kevlar but not )
+        Piercing: 0.85
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+# BOOTS
+
+- type: entity
+  parent: ClothingShoesMilitaryBase
+  id: ClothingMKIVTacSuitBoots
+  name: Mk. IV tacsuit greaves
+  description: Heavy, reinforced boots... Made for walking? They're definitely for stomping...
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Shoes/ModularArmor/sec_markIV_tacsuit.rsi
+    layers:
+    - state: boots
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Shoes/ModularArmor/sec_markIV_tacsuit.rsi
+    layers:
+      -state: equipped-FEET
+    equipSound: /Audio/Items/Equip/toolbelt_equip.ogg
+    unequipSound: /Audio/Items/jumpsuit_equip.ogg
+    slots: [ feet ]
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9 # the leather is stiff or something idk
+    sprintModifier: 0.8
+  - type: Armor # probably nerf soon but its fine since its like military grade or whatever the fuck idk
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95
+        Heat: 0.95
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+
+# HELMET
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingMKIVTacSuitHelmet
+  name: Mk. IV tacsuit helmet
+  description: A robust helmet made specifically to stop any close range attacks
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Head/ModularArmor/sec_markIV_tacsuit.rsi
+    state: icon
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Head/ModularArmor/sec_markIV_tacsuit.rsi
+    layers:
+    - state: equipped-HELMET
+    equipSound: /Audio/Items/Equip/toolbelt_equip.ogg
+    unequipSound: /Audio/Items/jumpsuit_equip.ogg
+    slots: [ head ]
+  - type: IngestionBlocker
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.95
+  - type: ExplosionResistance
+    damageCoefficient: 0.9

@@ -58,6 +58,8 @@
         amount: 2
       - id: ClothingMaskGasSecurity
         amount: 2
+      - id: ClothingMKIVTacSuitDuffle # GDS added
+        amount: 2
 
 - type: entity
   id: CrateSecurityHeavyBallisticArmor

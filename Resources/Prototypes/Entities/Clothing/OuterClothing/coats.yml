@@ -68,7 +68,7 @@
     sprite: Clothing/OuterClothing/Coats/gentlecoat.rsi
 
 - type: entity
-  parent: [ClothingOuterArmorCaptainCarapace, ClothingOuterStorageBase]
+  parent: [ClothingOuterArmorCaptainCarapace, ClothingOuterStorageBase, ClothingNeckBase]
   id: ClothingOuterCoatCapTrench
   name: captain's armored trenchcoat
   description: A greatcoat enhanced with a special alloy for some extra protection and style for those with a commanding presence, outfitted with emblems and decor befitting its wearer. Issued only to the station's finest.
@@ -77,6 +77,9 @@
     sprite: Clothing/OuterClothing/Coats/cap_trenchcoat.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/cap_trenchcoat.rsi
+    slots:
+    - OUTERCLOTHING
+    - NECK
 
 - type: entity
   abstract: true
