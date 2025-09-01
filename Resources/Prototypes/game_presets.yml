@@ -11,7 +11,7 @@
   - SpaceTrafficControlEventScheduler
   - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: KesslerSyndrome
@@ -27,7 +27,7 @@
   - RampingStationEventScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: SurvivalHellshift
@@ -42,7 +42,7 @@
   - SpaceTrafficControlEventScheduler
   - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: SurvivalIrregular
@@ -56,7 +56,7 @@
   - SpaceTrafficControlEventScheduler
   - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: SurvivalIrregularExtended
@@ -70,7 +70,7 @@
   - SpaceTrafficControlEventScheduler
   - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: AllAtOnce
@@ -91,7 +91,7 @@
   - RampingStationEventScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: AllerAtOnce
@@ -119,7 +119,7 @@
   - SpaceTrafficControlEventScheduler
   - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Extended
@@ -133,7 +133,7 @@
   - BasicStationEventScheduler
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Greenshift
@@ -145,7 +145,7 @@
   description: greenshift-description
   rules:
   - SpaceTrafficControlFriendlyEventScheduler
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Secret
@@ -157,7 +157,7 @@
   description: secret-description
   rules:
   - Secret
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: SecretExtended #For Admin Use: Runs Extended but shows "Secret" in lobby.
@@ -170,7 +170,7 @@
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: SecretGreenshift #For Admin Use: Runs Greenshift but shows "Secret" in lobby.
@@ -182,7 +182,7 @@
   rules:
   - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Sandbox
@@ -194,7 +194,7 @@
   maxPlayers: 5
   rules:
   - Sandbox
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Traitor
@@ -208,10 +208,10 @@
   - Traitor
   - SubGamemodesRule
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Deathmatch
@@ -237,10 +237,10 @@
   - Nukeops
   - SubGamemodesRule
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Revolutionary
@@ -255,10 +255,10 @@
   - Revolutionary
   - SubGamemodesRule
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Zombie
@@ -274,10 +274,10 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Zombieteors
@@ -294,7 +294,7 @@
   - KesslerSyndromeScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change
 
 - type: gamePreset
   id: Changeling
@@ -313,4 +313,4 @@
   - MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
-  - LavalandStormScheduler # Lavaland Change
+  #- LavalandStormScheduler # Lavaland Change

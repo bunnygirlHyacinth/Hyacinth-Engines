@@ -436,6 +436,7 @@
     - CanilunztTranslatorImplanter
     - SolCommonTranslatorImplanter
     - RootSpeakTranslatorImplanter
+    - EckeckyikTranslatorImplanter # gds
     - AnimalTranslator
     - MofficTranslatorImplanter
     - ClothingEyesNightVisionGoggles
