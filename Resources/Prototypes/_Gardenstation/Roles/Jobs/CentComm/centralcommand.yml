@@ -1,0 +1,160 @@
+﻿#JOBS
+- type: job
+  id: CentralCommandDirector
+  name: job-name-centcomdirector
+  description: job-description-centcomdirector
+  playTimeTracker: JobCentralCommandDirector
+  setPreference: false
+  startingGear: CentcomDirectorSuitGear
+  icon: "JobIconNanotrasen"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+  - AllAccess
+  access:
+  - CentralCommand
+  afterLoadoutSpecial:
+  - !type:ModifyEnvirosuitSpecial
+    charges: 10
+  - !type:ModifyEnvirohelmSpecial
+    powerCell: PowerCellHigh
+
+#DIRECTOR
+- type: startingGear
+  id: CentcomDirectorSuitGear
+  subGear:
+  - CentcomPlasmamanGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomDirector
+    shoes: ClothingShoesBootsCombatFilled
+    head: ClothingHeadHatCentcomcap
+    eyes: ClothingEyesGlassesMedSec
+    gloves: ClothingHandsGlovesInspection
+    outerClothing: ClothingOuterWinterCentcom
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: WeaponRevolverLucky
+    pocket1: MindShieldImplanter
+    pocket2: BluespaceLifelineImplanter
+
+- type: startingGear
+  id: CentcomDirectorSkirtGear
+  subGear:
+  - CentcomPlasmamanGear
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomDirector
+    shoes: ClothingShoesBootsCombatFilled
+    head: ClothingHeadHatCentcomcap
+    eyes: ClothingEyesGlassesMedSec
+    gloves: ClothingHandsGlovesInspection
+    outerClothing: ClothingOuterWinterCentcom
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: WeaponRevolverLucky
+    pocket1: MindShieldImplanter
+    pocket2: BluespaceLifelineImplanter
+
+#INVESTIGATOR // eventually make special lanyards/badges, det coat, and gloves/shoes/pistol
+
+- type: startingGear
+  id: CentcomInvestigatorSuit
+  subGear:
+  - CentcomPlasmamanGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomAgent
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesMedSec
+    gloves: ClothingHandsGlovesForensic
+    outerClothing: ClothingOuterCoatDetectiveLoadoutGrey
+    neck: ClothingNeckTieDet
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: WeaponPistolN1984
+    pocket1: ForensicScanner
+    pocket2: BluespaceLifelineImplanter
+
+- type: startingGear
+  id: CentcomInvestigatorSkirt
+  subGear:
+  - CentcomPlasmamanGear
+  equipment:
+    jumpsuit: CentcomAgentSkirt
+    shoes: ClothingShoesBootsLaceup
+    eyes: ClothingEyesGlassesMedSec
+    gloves: ClothingHandsGlovesForensic
+    outerClothing: ClothingOuterCoatDetectiveLoadoutGrey
+    neck: ClothingNeckTieDet
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: WeaponPistolN1984
+    pocket1: ForensicScanner
+    pocket2: BluespaceLifelineImplanter
+
+#MAGICALGIRL
+
+- type: startingGear
+  id: CentcomMagicalGirlLeotard
+  subGear:
+  - CentcomPlasmamanGear
+  equipment:
+    jumpsuit: ClothingUniformLeotardCCO
+    shoes: ClothingShoesLeather
+    eyes: ClothingEyesGlassesMedSec
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterWinterCentcom
+    neck: ClothingMagicalGirlCorpo
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: WeaponRevolverLucky
+    pocket1: BSOManual
+    pocket2: BluespaceLifelineImplanter
+
+- type: startingGear
+  id: CentcomMagicalGirlSailor
+  subGear:
+  - CentcomPlasmamanGear
+  equipment:
+    jumpsuit: UniformSchoolgirlGreen
+    shoes: ClothingShoesLeather
+    eyes: ClothingEyesGlassesMedSec
+    neck: ClothingMagicalGirlCorpo
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: WeaponRevolverLucky
+    pocket1: BSOManual
+    pocket2: BluespaceLifelineImplanter
+
+#DEATHSQUAD/ADMEME/SPECIFIC
+
+- type: startingGear
+  id: DeathsquadStealthLeotard
+#  subGear: sorry plasmamen, no jane doe for you <//3
+#  - CentcomPlasmamanGear
+  equipment:
+    jumpsuit: ClothingUniformLeotardDeathsquad
+    shoes: ClothingShoesChameleonNoSlips
+    eyes: ClothingEyesGlassesMedSec
+    back: ClothingBackpackSatchelHolding
+    gloves: ClothingHandsGlovesCombat
+    id: DeathsquadPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: BlueShieldShieldFilled
+    pocket1: BSOManual
+    pocket2: BluespaceLifelineImplanter
+  storage:
+    back:
+    - MagazineBoxCaselessRifleUranium
+    - MagazineCaselessRifle
+    - WeaponPulsePistol
+    - WeaponRevolverMateba
+    - SpeedLoaderMagnumAP
+    - SpeedLoaderMagnumAP
+    - BoxFlashbang
+    - ToolDebug # spanish army knife
+    - WelderExperimental
+    - Hypospray
+    - MindShieldImplanter
+    - DeathAcidifierImplanter # they die real good incase
+    - FreedomImplanter
+  inhand:
+  - WeaponSubMachineGunBRDIR25BSO

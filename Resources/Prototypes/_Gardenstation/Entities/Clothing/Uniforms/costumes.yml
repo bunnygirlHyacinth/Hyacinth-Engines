@@ -1,0 +1,83 @@
+﻿#CENTCOM LEOTARD
+
+- type: entity
+  parent: [ ClothingUniformSkirtBase, BaseCentcommContraband ]
+  id: ClothingUniformLeotardCCO
+  name: CENTCOM leotard
+  description: A form-fitting, aerodynamic leotard. its reinforced with some kind of strange nanoweave. Often seen used by special corporate operators.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Costume/leotard.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Costume/leotard.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.5
+        Radiation: 0.5
+        Caustic: 0.5
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.4
+  - type: ClothingModifyStunTime
+    modifier: 0.4
+
+- type: entity
+  parent: [ ClothingUniformSkirtBase, BaseCentcommContraband, BaseToggleClothing ]
+  id: ClothingUniformLeotardDeathsquad
+  name: deathsquad leotard
+  description: A form-fitting, aerodynamic leotard. its reinforced with some kind of strange nanoweave. Go quietly, Ghost.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Costume/leotard.rsi
+    state: icon-deathsquad
+    map: [ "enum.ToggleVisuals.Layer" ]
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Costume/leotard.rsi
+    equippedPrefix: deathsquad
+    onEquipFunctions:
+    - !type:TraitAddComponent
+      components:
+      - type: BreakStealthOnAttack
+    onUnequipFunctions:
+    - !type:TraitRemoveComponent
+      components:
+      - type: BreakStealthOnAttack
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleVisuals.Toggled:
+        enum.ToggleVisuals.Layer:
+          True: {state: icon-deathsquad}
+          False: {state: icon-deathsquad}
+  - type: Item
+    heldPrefix: deathsquad
+  - type: Armor #worse than actual DS hardsuit. ideally the user shouldnt even have this. its rlly just cco bullshit for playing ghost in the shell lol
+    modifiers:
+      coefficients:
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.3
+        Heat: 0.3
+        Radiation: 0.3
+        Caustic: 0.3
+        Psionic: 0.3
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.6
+  - type: ClothingModifyStunTime
+    modifier: 0.6
+  - type: ToggleClothing
+    action: ActionToggleStealthSuit
+  - type: ComponentToggler
+    parent: true
+    components:
+    - type: Stealth
+      minVisibility: 0
+      lastVisibility: 0
+#  - type: ClothingGrantComponent // dont use this unless you want perma stealth forever lol. you cant have stealth on move with it cause you need stealth for it to work and you cant have more than one component granted by the type :p
+#    component:
+#    - type: Stealth
+#      minVisibility: 0
+#      lastVisibility: 0

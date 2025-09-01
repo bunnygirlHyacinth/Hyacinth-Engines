@@ -1,0 +1,16 @@
+﻿- type: entity
+  id: ActionToggleStealthSuit
+  name: Toggle Stealth Field
+  description: toggle the suits innate stealth field
+  components:
+  - type: InstantAction
+    useDelay: 1
+    priority: -9
+    icon:
+      sprite: Interface/Actions/actions_fakemindshield.rsi
+      state: icon
+    iconOn:
+      sprite: Interface/Actions/actions_fakemindshield.rsi
+      state: icon-on
+    event: !type:ToggleActionEvent
+
