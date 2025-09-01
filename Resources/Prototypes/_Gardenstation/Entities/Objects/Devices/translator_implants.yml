@@ -1,0 +1,14 @@
+﻿- type: entity
+  parent: BaseSubdermalImplant
+  id: EckeckyikTranslatorImplant
+  name: eckeckyik translator implant
+  description: An implant that helps you speak and understand the aquatic language of thavens! Doesn't make you a better singer though...
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    understood:
+    - Eckeckyik
+#    spoken:  // the language is based mostly on subsonic frequency and weird acoustic bs so in theory only like. harpy could ever hope to even come close to speaking it.
+#    - Eckeckyik
+    requires:
+    - TauCetiBasic

@@ -1,0 +1,7 @@
+﻿- type: entity
+  id: EckeckyikTranslatorImplanter
+  parent: [ BaseTranslatorImplanter ]
+  name: eckeckyik translator implant
+  components:
+  - type: Implanter
+    implant: EckeckyikTranslatorImplant

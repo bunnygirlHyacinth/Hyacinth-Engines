@@ -30,6 +30,25 @@
     visualLayers:
       gloves:
       - state: equipped-HAND-sealed
+  - type: StaminaDamageOnHit
+    damage: 30
+  - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 0.6
+    damage:
+      types:
+        Blunt: 10
+        Holy: 10
+        Psionic: 15
+  - type: MeleeSpeech
+  - type: ActivatableUI
+    key: enum.MeleeSpeechUiKey.Key
+    verbOnly: true
+  - type: Actions
+  - type: UserInterface
+    interfaces:
+      enum.MeleeSpeechUiKey.Key:
+        type: MeleeSpeechBoundUserInterface
 
 #secsuit
 - type: entity
