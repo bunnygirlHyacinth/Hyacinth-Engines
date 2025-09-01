@@ -1,2 +1,6 @@
 ﻿- type: playTimeTracker
   id: JobJusticar
+
+ # cco
+- type: playTimeTracker
+  id: JobCentralCommandDirector
