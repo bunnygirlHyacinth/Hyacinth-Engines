@@ -37,7 +37,7 @@ public sealed partial class MachineBoardComponent : Component
     /// The machine that's constructed when this machine board is completed.
     /// </summary>
     [DataField(required: true)]
-    public EntProtoId Prototype;
+    public string Prototype;
 }
 
 [DataDefinition, Serializable]
