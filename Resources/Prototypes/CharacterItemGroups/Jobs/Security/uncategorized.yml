@@ -178,6 +178,8 @@
       id: LoadoutClothingEyesGlassesSecurityVisor
     - type: loadout
       id: LoadoutClothingEyesGlassesCorpsman
+    - type: loadout #gds
+      id: LoadoutSecurityEyesBroStriderSec
 
 - type: characterItemGroup
   id: LoadoutSecurityGloves

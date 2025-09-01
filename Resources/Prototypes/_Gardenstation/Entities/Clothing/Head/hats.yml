@@ -97,3 +97,13 @@
   - type: Clothing
     sprite: _Gardenstation/Clothing/Head/Hats/tcaf_officerdress_cap.rsi
 
+- type: entity
+  parent: [ ClothingHeadBase ]
+  id: ClothingHeadHatTCAFofficerdresscapred
+  name: TCAF officer field cap
+  description: An officers hat with the bieselite torch of liberty adorning the front, often seen worn by field officers of the TCAF.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Head/Hats/tcaf_fieldofficer_cap.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Head/Hats/tcaf_fieldofficer_cap.rsi

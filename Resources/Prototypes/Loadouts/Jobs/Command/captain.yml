@@ -277,6 +277,26 @@
   items:
     - ClothingHeadHatBeretCap
 
+- type: loadout
+  id: LoadoutCommandTCAFBlueHat
+  category: JobsCommandCaptain
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutCaptainHead
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Bieselite
+  - !type:CharacterLifepathRequirement
+    lifepaths:
+    - WarVet
+  - !type:CharacterJobRequirement
+    jobs:
+    - Captain
+  items:
+  - ClothingHeadHatTCAFofficerdresscapblue
+
+
 # Id
 - type: loadout
   id: LoadoutCaptainNTPDA
@@ -433,6 +453,26 @@
         - Captain
   items:
     - ClothingOuterCoatCapTrench
+
+- type: loadout
+  id: LoadoutCommandCapTCAFOuter
+  category: JobsCommandCaptain
+  cost: 0
+  requirements:
+    - !type:CharacterItemGroupRequirement
+      group: LoadoutCaptainOuter
+    - !type:CharacterNationalityRequirement
+      nationalities:
+      - Bieselite
+    - !type:CharacterLifepathRequirement
+      lifepaths:
+      - WarVet
+    - !type:CharacterJobRequirement
+      jobs:
+      - Captain
+  items:
+    - ClothingOuterCoatTCAFGeneralCoat
+
 
 - type: loadout
   id: LoadoutCommandCapOuterWinterTrench

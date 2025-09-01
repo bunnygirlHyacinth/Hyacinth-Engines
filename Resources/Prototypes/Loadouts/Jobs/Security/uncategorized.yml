@@ -205,6 +205,21 @@
   items:
     - ClothingEyesGlassesSecurityVisor
 
+- type: loadout
+  id: LoadoutSecurityEyesBroStriderSec
+  category: JobsSecurityAUncategorized
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutSecurityEyes
+  - !type:CharacterDepartmentRequirement
+    departments:
+    - Security
+  items:
+  - ClothingEyesGlassesStriderSec
+
+
 # Gloves
 
 - type: loadout
