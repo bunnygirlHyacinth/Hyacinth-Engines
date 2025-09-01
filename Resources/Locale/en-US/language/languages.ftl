@@ -95,6 +95,11 @@ language-Xeeplian-description =
     Our language is highly advanced, efficient and to the point.
     We have taken a liking to mimic some of the inferior lifeforms' babbling in the further pursuit of Our goals.
 
+language-Eckeckyik-name = Eckeckyik
+language-Eckeckyik-description =
+    A language consisting of long vocalizations, chirps, whistles and a large emphasis on harmonics.
+    Most of what makes up their speech is based on subsonic frequency and manipulation of acoustics, making it nearly impossible for most species to learn
+
 # Animal Languages
 
 language-Cat-name = Cat

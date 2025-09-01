@@ -1,0 +1,27 @@
+﻿#spoken by thaven
+- type: language
+  id: Eckeckyik
+  isVisibleLanguage: true
+  speech:
+    color: "#5dd4a0"
+    fontId: Sprykski
+    speechVerbOverrides:
+    - chat-speech-verb-eckeckyik-1
+    - chat-speech-verb-eckeckyik-2
+    - chat-speech-verb-eckeckyik-3
+    - chat-speech-verb-eckeckyik-4
+    - chat-speech-verb-eckeckyik-5
+    - chat-speech-verb-eckeckyik-6
+  obfuscation:
+    !type:SyllableObfuscation
+    minSyllables: 2
+    maxSyllables: 4
+    replacement:
+    - eeEeEE
+    - eeEEeeE
+    - ooOuoUoouu
+    - OuAHhhohhHUhhohh
+    - EEEeeeEee
+    - EeeEEE
+    - EEaaeEEEee
+    - ouuoouhHouhh

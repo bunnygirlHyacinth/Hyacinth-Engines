@@ -65,6 +65,13 @@
       Female: UnisexThaven
   - type: Speech
     speechSounds: Alto
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    - Eckeckyik
+    understands:
+    - TauCetiBasic
+    - Eckeckyik
   - type: HumanoidAppearance
     species: Thaven
     hideLayersOnEquip:
