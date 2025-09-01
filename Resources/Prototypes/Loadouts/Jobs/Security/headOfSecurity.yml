@@ -204,6 +204,25 @@
   items:
     - ClothingHeadHelmetHeavyHoS
 
+- type: loadout
+  id: LoadoutCommandHOSHatTCAFRED
+  category: JobsSecurityHeadOfSecurity
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutHeadOfSecurityHead
+  - !type:CharacterNationalityRequirement
+    nationalities:
+      - Bieselite
+  - !type:CharacterLifepathRequirement
+    lifepaths:
+      - WarVet
+  - !type:CharacterJobRequirement
+    jobs:
+    - HeadOfSecurity
+  items:
+  - ClothingHeadHatTCAFofficerdresscapred
+
 # Id
 - type: loadout
   id: LoadoutHeadOfSecurityNTPDA

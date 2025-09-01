@@ -86,6 +86,8 @@
       id: LoadoutCommandCapHatCapcap
     - type: loadout
       id: LoadoutCommandCapHatBeret
+    - type: loadout
+      id: LoadoutCommandTCAFBlueHat
 
 - type: characterItemGroup
   id: LoadoutCaptainId
@@ -130,6 +132,8 @@
       id: LoadoutCaptainOuterDogi
     - type: loadout
       id: LoadoutCommandCapOuterWinterTrench
+    - type: loadout
+      id: LoadoutCommandCapTCAFOuter
 
 - type: characterItemGroup
   id: LoadoutCaptainShoes

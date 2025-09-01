@@ -60,6 +60,8 @@
       id: LoadoutCommandHOSHatHoshat
     - type: loadout
       id: LoadoutCommandHOSHelmet
+    - type: loadout
+      id: LoadoutCommandHOSHatTCAFRED
 
 - type: characterItemGroup
   id: LoadoutHeadOfSecurityId
