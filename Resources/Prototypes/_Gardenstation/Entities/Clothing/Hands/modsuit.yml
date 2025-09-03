@@ -49,6 +49,12 @@
     interfaces:
       enum.MeleeSpeechUiKey.Key:
         type: MeleeSpeechBoundUserInterface
+  - type: ClothingGrantComponent # we want them to inspire terror
+    component:
+    - type: Prying
+      speedModifier: 4
+      pryPowered: true
+      useSound: /Audio/Items/jaws_pry.ogg
 
 #secsuit
 - type: entity

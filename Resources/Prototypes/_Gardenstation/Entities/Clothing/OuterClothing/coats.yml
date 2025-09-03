@@ -202,23 +202,40 @@
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
 
-#- type: entity
-#  parent: [ClothingOuterFoldableBaseOpened, ClothingNeckBase]
-#  id: ClothingOuterCoatTCAFGeneralCoatOpened
-#  name: TCAF officer coat
-#  components:
-#  - type: Sprite
-#    sprite: _Gardenstation/Clothing/OuterClothing/Coats/tcaf_general_coat.rsi
-#    layers:
-#      state: icon-open
-#  - type: Clothing
-#    sprite: _Gardenstation/Clothing/OuterClothing/Coats/tcaf_general_coat.rsi
-#    slots:
-#    - OUTERCLOTHING
-#    - NECK
-
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatTCAFGeneralCoat]
   id: ClothingOuterCoatTCAFGeneralCoatOpened
   name: TCAF officer coat
   suffix: Opened
+
+# CCO
+
+- type: entity
+  parent: [ClothingOuterCoatCapTrench, BaseCentcommContraband]
+  id: ClothingOuterCoatCCOTrench
+  name: CENTCOM armored trenchcoat
+  description: Stylish AND protective! Show 'em who's boss!
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/cco_trech.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/cco_trech.rsi
+  - type: Armor # not as robust cause cco ghostrole might have it at some point idfk
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.4
+        Heat: 0.45
+        Caustic: 0.6
+        Psionic: 0.7 # they know
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: GroupExamine
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1

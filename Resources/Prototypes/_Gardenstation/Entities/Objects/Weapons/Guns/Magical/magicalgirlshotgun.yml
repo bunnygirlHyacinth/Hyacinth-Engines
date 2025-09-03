@@ -1,0 +1,38 @@
+﻿#normal magical girls ver.
+- type: entity
+  name: soul thumper
+  parent: [BaseWeaponBattery, BaseGunWieldable,BaseWeaponShotgun]
+  id: WeaponMagicalGirlShotgun
+  description: A strange golden rifle...or... shotgun? cannon? Each time the cylinder turns a new shell is inside.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Weapons/Guns/Magic/magicalgirlcannon.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Objects/Weapons/Guns/Magic/magicalgirlcannon.rsi
+  - type: Gun
+    fireRate: 1
+    soundGunshot:
+      path: /Audio/Magic/fireball.ogg
+    uniformSpread: true
+  - type: ProjectileBatteryAmmoProvider
+    proto: PelletShotgunSpread0000Buckshot
+    fireCost: 150
+  - type: BatteryWeaponFireModes
+    fireModes:
+    - proto: PelletShotgunSpread0000Buckshot
+      fireCost: 150
+    - proto: PelletShotgunIncendiarySpread
+      fireCost: 200
+    - proto: PelletShotgunSoulbreaker
+      fireCost: 75
+  - type: Item
+    size: Large
+  - type: Battery
+    maxCharge: 800
+    startingCharge: 800
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 25
+  - type: AmmoCounter
+  - type: DisarmMalus
+    malus: 1

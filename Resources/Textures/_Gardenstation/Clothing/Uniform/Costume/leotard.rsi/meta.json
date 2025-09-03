@@ -36,6 +36,36 @@
         {
             "name": "deathsquad-equipped-INNERCLOTHING",
             "directions": 4
+        },
+        {
+            "name": "icon-blueshield"
+        },
+        {
+            "name": "blueshield-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "blueshield-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "blueshield-equipped-INNERCLOTHING",
+            "directions": 4
+        },
+        {
+            "name": "icon-captain"
+        },
+        {
+            "name": "captain-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "captain-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "captain-equipped-INNERCLOTHING",
+            "directions": 4
         }
     ]
 }
