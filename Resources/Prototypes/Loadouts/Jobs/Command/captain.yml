@@ -601,3 +601,17 @@
         - Captain
   items:
     - ClothingUniformJumpskirtCapFormalDress
+
+- type: loadout
+  id: LoadoutCommandCapLeotard
+  category: JobsCommandCaptain
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutCaptainUniforms
+  - !type:CharacterJobRequirement
+    jobs:
+    - Captain
+  items:
+  - ClothingUniformLeotardCAP

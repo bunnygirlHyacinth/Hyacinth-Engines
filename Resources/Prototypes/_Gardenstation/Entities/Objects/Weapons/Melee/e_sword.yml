@@ -40,6 +40,10 @@
     animation: WeaponArcThrust
   - type: Item
     sprite: _Gardenstation/Objects/Weapons/Melee/magicalgirlsaber.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Objects/Weapons/Melee/magicalgirlsaber.rsi
+    slots:
+    - Belt
   - type: DisarmMalus
     malus: 0.001
 
@@ -88,5 +92,9 @@
     animation: WeaponArcThrust
   - type: Item
     sprite: _Gardenstation/Objects/Weapons/Melee/magicalgirlsaber.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Objects/Weapons/Melee/magicalgirlsaber.rsi
+    slots:
+    - Belt
   - type: DisarmMalus
     malus: 0.001

@@ -115,3 +115,5 @@
       id: LoadoutClothingUniformJumpsuitBlueshieldOfficer
     - type: loadout # GDS added
       id: LoadoutClothingUniformJumpsuitBlueshieldOfficerDuelist
+    - type: loadout # GDS added - GITS inspired
+      id: LoadoutClothingUniformLeotardBlueshieldOfficer

@@ -14,3 +14,14 @@
       coefficients:
         Psionic: 0.7
         Holy: 0.6
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtCCOCaptain
+  name: CENTCOM captain turtleneck jumpskirt
+  description: A comfortable green turtleneck and navy blue armband. Wear this proudly captain, you've earned it.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Jumpskirt/cco_captain_turtleneck.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Jumpskirt/cco_captain_turtleneck.rsi

@@ -88,7 +88,7 @@
   parent: [ ClothingUniformSkirtBase, BaseCommandContraband ]
   id: ClothingUniformLeotardCAP
   name: captain's leotard
-  description: A form-fitting, aerodynamic leotard. Its quite easy to move in.
+  description: A form-fitting, aerodynamic leotard designed for use with a carapace chestplate. Its quite easy to move in.
   components:
   - type: Sprite
     sprite: _Gardenstation/Clothing/Uniform/Costume/leotard.rsi
