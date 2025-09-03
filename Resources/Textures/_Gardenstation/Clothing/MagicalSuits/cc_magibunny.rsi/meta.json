@@ -1,0 +1,81 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Monkestation files, repurposed for other stuff by GDS",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "pendant"
+        },
+        {
+            "name": "pendant-sealed"
+        },
+        {
+            "name": "helmet"
+        },
+        {
+            "name": "helmet-sealed"
+        },
+        {
+            "name": "gauntlets"
+        },
+        {
+            "name": "gauntlets-sealed"
+        },
+        {
+            "name": "boots"
+        },
+        {
+            "name": "boots-sealed"
+        },
+        {
+            "name": "suit"
+        },
+        {
+            "name": "suit-sealed"
+        },
+        {
+            "name": "equipped-HEAD",
+            "directions": 4
+        },
+        {
+            "name": "equipped-HEAD-sealed",
+            "directions": 4
+        },
+        {
+            "name": "equipped-HAND",
+            "directions": 4
+        },
+        {
+            "name": "equipped-HAND-sealed",
+            "directions": 4
+        },
+        {
+            "name": "equipped-INNERCLOTHING",
+            "directions": 4
+        },
+        {
+            "name": "equipped-INNERCLOTHING-sealed",
+            "directions": 4
+        },
+        {
+            "name": "equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "equipped-NECK-sealed",
+            "directions": 4
+        },
+        {
+            "name": "equipped-FEET",
+            "directions": 4
+        },
+        {
+            "name": "equipped-FEET-sealed",
+            "directions": 4
+        }
+    ]
+}

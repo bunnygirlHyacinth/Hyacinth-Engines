@@ -1,0 +1,289 @@
+﻿# this is specifically for the magical girls soulgem necklace were gonna make. rn this is a test version so expect SHIT
+- type: entity
+  parent: [Clothing, ContentsExplosionResistanceBase]
+  id: ClothingMagicalGirlCorpoBunny
+  name: Corporate Pendant
+  description: Do YOU have bunnysoul?
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/MagicalSuits/cc_magibunny.rsi
+    layers:
+    - state: pendant
+    - state: pendant-sealed
+      visible: false
+      map: [ "sealed" ]
+  - type: Clothing
+    equipSound: /Audio/Magic/ethereal_enter.ogg
+    unequipSound: /Audio/Magic/ethereal_exit.ogg
+    slots: [ neck ]
+  - type: SealableClothing
+    sealUpPopup: the pendant shimmers!
+    sealDownPopup: the pendant vanishes into glittery dust...
+  - type: SealableClothingVisuals
+    visualLayers:
+      neck:
+      - state: equipped-NECK-sealed
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: ComponentToggler
+    components:
+    - type: PressureProtection
+      highPressureMultiplier: 0.3
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.1
+      coolingCoefficient: 0.1
+
+#INNER // control?
+
+- type: entity
+  parent: [ ClothingUniformBase, ContentsExplosionResistanceBase ]
+  id: ClothingMagicalGirlBunnySuit
+  name: Corporate Bunnysuit
+  description: P-pyon...pyooon...
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/MagicalSuits/cc_magibunny.rsi
+    layers:
+    - state: suit
+    - state: suit-sealed
+      visible: false
+      map: [ "sealed" ]
+  - type: Item
+    size: Normal
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - innerclothing
+  - type: Storage
+    grid:
+    - 0,0,6,3
+    maxItemSize: Huge
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: [ ]
+      toggleable-clothing: !type:Container
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.ToggleClothingUiKey.Key:
+        type: ToggleableClothingBoundUserInterface
+  - type: UseDelay
+    delay: 0.1
+  - type: ExplosionResistance
+    damageCoefficient: 0.9
+  - type: ToggleableClothing
+    requiredSlot: innerclothing
+    blockUnequipWhenAttached: true
+    replaceCurrentClothing: true
+    clothingPrototypes:
+      head: ClothingMagicalGirlBunnyEars
+      gloves: ClothingMagicalGirlBunnyGauntlets
+      neck: ClothingMagicalGirlCorpoBunny
+      shoes: ClothingMagicalGirlBunnyHeels
+  - type: DoAfter
+  - type: SealableClothingControl
+  - type: SealableClothing
+    sealUpPopup: the suit tightens around you!
+    sealDownPopup: the suit loosens...
+  - type: SealableClothingVisuals
+    visualLayers:
+      INNERCLOTHING:
+      - state: equipped-INNERCLOTHING-sealed
+  - type: ClothingSpeedModifier
+    walkModifier: 1.2
+    sprintModifier: 1.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.3
+        Heat: 0.4
+        Radiation: 0.001
+        Caustic: 0.4
+        Holy: 0.3
+        Psionic: 0.3
+        #Soul: eventually this will be real with actual magical girls the crew can play/roll roundstart (and the antags that deal it)
+  - type: ComponentToggler
+    components:
+    - type: PressureProtection
+      highPressureMultiplier: 0.3
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.01
+      coolingCoefficient: 0.01
+    - type: FireProtection
+      reduction: 1
+    - type: ExplosionResistance
+      damageCoefficient: 0.2
+
+# HANDS
+
+#cco magicalgirls
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingMagicalGirlBunnyGauntlets
+  name: Corporate Cuffs
+  description: Carry drinks and crack skulls in style! Pyon Pyon Motherfucker!!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/MagicalSuits/cc_magibunny.rsi
+    layers:
+    - state: gauntlets
+    - state: gauntlets-sealed
+      visible: false
+      map: [ "sealed" ]
+  - type: Clothing
+    equipSound: /Audio/Magic/ethereal_enter.ogg
+    unequipSound: /Audio/Magic/ethereal_exit.ogg
+    slots: [ gloves ]
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-modular
+    fiberColor: fibers-black
+  - type: FingerprintMask
+  - type: SealableClothing
+    sealUpPopup: the cuffs tighten, power flows into your fingers!
+    sealDownPopup: the cuffs loosen...
+  - type: SealableClothingVisuals
+    visualLayers:
+      gloves:
+      - state: equipped-HAND-sealed
+  - type: StaminaDamageOnHit
+    damage: 15
+  - type: MeleeWeapon
+    autoAttack: true
+    attackRate: 0.4
+    damage:
+      types:
+        Blunt: 5
+        Holy: 5
+        Psionic: 10
+  - type: MeleeSpeech
+  - type: ActivatableUI
+    key: enum.MeleeSpeechUiKey.Key
+    verbOnly: true
+  - type: Actions
+  - type: UserInterface
+    interfaces:
+      enum.MeleeSpeechUiKey.Key:
+        type: MeleeSpeechBoundUserInterface
+  - type: ClothingGrantComponent
+    component:
+    - type: Prying
+      speedModifier: 2 # weaker than the other cco magigirls
+      pryPowered: true
+      useSound: /Audio/Items/jaws_pry.ogg
+
+# BOOTS
+
+- type: entity
+  parent: ClothingShoesBase
+  id: ClothingMagicalGirlBunnyHeels
+  name: Corporate Warmers
+  description: Keeps your ankles covered. Great support for hopping thru fields!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/MagicalSuits/cc_magibunny.rsi
+    layers:
+    - state: boots
+    - state: boots-sealed
+      visible: false
+      map: [ "sealed" ]
+  - type: Clothing
+    equipSound: /Audio/Magic/ethereal_enter.ogg
+    unequipSound: /Audio/Magic/ethereal_exit.ogg
+    slots: [ feet ]
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: SealableClothing
+    sealUpPopup: The cuffs turn into stylish heels!
+    sealDownPopup: The heels vanish into glittery dust...
+  - type: ToggleClothing
+    action: ActionToggleMagboots
+  - type: Magboots
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.3
+  - type: ClothingModifyStunTime
+    modifier: 0.3
+  - type: SealableClothingVisuals
+    visualLayers:
+      shoes:
+      - state: equipped-FEET-sealed
+    footstepSoundCollection:
+      collection: FootstepHighHeels
+
+# HEAD
+
+- type: entity
+  parent: [ BaseClothingModsuitHelmet, ShowSecurityIcons, ShowMedicalIcons ]
+  id: ClothingMagicalGirlBunnyEars
+  name: Corporate Bunny Ears
+  description: B-bunny-bunny....
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/MagicalSuits/cc_magibunny.rsi
+    layers:
+    - state: helmet
+    - state: helmet-sealed
+      visible: false
+      map: [ "sealed" ]
+  - type: SealableClothing
+    sealUpPopup: sealable-clothing-seal-up-helmet
+    sealDownPopup: sealable-clothing-seal-down-helmet
+  - type: SealableClothingVisuals
+    visualLayers:
+      head:
+      - state: equipped-HEAD-sealed
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.4
+        Slash: 0.4
+        Piercing: 0.4
+        Heat: 0.4
+        Radiation: 0.001
+        Caustic: 0.4
+        Holy: 0.4
+        Psionic: 0.4
+  - type: ComponentToggler
+    components:
+    - type: BreathMask
+    - type: PressureProtection
+      highPressureMultiplier: 0.3
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.01
+      coolingCoefficient: 0.01
+    - type: IdentityBlocker
+    - type: IngestionBlocker
+  - type: NightVision
+    isEquipment: true
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+    - Inorganic
+  - type: SolutionScanner
+  - type: ShowSyndicateIcons
+  - type: FlashImmunity
+  - type: EyeProtection
+  - type: Tag
+    tags:
+    - PlasmamanSafe
+    - Envirohelm
+  - type: IgniteFromGasImmunity
+    parts:
+    - Head

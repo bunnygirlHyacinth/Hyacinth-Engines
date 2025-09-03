@@ -1,0 +1,100 @@
+﻿#MAGICALGIRL SOUL WEAPONS
+- type: entity
+  name: soul saber
+  parent: [BaseMeleeWeaponEnergy, BaseCentcommContraband]
+  id: MagiGirlSaber
+  description: A magical focus to conduct your souls power!
+  components:
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/Magic/staff_animation.ogg
+    soundDeactivate:
+      path: /Audio/Magic/ethereal_exit.ogg
+  - type: ItemToggleMeleeWeapon
+    activatedDamage: # add soul damage here when thats real
+      types:
+        Holy: 10
+        Psionic: 12
+        Slash: 3
+        Heat: 3
+        Structural: 30
+    deactivatedSecret: true
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Weapons/Melee/magicalgirlsaber.rsi
+    layers:
+    - state: saber
+    - state: saber-blade
+      color: "#ff20e6" # apparently this is called razzle dazzle rose and i think thats just magical
+      visible: false
+      shader: unshaded
+      map: [ "blade" ]
+  - type: MeleeWeapon
+    attackRate: 0.9
+    soundHit:
+      path: /Audio/Weapons/eblade1.ogg
+    damage:
+      types:
+        Holy: 6
+        Blunt: 3
+        Psionic: 3
+    animation: WeaponArcThrust
+  - type: Item
+    sprite: _Gardenstation/Objects/Weapons/Melee/magicalgirlsaber.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Objects/Weapons/Melee/magicalgirlsaber.rsi
+    slots:
+    - Belt
+  - type: DisarmMalus
+    malus: 0.001
+
+#cco version - very busted for killing shitters or whatever
+- type: entity
+  name: conceptualized soul saber
+  parent: [BaseMeleeWeaponEnergy, BaseCentcommContraband]
+  id: MagiGirlSaberCCO
+  description: Give them Hope.
+  components:
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/Magic/staff_animation.ogg
+    soundDeactivate:
+      path: /Audio/Magic/ethereal_exit.ogg
+  - type: ItemToggleMeleeWeapon
+    activatedDamage: # add soul damage here when thats real
+      types:
+        Holy: 10
+        Psionic: 20
+        Heat: 5
+        Slash: 5
+        Structural: 50
+    deactivatedSecret: true
+  - type: Reflect
+    reflectProb: .6
+    spread: 3
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Weapons/Melee/magicalgirlsaber.rsi
+    layers:
+    - state: saber
+    - state: saber-blade
+      color: "#ff20e6" # apparently this is called razzle dazzle rose and i think thats just magical
+      visible: false
+      shader: unshaded
+      map: [ "blade" ]
+  - type: MeleeWeapon
+    attackRate: 0.5
+    soundHit:
+      path: /Audio/Weapons/eblade1.ogg
+    damage:
+      types:
+        Holy: 6
+        Blunt: 3
+        Psionic: 12
+    animation: WeaponArcThrust
+  - type: Item
+    sprite: _Gardenstation/Objects/Weapons/Melee/magicalgirlsaber.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Objects/Weapons/Melee/magicalgirlsaber.rsi
+    slots:
+    - Belt
+  - type: DisarmMalus
+    malus: 0.001

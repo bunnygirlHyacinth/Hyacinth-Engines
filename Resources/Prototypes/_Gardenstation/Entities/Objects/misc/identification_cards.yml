@@ -17,3 +17,25 @@
   - type: Access
     tags:
     - Justicar
+
+#CENTCOM
+
+- type: entity
+  parent: IDCardStandard
+  id: CentcomDirectorIDCard
+  name: Director ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+    - state: departmenthead
+      color: "#1B67A5"
+    - state: subdepartment
+      color: "#1B67A5"
+    - state: captain
+  - type: Item
+    heldPrefix: blue
+  - type: PresetIdCard
+    job: CentralCommandDirector
+  - type: NanoChatCard
+    listNumber: false

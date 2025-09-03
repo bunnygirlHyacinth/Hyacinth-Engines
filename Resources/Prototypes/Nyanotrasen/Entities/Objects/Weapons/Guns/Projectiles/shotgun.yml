@@ -11,6 +11,8 @@
     damage:
       types:
         Blunt: 1
+        Psionic: 30 # FUCK ALL LIFE // GDS
+        Holy: 15 # I HATE THE ANTICHRIST!!!!!!!
   - type: SolutionContainerManager
     solutions:
       ammo:

@@ -34,3 +34,14 @@
     sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/pagliacci_uniform.rsi
   - type: Clothing
     sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/pagliacci_uniform.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCCOCaptain
+  name: CENTCOM captain turtleneck jumpsuit
+  description: A comfortable green turtleneck and navy blue armband. Wear this proudly captain, you've earned it.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/cco_captain_turtleneck.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/cco_captain_turtleneck.rsi

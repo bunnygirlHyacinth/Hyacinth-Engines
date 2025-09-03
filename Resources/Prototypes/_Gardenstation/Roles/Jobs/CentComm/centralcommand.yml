@@ -30,8 +30,8 @@
     head: ClothingHeadHatCentcomcap
     eyes: ClothingEyesGlassesMedSec
     gloves: ClothingHandsGlovesInspection
-    outerClothing: ClothingOuterWinterCentcom
-    id: CentcomPDA
+    outerClothing: ClothingOuterCoatCCOTrench
+    id: CentcomDirectorPDA
     ears: ClothingHeadsetAltCentCom
     belt: WeaponRevolverLucky
     pocket1: MindShieldImplanter
@@ -47,8 +47,8 @@
     head: ClothingHeadHatCentcomcap
     eyes: ClothingEyesGlassesMedSec
     gloves: ClothingHandsGlovesInspection
-    outerClothing: ClothingOuterWinterCentcom
-    id: CentcomPDA
+    outerClothing: ClothingOuterCoatCCOTrench
+    id: CentcomDirectorPDA
     ears: ClothingHeadsetAltCentCom
     belt: WeaponRevolverLucky
     pocket1: MindShieldImplanter
@@ -105,12 +105,21 @@
     neck: ClothingMagicalGirlCorpo
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
-    belt: WeaponRevolverLucky
+    belt: WeaponRevolverLucky # honestly i think the cco magical girls can keep the revolvers, just maybe give it a magic flavor later or something when soul damage is real
     pocket1: BSOManual
     pocket2: BluespaceLifelineImplanter
+  storage:
+    neck:
+    - MagazineBoxSpecialMindbreaker
+    - MagazineBoxSpecialIncendiary
+    - SpeedLoaderSpecialMindbreaker
+    - SpeedLoaderSpecialMindbreaker
+    - MagiGirlSaberCCO
+    - MindShieldImplanter
+    - MindShieldImplanter
 
 - type: startingGear
-  id: CentcomMagicalGirlSailor
+  id: CentcomMagicalGirlSailorShotgun
   subGear:
   - CentcomPlasmamanGear
   equipment:
@@ -118,11 +127,41 @@
     shoes: ClothingShoesLeather
     eyes: ClothingEyesGlassesMedSec
     neck: ClothingMagicalGirlCorpo
+    back: WeaponMagicalGirlShotgun
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
-    belt: WeaponRevolverLucky
     pocket1: BSOManual
     pocket2: BluespaceLifelineImplanter
+  storage:
+    neck:
+    - MagiGirlSaberCCO
+    - MindShieldImplanter
+    - MindShieldImplanter
+
+- type: startingGear
+  id: CentcomMagicalGirlBunny
+  subGear:
+  - CentcomPlasmamanGear
+  equipment:
+    jumpsuit: ClothingMagicalGirlBunnySuit
+    shoes: ClothingShoesSlippers
+    eyes: ClothingEyesGlassesMedSec
+    id: CentcomPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: WeaponRevolverLucky # .38 special, make this a funny magical girl weapon later - carrot sword maybe? carrot....gun?
+    pocket1: BSOManual
+    pocket2: BluespaceLifelineImplanter
+  storage:
+    jumpsuit:
+    - MagazineBoxSpecialMindbreaker
+    - MagazineBoxSpecialIncendiary
+    - SpeedLoaderSpecialMindbreaker
+    - SpeedLoaderSpecialMindbreaker
+    - MagiGirlSaberCCO
+    - MindShieldImplanter
+    - MindShieldImplanter
+    - FoodCarrot
+    - FoodCarrot
 
 #DEATHSQUAD/ADMEME/SPECIFIC
 

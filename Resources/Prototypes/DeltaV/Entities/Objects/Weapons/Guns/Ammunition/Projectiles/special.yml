@@ -65,6 +65,7 @@
   - type: Projectile
     damage:
       types:
+        Psionic: 25 # this is for kil now
         Blunt: 1
   - type: SolutionContainerManager
     solutions:

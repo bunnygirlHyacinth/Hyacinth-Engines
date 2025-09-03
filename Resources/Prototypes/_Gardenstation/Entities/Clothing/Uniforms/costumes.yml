@@ -81,3 +81,43 @@
 #    - type: Stealth
 #      minVisibility: 0
 #      lastVisibility: 0
+
+# COMMAND LEOTARD (verylow/non armor)
+
+- type: entity
+  parent: [ ClothingUniformSkirtBase, BaseCommandContraband ]
+  id: ClothingUniformLeotardCAP
+  name: captain's leotard
+  description: A form-fitting, aerodynamic leotard designed for use with a carapace chestplate. Its quite easy to move in.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Costume/leotard.rsi
+    state: icon-captain
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Costume/leotard.rsi
+    equippedPrefix: captain
+  - type: Item
+    heldPrefix: captain
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.95
+  - type: ClothingModifyStunTime
+    modifier: 0.95
+
+- type: entity
+  parent: [ ClothingUniformSkirtBase, BaseCentcommContraband ]
+  id: ClothingUniformLeotardBSO
+  name: blueshield officer's leotard
+  description: A form-fitting, aerodynamic leotard. Its quite easy to move in. You swear these things used to have stealth fields...
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Costume/leotard.rsi
+    state: icon-blueshield
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Costume/leotard.rsi
+    equippedPrefix: blueshield
+  - type: Item
+    heldPrefix: blueshield
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.95
+  - type: ClothingModifyStunTime
+    modifier: 0.95
