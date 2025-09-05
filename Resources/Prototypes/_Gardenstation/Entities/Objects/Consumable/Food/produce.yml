@@ -20,7 +20,7 @@
   - type: Sprite
     sprite: _Gardenstation/Objects/Specific/Hydroponics/kelppod.rsi
   - type: Produce
-    seedId: kelppod
+    seedId: KelpPod
   - type: Extractable
     grindableSolutionName: food
   - type: FoodSequenceElement

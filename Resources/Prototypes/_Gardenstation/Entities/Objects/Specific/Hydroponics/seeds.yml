@@ -5,6 +5,6 @@
   id: KelpPodSeeds
   components:
   - type: Seed
-    seedId: kelppod
+    seedId: KelpPod
   - type: Sprite
     sprite: _Gardenstation/Objects/Specific/Hydroponics/kelppod.rsi
