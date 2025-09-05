@@ -66,3 +66,41 @@
       initializeFunctions:
       - !type:AddPsionicStatSources
         amplificationModifier: 0.25
+
+- type: reagent
+  id: KelpPodSlime
+  name: reagent-name-kelpslime
+  group: Medicine
+  desc: reagent-desc-kelpslime
+  physicalDesc: reagent-physical-desc-slimy
+  flavor: medicine
+  color: "#9972fd"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        damage:
+          types:
+            Asphyxiation: -1
+            Bloodloss: -0.5
+            Poison: -0.5
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
+        damage:
+          types:
+            Asphyxiation: 3
+            Caustic: 1 # it causes a buildup of acid in the body or something idk
+            Poison: 1
+      - !type:ChemAddMoodlet
+       moodPrototype: StrongPainkiller
+       conditions:
+        - !type:ReagentThreshold
+          min: 9
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 10 #thavens love getting fucked up probably thats why therye all like that
+        refresh: false
