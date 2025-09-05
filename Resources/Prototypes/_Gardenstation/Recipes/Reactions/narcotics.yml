@@ -39,7 +39,7 @@
       amount: 0.5
     Phenol:
       amount: 0.5
-    Aluminum: #catalyst but i also kinda dont wanna have infinite pcp factories? idk.
+    Iron:
       amount: 0.5
   products:
     PCPsps: 2 #super designer drug so its hard to make idk
