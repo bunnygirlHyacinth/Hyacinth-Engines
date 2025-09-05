@@ -541,6 +541,7 @@
     damage:
       types:
         Piercing: 10
+        Psionic: -100 # gds // cant have psi damage if theres no psyche to damage
 
 - type: entity
   parent: SurgeryStepBase
@@ -564,6 +565,10 @@
     sprite: _Shitmed/Objects/Specific/Medical/Surgery/hemostat.rsi
     state: hemostat
   - type: SurgeryStepEmoteEffect
+  - type: SurgeryDamageChangeEffect
+    damage:
+      types:
+        Psionic: -10 # gds // just to catch the last of it idk
 
 # The lengths I go to just for a joke... I HATE HARDCODING AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 # Maybe I should modify species prototypes to include tails and ears properly...

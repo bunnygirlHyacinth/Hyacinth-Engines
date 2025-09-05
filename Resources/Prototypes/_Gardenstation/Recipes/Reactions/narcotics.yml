@@ -1,0 +1,45 @@
+﻿- type: reaction # gdrulz -  i love opiates
+  id: Heroin
+  reactants:
+    Opium:
+      amount: 1
+    Morphine:
+      amount: 1
+    Acetone:
+      amount: 0.5
+    Benzene:
+      amount: 0.5
+  products:
+    Heroin: 3
+
+- type: reaction # gdrulz -  i love opiates // reduction reaction to encourage growing the flower and interacting with other departments
+  id: Opium
+  reactants:
+    Nutriment:
+      amount: 1
+    Benzene:
+      amount: 1
+    Bicaridine:
+      amount: 2
+    Carbon:
+      amount: 0.5
+    Hydroxide:
+      amount: 0.5
+  products:
+    Opium: 1
+
+# DISSOS
+
+- type: reaction # gdrulz -  I FUCKING LOVE DISSOS RAAA!!!!
+  id: PCPsps
+  reactants:
+    SpaceDrugs:
+      amount: 0.5
+    Acetone:
+      amount: 0.5
+    Phenol:
+      amount: 0.5
+    Aluminum: #catalyst but i also kinda dont wanna have infinite pcp factories? idk.
+      amount: 0.5
+  products:
+    PCPsps: 2 #super designer drug so its hard to make idk

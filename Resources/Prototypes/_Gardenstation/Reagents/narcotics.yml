@@ -1,0 +1,163 @@
+﻿# OPIATES
+
+- type: reagent
+  id: Opium
+  name: reagent-name-opium
+  group: Narcotics
+  desc: reagent-desc-opium
+  physicalDesc: reagent-physical-desc-milky
+  flavor: medicine
+  color: "#FFFFFF"
+  metabolisms:
+    Narcotic:
+      effects:
+      - !type:Emote
+        emote: Yawn
+        showInChat: true
+        probability: 0.1
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        component: Drowsiness
+        time: 3
+        type: Add
+        refresh: false
+      - !type:GenericStatusEffect
+        key: NoScream
+        component: NoScream
+        time: 10.0
+      - !type:ChemAddMoodlet
+        moodPrototype: StrongPainkiller
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 10.5
+        probability: 0.8
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 10.5
+        damage:
+          types:
+            Asphyxiation: 5
+            Poison: 2
+
+- type: reagent
+  id: Heroin
+  name: reagent-name-heroin
+  group: Narcotics
+  desc: reagent-desc-heroin
+  physicalDesc: reagent-physical-desc-opaque
+  flavor: medicine
+  color: "#FFFFFF"
+  metabolisms:
+    Narcotic:
+      effects:
+      - !type:Emote
+        emote: Yawn
+        showInChat: true
+        probability: 0.1
+      - !type:GenericStatusEffect
+        key: Drowsiness
+        component: Drowsiness
+        time: 3
+        type: Add
+        refresh: false
+      - !type:GenericStatusEffect
+        key: NoScream
+        component: NoScream
+        time: 60.0 # should hopefully last long enough for quick heart swaps now
+      - !type:ChemAddMoodlet
+        moodPrototype: StrongPainkiller
+      - !type:ChemVomit
+        conditions:
+        - !type:ReagentThreshold
+          min: 6
+        probability: 0.8
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 6
+        damage:
+          types:
+            Asphyxiation: 6
+            Poison: 3
+
+# DISSOS
+
+- type: reagent
+  id: PCPsps
+  name: reagent-name-pcp
+  group: Narcotics
+  desc: reagent-desc-pcp
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: bitter
+  color: "#FFFFFF"
+  boilingPoint: 310.0 #actually real // idk how hard we wanna go with it
+  meltingPoint: 170.0
+  metabolisms:
+    Narcotic:
+      effects:
+        - !type:PopupMessage
+          type: Local
+          messages:
+            - generic-reagent-effect-parched
+            - generic-reagent-effect-soundgood
+            - generic-reagent-effect-euphoria
+            - generic-reagent-effect-movie
+            - generic-reagent-effect-confused
+            - generic-reagent-effect-manic
+            - generic-reagent-effect-static
+          conditions:
+            - !type:ReagentThreshold
+              min: 5
+              max: 15
+          probability: 0.08
+        - !type:PopupMessage
+          visualType: LargeCaution
+          type: Local
+          messages:
+            - generic-reagent-effect-disoriented
+            - generic-reagent-effect-anxious
+            - generic-reagent-effect-paranoid
+            - generic-reagent-effect-up
+          conditions:
+            - !type:ReagentThreshold
+              min: 15
+          probability: 0.3
+        - !type:ChemAddMoodlet
+          moodPrototype: StrongPainkiller
+          conditions:
+          - !type:ReagentThreshold
+            min: 9
+        - !type:GenericStatusEffect
+          key: SeeingRainbows
+          component: SeeingRainbows
+          type: Add
+          time: 10 #oral pcp lasts like 6 hours lol
+          refresh: false
+        - !type:MovespeedModifier
+          walkSpeedModifier: 1.15
+          sprintSpeedModifier: 1.15
+        - !type:GenericStatusEffect # psychosis panic
+          key: Adrenaline
+          component: IgnoreSlowOnDamage
+          time: 5
+          conditions:
+            - !type:ReagentThreshold
+              min: 15
+        - !type:Jitter #closest to forced scream emotes. dissos lend to random behaviour but i wanna encourage the rp thru subtle texts idk
+          conditions:
+            - !type:ReagentThreshold
+              min: 15
+        - !type:ChemRerollPsionic #Nyano - Summary: lets the imbiber become psionic.
+          conditions:
+            - !type:ReagentThreshold
+              reagent: PCPsps
+              min: 15
+        - !type:ChemAddMoodlet
+          moodPrototype: SpaceDrugsBenefit
+
+
+# PSYCHS
+
+# STIMS
