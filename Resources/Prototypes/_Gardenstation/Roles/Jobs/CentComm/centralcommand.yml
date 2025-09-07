@@ -13,6 +13,7 @@
   - AllAccess
   access:
   - CentralCommand
+  - CentralCommandDirector
   afterLoadoutSpecial:
   - !type:ModifyEnvirosuitSpecial
     charges: 10
@@ -53,6 +54,24 @@
     belt: WeaponRevolverLucky
     pocket1: MindShieldImplanter
     pocket2: BluespaceLifelineImplanter
+
+- type: startingGear
+  id: CentcomDirectorFunnyThavenGear
+  subGear:
+  - CentcomPlasmamanGear
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomDirector
+    shoes: ClothingShoesSlippers
+    head: ClothingHeadHatCentcomcap
+    eyes: ClothingEyesGlassesMedSec
+    gloves: ClothingHandsGlovesInspection
+    neck: ClothingOuterCoatCCOTrench
+    id: CentcomDirectorPDA
+    ears: ClothingHeadsetAltCentCom
+    belt: ClothingBeltCapRapier
+    pocket1: MindShieldImplanter
+    pocket2: BluespaceLifelineImplanter
+
 
 #INVESTIGATOR // eventually make special lanyards/badges, det coat, and gloves/shoes/pistol
 

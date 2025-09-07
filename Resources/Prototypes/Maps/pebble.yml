@@ -24,6 +24,7 @@
             Captain: [ 1, 1 ]
             BlueshieldOfficer: [ 1, 1]
             NanotrasenRepresentative: [ 1, 1 ]
+            Magistrate: [ 1, 1 ]
             HeadOfPersonnel: [ 1, 1 ]
             HospitalityDirector: [ 1, 1 ] #Added by Impstation, ported by Gardenstation
             Bartender: [ 1, 2 ]
@@ -43,7 +44,7 @@
           #medical
             ChiefMedicalOfficer: [ 1, 1 ]
             Chemist: [ 1, 1 ]
-            SeniorPhysician: [ 1, 1 ]
+            SeniorPhysician: [ 1, 2 ]
             MedicalDoctor: [ 2, 3 ]
             MedicalIntern: [ 2, 2 ]
             Paramedic: [ 1, 1 ]
@@ -52,7 +53,7 @@
             ResearchDirector: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
             ForensicMantis: [ 1, 1 ]
-            SeniorResearcher: [ 1, 1]
+            SeniorResearcher: [ 1, 2]
             Scientist: [ 2, 3 ]
             ResearchAssistant: [ 2, 2 ]
             Borg: [ 1, 1 ]
@@ -61,9 +62,9 @@
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             Detective: [ 1, 1 ]
-            SeniorOfficer: [ 1, 1 ]
-            SecurityOfficer: [ 2, 2 ]
-            SecurityCadet: [ 1, 1 ]
+            SeniorOfficer: [ 2, 2 ]
+            SecurityOfficer: [ 4, 5 ]
+            SecurityCadet: [ 2, 4 ]
           #supply
             Quartermaster: [ 1, 1 ]
             MailCarrier: [ 1, 2 ]

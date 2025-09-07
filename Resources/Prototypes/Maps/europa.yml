@@ -12,11 +12,12 @@
 #           mapNameTemplate: '{0} Europa Outpost {1}'
 #           nameGenerator:
 #             !type:NanotrasenNameGenerator
-#             prefixCreator: 'B'
+#             prefixCreator: 'ZHNG' # zenghu pharma makes most sense since europa is an inner-circle sol colony, even if it is destroyed by the aftermath of war.
 #         - type: StationJobs
 #           availableJobs:
 #           #service
 #             Captain: [ 1, 1 ]
+#             Consular Officer [ 1, 1 ] # this should be solarian rep specifically, we need a way to lock the job to certain requirements on specific stations first
 #             BlueshieldOfficer: [ 1, 1]
 #             NanotrasenRepresentative: [ 1, 1 ]
 #             Magistrate: [ 1, 1 ]
@@ -50,6 +51,7 @@
 #             Scientist: [ 2, 3 ]
 #             ResearchAssistant: [ 2, 2 ]
 #             Borg: [ 1, 1 ]
+#             Justicar: [ 1,1 ] # gardenstation added
 #           #security
 #             HeadOfSecurity: [ 1, 1 ]
 #             Warden: [ 1, 1 ]

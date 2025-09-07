@@ -39,3 +39,9 @@
     job: CentralCommandDirector
   - type: NanoChatCard
     listNumber: false
+  - type: Access
+    groups:
+    - AllAccess
+    tags:
+    - CentralCommand
+    - CentralCommandDirector

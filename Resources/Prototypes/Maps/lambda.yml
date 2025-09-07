@@ -44,7 +44,7 @@
             MedicalDoctor: [ 4, 5 ]
             MedicalIntern: [ 3, 4 ]
             Paramedic: [ 1, 2 ]
-            SeniorPhysician: [ 1, 1 ]
+            SeniorPhysician: [ 1, 2 ]
           #science
             ResearchDirector: [ 1, 1 ]
             Scientist: [ 4, 6 ]
@@ -53,7 +53,7 @@
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ResearchAssistant: [ 3, 4 ]
-            SeniorResearcher: [ 1, 1 ]
+            SeniorResearcher: [ 1, 2 ]
             Justicar: [ 1,1 ] #gardenstation added
           #security
             HeadOfSecurity: [ 1, 1 ]
@@ -63,11 +63,12 @@
             SecurityOfficer: [ 5, 6 ]
             SecurityCadet: [ 3, 4 ]
             Detective: [ 1, 1 ]
-            SeniorOfficer: [ 1, 1 ]
+            SeniorOfficer: [ 2, 2 ]
           #supply
             Quartermaster: [ 1, 1 ]
             SalvageSpecialist: [ 3, 4 ]
             CargoTechnician: [ 4, 6 ]
+            MailCarrier: [ 2, 3 ]
           #civilian
             Passenger: [ -1, -1 ]
             Clown: [ 2, 2 ]

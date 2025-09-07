@@ -1,7 +1,25 @@
-﻿- type: entity
+﻿#JUSTICAR
+- type: entity
   parent: DoorElectronics
   id: DoorElectronicsJusticar
   suffix: Justicar, Locked
   components:
   - type: AccessReader
     access: [["Justicar"]]
+#PSI ENFORCER
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsPsiEnforcer
+  suffix: Epistemics, Locked
+  components:
+  - type: AccessReader
+    access: [["Justicar"], ["Mantis"], ["Library"]]
+
+#DIGNITARY
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsDirector
+  suffix: Command, CentCom, Locked
+  components:
+  - type: AccessReader
+    access: [["CentralCommandDirector"]]
