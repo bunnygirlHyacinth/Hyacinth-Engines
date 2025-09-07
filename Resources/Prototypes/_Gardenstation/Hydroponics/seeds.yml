@@ -19,10 +19,10 @@
   idealHeat: 298
   chemicals:
     KelpPodSlime:
-      Min: 1
-      Max: 20
+      Min: 10 #make this yield better eventually for mass wine production, or like a self-fermenting pod mutation?
+      Max: 30
       PotencyDivisor: 20
     Slime:
-      Min: 1
+      Min: 5
       Max: 20
       PotencyDivisor: 50
