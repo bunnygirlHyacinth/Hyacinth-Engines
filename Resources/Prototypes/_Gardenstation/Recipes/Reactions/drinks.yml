@@ -31,12 +31,12 @@
   products:
     KelpPodWine: 5 # its a reduction, evaporation occurs during the brewing process generally resulting in ~0.5 gallons being gone or unusable
 
-- type: reaction # thaven kelp wine fermentation // put estrogen in this later when we have it lolol
+- type: reaction # sodawater and wine with icecubes
   id: ThavenWineSpritz
   requiredMixerCategories:
   - Stir # shaking a carbonated beverage would make it fizz everywhere lol (im looking at you budget insuls)
   reactants:
-    KelpPodWine: # we dont hav sodiumcarbonate
+    KelpPodWine: # yum
       amount: 1
     KelpPodSlime: # its used similar to a simple syrup in this recipe
       amount: 0.5
@@ -61,7 +61,7 @@
     Ice: # the ice isnt used in the glass proper idk
       amount: 0.5
   products:
-    ThavenBloodDrink: 3 # i wanna have a piscine with choices <//3
+    ThavenBloodDrink: 3 # i wanna drink choi-*BANGBANGBANG*
 
 - type: reaction # i think the pods and absinthe would be reaaaally yummy. eventually we should make thaven absinthe for this too.
   id: ThavenKelpCocktail
