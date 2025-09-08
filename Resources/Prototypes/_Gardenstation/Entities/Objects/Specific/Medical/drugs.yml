@@ -1,0 +1,27 @@
+﻿- type: entity
+  name: heroin needle
+  parent: PrefilledSyringe
+  id: SyringeHeroin
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+        reagents:
+        - ReagentId: Heroin
+          Quantity: 15
+
+- type: entity # move this to a chemistry-bottle yml later when we have more to put in it
+  id: OpiumChemistryBottle
+  suffix: opium
+  parent: BaseChemistryBottleFilled
+  components:
+  - type: Label
+    currentLabel: reagent-name-opium
+  - type: SolutionContainerManager
+    solutions:
+      drink: # This solution name and target volume is hard-coded in ChemMasterComponent
+        maxVol: 30
+        reagents:
+        - ReagentId: Opium
+          Quantity: 30

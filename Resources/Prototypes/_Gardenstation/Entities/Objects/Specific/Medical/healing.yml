@@ -1,0 +1,17 @@
+﻿- type: entity
+  name: Psilacrazene spray #easier spawning - add to spray yml later maybe for better organization once we add more spray chems/fills
+  description: This spray bottle contains a chemical developed by Zeng-Hu Pharmaceuticals, used in quickly sealing and treating caustic and cold burns. A large warning states "DO NOT INGEST"
+  id: SprayBottlePsilacrazene
+  suffix: Filled
+  parent: SprayBottle
+  components:
+  - type: Tag
+    tags:
+    - Spray
+  - type: SolutionContainerManager
+    solutions:
+      spray:
+        maxVol: 100
+        reagents:
+        - ReagentId: Psilacrazene
+          Quantity: 100

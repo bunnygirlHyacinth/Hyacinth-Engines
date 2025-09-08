@@ -1451,6 +1451,9 @@
       - !type:AdjustReagent
         reagent: MindbreakerToxin
         amount: -3.0
+      - !type:AdjustReagent
+        reagent: PCPsps # pcp lasts a long time so this is the only way to pull sm1 outta manic psychosis
+        amount: -3.0
 
 - type: reagent
   id: Artiplates
