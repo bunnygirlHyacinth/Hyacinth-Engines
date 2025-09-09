@@ -87,12 +87,11 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 10
+          min: 35
         damage:
           types:
-            Asphyxiation: 3
-            Caustic: 1 # it causes a buildup of acid in the body or something idk
-            Poison: 1
+            Asphyxiation: 0.5
+            Poison: 0.5
       - !type:ChemAddMoodlet
        moodPrototype: StrongPainkiller
        conditions:
@@ -104,3 +103,42 @@
         type: Add
         time: 10 #thavens love getting fucked up probably thats why therye all like that
         refresh: false
+    Narcotic:
+      effects:
+      - !type:PopupMessage
+        type: Local
+        messages:
+        - generic-reagent-effect-kelp-drooling
+        - generic-reagent-effect-kelp-stupid
+        - generic-reagent-effect-kelp-slow
+        - generic-reagent-effect-kelp-seacow
+        - generic-reagent-effect-kelp-silly
+        - generic-reagent-effect-kelp-bubbles
+        - generic-reagent-effect-kelp-more
+        - generic-reagent-effect-kelp-good
+        - generic-reagent-effect-kelp-pretty
+        - generic-reagent-effect-soundgood
+        - generic-reagent-effect-euphoria
+        conditions:
+        - !type:ReagentThreshold
+          min: 5
+          max: 30
+        probability: 0.08
+      - !type:PopupMessage
+        visualType: LargeCaution
+        type: Local
+        messages:
+        - generic-reagent-effect-kelp-beauty
+        - generic-reagent-effect-kelp-weird
+        - generic-reagent-effect-kelp-anythinggoes
+        - generic-reagent-effect-kelp-punchshit #this happened to me on shrooms once
+        - generic-reagent-effect-kelp-scream
+        - generic-reagent-effect-disoriented
+        - generic-reagent-effect-manic
+        - generic-reagent-effect-confused
+        - generic-reagent-effect-static
+        - generic-reagent-effect-breakthrough
+        conditions:
+        - !type:ReagentThreshold
+          min: 40
+        probability: 0.3

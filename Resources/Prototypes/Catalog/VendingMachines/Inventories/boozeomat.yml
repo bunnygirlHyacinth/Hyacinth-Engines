@@ -43,6 +43,7 @@
     DrinkWhiskeyBottleFull: 5
     DrinkWineBottleFull: 5
     DrinkChampagneBottleFull: 2 #because the premium drink
+    DrinkKelpWineBottleFull: 2 #rare to import because thaven society is either romunlans or beavis and butthead with no inbetweens
     DrinkSakeBottleFull: 3
     DrinkSojuBottleFull: 2 # DeltaV - Soju bottle
     DrinkBeerCan: 5
