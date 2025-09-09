@@ -1,0 +1,164 @@
+﻿#DIGNITARY
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconDignitary
+  suffix: Dignitary
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-dignitary
+    color: "#00ff1b"
+#bso
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconBlueshield
+  suffix: BSO
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-blueshield
+    color: "#00ff1b"
+#magi
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconMagistrate
+  suffix: Magistrate
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-magistrate
+    color: "#00ff1b"
+#corporate liaison
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconCL
+  suffix: NTR
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-liaison
+    color: "#00ff1b"
+#consulate // implement actual job soon lol
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconConsulate
+  suffix: Consulate
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-consulate
+    color: "#00ff1b"
+#cco
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconCCO
+  suffix: Director
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-cco
+    color: "#00ff1b"
+#V.I.P // specially for asterisk but maybe for other stations too?
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconVIP
+  suffix: VIP
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-vip
+    color: "#00ff1b"
+#V.I.P docking // also asterisk but maybe for pigstation we can put this in the head lol lol lolemao lmao
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconVIPDock
+  suffix: VIP Dock
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-vipdock
+    color: "#00ff1b"
+
+# COMMAND
+
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconHD
+  suffix: HD
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-hospitalitydirector
+    color: "#FFFF00"
+
+# SENIOR MANAGERS
+
+#senior officer // large stations will have senior staff offices
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconSeniorOfficer
+  suffix: Senior Officer
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-seniorofficer
+    color: "#DE3A3A"
+
+#senior physician
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconSeniorPhys
+  suffix: Senior Physician
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-seniorphys
+    color: "#52B4E9"
+
+#senior epi // this should be a separate lab for more advanced epistemics work, as close to the psi wing as possible
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconSeniorEpi
+  suffix: Senior Researcher Lab
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-seniorepi
+    color: "#D381C9"
+
+#senior engi // really just a smaller lockerroom connecting atmos/PA for ease of access, maybe a special airlock too?
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconSeniorEngi
+  suffix: Senior Engineer Bay
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-seniorengi
+    color: "#EFB341"
+
+# EPISTEMICS // PSI-ENFORCERS // psi-enf has a special color too
+
+#justicar
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconJusticar
+  suffix: Justicar
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-justicar
+    color: "#712aaf"
+#justicar hold
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconEpiVault
+  suffix: Justicar's Hold
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-epivault
+    color: "#712aaf"
+#Psi enforcers
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconPsiSec
+  suffix: Psi-Enforcer Wing
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-psienforcer
+    color: "#712aaf"
+#Psi torture // specifically for asterisk/separated psi holding units
+- type: entity
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconPsiTorture
+  suffix: Psionics Holding Unit
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-psitorture
+    color: "#712aaf"

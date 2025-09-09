@@ -1,4 +1,5 @@
-﻿- type: entity
+﻿#justicar
+- type: entity
   parent: WindoorSecure
   id: WindoorSecureJusticarLocked
   suffix: Justicar, Locked
@@ -17,5 +18,52 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsJusticar ]
+  - type: Wires
+    layoutId: AirlockArmory
+#psi enforcer
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecurePsiEnforcerLocked
+  suffix: Epistemics, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPsiEnforcer ]
+  - type: Wires
+    layoutId: AirlockArmory
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecurePsiEnforcerLocked
+  suffix: Epistemics, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPsiEnforcer ]
+  - type: Wires
+    layoutId: AirlockArmory
+
+#command
+
+#dignitary
+- type: entity
+  parent: WindoorSecure
+  id: WindoorSecureDirectorLocked
+  suffix: Command, CentCom, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDirector ]
+  - type: Wires
+    layoutId: AirlockArmory
+
+- type: entity
+  parent: WindoorSecurePlasma
+  id: PlasmaWindoorSecureDirectorLocked
+  suffix: Command, CentCom, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDirector ]
   - type: Wires
     layoutId: AirlockArmory

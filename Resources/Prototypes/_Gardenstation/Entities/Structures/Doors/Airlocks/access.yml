@@ -1,4 +1,5 @@
-﻿- type: entity
+﻿#JUSTICAR
+- type: entity
   parent: HighSecDoor
   id: AirlockJusticarHighSecLocked
   suffix: Justicar, Locked
@@ -6,3 +7,88 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsJusticar ]
+
+- type: entity
+  parent: PinionAirlock
+  id: AirlockJusticarPinionLocked
+  suffix: Justicar, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsJusticar ]
+
+- type: entity
+  parent: PinionAirlockGlass
+  id: AirlockJusticarPinionGlassLocked
+  suffix: Justicar, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsJusticar ]
+
+- type: entity
+  parent: AirlockScienceGlass
+  id: AirlockJusticarSciGlassLocked
+  suffix: Justicar, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsJusticar ]
+
+- type: entity
+  parent: AirlockScience
+  id: AirlockJusticarSciLocked
+  suffix: Justicar, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsJusticar ]
+
+#PSI ENFORCER // Justicar, Mantis, Cataloguer
+- type: entity
+  parent: HighSecDoor
+  id: AirlockPsiEnforcerHighSecLocked
+  suffix: Epistemics, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPsiEnforcer ]
+
+- type: entity
+  parent: AirlockScienceGlass
+  id: AirlockPsiEnforcerSciGlassLocked
+  suffix: Epistemics, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPsiEnforcer ]
+
+- type: entity
+  parent: AirlockScience
+  id: AirlockPsiEnforcerSciLocked
+  suffix: Epistemics, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsPsiEnforcer ]
+
+#DIGNITARY - add special dignitary command levels - Director, 3 star command subroles, special VIP, etc. CONSULATE SPECIALLY.
+
+#director
+- type: entity
+  parent: AirlockCentralCommand
+  id: AirlockCetntralCommandDirectorLocked
+  suffix: Command, CentCom, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDirector ]
+
+- type: entity
+  parent: AirlockCentralCommandGlass
+  id: AirlockCetntralCommandDirectorGlassLocked
+  suffix: Command, CentCom, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsDirector ]

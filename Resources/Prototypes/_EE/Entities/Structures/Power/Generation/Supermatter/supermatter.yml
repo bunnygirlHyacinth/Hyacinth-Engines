@@ -8,6 +8,8 @@
   - type: Supermatter
   - type: AtmosDevice
   - type: RadiationSource
+    slope: 0.15
+    intensity: 10 #idk man
   - type: AmbientSound
     range: 20
     volume: -5

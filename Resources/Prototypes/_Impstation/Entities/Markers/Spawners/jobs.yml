@@ -1,0 +1,14 @@
+﻿# HD SPAWNER
+
+- type: entity
+  id: SpawnPointHD
+  parent: SpawnPointJobBase
+  name: Hospitality Director
+  components:
+  - type: SpawnPoint
+    job_id: HospitalityDirector
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Nyanotrasen/Clothing/Uniforms/Costume/maid.rsi
+      state: icon

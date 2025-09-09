@@ -4,8 +4,8 @@ meta:
   engineVersion: 260.2.0
   forkId: ""
   forkVersion: ""
-  time: 09/04/2025 21:45:32
-  entityCount: 5127
+  time: 09/06/2025 07:39:41
+  entityCount: 5147
 maps:
 - 1
 grids:
@@ -2348,7 +2348,7 @@ entities:
       pos: -33.5,-28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -20164.941
+      secondsUntilStateChange: -20896.201
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2360,7 +2360,7 @@ entities:
       pos: -35.5,-28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -20101.64
+      secondsUntilStateChange: -20832.9
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2613,7 +2613,7 @@ entities:
       pos: -8.5,-14.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -27639.084
+      secondsUntilStateChange: -28370.344
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2734,7 +2734,7 @@ entities:
       pos: -22.5,-25.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -20126.674
+      secondsUntilStateChange: -20857.934
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11096,6 +11096,17 @@ entities:
     - type: Transform
       pos: -40.5,-8.5
       parent: 2
+- proto: CentcomDirectorPDA
+  entities:
+  - uid: 5138
+    components:
+    - type: Transform
+      parent: 5001
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ChairCursed
   entities:
   - uid: 4578
@@ -11396,6 +11407,17 @@ entities:
     - type: Transform
       pos: -38.505833,-1.3955564
       parent: 2
+- proto: ClothingBeltCapRapierSheathFilled
+  entities:
+  - uid: 5141
+    components:
+    - type: Transform
+      parent: 5001
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ClothingEyesEyepatchHudTintedSecurity
   entities:
   - uid: 5085
@@ -11550,6 +11572,22 @@ entities:
     - type: Transform
       pos: -16.524805,16.514212
       parent: 2
+- proto: ClothingOuterCoatCapTrench
+  entities:
+  - uid: 5140
+    components:
+    - type: Transform
+      parent: 5001
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 5147
+    components:
+    - type: Transform
+      pos: -16.518702,-21.472584
+      parent: 2
 - proto: ClothingOuterHardsuitBasic
   entities:
   - uid: 1493
@@ -11624,23 +11662,23 @@ entities:
     - type: Transform
       pos: -5.2158756,19.834211
       parent: 2
+- proto: ClothingUniformJumpskirtCCOCaptain
+  entities:
+  - uid: 5137
+    components:
+    - type: Transform
+      parent: 5001
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ClothingUniformJumpskirtHDTurtle
   entities:
   - uid: 4435
     components:
     - type: Transform
       parent: 4433
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
-      canCollide: False
-    - type: InsideEntityStorage
-- proto: ClothingUniformJumpsuitCentcomAgent
-  entities:
-  - uid: 5002
-    components:
-    - type: Transform
-      parent: 5001
     - type: Physics
       angularDamping: 0
       linearDamping: 0
@@ -12480,7 +12518,7 @@ entities:
       pos: -40.5,-15.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -4569.3843
+      secondsUntilStateChange: -5300.6445
       state: Opening
   - uid: 4579
     components:
@@ -12559,6 +12597,13 @@ entities:
     - type: Transform
       pos: -15.5,8.5
       parent: 2
+- proto: DefaultStationBeaconBlueshield
+  entities:
+  - uid: 5135
+    components:
+    - type: Transform
+      pos: -17.5,14.5
+      parent: 2
 - proto: DefaultStationBeaconBotany
   entities:
   - uid: 1588
@@ -12608,6 +12653,13 @@ entities:
     - type: Transform
       pos: -32.5,-2.5
       parent: 2
+- proto: DefaultStationBeaconCL
+  entities:
+  - uid: 5133
+    components:
+    - type: Transform
+      pos: -13.5,17.5
+      parent: 2
 - proto: DefaultStationBeaconCMORoom
   entities:
   - uid: 1595
@@ -12622,12 +12674,26 @@ entities:
     - type: Transform
       pos: -17.5,-16.5
       parent: 2
+- proto: DefaultStationBeaconDignitary
+  entities:
+  - uid: 5134
+    components:
+    - type: Transform
+      pos: -8.5,13.5
+      parent: 2
 - proto: DefaultStationBeaconDisposals
   entities:
   - uid: 1597
     components:
     - type: Transform
       pos: -21.5,-28.5
+      parent: 2
+- proto: DefaultStationBeaconEpiVault
+  entities:
+  - uid: 5131
+    components:
+    - type: Transform
+      pos: -37.5,-20.5
       parent: 2
 - proto: DefaultStationBeaconEvac
   entities:
@@ -12642,6 +12708,13 @@ entities:
     components:
     - type: Transform
       pos: -27.5,-4.5
+      parent: 2
+- proto: DefaultStationBeaconHD
+  entities:
+  - uid: 5130
+    components:
+    - type: Transform
+      pos: -27.5,8.5
       parent: 2
 - proto: DefaultStationBeaconHOPOffice
   entities:
@@ -12696,6 +12769,13 @@ entities:
     components:
     - type: Transform
       pos: -20.5,-34.5
+      parent: 2
+- proto: DefaultStationBeaconPsiSec
+  entities:
+  - uid: 5132
+    components:
+    - type: Transform
+      pos: -39.5,-25.5
       parent: 2
 - proto: DefaultStationBeaconQMRoom
   entities:
@@ -12759,6 +12839,13 @@ entities:
     components:
     - type: Transform
       pos: -8.5,-20.5
+      parent: 2
+- proto: DefaultStationBeaconVIP
+  entities:
+  - uid: 5136
+    components:
+    - type: Transform
+      pos: -4.5,21.5
       parent: 2
 - proto: DeployableBarrier
   entities:
@@ -12889,7 +12976,7 @@ entities:
       desc: Looks weird. Tastes good. Mildly psychoactive... But thats besides the point...
       name: shimmering blood
     - type: Transform
-      pos: -5.0178556,20.721762
+      pos: -5.049218,20.802626
       parent: 2
     - type: Physics
       angularDamping: 0
@@ -13180,6 +13267,17 @@ entities:
     - type: Transform
       pos: -31.5,-8.5
       parent: 2
+- proto: EncryptionKeyCentCom
+  entities:
+  - uid: 5139
+    components:
+    - type: Transform
+      parent: 5001
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ExosuitFabricator
   entities:
   - uid: 1670
@@ -14321,6 +14419,25 @@ entities:
     - type: Transform
       pos: -9.5164,-12.258055
       parent: 2
+- proto: FoodKelpPod
+  entities:
+  - uid: 5142
+    components:
+    - type: Transform
+      parent: 5001
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 5145
+    components:
+    - type: Transform
+      pos: -3.9283562,20.595407
+      parent: 2
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
 - proto: FoodMealCubancarp
   entities:
   - uid: 1788
@@ -22924,7 +23041,7 @@ entities:
       pos: -39.5,-1.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -21817.139
+      secondsUntilStateChange: -22548.398
       state: Opening
   - uid: 2733
     components:
@@ -22939,7 +23056,7 @@ entities:
       pos: -39.5,-3.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -9444.738
+      secondsUntilStateChange: -10175.998
       state: Opening
 - proto: HydroponicsToolClippers
   entities:
@@ -23086,6 +23203,27 @@ entities:
     components:
     - type: Transform
       pos: -1.5206652,-16.494678
+      parent: 2
+- proto: KelpPodSeeds
+  entities:
+  - uid: 5002
+    components:
+    - type: Transform
+      parent: 5001
+    - type: Physics
+      angularDamping: 0
+      linearDamping: 0
+      canCollide: False
+    - type: InsideEntityStorage
+  - uid: 5143
+    components:
+    - type: Transform
+      pos: -32.988255,3.6404057
+      parent: 2
+  - uid: 5144
+    components:
+    - type: Transform
+      pos: -32.777317,3.5466557
       parent: 2
 - proto: KitchenDeepFryer
   entities:
@@ -23407,6 +23545,32 @@ entities:
     - type: Transform
       pos: -16.5,-21.5
       parent: 2
+    - type: Lock
+      locked: False
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PolygonShape
+            radius: 0.01
+            vertices:
+            - -0.25,-0.48
+            - 0.25,-0.48
+            - 0.25,0.48
+            - -0.25,0.48
+          mask:
+          - Impassable
+          - MidImpassable
+          - LowImpassable
+          - BlobImpassable
+          layer:
+          - BulletImpassable
+          - Opaque
+          density: 150
+          hard: True
+          restitution: 0
+          friction: 0.4
+    - type: PlaceableSurface
+      isPlaceable: True
     - type: EntityStorage
       air:
         volume: 200
@@ -23425,17 +23589,8 @@ entities:
         - 0
         - 0
         - 0
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          showEnts: False
-          occludes: True
-          ents:
-          - 2793
-        paper_label: !type:ContainerSlot
-          showEnts: False
-          occludes: True
-          ent: null
+      open: True
+      removedMasks: 20
 - proto: LockerChemistryFilled
   entities:
   - uid: 4381
@@ -23665,24 +23820,28 @@ entities:
     - type: Transform
       pos: -5.5,21.5
       parent: 2
-    - type: Weldable
-      isWelded: True
     - type: ContainerContainer
       containers:
         entity_storage: !type:Container
           showEnts: False
           occludes: True
           ents:
-          - 4484
+          - 5141
+          - 5139
+          - 5138
+          - 5002
+          - 5140
+          - 5137
           - 4349
+          - 4484
           - 4350
           - 4683
           - 5003
           - 5004
-          - 5002
           - 4752
           - 5060
           - 5058
+          - 5142
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -24596,6 +24755,11 @@ entities:
     - type: Physics
       angularDamping: 0
       linearDamping: 0
+  - uid: 5146
+    components:
+    - type: Transform
+      pos: -4.4060774,-39.009148
+      parent: 2
 - proto: Pen
   entities:
   - uid: 2869
@@ -28667,6 +28831,18 @@ entities:
     - type: Transform
       pos: -39.5,-24.5
       parent: 2
+- proto: SpawnPointHD
+  entities:
+  - uid: 5128
+    components:
+    - type: Transform
+      pos: -27.5,9.5
+      parent: 2
+  - uid: 5129
+    components:
+    - type: Transform
+      pos: -18.5,-18.5
+      parent: 2
 - proto: SpawnPointHeadOfPersonnel
   entities:
   - uid: 3426
@@ -30508,7 +30684,7 @@ entities:
   - uid: 5040
     components:
     - type: Transform
-      pos: -4.2279453,20.78169
+      pos: -4.36495,20.724958
       parent: 2
     - type: Physics
       angularDamping: 0
@@ -34385,12 +34561,11 @@ entities:
   - uid: 2793
     components:
     - type: Transform
-      parent: 2792
+      pos: -16.5,-21.5
+      parent: 2
     - type: Physics
       angularDamping: 0
       linearDamping: 0
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: WeaponCapacitorRecharger
   entities:
   - uid: 4226
@@ -34672,7 +34847,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -7758.6396
+      secondsUntilStateChange: -8489.899
       state: Opening
 - proto: WindoorSecureScienceLocked
   entities:
