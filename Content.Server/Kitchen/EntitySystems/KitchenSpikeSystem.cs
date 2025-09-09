@@ -42,6 +42,7 @@ using Content.Shared.Interaction;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Kitchen;
 using Content.Shared.Kitchen.Components;
+using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Nutrition.Components;
@@ -200,7 +201,6 @@ namespace Content.Server.Kitchen.EntitySystems
 
             if (TryComp<PerishableComponent>(spiked, out var perishable))
             {
-                Log.Info("Found perishable entity!");
                 var ent = new Entity<PerishableComponent>(spiked.Value, perishable);
                 var examineText = _rotting.GetPerishableExamineText(ent);
                 if (examineText != string.Empty)
@@ -270,6 +270,9 @@ namespace Content.Server.Kitchen.EntitySystems
             CopyComponent<PerishableComponent>(victimId, ent);
             CopyComponent<RottingComponent>(victimId, ent);
             CopyComponent<TemperatureComponent>(victimId, ent);
+
+            TryComp<MobStateComponent>(ent, out var mobState); //Garden - mobs weren't rotting on meatspikes bc the virtual entity was not
+            _mobStateSystem.ChangeMobState(ent, MobState.Dead, mobState); //being read as dead, this seems to fix it
             return ent;
         }
 
