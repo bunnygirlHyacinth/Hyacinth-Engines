@@ -1,11 +1,14 @@
 - type: reaction
   id: Morphine
+  minTemp: 400 # idk man just make it hot
   reactants:
     Phenol:
-      amount: 2
+      amount: 1
     Nitrogen:
       amount: 1
     Oxygen:
+      amount: 1
+    Opium: # morphine is synthesized from opium
       amount: 1
   products:
     Morphine: 4

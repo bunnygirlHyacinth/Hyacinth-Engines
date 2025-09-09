@@ -8,6 +8,8 @@
   physicalDesc: reagent-physical-desc-milky
   flavor: medicine
   color: "#FFFFFF"
+  boilingPoint: 473.15  # idk just heroin but again
+  meltingPoint: 448.15
   metabolisms:
     Narcotic:
       effects:
@@ -26,7 +28,11 @@
         component: NoScream
         time: 10.0
       - !type:ChemAddMoodlet
-        moodPrototype: StrongPainkiller
+        moodPrototype: OpiumBenefit
+        conditions:
+        - !type:ReagentThreshold # addiction rp is going to become real
+          reagent: Opium
+          min: 13
       - !type:ChemVomit
         conditions:
         - !type:ReagentThreshold
@@ -49,6 +55,8 @@
   physicalDesc: reagent-physical-desc-opaque
   flavor: medicine
   color: "#FFFFFF"
+  boilingPoint: 473.15  # kelvin??? TELL ME THE NUMBERS!!!!
+  meltingPoint: 448.15 # melting range of gerion is 175-176 celsius
   metabolisms:
     Narcotic:
       effects:
@@ -65,9 +73,13 @@
       - !type:GenericStatusEffect
         key: NoScream
         component: NoScream
-        time: 60.0 # should hopefully last long enough for quick heart swaps now
+        time: 60.0 # you can nod for hours
       - !type:ChemAddMoodlet
-        moodPrototype: StrongPainkiller
+        moodPrototype: HeroinBenefit
+        conditions:
+        - !type:ReagentThreshold # addiction rp is going to become real
+          reagent: Heroin
+          min: 10 # more addictive than morphine, if youre seeking out an OD you will get issues.
       - !type:ChemVomit
         conditions:
         - !type:ReagentThreshold
@@ -92,8 +104,8 @@
   physicalDesc: reagent-physical-desc-powdery
   flavor: bitter
   color: "#FFFFFF"
-  boilingPoint: 310.0 #actually real // idk how hard we wanna go with it
-  meltingPoint: 170.0
+  boilingPoint: 583.15 #actually real // idk how hard we wanna go with it
+  meltingPoint: 443.15
   metabolisms:
     Narcotic:
       effects:

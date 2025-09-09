@@ -1,0 +1,5 @@
+﻿- type: moodCategory
+  id: HeroinAddiction
+
+- type: moodCategory
+  id: OpiumAddiction

@@ -1,10 +1,9 @@
 ﻿- type: reaction # gdrulz -  i love opiates
   id: Heroin
+  minTemp: 425
   reactants:
-    Opium:
-      amount: 1
-    Morphine:
-      amount: 1
+    Morphine: # heroin is synthesized from the acetylization of morphine
+      amount: 2
     Acetone:
       amount: 0.5
     Benzene:
@@ -32,14 +31,16 @@
 
 - type: reaction # gdrulz -  I FUCKING LOVE DISSOS RAAA!!!!
   id: PCPsps
+  minTemp: 464.15
   reactants:
-    SpaceDrugs:
+    Chlorine:
       amount: 0.5
     Acetone:
       amount: 0.5
     Phenol:
       amount: 0.5
-    Iron:
+    Aluminium:
       amount: 0.5
+      catalyst: true
   products:
     PCPsps: 2 #super designer drug so its hard to make idk

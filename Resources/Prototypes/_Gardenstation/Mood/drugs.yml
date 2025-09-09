@@ -1,0 +1,25 @@
+﻿# Heroin
+- type: moodEffect
+  id: HeroinBenefit
+  moodChange: 10
+  timeout: 1020 # 17 minutes
+  moodletOnEnd: HeroinWithdrawal
+  category: "HeroinAddiction"
+
+- type: moodEffect
+  id: HeroinWithdrawal
+  moodChange: -30 # no timeout
+  category: "HeroinAddiction"
+
+# Opium
+- type: moodEffect
+  id: OpiumBenefit
+  moodChange: 5
+  timeout: 1020 # 17 minutes
+  moodletOnEnd: OpiumWithdrawal
+  category: "OpiumAddiction"
+
+- type: moodEffect
+  id: OpiumWithdrawal
+  moodChange: -15 # no timeout
+  category: "OpiumAddiction"
