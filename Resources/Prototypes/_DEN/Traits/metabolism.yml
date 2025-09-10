@@ -6,8 +6,8 @@
 
 - type: trait
   id: Detritivore
-  category: TraitsPhysicalBiological
-  points: -3
+  category: Physical
+  points: -5
   requirements:
   - !type:CharacterJobRequirement
     inverted: true
