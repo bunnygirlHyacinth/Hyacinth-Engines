@@ -1,0 +1,14 @@
+﻿- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsBieselArmband
+  name: Republic of Biesel armband
+  description: An armband fashioned after the flag of the Biesel Republic
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Hands/Misc/armbands.rsi
+    state: biesel-icon
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Hands/Misc/armbands.rsi
+    equippedPrefix: biesel
+  - type: Item
+    heldPrefix: biesel

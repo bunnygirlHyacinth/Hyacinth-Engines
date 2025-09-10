@@ -1,0 +1,363 @@
+﻿# CONSULAR
+# Backpacks
+
+# Belt
+
+# Ears
+
+# Equipment
+
+# Trinkets
+
+- type: loadout
+  id: LoadoutConsularOfficerSpesos
+  category: JobsCommandConsularOfficer
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerTrinkets
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - SpaceCash1000
+
+- type: loadout
+  id: LoadoutConsularOfficerCigarCase
+  category: JobsCommandConsularOfficer
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerTrinkets
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - CigarGoldCase
+# Eyes
+
+- type: loadout
+  id: LoadoutConsularOfficerEyesSunglasses
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerEyes
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingEyesGlassesSunglasses
+
+# Gloves
+#biesel
+- type: loadout
+  id: LoadoutConsularOfficerGlovesBieselArmband
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerGloves
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Bieselite
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingHandsBieselArmband
+#Head
+#BIESEL
+- type: loadout
+  id: LoadoutConsularOfficerTCAFBlueHat
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerHead
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Bieselite
+  - !type:CharacterLifepathRequirement
+    lifepaths:
+    - WarVet
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingHeadHatTCAFofficerdresscapblue
+
+#SOLARIAN
+- type: loadout
+  id: LoadoutConsularOfficerSolOfficer
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerHead
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Solarian
+  - !type:CharacterLifepathRequirement
+    lifepaths:
+    - WarVet
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingHeadHatSANArmyCapOfficer
+
+- type: loadout
+  id: LoadoutConsularOfficerSolSrOfficer
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerHead
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Solarian
+  - !type:CharacterLifepathRequirement
+    lifepaths:
+    - WarVet
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingHeadHatSANArmyCapSenior
+
+# PRA
+
+- type: loadout
+  id: LoadoutConsularOfficerPRACap
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerHead
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Adhomai
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingHeadHatPRAConsular
+
+# Id
+
+# Neck
+
+#FLAG MANTLE
+
+- type: loadout
+  id: LoadoutConsularOfficerNeckBieselMantle
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerNeck
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Bieselite
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingNeckMantleBieselFlag
+
+# Mask
+
+# Outer
+- type: loadout
+  id: LoadoutConsularOfficerTCAFOuter
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerOuter
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Bieselite
+  - !type:CharacterLifepathRequirement
+    lifepaths:
+    - WarVet
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingOuterCoatTCAFGeneralCoat
+
+
+# Shoes
+
+# Uniforms
+
+#GENERIC
+- type: loadout
+  id: LoadoutConsularOfficerBlackSuit
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerUniforms
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingUniformJumpsuitConsularBlackSuit
+#BIESEL
+#suit
+- type: loadout
+  id: LoadoutConsularOfficerBieselSuit
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerUniforms
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Bieselite
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingUniformJumpsuitBieselConsular
+#skirt
+- type: loadout
+  id: LoadoutConsularOfficerBieselSkirt
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerUniforms
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Bieselite
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingUniformJumpskirtBieselConsular
+
+#SOLARIAN
+
+- type: loadout
+  id: LoadoutConsularOfficerSolSrUniform
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerUniforms
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Solarian
+  - !type:CharacterLifepathRequirement
+    lifepaths:
+    - WarVet
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingUniformJumpsuitSolNavyDressSeniorOfficer
+
+- type: loadout
+  id: LoadoutConsularOfficerSolDressUniform
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerUniforms
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Solarian
+  - !type:CharacterLifepathRequirement
+    lifepaths:
+    - WarVet
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingUniformJumpsuitSolNavyDressOfficer
+#PRCA
+#suit
+- type: loadout
+  id: LoadoutConsularOfficerPRAjumpsuit
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerUniforms
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Adhomai
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingUniformJumpsuitPRAConsular
+#skirt
+- type: loadout
+  id: LoadoutConsularOfficerPRAjumpskirt
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerUniforms
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Adhomai
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingUniformJumpskirtPRAConsular
+#GOLDEN DEEP
+- type: loadout
+  id: LoadoutConsularOfficerGDGoldSuit
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerUniforms
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - GoldenDeep
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingUniformJumpsuitGDGrandConsular
+
+- type: loadout
+  id: LoadoutConsularOfficerGDGoldSkirt
+  category: JobsCommandConsularOfficer
+  cost: 0
+  exclusive: true
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerUniforms
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - GoldenDeep
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ClothingUniformJumpskirtGDGrandConsular

@@ -1,4 +1,5 @@
-﻿- type: entity
+﻿#EPI
+- type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatJusticarPsychalCoif
   name: justicar's psychal coif
@@ -19,7 +20,7 @@
         Radiation: 0.9
         Holy: 0.9
         Psionic: 0.3
-
+#BSO
 - type: entity
   parent: [ ClothingHeadBase, TranslatorPoweredBase ]
   id: ClothingHeadHatBSODuelistHat
@@ -43,7 +44,7 @@
     - Tradeband
     requires:
     - TauCetiBasic
-
+#ANTAG
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatSisterDervishCirclet
@@ -65,7 +66,7 @@
         Radiation: 0.9
         Holy: 0.9
         Psionic: 0.8
-
+#SERVICE
 - type: entity
   parent: [ ClothingHeadBase, TranslatorPoweredBase ]
   id: ClothingHeadHatPagliacci
@@ -85,7 +86,7 @@
     - Tradeband
     requires:
     - TauCetiBasic
-
+#BIESEL
 - type: entity
   parent: [ ClothingHeadBase ]
   id: ClothingHeadHatTCAFofficerdresscapblue
@@ -107,3 +108,18 @@
     sprite: _Gardenstation/Clothing/Head/Hats/tcaf_fieldofficer_cap.rsi
   - type: Clothing
     sprite: _Gardenstation/Clothing/Head/Hats/tcaf_fieldofficer_cap.rsi
+#SOL
+
+#ADHOMAI
+- type: entity
+  parent: [ ClothingHeadBase ]
+  id: ClothingHeadHatPRAConsular
+  name: PRA Consular Officer cap
+  description: A large hat worn by Consular Officers of the People's Republic of Adhomai
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Head/Hats/pra_consular.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Head/Hats/pra_consular.rsi
+#ELYRA
+#GOLDENDEEP

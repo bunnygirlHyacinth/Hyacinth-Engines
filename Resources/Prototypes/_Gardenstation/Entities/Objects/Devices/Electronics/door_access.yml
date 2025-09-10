@@ -23,3 +23,11 @@
   components:
   - type: AccessReader
     access: [["CentralCommandDirector"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsConsulate
+  suffix: Consulate
+  components:
+  - type: AccessReader
+    access: [["ConsularOfficer"]]

@@ -38,6 +38,7 @@
             Magistrate: [ 1, 1 ] # EE: Disabled # gardenstation enabled
             AdministrativeAssistant: [ 1, 1 ] # EE: Disabled # gardenstation enabled
             HeadOfPersonnel: [ 1, 1 ]
+            ConsularOfficer: [ 1, 1 ] # GDS added
           #Engineering
             ChiefEngineer: [ 1, 1 ]
             StationEngineer: [ 2, 5 ]

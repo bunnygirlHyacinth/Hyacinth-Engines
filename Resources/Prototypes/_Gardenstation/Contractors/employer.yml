@@ -1,0 +1,70 @@
+﻿- type: employer
+  id: BieselRepGov
+  nameKey: employer_name_bieselgov
+  descriptionKey: employer_description_bieselgov
+  primaryColour: "#373FCD"
+  secondaryColour: "#EF1420"
+  requirements:
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Bieselite
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Tajaran
+
+- type: employer
+  id: SolGov
+  nameKey: employer_name_solgov
+  descriptionKey: employer_description_solgov
+  primaryColour: "#C9911F"
+  secondaryColour: "#8Db6DC"
+  requirements:
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Solarian
+
+- type: employer
+  id: PRCAGov
+  nameKey: employer_name_prca
+  descriptionKey: employer_description_prca
+  primaryColour: "#8C1605"
+  secondaryColour: "#FDFDFD"
+  requirements:
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Adhomai
+  - !type:CharacterSpeciesRequirement
+    species:
+    - Tajaran
+
+- type: employer
+  id: ElyraGov
+  nameKey: employer_name_elyragov
+  descriptionKey: employer_description_elyragov
+  primaryColour: "#FF6A00"
+  secondaryColour: "#FFE14F"
+  requirements:
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Elyran
+  - !type:CharacterSpeciesRequirement
+    inverted: true
+    species:
+    - Tajaran
+    - Xelthia
+    - Diona
+
+- type: employer
+  id: MidasGroup
+  nameKey: employer_name_goldendeep
+  descriptionKey: employer_description_goldendeep
+  primaryColour: "#FEDF36"
+  secondaryColour: "#8BE0E8"
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    species:
+    - IPC
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - GoldenDeep

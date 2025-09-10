@@ -12,6 +12,7 @@
   descriptionKey: nationality_description_solarian
   hostile:
   - Bieselite
+  - Adhomai # GDS
   requirements:
     - !type:CharacterSpeciesRequirement
       species:
@@ -68,6 +69,10 @@
   id: Izweski
   nameKey: nationality_name_izweski
   descriptionKey: nationality_description_izweski
+  requirements:
+    - !type:CharacterSpeciesRequirement
+      species:
+         - Reptilian # they are cannibal warrior-feudalists. Humans would be cattle to them lmfao.
   functions:
     - !type:TraitModifyLanguages
       languagesSpoken:
@@ -80,6 +85,8 @@
   id: Adhomai
   nameKey: nationality_name_adhomai
   descriptionKey: nationality_description_adhomai
+  hostile: # GDS
+  - Solarian
   functions:
     - !type:TraitModifyLanguages
       languagesSpoken:

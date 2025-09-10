@@ -1,0 +1,106 @@
+﻿#small flags // replace this with a modular flag system maybe?
+- type: entity
+  parent: N14SignBase
+  id: Ar13WallFlagBiesel
+  name: flag
+  suffix: Biesel
+  description: The flag of the Biesel Republic.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
+    state: bieselflag
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20 #With the damage modifier you should have a hard time getting through it with something blunt, but an axe or something flammable will do the trick.
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+- type: entity
+  parent: N14SignBase
+  id: Ar13WallFlagSol
+  name: flag
+  suffix: Sol
+  description: The flag of the Solarian Alliance.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
+    state: solflag
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20 #With the damage modifier you should have a hard time getting through it with something blunt, but an axe or something flammable will do the trick.
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+- type: entity
+  parent: N14SignBase
+  id: Ar13WallFlagElyra
+  name: flag
+  suffix: Elyra
+  description: The flag of the Serene Republic of Elyra.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
+    state: elyraflag
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20 #With the damage modifier you should have a hard time getting through it with something blunt, but an axe or something flammable will do the trick.
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+- type: entity
+  parent: N14SignBase
+  id: Ar13WallFlagPRA
+  name: flag
+  suffix: Adhomai
+  description: The flag of the People's Republic of Adhomai
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
+    state: praflag
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20 #With the damage modifier you should have a hard time getting through it with something blunt, but an axe or something flammable will do the trick.
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+- type: entity
+  parent: N14SignBase
+  id: Ar13WallFlagGoldenDeep
+  name: flag
+  suffix: Golden Deep
+  description: The flag of the Golden Deep mercantile collective
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
+    state: goldendeepflag
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20 #With the damage modifier you should have a hard time getting through it with something blunt, but an axe or something flammable will do the trick.
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

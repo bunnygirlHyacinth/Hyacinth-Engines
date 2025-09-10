@@ -1,0 +1,26 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from aurorastation.3, modified lightly for ss14 use",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "goldendeepflag"
+        },
+        {
+            "name": "elyraflag"
+        },
+        {
+            "name": "bieselflag"
+        },
+        {
+            "name": "solflag"
+        },
+        {
+            "name": "praflag"
+        }
+    ]
+}

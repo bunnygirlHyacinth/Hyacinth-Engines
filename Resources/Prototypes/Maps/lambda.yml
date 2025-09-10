@@ -25,6 +25,7 @@
             NanotrasenRepresentative: [ 1, 1 ]
             BlueshieldOfficer: [ 1, 1 ]
             Magistrate: [ 1, 1 ] # EE: Disabled # gardenstation enabled
+            ConsularOfficer: [ 1, 2 ] # GDS added # add multiple offices here cause its a big map!
             AdministrativeAssistant: [ 1, 1 ] # EE: Disabled # gardenstation enabled
           #service
             HospitalityDirector: [ 1, 1 ] #Added by Impstation, ported by Gardenstation

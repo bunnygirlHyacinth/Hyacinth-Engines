@@ -77,8 +77,8 @@
 #director
 - type: entity
   parent: AirlockCentralCommand
-  id: AirlockCetntralCommandDirectorLocked
-  suffix: Command, CentCom, Locked
+  id: AirlockCetntralCommandDirectorLocked #i made a typo when i was drunk and its fucked forever lol
+  suffix: Director, CentCom, Locked
   components:
   - type: ContainerFill
     containers:
@@ -87,8 +87,26 @@
 - type: entity
   parent: AirlockCentralCommandGlass
   id: AirlockCetntralCommandDirectorGlassLocked
-  suffix: Command, CentCom, Locked
+  suffix: Director
   components:
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsDirector ]
+
+- type: entity
+  parent: AirlockCentralCommandGlass
+  id: AirlockCentralCommandConsulateGlass
+  suffix: Consulate, CentCom
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsConsulate ]
+
+- type: entity
+  parent: AirlockCentralCommand
+  id: AirlockCentralCommandConsulate
+  suffix: Consulate, CentCom
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsConsulate ]

@@ -12,3 +12,16 @@
     - state: green
     - sprite: _Gardenstation/Markers/jobs.rsi
       state: justicarguy
+
+- type: entity
+  id: SpawnPointConsularOfficer
+  parent: SpawnPointJobBase
+  name: consular officer
+  components:
+  - type: SpawnPoint
+    job_id: ConsularOfficer
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _Gardenstation/Markers/jobs.rsi
+      state: consularist

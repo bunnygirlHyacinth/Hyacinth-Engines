@@ -56,6 +56,7 @@
     - JobsCommandBlueshieldOfficer
     - JobsCommandNanorep
     - JobsCommandMagistrate
+    - JobsCommandConsularOfficer #gds ported
 
 - type: loadoutCategory
   id: JobsCommandAUncategorized
@@ -77,6 +78,9 @@
 
 - type: loadoutCategory
   id: JobsCommandMagistrate
+
+- type: loadoutCategory #gds
+  id: JobsCommandConsularOfficer
 
 # Engineering
 - type: loadoutCategory
@@ -260,7 +264,7 @@
   id: JobsService
   subCategories:
     - JobsServiceAUncategorized
-    - JobsServiceHospitalityDirector #Ported from Impstation by Gardenstation 
+    - JobsServiceHospitalityDirector #Ported from Impstation by Gardenstation
     - JobsServiceBartender
     - JobsServiceBotanist
     - JobsServiceChef

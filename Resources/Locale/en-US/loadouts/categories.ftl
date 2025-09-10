@@ -21,6 +21,7 @@ loadout-category-JobsCommandAdminAssistant = Administrative Assistant
 loadout-category-JobsCommandBlueshieldOfficer = Blueshield Officer
 loadout-category-JobsCommandNanorep = Corporate Liaison
 loadout-category-JobsCommandMagistrate = Magistrate
+loadout-category-JobsCommandConsularOfficer = Consular Officer
 
 # Engineering
 loadout-category-JobsEngineering = Engineering

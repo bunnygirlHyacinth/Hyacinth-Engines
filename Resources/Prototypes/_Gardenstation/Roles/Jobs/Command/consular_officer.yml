@@ -1,0 +1,72 @@
+﻿- type: job
+  id: ConsularOfficer
+  name: Consular Officer
+  description: "Represent your government, act as a diplomat, ensure your citizens are treated fairly, work with the magistrate to uphold sectoral law, cry to the president when they arrest you"
+  playTimeTracker: JobConsularOfficer
+  requirements:
+  - !type:CharacterDepartmentTimeRequirement
+    department: Command
+    min: 54000 # 15 hours
+  - !type:CharacterTraitRequirement
+    inverted: true
+    traits:
+    #- Foreigner // this might be kinda fun i dunno
+    #- ForeignerLight
+    - Muted
+  - !type:CharacterEmployerRequirement # add government body employers? atleast for major factions anyways
+    employers:
+    - BieselRepGov
+    - SolGov
+    - PRCAGov
+    - ElyraGov
+    - MidasGroup
+  weight: 20
+  startingGear: ConsularOfficerGear
+  icon: "JobIconConsulate"
+  requireAdminNotify: true
+  joinNotifyCrew: true
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  access:
+  - CentralCommand
+  - Brig
+  - External
+  - Cryogenics
+  - Maintenance
+  - Engineering
+  - Medical
+  - Research
+  - Command
+  - ConsularOfficer
+  - Lawyer
+  - Cargo
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+    - type: CommandStaff
+  afterLoadoutSpecial:
+  - !type:ModifyEnvirosuitSpecial
+    charges: 8
+  - !type:ModifyEnvirohelmSpecial
+    powerCell: PowerCellHigh
+
+- type: startingGear
+  id: ConsularOfficerGear
+  subGear:
+  - ConsulatePlasmamanGear
+  equipment:
+    shoes: ClothingShoesColorBlack
+    id: ConsularOfficerPDA
+    jumpsuit: ClothingUniformJumpsuitConsularBlackSuit
+    back: ClothingBackpackSatchel
+    ears: ClothingHeadsetAltCentCom
+
+- type: startingGear
+  id: ConsulatePlasmamanGear
+  parent: BasePlasmamanMaskGear
+  equipment:
+    jumpsuit: ClothingUniformEnvirosuitNanotrasenRepresentative
+    head: ClothingHeadEnvirohelmNanotrasenRepresentative
+    gloves: ClothingHandsGlovesEnviroglovesBlack

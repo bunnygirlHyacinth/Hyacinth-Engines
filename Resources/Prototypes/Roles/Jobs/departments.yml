@@ -65,7 +65,7 @@
   - HeadOfSecurity
   - ResearchDirector
   - Quartermaster
-  - HospitalityDirector 
+  - HospitalityDirector
   - ChiefJustice
   - AdministrativeAssistant
   - CentralCommandOfficial
@@ -89,6 +89,7 @@
   - BlueshieldOfficer
   - NanotrasenRepresentative
   - Magistrate
+  - ConsularOfficer # gds ported
   primary: false
   weight: 101
 
