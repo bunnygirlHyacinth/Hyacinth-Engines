@@ -10,5 +10,5 @@
 
 trait-name-Detritivore = Detritivore
 trait-description-Detritivore = Through some gruesome biomechanical augmentation or
-freak mutation, you are able to metabolize raw flesh, rotting or otherwise, as well
-as mold-infested foods.
+    freak mutation, you are able to metabolize raw flesh, rotting or otherwise, as well
+    as mold-infested foods.
