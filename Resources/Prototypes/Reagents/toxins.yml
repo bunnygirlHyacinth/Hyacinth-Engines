@@ -90,6 +90,10 @@
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Detritivore
+          shouldHave: false
         damage:
           types:
             Poison: 2
@@ -97,7 +101,25 @@
         conditions:
         - !type:ReagentThreshold
           min: 2
+        - !type:OrganType
+          type: Detritivore
+          shouldHave: false
         probability: 0.2
+      - !type:PopupMessage
+        conditions:
+        - !type:OrganType
+          type: Detritivore
+          shouldHave: false
+        type: Local
+        visualType: MediumCaution
+        messages: [ "generic-reagent-effect-sick" ]
+        probability: 0.4
+    Food:
+      effects:
+      - !type:SatiateHunger
+        conditions:
+        - !type:OrganType
+          type: Detritivore
 
 - type: reagent
   id: Mold
@@ -112,9 +134,19 @@
     Poison:
       effects:
       - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Detritivore
+          shouldHave: false
         damage:
           types:
             Poison: 1
+    Food:
+      effects:
+      - !type:SatiateHunger
+        conditions:
+          - !type:OrganType
+            type: Detritivore
 
 - type: reagent
   id: PolytrinicAcid
@@ -502,10 +534,16 @@
         - !type:OrganType
           type: Animal
           shouldHave: false
+        - !type:OrganType # It'd be silly if you could stomach Rotting Food but not raw meat on its own.
+          type: Detritivore
+          shouldHave: false
       - !type:HealthChange
         conditions:
         - !type:OrganType
           type: Animal
+          shouldHave: false
+        - !type:OrganType
+          type: Detritivore
           shouldHave: false
         damage:
           types:
@@ -515,6 +553,9 @@
         - !type:OrganType
           type: Animal
           shouldHave: true
+        - !type:OrganType
+          type: Detritivore
+          shouldHave: false
         reagent: Protein
         amount: 0.5
       - !type:AdjustReagent

@@ -1,4 +1,4 @@
-﻿- type: body
+- type: body
   id: Animal
   name: "animal"
   root: torso
@@ -33,7 +33,7 @@
         lungs: OrganAnimalLungs
         stomach: OrganMouseStomach
         liver: OrganAnimalLiver
-        heart: OrganAnimalHeart
+        heart: OrganMouseHeart
         kidneys: OrganAnimalKidneys
     legs:
       part: LegsAnimal

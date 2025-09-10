@@ -24,11 +24,9 @@
     torso:
       part: TorsoRodentia
       organs:
-        #heart: OrganMouseHeart
-        heart: OrganHumanHeart
+        heart: OrganMouseHeart
         lungs: OrganHumanLungs
-        #stomach: OrganRodentiaStomach
-        stomach: OrganHumanStomach
+        stomach: OrganRodentiaStomach
         liver: OrganAnimalLiver
         kidneys: OrganHumanKidneys
       connections:
