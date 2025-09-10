@@ -9,7 +9,6 @@
 
 
 trait-name-Detritivore = Detritivore
-trait-description-Detritivore = Your hardy digestive system is well-equipped for rotting food.
-    Gastrotoxin and mold have no ill effects on you, and will restore your hunger.
-    You can also digest uncooked animal proteins (raw meat) if you do not already have the ability
-    to do so, and even rotting animal corpses will be safe for consumption.
+trait-description-Detritivore = Through some gruesome biomechanical augmentation or
+freak mutation, you are able to metabolized raw flesh, rotting or otherwise, as well
+as mold-infested foods.
