@@ -5,3 +5,11 @@
     sprite: /Textures/_Gardenstation/Interface/Misc/job_icons.rsi
     state: Justicar
   jobName: job-name-justicar
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconConsulate
+  icon:
+    sprite: /Textures/_Gardenstation/Interface/Misc/job_icons.rsi
+    state: consulate
+  jobName: job-name-consularofficer

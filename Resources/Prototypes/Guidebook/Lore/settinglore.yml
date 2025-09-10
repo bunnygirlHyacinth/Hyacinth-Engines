@@ -79,6 +79,7 @@
     # Major Nations
     - SolAlliance
     - TCFL
+    - PRCA
     #- BieselRepublic
     #- CoalitionOfColonies
     #- AdhomaiFactions
@@ -87,10 +88,30 @@
 
 - type: guideEntry
   id: SolAlliance
-  name: guide-entry-sol-alliance
+  name: Sol Alliance
   text: "/ServerInfo/Guidebook/Lore/Nations/SolAlliance.xml"
 
 - type: guideEntry
   id: TCFL
-  name: guide-entry-tcfl
+  name: TCFL
   text: "/ServerInfo/Guidebook/Lore/Nations/TCFL.xml"
+
+- type: guideEntry
+  id: PRCA
+  name: People's Republic of Adhomai
+  text: "/ServerInfo/Guidebook/Lore/Nations/PRCA.xml"
+
+- type: guideEntry
+  id: FRB
+  name: Federal Republic of Biesel
+  text: "/ServerInfo/Guidebook/Lore/Nations/FRB.xml"
+
+- type: guideEntry
+  id: ElyraRepb
+  name: The Serene Republic of Elyra
+  text: "/ServerInfo/Guidebook/Lore/Nations/ElyraRepb.xml"
+
+- type: guideEntry
+  id: GoldenDeep
+  name: The Golden Deep
+  text: "/ServerInfo/Guidebook/Lore/Nations/GoldenDeep.xml"

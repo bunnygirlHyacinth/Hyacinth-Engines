@@ -13,3 +13,19 @@
       coefficients:
         Slash: 0.95
         Piercing: 0.95
+
+- type: entity # make a chameleon flag at some point when we have enough flags to warrant it
+  parent: ClothingNeckBase
+  id: ClothingNeckMantleBieselFlag
+  name: Biesel Republic flag
+  description: THE TORCH OF LIBERTY SHALL NEVER DIE!!!!
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Neck/Mantles/flag_mantle.rsi
+    state: biesel-icon
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Neck/Mantles/flag_mantle.rsi
+    equippedPrefix: biesel
+  - type: Item
+    heldPrefix: biesel
+

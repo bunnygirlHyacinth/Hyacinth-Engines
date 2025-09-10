@@ -1,0 +1,26 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from aurorastation, modified for use in ss14 by bunnygirlHyacinth",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "biesel-icon"
+        },
+        {
+            "name": "biesel-equipped-HAND",
+            "directions": 4
+        },
+        {
+            "name": "biesel-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "biesel-inhand-right",
+            "directions": 4
+        }
+    ]
+}

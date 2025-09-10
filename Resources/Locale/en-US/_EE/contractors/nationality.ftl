@@ -23,7 +23,7 @@ nationality_description_nederlandic = A nation of traders and terraformers. Whil
 nationality_name_izweski = Izweski
 nationality_description_izweski = The Izweski Hegemony, also known as the Izweski Nation and the Third Hegemony of Moghes, is the primary Unathi nation of the Orion Spur - a feudal empire in the Badlands ruled by a monarch known as the Hegemon. The nation is made up of hundreds of land-owning noble clans and their vassals, of which a few dozen are major influencers in the Hegemon's politics.
 
-nationality_name_adhomai = Adhomai
+nationality_name_adhomai = Hadiist Adhomai
 nationality_description_adhomai = The People's Republic of Adhomai was established in 2431 as the sole ruling government in Adhomai following its victory in the First Revolution. With the popular leader Rhagrrhuzau Hadii as their first president, they were able to enact deep reforms, such as the distribution of land, the establishment of state schools, and healthcare.
 
 nationality_name_goldendeep = Golden Deep

@@ -27,6 +27,7 @@
           BlueshieldOfficer: [ 1, 1]
           NanotrasenRepresentative: [ 1, 1 ]
           Magistrate: [ 1, 1 ]
+          ConsularOfficer: [ 1, 1 ] # GDS added
           AdministrativeAssistant: [ 1, 1 ]
           HeadOfPersonnel: [ 1, 1 ]
           ChiefEngineer: [ 1, 1 ]

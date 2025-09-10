@@ -34,7 +34,7 @@
   - type: NavMapBeacon
     defaultText: station-beacon-liaison
     color: "#00ff1b"
-#consulate // implement actual job soon lol
+#consulate // implement actual job soon lol - 9/10 ITS IN
 - type: entity
   parent: DefaultStationBeacon
   id: DefaultStationBeaconConsulate

@@ -1,4 +1,5 @@
-﻿- type: entity
+﻿#ANTAG?
+- type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtSisterWraps
   name: sister's skirts
@@ -15,6 +16,7 @@
         Psionic: 0.7
         Holy: 0.6
 
+#CENTCOM/VETCOMMAND
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtCCOCaptain
@@ -25,3 +27,41 @@
     sprite: _Gardenstation/Clothing/Uniform/Jumpskirt/cco_captain_turtleneck.rsi
   - type: Clothing
     sprite: _Gardenstation/Clothing/Uniform/Jumpskirt/cco_captain_turtleneck.rsi
+
+#BIESEL
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtBieselConsular
+  name: Biesel Republic consulate skirt
+  description: A lightweight suit jacket and skirt spun in the state colors of Biesel. The cufflinks are gold!
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Jumpskirt/biesel_consular.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Jumpskirt/biesel_consular.rsi
+#SOL
+#ADHOMAI
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtPRAConsular
+  name: PRA Consular Officer uniform
+  description: A stuffy uniform worn by consular officers of the People's Republic of Adhomai
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Jumpskirt/pra_consular.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Jumpskirt/pra_consular.rsi
+
+#ELYRA
+#GOLDENDEEP
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtGDGrandConsular
+  name: Golden Suitskirt
+  description: A solid gold suit for a BIGSHOT diplomat!!
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Jumpskirt/goldendeep_skirt.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Jumpskirt/goldendeep_skirt.rsi

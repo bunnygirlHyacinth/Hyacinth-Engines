@@ -101,6 +101,24 @@ character-item-group-LoadoutNanorepBackpacks = Corporate Liaison Backpacks
 character-item-group-LoadoutNanorepUniforms = Corporate Liaison Uniforms
 character-item-group-LoadoutNanotrasenRepresentativeWeapon = Corporate Liaison Weapons
 
+# Dignitary - Consular Officer
+
+character-item-group-LoadoutConsularOfficerBackpacks = Consular Officer Backpacks
+character-item-group-LoadoutConsularOfficerBelt = Consular Officer Belt
+character-item-group-LoadoutConsularOfficerEars = Consular Officer Ears
+character-item-group-LoadoutConsularOfficerEquipment = Consular Officer Equipment
+character-item-group-LoadoutConsularOfficerTrinkets = Consular Officer Trinkets
+character-item-group-LoadoutConsularOfficerWeapon = Consular Officer Personal Weapon
+character-item-group-LoadoutConsularOfficerEyes = Consular Officer Eyewear
+character-item-group-LoadoutConsularOfficerGloves = Consular Officer Gloves
+character-item-group-LoadoutConsularOfficerHead = Consular Officer Headgear
+character-item-group-LoadoutConsularOfficerId = Consular Officer Id
+character-item-group-LoadoutConsularOfficerNeck = Consular Officer Neckwear
+character-item-group-LoadoutConsularOfficerMask = Consular Officer Masks
+character-item-group-LoadoutConsularOfficerOuter = Consular Officer Outerwear
+character-item-group-LoadoutConsularOfficerShoes = Consular Officer Shoes
+character-item-group-LoadoutConsularOfficerUniforms = Consular Officer Uniforms
+
 # Engineering
 character-item-group-LoadoutEngineeringBackpacks = Engineering Backpacks
 character-item-group-LoadoutEngineeringBelt = Engineering Belt

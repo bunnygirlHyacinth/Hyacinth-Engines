@@ -1,0 +1,37 @@
+﻿# GOLDEN DEEP
+
+- type: lifepath
+  id: GdMerchant
+  nameKey: lifepath_name_gdmerchant
+  descriptionKey: lifepath_description_gdmerchant
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    species:
+    - IPC
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - GoldenDeep
+
+- type: lifepath
+  id: GdGrandMerchant
+  nameKey: lifepath_name_grandmerchant
+  descriptionKey: lifepath_description_grandmerchant
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    species:
+    - IPC
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - GoldenDeep
+
+- type: lifepath
+  id: GdThesian
+  nameKey: lifepath_name_gdthesian
+  descriptionKey: lifepath_description_gdthesian
+  requirements:
+  - !type:CharacterSpeciesRequirement
+    species:
+    - IPC
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - GoldenDeep

@@ -1,0 +1,129 @@
+﻿#- type: characterItemGroup
+#  id: LoadoutConsularOfficerBackpacks
+#  maxItems: 1
+#  items:
+
+#- type: characterItemGroup
+#  id: LoadoutConsularOfficerBelt
+#  maxItems: 1
+#  items:
+
+#- type: characterItemGroup
+#  id: LoadoutConsularOfficerEars
+#  maxItems: 1
+#  items:
+
+#- type: characterItemGroup
+#  id: LoadoutConsularOfficerEquipment
+#  maxItems: 1
+#  items:
+
+- type: characterItemGroup
+  id: LoadoutConsularOfficerTrinkets
+  maxItems: 3
+  items:
+  - type: loadout
+    id: LoadoutConsularOfficerSpesos
+  - type: loadout
+    id: LoadoutConsularOfficerCigarCase
+
+#- type: characterItemGroup
+#  id: LoadoutConsularOfficerWeapon // add special faction disabler weapons here - TCAF/Solarian revolvers, PRC tesla disabler, Elyran phoron phaser, etc
+#  maxItems: 1
+#  items:
+#  - type: loadout
+#    id: LoadoutConsularOfficerDisabler
+
+
+- type: characterItemGroup # add special hud eyewear for consulates that show citizenship status
+  id: LoadoutConsularOfficerEyes
+  maxItems: 1
+  items:
+  - type: loadout
+    id: LoadoutConsularOfficerEyesSunglasses
+
+- type: characterItemGroup # add more faction rep clothes idk mb weird rings and shit like that
+  id: LoadoutConsularOfficerGloves
+  maxItems: 1
+  items:
+  - type: loadout
+    id: LoadoutConsularOfficerGlovesBieselArmband
+
+
+- type: characterItemGroup # tcaf/sol navy gear can show here too maybe, thos funny golden deep berets maybe too
+  id: LoadoutConsularOfficerHead
+  maxItems: 1
+  items:
+  - type: loadout
+    id: LoadoutConsularOfficerTCAFBlueHat
+  - type: loadout
+    id: LoadoutConsularOfficerSolOfficer
+  - type: loadout
+    id: LoadoutConsularOfficerSolSrOfficer
+  - type: loadout
+    id: LoadoutConsularOfficerPRACap
+
+#- type: characterItemGroup # different pdas/lanyards available to different faction reps # we need to make some kind of safe storage for this to matter. each rep should have a special faction access prolly.
+#  id: LoadoutConsularOfficerId
+#  maxItems: 1
+#  items:
+#  - type: loadout
+#    id: LoadoutConsularOfficerBieselRep
+
+- type: characterItemGroup # lanyards/armbands?
+  id: LoadoutConsularOfficerNeck
+  maxItems: 1
+  items:
+  - type: loadout
+    id: LoadoutConsularOfficerNeckBieselMantle
+
+#- type: characterItemGroup // certain factions might have like religious face coverings idk
+#  id: LoadoutConsularOfficerMask
+#  maxItems: 1
+#  items:
+#  - type: loadout
+#    id: LoadoutConsularOfficerMask
+
+
+- type: characterItemGroup
+  id: LoadoutConsularOfficerOuter
+  maxItems: 1
+  items:
+  - type: loadout
+    id: LoadoutConsularOfficerTCAFOuter
+
+#- type: characterItemGroup // make more faction specific footwear, PRC/TCAF/SAN jackboots, golden deep bejewelled heels, etc
+#  id: LoadoutCaptainShoes
+#  maxItems: 1
+#  items:
+#  - type: loadout
+#    id: LoadoutCaptainShoesLaceup
+#  - type: loadout
+#    id: LoadoutCaptainShoesLeather
+#  - type: loadout
+#    id: LoadoutCaptainShoesWinter
+#  - type: loadout
+#    id: LoadoutCaptainShoesCombat
+
+- type: characterItemGroup # aristocrat gear, uniforms, diplomat suits? idk.
+  id: LoadoutConsularOfficerUniforms
+  maxItems: 1
+  items:
+  - type: loadout
+    id: LoadoutConsularOfficerBlackSuit
+  - type: loadout
+    id: LoadoutConsularOfficerSolSrUniform # add custom solarian diplomat wear in a similar fashion to the PRA gear//similar to officer gear but b careful cause that shit look SUS
+  - type: loadout
+    id: LoadoutConsularOfficerSolDressUniform
+  - type: loadout
+    id: LoadoutConsularOfficerPRAjumpsuit
+  - type: loadout
+    id: LoadoutConsularOfficerPRAjumpskirt
+  - type: loadout
+    id: LoadoutConsularOfficerBieselSkirt
+  - type: loadout
+    id: LoadoutConsularOfficerBieselSuit
+  - type: loadout
+    id: LoadoutConsularOfficerGDGoldSuit
+  - type: loadout
+    id: LoadoutConsularOfficerGDGoldSkirt
