@@ -73,13 +73,15 @@
 
 - type: guideEntry
   id: Nations
-  name: guide-entry-nations
+  name: Nations
   text: "/ServerInfo/Guidebook/Lore/Nations/Nations.xml"
   children:
     # Major Nations
     - SolAlliance
     - TCFL
     - PRCA
+    - ElyraRepb
+    - GoldenDeep
     #- BieselRepublic
     #- CoalitionOfColonies
     #- AdhomaiFactions
