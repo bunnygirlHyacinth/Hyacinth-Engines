@@ -13,17 +13,25 @@
 #  maxItems: 1
 #  items:
 
-#- type: characterItemGroup
-#  id: LoadoutConsularOfficerEquipment
-#  maxItems: 1
-#  items:
+- type: characterItemGroup
+  id: LoadoutConsularOfficerEquipment
+  maxItems: 2
+  items:
+  - type: loadout
+    id: LoadoutConsularOfficerBieselTele
+  - type: loadout
+    id: LoadoutConsularOfficerPRATele
+  - type: loadout
+    id: LoadoutConsularOfficerSolTele
+  - type: loadout
+    id: LoadoutConsularOfficerElyraTele
+  - type: loadout
+    id: LoadoutConsularOfficerGoldenDeepTele
 
 - type: characterItemGroup
   id: LoadoutConsularOfficerTrinkets
   maxItems: 3
   items:
-  - type: loadout
-    id: LoadoutConsularOfficerSpesos
   - type: loadout
     id: LoadoutConsularOfficerCigarCase
 

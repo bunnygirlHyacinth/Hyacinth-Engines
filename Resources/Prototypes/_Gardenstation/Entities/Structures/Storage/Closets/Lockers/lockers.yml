@@ -22,7 +22,7 @@
   - type: Sprite
     sprite: _Gardenstation/Structures/Storage/closet.rsi
   - type: AccessReader
-    access: [["ConsularOfficer"]]
+    access: [["BieselRepublic"]]
   - type: EntityStorageVisuals
     stateBaseClosed: bieselrep
     stateDoorOpen: bieselrep_open
@@ -37,7 +37,7 @@
   - type: Sprite
     sprite: _Gardenstation/Structures/Storage/closet.rsi
   - type: AccessReader
-    access: [["ConsularOfficer"]]
+    access: [["SAN"]]
   - type: EntityStorageVisuals
     stateBaseClosed: solrep
     stateDoorOpen: solrep_open
@@ -52,7 +52,7 @@
   - type: Sprite
     sprite: _Gardenstation/Structures/Storage/closet.rsi
   - type: AccessReader
-    access: [["ConsularOfficer"]]
+    access: [["PeoplesRepublic"]]
   - type: EntityStorageVisuals
     stateBaseClosed: prarep
     stateDoorOpen: prarep_open
@@ -67,7 +67,7 @@
   - type: Sprite
     sprite: _Gardenstation/Structures/Storage/closet.rsi
   - type: AccessReader
-    access: [["ConsularOfficer"]]
+    access: [["GoldenDeep"]]
   - type: EntityStorageVisuals
     stateBaseClosed: goldendeeprep
     stateDoorOpen: goldendeeprep_open
@@ -82,7 +82,7 @@
   - type: Sprite
     sprite: _Gardenstation/Structures/Storage/closet.rsi
   - type: AccessReader
-    access: [["ConsularOfficer"]]
+    access: [["ElyraRepublic"]]
   - type: EntityStorageVisuals
     stateBaseClosed: elyrarep
     stateDoorOpen: elyrarep_open

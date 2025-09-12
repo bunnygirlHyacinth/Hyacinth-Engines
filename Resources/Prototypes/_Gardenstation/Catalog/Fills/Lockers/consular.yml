@@ -11,6 +11,7 @@
     - id: ClothingUniformJumpsuitBieselConsular
     - id: ClothingHandsBieselArmband
       amount: 2 # for handing out and stuff like that
+    - id: BieselLanyard # just the one spare
     # Diplomacy tools
     - id: SpaceCash5000
     - id: RubberStampBieselRep
@@ -27,6 +28,8 @@
     - id: ClothingUniformJumpsuitSolServiceWhite
     - id: ClothingUniformJumpsuitSolNavyDressSeniorOfficer
     - id: ClothingHeadHatSANNavyCapOfficerSenior
+    - id: SANIdCard # one spare and -god forbid- they manage to recruit someone, an extra id for them too.
+      amount: 2
 #    - id: ClothingHandsBieselArmband # add solarian armband WITH GREAT, GREAT DISCRETION !! NO ENABLING FASCISTS PLEASE !!
       #amount: 2 # for handing out and stuff like that
     # Diplomacy tools
@@ -47,6 +50,8 @@
     - id: ClothingUniformJumpsuitPRAConsular
     - id: ClothingHeadHatPRAConsular # 2 hats incase they lose one or decide to hand them out to new party members?
       amount: 2
+    - id: PRALanyard # one spare and two party memberships
+      amount: 3
     #- id: ClothingHandsBieselArmband # adhomian flag already looks sus enough, please be very careful with how we go about this one
       #amount: 2 # for handing out and stuff like that
     # Diplomacy tools
@@ -68,6 +73,7 @@
     - id: ClothingUniformJumpskirtGDGrandConsular
     - id: ClothingUniformJumpsuitGDGrandConsular
     - id: ClothingOuterCoatExpensive # i think its silly idk
+    - id: GoldenDeepRingID
     # Diplomacy tools
     - id: SpaceCash25000 #realistically this is small potatoes lol
     - id: RubberStampGoldenDeepRep
@@ -84,6 +90,7 @@
     #- id: BieselRepFlag # add elyra flag
     # Spare change of clothes
     - id: ClothingUniformJumpsuitConsularBlackSuit
+    - id: ElyraLanyard # just the one spare, elyra reps shouldnt be trying to offer citizenships or anything like that
     # Diplomacy tools # add an elyran translator of some kind for them to give out maybe?
     - id: SpaceCash2500 #balance for item trading
     - id: SheetPlasma10

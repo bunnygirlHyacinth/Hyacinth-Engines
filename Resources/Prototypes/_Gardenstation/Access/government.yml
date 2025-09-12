@@ -1,0 +1,15 @@
+﻿- type: accessLevel
+  id: BieselRepublic
+  name: id-card-access-level-bieselrepublic
+
+- type: accessLevel
+  id: PeoplesRepublic
+  name: id-card-access-level-peoplesrepublic
+
+- type: accessLevel
+  id: GoldenDeep
+  name: id-card-access-level-goldendeep
+
+- type: accessLevel
+  id: ElyraRepublic
+  name: id-card-access-level-elyrarepublic

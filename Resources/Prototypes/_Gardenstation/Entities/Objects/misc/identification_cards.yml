@@ -74,3 +74,112 @@
     tags:
     - CentralCommand
     - ConsularOfficer
+
+# LANYARDS
+
+# BIESEL
+- type: entity
+  parent: [IDCardStandard, ClothingNeckBase]
+  id: BieselLanyard
+  name: Republic of Biesel dignitary lanyard
+  components:
+  - type: Icon
+    sprite: _Gardenstation/Clothing/Neck/Lanyards/consulate.rsi
+    state: biesel-icon
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Neck/Lanyards/consulate.rsi
+    state: biesel-icon
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Neck/Lanyards/consulate.rsi
+    equippedPrefix: biesel
+    slots:
+    - idcard
+    - belt
+    - neck
+  - type: Item
+    heldPrefix: biesel
+  - type: Access
+    tags:
+    - ConsularOfficer
+    - BieselRepublic
+    - CentralCommand
+
+- type: entity
+  parent: [IDCardStandard, ClothingNeckBase]
+  id: PRALanyard
+  name: People's Republic of Adhomai dignitary lanyard
+  components:
+  - type: Icon
+    sprite: _Gardenstation/Clothing/Neck/Lanyards/consulate.rsi
+    state: pra-icon
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Neck/Lanyards/consulate.rsi
+    state: pra-icon
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Neck/Lanyards/consulate.rsi
+    equippedPrefix: pra
+    slots:
+    - idcard
+    - belt
+    - neck
+  - type: Item
+    heldPrefix: pra
+  - type: Access
+    tags:
+    - ConsularOfficer
+    - PeoplesRepublic
+    - CentralCommand
+
+- type: entity
+  parent: [IDCardStandard, ClothingNeckBase]
+  id: ElyraLanyard
+  name: Serene Republic of Elyra dignitary lanyard
+  components:
+  - type: Icon
+    sprite: _Gardenstation/Clothing/Neck/Lanyards/consulate.rsi
+    state: elyra-icon
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Neck/Lanyards/consulate.rsi
+    state: elyra-icon
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Neck/Lanyards/consulate.rsi
+    equippedPrefix: elyra
+    slots:
+    - idcard
+    - belt
+    - neck
+  - type: Item
+    heldPrefix: elyra
+  - type: Access
+    tags:
+    - ConsularOfficer
+    - ElyraRepublic
+    - CentralCommand
+
+#misc
+
+- type: entity
+  parent: RingBase
+  id: GoldenDeepRingID
+  name: Midas Collective signet
+  description: Shiny and valuable!
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Rings/basic.rsi
+    layers:
+    - state: ring
+    - state: gem
+      map: [ "gemColor" ]
+  - type: StaticPrice
+    price: 2000
+  - type: Appearance
+  - type: RandomSprite
+    getAllGroups: true
+    available:
+    - gemColor:
+        gem: Rainbow
+  - type: Access
+    tags:
+    - ConsularOfficer
+    - GoldenDeep
+    - CentralCommand
