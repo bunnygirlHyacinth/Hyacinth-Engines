@@ -15,7 +15,7 @@
     speedModifier: 1 # Kept for future adjustments. Currently 1x for balance # might wanna change this later maybe/add an emag version?
     useSound:
       collection: Screwdriver
-  - type: SurgeryTool # wild but the Visage should be able to come in and kinda do whatever. Theyre like 8 steps above anything the station can comprehend. this is just multitool basically :P
+  - type: SurgeryTool # maybe make this even slower if its too much
     startSound:
       path: /Audio/Weapons/bladeslice.ogg
     endSound:
