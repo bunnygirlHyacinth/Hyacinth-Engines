@@ -13,3 +13,77 @@
     stateDoorOpen: justicar_open
     stateDoorClosed: justicar_door
 
+- type: entity # makes sense to add special access types for each factions officer but ill do that later when i sprite that stuff. might be a little crazy for antag stuff though lol
+  id: LockerBieselRep
+  parent: LockerBaseSecure
+  name: Republic of Biesel Consular locker
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Structures/Storage/closet.rsi
+  - type: AccessReader
+    access: [["ConsularOfficer"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: bieselrep
+    stateDoorOpen: bieselrep_open
+    stateDoorClosed: bieselrep_door
+
+- type: entity
+  id: LockerSolRep
+  parent: LockerBaseSecure
+  name: Sol Alliance Consular locker
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Structures/Storage/closet.rsi
+  - type: AccessReader
+    access: [["ConsularOfficer"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: solrep
+    stateDoorOpen: solrep_open
+    stateDoorClosed: solrep_door
+
+- type: entity
+  id: LockerPRARep
+  parent: LockerBaseSecure
+  name: People's Republic of Adhomai Consular locker
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Structures/Storage/closet.rsi
+  - type: AccessReader
+    access: [["ConsularOfficer"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: prarep
+    stateDoorOpen: prarep_open
+    stateDoorClosed: prarep_door
+
+- type: entity
+  id: LockerGoldenDeepRep
+  parent: LockerBaseSecure
+  name: Midas Collective Consular locker
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Structures/Storage/closet.rsi
+  - type: AccessReader
+    access: [["ConsularOfficer"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: goldendeeprep
+    stateDoorOpen: goldendeeprep_open
+    stateDoorClosed: goldendeeprep_door
+
+- type: entity
+  id: LockerElyraRep
+  parent: LockerBaseSecure
+  name: Serene Republic of Elyra Consular locker
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: _Gardenstation/Structures/Storage/closet.rsi
+  - type: AccessReader
+    access: [["ConsularOfficer"]]
+  - type: EntityStorageVisuals
+    stateBaseClosed: elyrarep
+    stateDoorOpen: elyrarep_open
+    stateDoorClosed: elyrarep_door

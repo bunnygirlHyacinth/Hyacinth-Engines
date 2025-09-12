@@ -1,0 +1,25 @@
+﻿- type: entity #literally just the syndie with a different description lol - give it a new sprite later with a solarian coat of paint idk
+  id: SpyCameraBug
+  parent: [ BaseItem, BaseMajorContraband ]
+  name: camera bug
+  description: A spy device of SAN build, often used by agents in the field to collect information and monitor targets...
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/camera_bug.rsi
+    layers:
+    - state: camera_bug
+  - type: Item
+  - type: ActivatableUI
+    requireActiveHand: false
+    inHandsOnly: true
+    key: enum.SurveillanceCameraMonitorUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.SurveillanceCameraMonitorUiKey.Key:
+        type: SurveillanceCameraMonitorBoundUserInterface
+  - type: DeviceNetwork
+    deviceNetId: Wired
+    receiveFrequencyId: SurveillanceCamera
+    transmitFrequencyId: SurveillanceCamera
+  - type: WiredNetworkConnection
+  - type: SurveillanceCameraMonitor

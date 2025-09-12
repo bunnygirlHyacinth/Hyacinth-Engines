@@ -16,6 +16,51 @@
             "name": "justicar_open"
         },
         {
+            "name": "bieselrep"
+        },
+        {
+            "name": "bieselrep_door"
+        },
+        {
+            "name": "bieselrep_open"
+        },
+        {
+            "name": "solrep"
+        },
+        {
+            "name": "solrep_door"
+        },
+        {
+            "name": "solrep_open"
+        },
+        {
+            "name": "prarep"
+        },
+        {
+            "name": "prarep_door"
+        },
+        {
+            "name": "prarep_open"
+        },
+        {
+            "name": "elyrarep"
+        },
+        {
+            "name": "elyrarep_door"
+        },
+        {
+            "name": "elyrarep_open"
+        },
+        {
+            "name": "goldendeeprep"
+        },
+        {
+            "name": "goldendeeprep_door"
+        },
+        {
+            "name": "goldendeeprep_open"
+        },
+        {
             "name": "generic"
         },
         {

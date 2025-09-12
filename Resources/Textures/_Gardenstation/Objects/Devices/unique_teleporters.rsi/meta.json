@@ -1,0 +1,26 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Consul teles by bunnygirlHyacinth, originals made by Renee - https://discord.com/channels/1202734573247795300/1288192265319223387/1288254493020131368.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "biesel"
+        },
+        {
+            "name": "sol"
+        },
+        {
+            "name": "pra"
+        },
+        {
+            "name": "elyra"
+        },
+        {
+            "name": "goldendeep"
+        }
+    ]
+}

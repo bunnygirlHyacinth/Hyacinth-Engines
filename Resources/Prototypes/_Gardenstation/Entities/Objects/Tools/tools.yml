@@ -1,0 +1,38 @@
+﻿- type: entity
+  name: PRA field knife
+  parent: ToolDebug
+  id: PRAFieldKnife
+  description: Standard issue to all in-field officers. You can't get the corkscrew out for the life of you though...
+  suffix: PRA
+  components:
+  - type: MeleeWeapon
+    damage:
+      types:
+        Slash: 7
+  - type: Tool
+    qualities:
+    - Screwing
+    speedModifier: 1 # Kept for future adjustments. Currently 1x for balance # might wanna change this later maybe/add an emag version?
+    useSound:
+      collection: Screwdriver
+  - type: SurgeryTool # wild but the Visage should be able to come in and kinda do whatever. Theyre like 8 steps above anything the station can comprehend. this is just multitool basically :P
+    startSound:
+      path: /Audio/Weapons/bladeslice.ogg
+    endSound:
+      path: /Audio/Medical/Surgery/retractor2.ogg
+  - type: Hemostat
+    speed: 0.5
+  - type: Scalpel
+    speed: 0.7
+  - type: Drill
+    speed: 0.5
+  - type: BoneSetter
+    speed: 0.5
+  - type: Retractor
+    speed: 0.5
+  - type: BoneSaw
+    speed: 0.5
+  - type: Tweezers
+    speed: 0.5
+  - type: Tending
+    speed: 0.5

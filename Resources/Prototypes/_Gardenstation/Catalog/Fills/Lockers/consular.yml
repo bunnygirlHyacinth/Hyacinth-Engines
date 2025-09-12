@@ -1,0 +1,92 @@
+﻿- type: entity
+  id: LockerBieselRepFilled
+  suffix: Filled
+  parent: LockerBieselRep
+  components:
+  - type: StorageFill # biesel food, cigarettes, lighters, handflags, box of passports? visas? #add humanized versions of other species recipes to put here too maybe?
+    contents:
+    - id: BieselRepFlag
+    # Spare change of clothes
+    - id: ClothingUniformJumpskirtBieselConsular
+    - id: ClothingUniformJumpsuitBieselConsular
+    - id: ClothingHandsBieselArmband
+      amount: 2 # for handing out and stuff like that
+    # Diplomacy tools
+    - id: SpaceCash5000
+    - id: RubberStampBieselRep
+
+- type: entity
+  id: LockerSolRepFilled
+  suffix: Filled
+  parent: LockerSolRep
+  components:
+  - type: StorageFill # solflag, parade dress, vintage solarian alcohol? maybe some weird poison cigars?
+    contents:
+#    - id: BieselRepFlag # make this a sol flag
+    # Spare change of clothes
+    - id: ClothingUniformJumpsuitSolServiceWhite
+    - id: ClothingUniformJumpsuitSolNavyDressSeniorOfficer
+    - id: ClothingHeadHatSANNavyCapOfficerSenior
+#    - id: ClothingHandsBieselArmband # add solarian armband WITH GREAT, GREAT DISCRETION !! NO ENABLING FASCISTS PLEASE !!
+      #amount: 2 # for handing out and stuff like that
+    # Diplomacy tools
+    - id: SpaceCash2500 # the ASSN is declining
+    - id: RubberStampSolRep
+    - id: SpyCameraBug # "diplomacy"
+
+- type: entity
+  id: LockerPRARepFilled
+  suffix: Filled
+  parent: LockerPRARep
+  components:
+  - type: StorageFill # extra consular outfit, PRA casual uniform, PRA cigs, adhomian lunchbox? some weird spy gear?
+    contents:
+    #- id: BieselRepFlag # make this a PRA flag
+    # Spare change of clothes
+    - id: ClothingUniformJumpskirtPRAConsular
+    - id: ClothingUniformJumpsuitPRAConsular
+    - id: ClothingHeadHatPRAConsular # 2 hats incase they lose one or decide to hand them out to new party members?
+      amount: 2
+    #- id: ClothingHandsBieselArmband # adhomian flag already looks sus enough, please be very careful with how we go about this one
+      #amount: 2 # for handing out and stuff like that
+    # Diplomacy tools
+    - id: SpaceCash1000 # the adhomian knuckle is worth like NOTHING - in knuckles this would be like an absurd amount of walking around cash
+    - id: RubberStampPRARep
+    - id: SiikMaasTranslator # i did a round as a PRA diplomat and literally NOBODY could rp with her cause they couldnt speak siikmaas
+      amount: 2
+    - id: PRAFieldKnife #might be fucking crazy to give them but idk i think its cool
+
+- type: entity
+  id: LockerGoldenDeepRepFilled
+  suffix: Filled
+  parent: LockerGoldenDeepRep
+  components:
+  - type: StorageFill # butt load of cash, batteries, borg charger flatpack? maybe some hoplite/owned uniforms for silicons they purchase lmao
+    contents:
+    #- id: BieselRepFlag # add midas collective flag
+    # Spare change of clothes
+    - id: ClothingUniformJumpskirtGDGrandConsular
+    - id: ClothingUniformJumpsuitGDGrandConsular
+    - id: ClothingOuterCoatExpensive # i think its silly idk
+    # Diplomacy tools
+    - id: SpaceCash25000 #realistically this is small potatoes lol
+    - id: RubberStampGoldenDeepRep
+    - id: RubberStampTrader
+    - id: EncryptionKeyBinary #might be wild for antags but iiiidk it just kinda makes sense
+
+- type: entity
+  id: LockerElyraRepFilled
+  suffix: Filled
+  parent: LockerElyraRep
+  components:
+  - type: StorageFill # we need more relevant cultural clothing for elyra, the human cultures that built it have a rich history and we can do to gain alot by building off that.
+    contents:
+    #- id: BieselRepFlag # add elyra flag
+    # Spare change of clothes
+    - id: ClothingUniformJumpsuitConsularBlackSuit
+    # Diplomacy tools # add an elyran translator of some kind for them to give out maybe?
+    - id: SpaceCash2500 #balance for item trading
+    - id: SheetPlasma10
+    - id: RubberStampElyraRep
+    - id: ResearchDisk5000
+    - id: BorgModuleMusique #just for fun
