@@ -1,0 +1,64 @@
+﻿- type: entity
+  name: Federal Republic of Biesel official seal
+  parent: [RubberStampBase, BaseCommandContraband]
+  id: RubberStampBieselRep
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-bieselrep
+    stampedColor: "#3D45CD"
+    stampState: "paper_stamp-biesel"
+  - type: Sprite
+    state: stamp-cap
+
+- type: entity
+  name: Alliance of Sovereign Solarian Nations grand seal
+  parent: [RubberStampBase, BaseCommandContraband]
+  id: RubberStampSolRep
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-solrep
+    stampedColor: "#8DB6DC"
+    stampState: "paper_stamp-sol"
+  - type: Sprite
+    state: stamp-hop
+
+- type: entity
+  name: National seal of The People's Republic of Adhomai
+  parent: [RubberStampBase, BaseCommandContraband]
+  id: RubberStampPRARep
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-prarep
+    stampedColor: "#831505"
+    stampState: "paper_stamp-pra"
+  - type: Sprite
+    state: stamp-greytide
+
+- type: entity
+  name: Serene Republic of Elyra seal of state
+  parent: [RubberStampBase, BaseCommandContraband]
+  id: RubberStampElyraRep
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-elyrarep
+    stampedColor: "#FF6A00"
+    stampState: "paper_stamp-elyra"
+  - type: Sprite
+    state: stamp-ce
+
+- type: entity
+  name: Midas Collective official seal
+  parent: [RubberStampBase, BaseCommandContraband]
+  id: RubberStampGoldenDeepRep
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-goldendeeprep
+    stampedColor: "#FFE037"
+    stampState: "paper_stamp-goldendeep"
+  - type: Sprite
+    state: stamp-detective

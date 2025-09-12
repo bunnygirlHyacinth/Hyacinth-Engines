@@ -7,20 +7,93 @@
 
 # Equipment
 
-# Trinkets
-
+# TELEPORTERS
 - type: loadout
-  id: LoadoutConsularOfficerSpesos
+  id: LoadoutConsularOfficerBieselTele
   category: JobsCommandConsularOfficer
   cost: 0
   requirements:
   - !type:CharacterItemGroupRequirement
-    group: LoadoutConsularOfficerTrinkets
+    group: LoadoutConsularOfficerEquipment
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Bieselite
   - !type:CharacterJobRequirement
     jobs:
     - ConsularOfficer
   items:
-  - SpaceCash1000
+  - BieselRepLockerTeleporter
+  - BieselLanyard
+
+- type: loadout
+  id: LoadoutConsularOfficerPRATele
+  category: JobsCommandConsularOfficer
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerEquipment
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Adhomai
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - PRARepLockerTeleporter
+  - PRALanyard
+
+- type: loadout
+  id: LoadoutConsularOfficerSolTele
+  category: JobsCommandConsularOfficer
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerEquipment
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Solarian
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - SolRepLockerTeleporter
+  - SANIdCard
+
+- type: loadout
+  id: LoadoutConsularOfficerElyraTele
+  category: JobsCommandConsularOfficer
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerEquipment
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Elyran
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - ElyraRepLockerTeleporter
+  - ElyraLanyard
+
+- type: loadout
+  id: LoadoutConsularOfficerGoldenDeepTele
+  category: JobsCommandConsularOfficer
+  cost: 0
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutConsularOfficerEquipment
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - GoldenDeep
+  - !type:CharacterJobRequirement
+    jobs:
+    - ConsularOfficer
+  items:
+  - GoldenDeepRepLockerTeleporter
+  - GoldenDeepRingID
+
+# Trinkets
 
 - type: loadout
   id: LoadoutConsularOfficerCigarCase

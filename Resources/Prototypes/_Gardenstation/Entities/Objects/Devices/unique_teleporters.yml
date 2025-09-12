@@ -1,0 +1,76 @@
+﻿#CONSULATE
+- type: entity
+  parent: BaseLockerTeleporter
+  id: BieselRepLockerTeleporter
+  name: Biesel Consular locker teleporter
+  description: Device that allows you to request delivery of a consular locker from the Republic of Biesel.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Devices/unique_teleporters.rsi
+    state: biesel
+  - type: Item
+    sprite: _Gardenstation/Objects/Devices/unique_teleporters.rsi
+  - type: SpawnItemsOnUse
+    items:
+    - id: LockerBieselRepFilled
+
+- type: entity
+  parent: BaseLockerTeleporter
+  id: SolRepLockerTeleporter
+  name: Sol Alliance Consular locker teleporter
+  description: Device that allows you to request delivery of a consular locker from the Sol Alliance.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Devices/unique_teleporters.rsi
+    state: sol
+  - type: Item
+    sprite: _Gardenstation/Objects/Devices/unique_teleporters.rsi
+  - type: SpawnItemsOnUse
+    items:
+    - id: LockerSolRepFilled
+
+- type: entity
+  parent: BaseLockerTeleporter
+  id: PRARepLockerTeleporter
+  name: People's Republic of Adhomai Consular locker teleporter
+  description: Device that allows you to request delivery of a consular locker directly from The Party.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Devices/unique_teleporters.rsi
+    state: pra
+  - type: Item
+    sprite: _Gardenstation/Objects/Devices/unique_teleporters.rsi
+  - type: SpawnItemsOnUse
+    items:
+    - id: LockerPRARepFilled
+
+- type: entity
+  parent: BaseLockerTeleporter
+  id: GoldenDeepRepLockerTeleporter
+  name: Midas Collective Consular locker dashbutton
+  description: A small device that purchases a consular locker when pressed, bluespace fees are automatically withdrawn from your account.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Devices/unique_teleporters.rsi
+    state: goldendeep
+  - type: Item
+    sprite: _Gardenstation/Objects/Devices/unique_teleporters.rsi
+  - type: SpawnItemsOnUse
+    items:
+    - id: LockerGoldenDeepRepFilled
+
+- type: entity
+  parent: BaseLockerTeleporter
+  id: ElyraRepLockerTeleporter
+  name: Elyran Consular locker bluespace beacon
+  description: A piece of Elyran technology, when activated it automatically locks onto the users location and sends the preset item enscribed on its bluespace shard.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Devices/unique_teleporters.rsi
+    state: elyra
+  - type: Item
+    sprite: _Gardenstation/Objects/Devices/unique_teleporters.rsi
+  - type: SpawnItemsOnUse
+    items:
+    - id: LockerElyraRepFilled
+

@@ -1,0 +1,68 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "sprited by bunnygirlHyacinth",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "pra-icon"
+        },
+        {
+            "name": "pra-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "pra-equipped-BELT",
+            "directions": 4
+        },
+        {
+            "name": "pra-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "pra-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "biesel-icon"
+        },
+        {
+            "name": "biesel-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "biesel-equipped-BELT",
+            "directions": 4
+        },
+        {
+            "name": "biesel-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "biesel-inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "elyra-icon"
+        },
+        {
+            "name": "elyra-equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "elyra-equipped-BELT",
+            "directions": 4
+        },
+        {
+            "name": "elyra-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "elyra-inhand-right",
+            "directions": 4
+        }
+    ]
+}

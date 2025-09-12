@@ -70,3 +70,80 @@
     jumpsuit: ClothingUniformEnvirosuitNanotrasenRepresentative
     head: ClothingHeadEnvirohelmNanotrasenRepresentative
     gloves: ClothingHandsGlovesEnviroglovesBlack
+
+- type: startingGear
+  id: BieselFactionGear
+  requirements:
+  - !type:CharacterEmployerRequirement # I DONT KNOW MAAAAN make this work later
+    employers:
+    - BieselRepGov
+  subGear:
+  - ConsulatePlasmamanGear
+  equipment:
+    shoes: ClothingShoesColorBlack
+    id: ConsularOfficerPDA
+    jumpsuit: ClothingUniformJumpsuitBieselConsular
+    back: ClothingBackpackSatchel
+    ears: ClothingHeadsetAltCentCom
+    pocket1: BieselRepLockerTeleporter
+    pocket2: BieselLanyard
+
+- type: startingGear
+  id: PRAFactionGear
+  requirements:
+  - !type:CharacterEmployerRequirement
+    employers:
+    - PRCAGov
+  equipment:
+    shoes: ClothingShoesColorBlack
+    id: ConsularOfficerPDA
+    jumpsuit: ClothingUniformJumpsuitPRAConsular
+    back: ClothingBackpackSatchel
+    ears: ClothingHeadsetAltCentCom
+    pocket1: PRARepLockerTeleporter
+    pocket2: PRALanyard
+
+- type: startingGear
+  id: SolFactionGear
+  requirements:
+  - !type:CharacterEmployerRequirement
+    employers:
+    - SolGov
+  equipment:
+    shoes: ClothingShoesColorBlack
+    id: ConsularOfficerPDA
+    jumpsuit: ClothingUniformJumpsuitConsularBlackSuit
+    back: ClothingBackpackSatchel
+    ears: ClothingHeadsetAltCentCom
+    pocket1: SolRepLockerTeleporter
+    pocket2: SANIdCard
+
+- type: startingGear
+  id: GoldenDeepFactionGear
+  requirements:
+  - !type:CharacterEmployerRequirement
+    employers:
+    - MidasGroup
+  equipment:
+    shoes: ClothingShoesColorBlack
+    id: ConsularOfficerPDA
+    jumpsuit: ClothingUniformJumpsuitGDGrandConsular
+    back: ClothingBackpackSatchel
+    ears: ClothingHeadsetAltCentCom
+    pocket1: GoldenDeepRepLockerTeleporter
+    pocket2: GoldenDeepRingID
+
+- type: startingGear
+  id: ElyraFactionGear
+  requirements:
+  - !type:CharacterEmployerRequirement
+    employers:
+    - ElyraGov
+  equipment:
+    shoes: ClothingShoesColorBlack
+    id: ConsularOfficerPDA
+    jumpsuit: ClothingUniformJumpsuitConsularBlackSuit
+    back: ClothingBackpackSatchel
+    ears: ClothingHeadsetAltCentCom
+    pocket1: ElyraRepLockerTeleporter
+    pocket2: ElyraLanyard

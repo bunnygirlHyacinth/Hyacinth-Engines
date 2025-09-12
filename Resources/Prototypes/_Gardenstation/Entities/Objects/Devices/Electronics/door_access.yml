@@ -31,3 +31,45 @@
   components:
   - type: AccessReader
     access: [["ConsularOfficer"]]
+
+#GOVERNMENT
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsBieselRepublic
+  suffix: Biesel
+  components:
+  - type: AccessReader
+    access: [["BieselRepublic"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsPRA
+  suffix: Adhomai
+  components:
+  - type: AccessReader
+    access: [["PeoplesRepublic"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsGoldenDeep
+  suffix: Golden Deep
+  components:
+  - type: AccessReader
+    access: [["GoldenDeep"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsElyraRepublic
+  suffix: Elyra
+  components:
+  - type: AccessReader
+    access: [["ElyraRepublic"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsSANdignitary
+  suffix: Sol
+  components:
+  - type: AccessReader
+    access: [["SAN"]]
