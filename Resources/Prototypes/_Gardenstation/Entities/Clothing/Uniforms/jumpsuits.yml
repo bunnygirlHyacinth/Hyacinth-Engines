@@ -83,6 +83,17 @@
   - type: Clothing
     sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/pra_consular.rsi
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPRAStriped
+  name: PRA casual uniform
+  description: A light striped shirt and pair of pants. Often seen worn by PRA officers and soldiers in more casual settings.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/pra_stripesuniform.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/pra_stripesuniform.rsi
+
 #ELYRA
 #GOLDENDEEP
 - type: entity
@@ -95,3 +106,14 @@
     sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/goldendeep_suit.rsi
   - type: Clothing
     sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/goldendeep_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase #add less crazy version of this later maybe ala solarian BDUs
+  id: ClothingUniformJumpsuitHoplanUniform
+  name: Hoplan dress uniform
+  description: A dress uniform used by Hoplan of the Golden Deep Merchant Navy
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/hoplan_uniform.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Uniform/Jumpsuit/hoplan_uniform.rsi

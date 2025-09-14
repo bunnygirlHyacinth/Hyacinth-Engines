@@ -121,5 +121,27 @@
     sprite: _Gardenstation/Clothing/Head/Hats/pra_consular.rsi
   - type: Clothing
     sprite: _Gardenstation/Clothing/Head/Hats/pra_consular.rsi
+
+- type: entity
+  parent: [ ClothingHeadBase ]
+  id: ClothingHeadHatPRAFieldBeret
+  name: PRA Soldat field beret
+  description: An olive green beret often seen worn by soldiers and veterans of the Grand People's Army
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Head/Hats/pra_soldierberet.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Head/Hats/pra_soldierberet.rsi
 #ELYRA
 #GOLDENDEEP
+
+- type: entity
+  parent: [ ClothingHeadBase ]
+  id: ClothingHeadHatHoplanCombatBeret
+  name: Hoplan combat hat
+  description: A large padded hat worn by members of the Golden Deep Merchant Navy Hoplan
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Head/Hats/hoplan_beret.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Head/Hats/hoplan_beret.rsi

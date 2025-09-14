@@ -1,0 +1,20 @@
+﻿#JOBS
+- type: job
+  id: ConsularBodyguard
+  name: Diplomatic Bodyguard
+  description: "Guard your consular with your life, try not to argue with security, look menacing."
+  playTimeTracker: JobDiplomatBodyguard
+  setPreference: false
+  startingGear: BieselRepBodyguard
+  icon: "JobIconVisitor"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  access:
+  - CentralCommand
+  - ConsularOfficer
+  - Security # basic sec access maybe? we might wanna take this one off tbh idk
+  afterLoadoutSpecial:
+  - !type:ModifyEnvirosuitSpecial
+    charges: 10
+  - !type:ModifyEnvirohelmSpecial
+    powerCell: PowerCellHigh

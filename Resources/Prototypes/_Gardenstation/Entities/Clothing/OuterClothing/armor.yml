@@ -21,3 +21,23 @@
         Holy: 0.97 # someone forgot to charge their crystal lole - see you in the badplace BUDDY
   - type: ExplosionResistance
     damageCoefficient: 0.80
+
+- type: entity
+  parent: [ClothingOuterArmorBasic, BaseRestrictedContraband]
+  id: ClothingOuterHoplanChestplate
+  name: Hoplan dress carapace
+  description: A light chestplate made for use guarding high ranking merchants and Midas Control members.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/Armor/hoplan_chest.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/OuterClothing/Armor/hoplan_chest.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.75
+        Slash: 0.8
+        Piercing: 0.65 # more bulletproof than normal kevlar/flak vests - shell armor
+        Heat: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.80

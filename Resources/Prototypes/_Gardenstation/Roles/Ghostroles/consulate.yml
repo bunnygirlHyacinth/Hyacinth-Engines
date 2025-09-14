@@ -1,0 +1,49 @@
+﻿- type: ghostRole
+  id: BodyguardBiesel
+  name: ghost-role-information-biesel-bodyguard-reinforcement-name
+  description: ghost-role-information-biesel-bodyguard-reinforcement-description
+  rules: ghost-role-information-consulate-bodyguard-rules
+  entityPrototype: BieselBodyguard
+
+- type: ghostRole
+  id: BodyguardPRA
+  name: ghost-role-information-pra-bodyguard-reinforcement-name
+  description: ghost-role-information-pra-bodyguard-reinforcement-description
+  rules: ghost-role-information-consulate-bodyguard-rules
+  entityPrototype: PRABodyguard
+
+- type: ghostRole
+  id: BodyguardHoplan
+  name: ghost-role-information-goldendeep-bodyguard-reinforcement-name
+  description: ghost-role-information-goldendeep-bodyguard-reinforcement-description
+  rules: ghost-role-information-consulate-bodyguard-rules
+  entityPrototype: HoplanBodyguard
+
+- type: ghostRole
+  id: BodyguardSAN
+  name: ghost-role-information-sol-bodyguard-reinforcement-name
+  description: ghost-role-information-sol-bodyguard-reinforcement-description
+  rules: ghost-role-information-consulate-bodyguard-rules
+  entityPrototype: SANBodyguard
+
+- type: ghostRole
+  id: BodyguardElyra
+  name: ghost-role-information-elyra-bodyguard-reinforcement-name
+  description: ghost-role-information-elyra-bodyguard-reinforcement-description
+  rules: ghost-role-information-consulate-bodyguard-rules
+  entityPrototype: ElyraBodyguard
+
+
+- type: ghostRole
+  id: AssistantBiesel
+  name: ghost-role-information-syndicate-kobold-reinforcement-name
+  description: ghost-role-information-syndicate-kobold-reinforcement-description
+  rules: ghost-role-information-consulate-assistant-rules
+  entityPrototype: MobKoboldSyndicateAgent
+
+- type: ghostRole
+  id: AssistantSol
+  name: ghost-role-information-syndicate-kobold-reinforcement-name
+  description: ghost-role-information-syndicate-kobold-reinforcement-description
+  rules: ghost-role-information-consulate-assistant-rules
+  entityPrototype: MobKoboldSyndicateAgent

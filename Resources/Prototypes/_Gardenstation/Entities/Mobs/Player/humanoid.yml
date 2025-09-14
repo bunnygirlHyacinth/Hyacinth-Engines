@@ -215,3 +215,317 @@
     belt: OspreySickle
     pocket1: FoodOusianaDustBowl
     pocket2: BlinkBook
+
+# CONSULATE
+
+#BIESEL
+- type: randomHumanoidSettings
+  id: BieselBodyguard
+  randomizeName: false
+  parent: EventHumanoidMindShielded
+  speciesBlacklist: # just matches the CO requirements
+  - Shadowkin # there is a solarian saying
+  - Monkey
+  - Kobold
+  - Abductor
+  - Xelthia
+  - Rodentia #rodentia last names are broken i guess
+  - Vox # they die instantly
+  - Arachnid # spiders scare me
+  - Plasmaman # they die instantly
+  - Tajaran # biesel COs cant be tajarans, DSS agents probably cant either...
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    name: ghost-role-information-biesel-bodyguard-reinforcement-name
+    description: ghost-role-information-biesel-bodyguard-reinforcement-description
+    requirements:
+    - !type:CharacterOverallTimeRequirement
+      time: 18000 #5 hours
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      time: 7200 #2 hours
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      time: 7200 #2 hours
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [ BieselRepBodyguard ]
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstAgentDSS
+    - names_last
+
+- type: entity
+  id: RandomHumanoidSpawnerBieselBodygaurd
+  categories: [HideSpawnMenu]
+  name: Biesel Bodygaurd
+  components:
+  - type: RandomHumanoidSpawner
+    settings: BieselBodyguard
+
+
+#PRA // slightly different than other ones i just wanna consolidate this shit tbh
+- type: entity
+  categories: [HideSpawnMenu]
+  parent: MobTajaran
+  id: PRABodyguard
+  name: PRA bodyguard
+  components:
+  - type: MindShield
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    name: ghost-role-information-pra-bodyguard-reinforcement-name
+    description: ghost-role-information-pra-bodyguard-reinforcement-description
+    requirements:
+    - !type:CharacterOverallTimeRequirement
+      time: 18000 #5 hours
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      time: 7200 #2 hours
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      time: 7200 #2 hours
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [ PRABodyguard ]
+  - type: RandomMetadata
+    nameSegments:
+    - names_tajaran_first
+    - names_tajaran_last
+
+# SOL
+
+- type: entity
+  categories: [HideSpawnMenu]
+  parent: MobHuman
+  id: SANBodyguard
+  name: SAN Command Guard
+  components:
+  - type: MindShield
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    name: ghost-role-information-sol-bodyguard-reinforcement-name
+    description: ghost-role-information-sol-bodyguard-reinforcement-description
+    requirements:
+    - !type:CharacterOverallTimeRequirement
+      time: 18000 #5 hours
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      time: 7200 #2 hours
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      time: 7200 #2 hours
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [ SANBodyguard ]
+  - type: NpcFactionMember
+    factions:
+    - SAN
+    - NanoTrasen
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstMilitary
+    - names_last
+  - type: LanguageKnowledge
+    speaks:
+    - SolCommon # Intentionally does not include Tau-Ceti Basic, so they can only communicate with Humans on the station.
+    understands:
+    - SolCommon
+
+
+# ELYRA
+- type: entity
+  categories: [HideSpawnMenu]
+  parent: MobHuman
+  id: ElyraBodyguard
+  name: EAF Special Protections Officer
+  components:
+  - type: MindShield
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    name: ghost-role-information-elyra-bodyguard-reinforcement-name
+    description: ghost-role-information-elyra-bodyguard-reinforcement-description
+    requirements:
+    - !type:CharacterOverallTimeRequirement
+      time: 18000 #5 hours
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      time: 7200 #2 hours
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      time: 7200 #2 hours
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [ ElyraRepBodyguard ]
+  - type: NpcFactionMember
+    factions:
+    - NanoTrasen
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstMilitary
+    - names_last
+  - type: LanguageKnowledge
+    speaks:
+    - Elyran # they are directly from the EAF so rlly theyd have no reason to learn other languages
+    understands:
+    - Elyran
+
+# GOLDEN DEEP
+
+- type: entity
+  categories: [HideSpawnMenu]
+  parent: MobIPC
+  id: HoplanBodyguard
+  name: Hoplan Merchant Guard
+  components:
+  - type: MindShield
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    name: ghost-role-information-goldendeep-bodyguard-reinforcement-name
+    description: ghost-role-information-goldendeep-bodyguard-reinforcement-description
+    rules: ghost-role-information-consulate-bodyguard-rules
+    requirements:
+    - !type:CharacterOverallTimeRequirement
+      time: 18000 #5 hours
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      time: 7200 #2 hours
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      time: 7200 #2 hours
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [ HoplanBodyguard ]
+  - type: RandomMetadata
+    nameSegments:
+    - IpcFirst
+    - IpcLast
+
+#CONSULATE GEAR
+
+- type: startingGear # make this less military maybe idkk - alternatively have a special warvet CO only one that sends in a guy like this?
+  id: BieselRepBodyguard
+  equipment:
+    head: ClothingHeadHatTCAFBeretField
+    id: ConsularBodyguardPDA
+    ears: ClothingHeadsetAltCentCom
+    neck: BieselLanyard
+    jumpsuit: ClothingUniformJumpsuitConsularBlackSuit
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesGlassesMedSec
+    gloves: ClothingHandsGlovesCombatTCAF
+    outerClothing: ClothingOuterArmorTCFLLight
+    belt: ClothingBeltTCAFWebbing
+    pocket1: WeaponRevolverMateba
+    pocket2: SpeedLoaderMagnum
+  storage:
+    belt:
+    - Flash
+    - MagazineBoxMagnum
+    - Stunbaton
+    - SyringeCaseFilled
+
+- type: startingGear # add special peoples army weapons? maybe even make tesla armor they can call in or some shit idfk
+  id: PRABodyguard
+  equipment:
+    head: ClothingHeadHatPRAFieldBeret
+    id: ConsularBodyguardPDA
+    ears: ClothingHeadsetAltCentCom
+    neck: PRALanyard
+    jumpsuit: ClothingUniformJumpsuitPRAStriped
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesGlassesMedSec
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorBasicSlim
+    belt: ClothingBeltMilitaryWebbing
+    pocket1: WeaponRevolverSnub
+    pocket2: SpeedLoaderMagnum
+  storage:
+    belt:
+    - Flash
+    - MagazineBoxMagnum
+    - Stunbaton
+    - SyringeCaseFilled
+
+- type: startingGear # add weird roboguns idk lol
+  id: HoplanBodyguard
+  equipment:
+    head: ClothingHeadHatHoplanCombatBeret
+    id: ConsularBodyguardPDA
+    ears: ClothingHeadsetAltCentCom
+    neck: GoldenDeepRingID
+    jumpsuit: ClothingUniformJumpsuitHoplanUniform
+    shoes: ClothingShoesBootsCowboyBrown
+    eyes: ClothingEyesGlassesMedSec
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHoplanChestplate
+    belt: ClothingBeltMercWebbing
+    pocket1: WeaponRevolverSnub
+    pocket2: SpeedLoaderMagnum
+  storage:
+    belt:
+    - Flash
+    - MagazineBoxMagnum
+    - Stunbaton
+    - WelderIndustrial
+    - CableApcStack10
+
+- type: startingGear # add weird roboguns idk lol SANIdCard
+  id: SANBodyguard
+  equipment:
+    head: ClothingHeadHatSANArmyGarrisonOficer
+    id: ConsularBodyguardPDA
+    ears: ClothingHeadsetAltCentCom
+    neck: SANIdCard
+    jumpsuit: ClothingUniformJumpsuitSolServiceWhite
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesGlassesMedSec
+    gloves: ClothingHandsMercGlovesCombat
+    outerClothing: ClothingOuterVestWebSAN
+    belt: ClothingBeltMercWebbing
+    pocket1: WeaponRevolverPython
+    pocket2: SpeedLoaderMagnum
+  storage:
+    belt:
+    - Flash
+    - MagazineBoxMagnum
+    - Stunbaton
+    - SyringeCaseFilled
+
+- type: startingGear # make this less military maybe idkk - alternatively have a special warvet CO only one that sends in a guy like this?
+  id: ElyraRepBodyguard
+  equipment:
+    id: ConsularBodyguardPDA
+    ears: ClothingHeadsetAltCentCom
+    neck: ElyraLanyard
+    jumpsuit: ClothingUniformJumpsuitConsularBlackSuit
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesGlassesMedSec
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterArmorBasicSlim
+    belt: ClothingBeltMilitaryWebbing
+    pocket1: WeaponEnergyGunPistol
+    pocket2: EmergencyMedipen
+  storage:
+    belt:
+    - Flash
+    - Stunbaton
+    - SyringeCaseFilled
+
+# ASSISTANTS
+
+# biesel
+
+# sol
+
+# pra
+
+# golden deep
+
+# elyra

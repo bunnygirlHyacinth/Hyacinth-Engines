@@ -839,3 +839,25 @@
     - !type:CharacterLifepathRequirement
       lifepaths:
         - WarVet
+
+# GDS
+
+#PRA // GRAND PEOPLES ARMY
+
+- type: loadout
+  id: ClothingHeadHatPRAFieldBeret
+  category: Head
+  cost: 0
+  canBeHeirloom: true
+  exclusive: true
+  items:
+  - ClothingHeadHatPRAFieldBeret
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutHead
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Adhomai
+  - !type:CharacterLifepathRequirement
+    lifepaths:
+    - WarVet

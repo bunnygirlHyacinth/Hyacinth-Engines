@@ -933,3 +933,23 @@
     - !type:CharacterLifepathRequirement
       lifepaths:
         - WarVet
+
+#gds
+
+#PRA JACKETS
+- type: loadout
+  id: LoadoutOuterJacketPRAService
+  category: Outer
+  cost: 0
+  canBeHeirloom: true
+  items:
+  - ClothingOuterCoatPRAService
+  requirements:
+  - !type:CharacterItemGroupRequirement
+    group: LoadoutOuter
+  - !type:CharacterNationalityRequirement
+    nationalities:
+    - Adhomai
+  - !type:CharacterLifepathRequirement
+    lifepaths:
+    - WarVet

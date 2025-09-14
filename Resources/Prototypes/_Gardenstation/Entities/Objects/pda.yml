@@ -102,3 +102,30 @@
     - CrimeAssistCartridge # to assist magistrate
     - SecWatchCartridge # keep watch on whos wanted
     - NanoChatCartridge # DeltaV
+
+- type: entity
+  parent: ConsularOfficerPDA
+  id: ConsularBodyguardPDA
+  name: Diplomatic Bodyguard PDA
+  description: Light green sign of walking bureaucracy.
+  components:
+  - type: Pda
+    id: ConsulateBodyguardIDCard
+    penSlot:
+      startingItem: PenCentcom
+      whitelist:
+        tags:
+        - Write
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    diskSpace: 10 # DeltaV
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NewsReaderCartridge
+    - MedTekCartridge
+    - LogProbeCartridge
+    - AstroNavCartridge
+    - CrimeAssistCartridge # DeltaV
+    - SecWatchCartridge # DeltaV
+    - NanoChatCartridge # DeltaV
