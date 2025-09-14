@@ -1,0 +1,103 @@
+﻿- type: entity
+  parent: [BaseItem, BaseCommandContraband]
+  abstract: true
+  id: ConsulateRadio
+  name: Consular Communicator
+  description: Request assistance in your consular duties from your government. While they are useful, they are not protected by directive 12 like you are!
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/communication.rsi
+    layers:
+    - state: radio
+  - type: UserInterface
+    interfaces:
+      enum.GhostRoleRadioUiKey.Key:
+        type: GhostRoleRadioBoundUserInterface
+  - type: ActivatableUI
+    key: enum.GhostRoleRadioUiKey.Key
+
+- type: entity
+  parent: ConsulateRadio
+  id: ReinforcementRadioBiesel
+  name: Biesel DSS Communicator
+  description: Call in a DSS provided bodyguard from the Republic of Biesel.
+  components:
+  - type: GhostRole
+    name: ghost-role-information-biesel-bodyguard-reinforcement-name
+    description: ghost-role-information-biesel-bodyguard-reinforcement-description
+    rules: ghost-role-information-consulate-bodyguard-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: RandomHumanoidSpawnerBieselBodygaurd
+
+- type: entity
+  parent: ConsulateRadio
+  id: ReinforcementRadioPRA
+  name: PRA SGC Communicator
+  description: Call in a SGC officer from the nearest stationed Republican vessel.
+  components:
+  - type: GhostRole
+    name: ghost-role-information-pra-bodyguard-reinforcement-name
+    description: ghost-role-information-pra-bodyguard-reinforcement-description
+    rules: ghost-role-information-consulate-bodyguard-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: PRABodyguard
+
+- type: entity
+  parent: ConsulateRadio
+  id: ReinforcementRadioGoldenDeep
+  name: Midas Control Communicator
+  description: Rent a Hoplan from the Golden Deep Merchant Navy to protect you.
+  components:
+  - type: GhostRole
+    id: BodyguardHoplan
+    name: ghost-role-information-goldendeep-bodyguard-reinforcement-name
+    description: ghost-role-information-goldendeep-bodyguard-reinforcement-description
+    rules: ghost-role-information-consulate-bodyguard-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: HoplanBodyguard
+
+- type: entity
+  parent: ConsulateRadio
+  id: ReinforcementRadioSAN
+  name: ASSN Department of State Communicator
+  description: Request a bodyguard from the Department of State to protect you.
+  components:
+  - type: GhostRole
+    name: ghost-role-information-sol-bodyguard-reinforcement-name
+    description: ghost-role-information-sol-bodyguard-reinforcement-description
+    rules: ghost-role-information-consulate-bodyguard-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: SANBodyguard
+
+- type: entity
+  parent: ConsulateRadio
+  id: ReinforcementRadioElyra
+  name: EAF Communicator
+  description: Request a bodyguard from the Serene Republic of Elyra to protect you.
+  components:
+  - type: GhostRole
+    name: ghost-role-information-elyra-bodyguard-reinforcement-name
+    description: ghost-role-information-elyra-bodyguard-reinforcement-description
+    rules: ghost-role-information-consulate-bodyguard-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: ElyraBodyguard

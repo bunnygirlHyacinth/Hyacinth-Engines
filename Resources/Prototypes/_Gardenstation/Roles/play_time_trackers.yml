@@ -9,3 +9,6 @@
 # command
 - type: playTimeTracker
   id: JobConsularOfficer
+
+- type: playTimeTracker
+  id: JobDiplomatBodyguard

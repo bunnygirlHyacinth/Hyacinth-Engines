@@ -75,6 +75,31 @@
     - CentralCommand
     - ConsularOfficer
 
+- type: entity
+  parent: IDCardStandard
+  id: ConsulateBodyguardIDCard
+  name: Consular Officer ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: centcom
+    - state: departmenthead
+      color: "#1B67A5"
+    - state: subdepartment
+      color: "#1B67A5"
+    - state: visitor
+  - type: Item
+    heldPrefix: blue
+  - type: PresetIdCard
+    job: ConsularBodyguard
+  - type: NanoChatCard
+    listNumber: true
+  - type: Access
+    tags:
+    - CentralCommand
+    - ConsularOfficer
+
+
 # LANYARDS
 
 # BIESEL

@@ -1,7 +1,7 @@
 - type: job
   id: Justicar
-  name: job-name-justicar
-  description: job-description-justicar
+  name: Justicar
+  description: "protect the little ones, guard your ward, guide the flock, give council to the mystagogue and be their wrathful hand."
   playTimeTracker: JobJusticar
   requirements:
     - !type:CharacterOverallTimeRequirement

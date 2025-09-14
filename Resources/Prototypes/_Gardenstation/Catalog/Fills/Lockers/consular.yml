@@ -15,6 +15,8 @@
     # Diplomacy tools
     - id: SpaceCash5000
     - id: RubberStampBieselRep
+    - id: ReinforcementRadioBiesel
+
 
 - type: entity
   id: LockerSolRepFilled
@@ -36,6 +38,7 @@
     - id: SpaceCash2500 # the ASSN is declining
     - id: RubberStampSolRep
     - id: SpyCameraBug # "diplomacy"
+    - id: ReinforcementRadioSAN
 
 - type: entity
   id: LockerPRARepFilled
@@ -60,6 +63,7 @@
     - id: SiikMaasTranslator # i did a round as a PRA diplomat and literally NOBODY could rp with her cause they couldnt speak siikmaas
       amount: 2
     - id: PRAFieldKnife #might be fucking crazy to give them but idk i think its cool
+    - id: ReinforcementRadioPRA
 
 - type: entity
   id: LockerGoldenDeepRepFilled
@@ -79,6 +83,7 @@
     - id: RubberStampGoldenDeepRep
     - id: RubberStampTrader
     - id: EncryptionKeyBinary #might be wild for antags but iiiidk it just kinda makes sense
+    - id: ReinforcementRadioGoldenDeep
 
 - type: entity
   id: LockerElyraRepFilled
@@ -97,3 +102,4 @@
     - id: RubberStampElyraRep
     - id: ResearchDisk5000
     - id: BorgModuleMusique #just for fun
+    - id: ReinforcementRadioElyra

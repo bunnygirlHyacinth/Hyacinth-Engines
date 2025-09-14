@@ -1,0 +1,14 @@
+﻿- type: dataset
+  id: NamesFirstAgentSpecial
+  values:
+  - Special Agent
+  - Supervisory Special Agent
+  - Assistant Special Agent
+  - Agent
+  - Senior Agent
+  - Deputy Agent
+
+- type: dataset
+  id: NamesFirstAgentDSS
+  values:
+  - Special Agent

@@ -239,3 +239,33 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+
+# GOVT/FACTION/CONSUL
+
+#PRA
+
+- type: entity
+  parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, ClothingOuterStorageBase]
+  id: ClothingOuterCoatPRAService
+  name: Grand People's Army service coat
+  description: A standard issue service coat, often seen worn by members present and former of the GPA.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/pra_servicecoat.rsi
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/OuterClothing/Coats/pra_servicecoat.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.0
+    sprintModifier: 1.0
+  - type: HeldSpeedModifier
+  - type: GroupExamine
+  - type: TemperatureProtection
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
+  - type: Armor # not as robust cause cco ghostrole might have it at some point idfk
+    modifiers:
+      coefficients:
+        Blunt: 0.93
+        Slash: 0.93
+        Piercing: 0.93
+        Heat: 0.93
