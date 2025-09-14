@@ -74,15 +74,3 @@
     items:
     - id: LockerElyraRepFilled
 
-
-#- type: entity
-#  parent: BlueshieldOfficerLockerTeleporter
-#  id: UniqueBlueshieldOfficerLockerTeleporter
-#  suffix: Unique
-#  categories: [ HideSpawnMenu ]
-#  components:
-#  - type: UniqueEntityChecker
-#    markerName: BlueshieldLocker
-#  - type: UniqueEntityMarker
-#    markerName: BlueshieldLocker
-#    stationOnly: false
