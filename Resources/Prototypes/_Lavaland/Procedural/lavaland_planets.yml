@@ -15,8 +15,8 @@
   - 25.10312 # nitrogen
   - 8.21301 # carbon dioxide
   weather:
-  - AshfallLight
-  - AshfallHeavy
+  #- AshfallLight
+  #- AshfallHeavy
   markers:
   - RandomTendrilLavaland
   - ChasmLavaland

@@ -12,7 +12,7 @@
   table: !type:AllSelector # we need to pass a list of rules, since rules have further restrictions to consider via StationEventComp
     children:
     - id: GameRuleMeteorSwarmSmall
-      prob: 0.15
+      prob: 0.01
 
 - type: entityTable
   id: MeteorSwarmMildTable
@@ -32,8 +32,8 @@
     - id: GameRuleMeteorSwarmSmall
     - id: GameRuleMeteorSwarmMedium
     - id: GameRuleMeteorSwarmLarge
-    - id: GameRuleUristSwarm
-    - id: ImmovableRodSpawn
+    #- id: GameRuleUristSwarm - this is so dumb lmao
+    #- id: ImmovableRodSpawn
 
 - type: weightedRandomEntity
   id: MeteorSpawnAsteroidWallTable
@@ -106,7 +106,7 @@
   - type: StationEvent
     weight: 44
     earliestStart: 2
-    minimumPlayers: 0
+    minimumPlayers: 8
   - type: MeteorSwarm
     announcement: null
     announcementSound: null
@@ -126,7 +126,7 @@
   components:
   - type: StationEvent
     weight: 22
-    minimumPlayers: 0
+    minimumPlayers: 10
   - type: MeteorSwarm
     announcement: station-event-space-dust-announcement
     announcementSound: /Audio/Announcements/attention.ogg
@@ -158,6 +158,7 @@
   components:
   - type: StationEvent
     weight: 10
+    minimumPlayers: 20
   - type: MeteorSwarm
     meteors:
       MeteorSmall: 3
@@ -170,6 +171,7 @@
   components:
   - type: StationEvent
     weight: 5
+    minimumPlayers: 30
   - type: MeteorSwarm
     meteors:
       MeteorSmall: 2
