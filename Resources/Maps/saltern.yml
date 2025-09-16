@@ -4,8 +4,8 @@ meta:
   engineVersion: 260.2.0
   forkId: ""
   forkVersion: ""
-  time: 09/10/2025 19:00:15
-  entityCount: 13799
+  time: 09/16/2025 06:20:23
+  entityCount: 13813
 maps:
 - 1
 grids:
@@ -889,7 +889,7 @@ entities:
             2: 57344
           8,5:
             0: 272
-            4: 17472
+            3: 17472
           8,6:
             0: 13105
             2: 2176
@@ -937,10 +937,10 @@ entities:
             0: 53759
           11,2:
             0: 4319
-            3: 49152
+            4: 49152
           11,3:
             0: 61457
-            3: 204
+            4: 204
           11,-1:
             0: 30583
           11,4:
@@ -952,9 +952,9 @@ entities:
             0: 28791
           12,2:
             0: 119
-            3: 28672
+            4: 28672
           12,3:
-            3: 119
+            4: 119
             0: 61440
           12,-1:
             0: 29311
@@ -1000,7 +1000,7 @@ entities:
             0: 52701
           16,0:
             0: 13116
-            7: 52416
+            5: 52416
           16,1:
             0: 65484
           16,2:
@@ -1410,13 +1410,13 @@ entities:
           8,-10:
             2: 61167
           9,5:
-            5: 4368
-            3: 17472
+            6: 4368
+            4: 17472
           9,6:
             2: 4080
           10,5:
-            3: 4368
-            6: 17472
+            4: 4368
+            7: 17472
           10,6:
             2: 8176
           10,7:
@@ -1424,7 +1424,7 @@ entities:
           10,8:
             2: 3993
           11,5:
-            3: 21840
+            4: 21840
           11,6:
             2: 65520
           11,7:
@@ -1479,7 +1479,7 @@ entities:
           17,0:
             0: 1
             2: 8
-            7: 21776
+            5: 21776
           18,-3:
             2: 4096
           18,-2:
@@ -1724,21 +1724,6 @@ entities:
           temperature: 293.15
           moles:
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 0
           - 6666.982
           - 0
           - 0
@@ -1753,25 +1738,10 @@ entities:
         - volume: 2500
           temperature: 293.15
           moles:
-          - 6666.982
           - 0
           - 0
           - 0
           - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-          - 0
-        - volume: 2500
-          temperature: 293.15
-          moles:
-          - 0
-          - 0
-          - 0
-          - 6666.982
           - 0
           - 0
           - 0
@@ -1787,6 +1757,36 @@ entities:
           - 9350
           - 0
           - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 6666.982
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 0
+          - 0
+          - 0
+          - 6666.982
           - 0
           - 0
           - 0
@@ -1863,6 +1863,7 @@ entities:
             929: 23,11
             930: 24,13
             931: 23,13
+            1118: -31,-14
         - node:
             zIndex: 1
             color: '#FFFFFFFF'
@@ -2591,6 +2592,18 @@ entities:
             id: Caution
           decals:
             81: 53,2
+        - node:
+            angle: 3.141592653589793 rad
+            color: '#FFFFFFFF'
+            id: Caution
+          decals:
+            1120: 70,5
+        - node:
+            angle: 4.71238898038469 rad
+            color: '#FFFFFFFF'
+            id: Caution
+          decals:
+            1119: 57,7
         - node:
             color: '#52B4E996'
             id: CheckerNWSE
@@ -5798,7 +5811,7 @@ entities:
       pos: 20.5,0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -5836.3687
+      secondsUntilStateChange: -6444.5967
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -31461,6 +31474,11 @@ entities:
     - type: Transform
       pos: 10.742821,-45.201637
       parent: 2
+  - uid: 13766
+    components:
+    - type: Transform
+      pos: -3.2819057,10.69077
+      parent: 2
 - proto: ClothingOuterVestHazard
   entities:
   - uid: 4829
@@ -32308,6 +32326,18 @@ entities:
     components:
     - type: Transform
       pos: -32.5,-28.5
+      parent: 2
+  - uid: 13801
+    components:
+    - type: Transform
+      pos: -38.5,-27.5
+      parent: 2
+- proto: CrateEngineeringTEGKit
+  entities:
+  - uid: 13804
+    components:
+    - type: Transform
+      pos: 37.5,12.5
       parent: 2
 - proto: CrateEngineeringTeslaCoil
   entities:
@@ -37119,6 +37149,13 @@ entities:
     - type: Transform
       pos: 43.593338,-8.411646
       parent: 2
+- proto: DrinkThavenKelpCocktailGlass
+  entities:
+  - uid: 13813
+    components:
+    - type: Transform
+      pos: -2.3389356,-5.3937416
+      parent: 2
 - proto: DrinkTokkuri
   entities:
   - uid: 5688
@@ -38028,7 +38065,7 @@ entities:
       pos: -8.5,25.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -5235.601
+      secondsUntilStateChange: -5843.829
       state: Closing
   - uid: 5819
     components:
@@ -59528,6 +59565,18 @@ entities:
     - type: Transform
       pos: 42.38984,-10.466663
       parent: 2
+- proto: KelpPodSeeds
+  entities:
+  - uid: 13811
+    components:
+    - type: Transform
+      pos: -4.7220225,-42.37433
+      parent: 2
+  - uid: 13812
+    components:
+    - type: Transform
+      pos: -4.494158,-42.455708
+      parent: 2
 - proto: KitchenDeepFryer
   entities:
   - uid: 8749
@@ -60182,13 +60231,6 @@ entities:
     - type: Transform
       pos: -11.5,13.5
       parent: 2
-- proto: LockerSteel
-  entities:
-  - uid: 13766
-    components:
-    - type: Transform
-      pos: -32.5,28.5
-      parent: 2
 - proto: LockerWardenFilledHardsuit
   entities:
   - uid: 8829
@@ -60714,6 +60756,18 @@ entities:
     components:
     - type: Transform
       pos: 19.450434,-9.014745
+      parent: 2
+- proto: MedTekCartridge
+  entities:
+  - uid: 13809
+    components:
+    - type: Transform
+      pos: 22.303833,-10.624462
+      parent: 2
+  - uid: 13810
+    components:
+    - type: Transform
+      pos: 22.303833,-10.412873
       parent: 2
 - proto: MicrophoneInstrument
   entities:
@@ -65332,6 +65386,23 @@ entities:
     components:
     - type: Transform
       pos: -9.5,-3.5
+      parent: 2
+- proto: RadiationCollectorFlatpack
+  entities:
+  - uid: 13802
+    components:
+    - type: Transform
+      pos: 50.826527,9.800333
+      parent: 2
+  - uid: 13803
+    components:
+    - type: Transform
+      pos: 50.403347,9.718953
+      parent: 2
+  - uid: 13805
+    components:
+    - type: Transform
+      pos: 50.76142,9.393433
       parent: 2
 - proto: RadiationCollectorNoTank
   entities:
@@ -71564,6 +71635,18 @@ entities:
     - type: Transform
       pos: -18.5,-12.5
       parent: 2
+- proto: SpawnPointConsularOfficer
+  entities:
+  - uid: 13807
+    components:
+    - type: Transform
+      pos: -38.5,29.5
+      parent: 2
+  - uid: 13808
+    components:
+    - type: Transform
+      pos: -2.5,25.5
+      parent: 2
 - proto: SpawnPointDetective
   entities:
   - uid: 10520
@@ -71612,6 +71695,13 @@ entities:
     components:
     - type: Transform
       pos: 11.5,-30.5
+      parent: 2
+- proto: SpawnPointLocationMidRoundAntag
+  entities:
+  - uid: 13806
+    components:
+    - type: Transform
+      pos: 40.5,-6.5
       parent: 2
 - proto: SpawnPointMagistrate
   entities:
@@ -75607,6 +75697,85 @@ entities:
     - type: Transform
       pos: 48.60447,5.4525433
       parent: 2
+- proto: TwoWayLever
+  entities:
+  - uid: 13800
+    components:
+    - type: Transform
+      pos: -30.5,-13.5
+      parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        4929:
+        - - Left
+          - Forward
+        - - Right
+          - Reverse
+        - - Middle
+          - Off
+        4930:
+        - - Left
+          - Forward
+        - - Right
+          - Reverse
+        - - Middle
+          - Off
+        4925:
+        - - Left
+          - Forward
+        - - Right
+          - Reverse
+        - - Middle
+          - Off
+        4924:
+        - - Left
+          - Forward
+        - - Right
+          - Reverse
+        - - Middle
+          - Off
+        4931:
+        - - Left
+          - Forward
+        - - Right
+          - Reverse
+        - - Middle
+          - Off
+        4928:
+        - - Left
+          - Forward
+        - - Right
+          - Reverse
+        - - Middle
+          - Off
+        4927:
+        - - Left
+          - Forward
+        - - Right
+          - Reverse
+        - - Middle
+          - Off
+        4926:
+        - - Left
+          - Forward
+        - - Right
+          - Reverse
+        - - Middle
+          - Off
+        496:
+        - - Left
+          - Open
+        - - Right
+          - Open
+        - - Middle
+          - Close
+        502:
+        - - Left
+          - Open
+        - - Right
+          - Open
+        - - Middle
+          - Close
 - proto: TyrantCircuitBoard
   entities:
   - uid: 11058

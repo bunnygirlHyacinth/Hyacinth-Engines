@@ -4,8 +4,8 @@ meta:
   engineVersion: 260.2.0
   forkId: ""
   forkVersion: ""
-  time: 09/06/2025 07:39:41
-  entityCount: 5147
+  time: 09/16/2025 22:16:59
+  entityCount: 5152
 maps:
 - 1
 grids:
@@ -2348,7 +2348,7 @@ entities:
       pos: -33.5,-28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -20896.201
+      secondsUntilStateChange: -21267.762
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2360,7 +2360,7 @@ entities:
       pos: -35.5,-28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -20832.9
+      secondsUntilStateChange: -21204.46
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2613,7 +2613,7 @@ entities:
       pos: -8.5,-14.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -28370.344
+      secondsUntilStateChange: -28741.904
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -2734,7 +2734,7 @@ entities:
       pos: -22.5,-25.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -20857.934
+      secondsUntilStateChange: -21229.494
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -11315,6 +11315,14 @@ entities:
     - type: Transform
       pos: -29.5,-22.5
       parent: 2
+- proto: CleanerDispenser
+  entities:
+  - uid: 5151
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -19.5,-27.5
+      parent: 2
 - proto: CloningPod
   entities:
   - uid: 1475
@@ -12518,7 +12526,7 @@ entities:
       pos: -40.5,-15.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -5300.6445
+      secondsUntilStateChange: -5672.2056
       state: Opening
   - uid: 4579
     components:
@@ -14544,6 +14552,14 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -36.379333,-21.236526
+      parent: 2
+- proto: FuelDispenser
+  entities:
+  - uid: 5150
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -30.5,-1.5
       parent: 2
 - proto: GasFilter
   entities:
@@ -23041,7 +23057,7 @@ entities:
       pos: -39.5,-1.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -22548.398
+      secondsUntilStateChange: -22919.959
       state: Opening
   - uid: 2733
     components:
@@ -23056,7 +23072,7 @@ entities:
       pos: -39.5,-3.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -10175.998
+      secondsUntilStateChange: -10547.56
       state: Opening
 - proto: HydroponicsToolClippers
   entities:
@@ -28817,6 +28833,18 @@ entities:
     - type: Transform
       pos: -19.5,-5.5
       parent: 2
+- proto: SpawnPointConsularOfficer
+  entities:
+  - uid: 5148
+    components:
+    - type: Transform
+      pos: -18.5,-15.5
+      parent: 2
+  - uid: 5149
+    components:
+    - type: Transform
+      pos: -3.5,18.5
+      parent: 2
 - proto: SpawnPointDetective
   entities:
   - uid: 3425
@@ -29809,6 +29837,14 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -35.3124,-6.4835424
+      parent: 2
+- proto: SyringeHeroin
+  entities:
+  - uid: 5152
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -7.4477787,-13.509993
       parent: 2
 - proto: Table
   entities:
@@ -34847,7 +34883,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -8489.899
+      secondsUntilStateChange: -8861.461
       state: Opening
 - proto: WindoorSecureScienceLocked
   entities:
