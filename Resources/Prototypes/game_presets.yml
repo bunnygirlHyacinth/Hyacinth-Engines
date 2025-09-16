@@ -131,7 +131,7 @@
   description: extended-description
   rules:
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   #- LavalandStormScheduler # Lavaland Change
 
@@ -167,7 +167,7 @@
   showInVote: false #Admin Use
   description: secret-description
   rules:
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   #- LavalandStormScheduler # Lavaland Change
@@ -310,7 +310,7 @@
   - Changeling
   - SubGamemodesRule
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
   #- LavalandStormScheduler # Lavaland Change
