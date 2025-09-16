@@ -50,6 +50,8 @@
   - type: GhostRoleMobSpawner
     prototype: PRABodyguard
 
+
+
 - type: entity
   parent: ConsulateRadio
   id: ReinforcementRadioGoldenDeep
@@ -85,6 +87,7 @@
   - type: GhostRoleMobSpawner
     prototype: SANBodyguard
 
+
 - type: entity
   parent: ConsulateRadio
   id: ReinforcementRadioElyra
@@ -101,3 +104,4 @@
       settings: default
   - type: GhostRoleMobSpawner
     prototype: ElyraBodyguard
+

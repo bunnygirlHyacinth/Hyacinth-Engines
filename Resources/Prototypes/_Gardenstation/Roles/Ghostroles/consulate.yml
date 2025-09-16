@@ -3,7 +3,7 @@
   name: ghost-role-information-biesel-bodyguard-reinforcement-name
   description: ghost-role-information-biesel-bodyguard-reinforcement-description
   rules: ghost-role-information-consulate-bodyguard-rules
-  entityPrototype: BieselBodyguard
+  entityPrototype: RandomHumanoidSpawnerBieselBodyguard
 
 - type: ghostRole
   id: BodyguardPRA
@@ -33,17 +33,39 @@
   rules: ghost-role-information-consulate-bodyguard-rules
   entityPrototype: ElyraBodyguard
 
+# SECRETARY -- consildate this to a secretary with single use chameleon clothes or something maybe
 
 - type: ghostRole
   id: AssistantBiesel
-  name: ghost-role-information-syndicate-kobold-reinforcement-name
-  description: ghost-role-information-syndicate-kobold-reinforcement-description
+  name: ghost-role-information-biesel-assistant-reinforcement-name
+  description: ghost-role-information-biesel-assistant-reinforcement-description
   rules: ghost-role-information-consulate-assistant-rules
-  entityPrototype: MobKoboldSyndicateAgent
+  entityPrototype: RandomHumanoidSpawnerBieselSecretary
 
 - type: ghostRole
-  id: AssistantSol
-  name: ghost-role-information-syndicate-kobold-reinforcement-name
-  description: ghost-role-information-syndicate-kobold-reinforcement-description
+  id: AssistantSAN
+  name: ghost-role-information-sol-assistant-reinforcement-name
+  description: ghost-role-information-sol-assistant-reinforcement-description
   rules: ghost-role-information-consulate-assistant-rules
-  entityPrototype: MobKoboldSyndicateAgent
+  entityPrototype: SANSecretary
+
+- type: ghostRole
+  id: AssistantPRA
+  name: ghost-role-information-pra-assistant-reinforcement-name
+  description: ghost-role-information-pra-assistant-reinforcement-description
+  rules: ghost-role-information-consulate-assistant-rules
+  entityPrototype: PRASecretary
+
+- type: ghostRole
+  id: AssistantElyra
+  name: ghost-role-information-elyra-assistant-reinforcement-name
+  description: ghost-role-information-elyra-assistant-reinforcement-description
+  rules: ghost-role-information-consulate-assistant-rules
+  entityPrototype: ElyraSecretary
+
+- type: ghostRole
+  id: AssistantGoldenDeep
+  name: ghost-role-information-goldendeep-assistant-reinforcement-name
+  description: ghost-role-information-goldendeep-assistant-reinforcement-description
+  rules: ghost-role-information-consulate-assistant-rules
+  entityPrototype: GoldenDeepSecretary

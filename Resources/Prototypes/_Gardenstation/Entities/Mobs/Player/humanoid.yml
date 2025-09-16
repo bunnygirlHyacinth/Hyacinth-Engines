@@ -256,6 +256,39 @@
     nameSegments:
     - NamesFirstAgentDSS
     - names_last
+# assistant
+- type: randomHumanoidSettings
+  id: BieselSecretary
+  randomizeName: false
+  parent: EventHumanoidMindShielded
+  speciesBlacklist:
+  - Shadowkin
+  - Monkey
+  - Kobold
+  - Abductor
+  - Xelthia
+  - Rodentia #rodentia last names are broken i guess -- sola fix this later pretty please
+  - Vox
+  - Arachnid
+  - Plasmaman
+  - Tajaran # tajarans generally being given govt positions in biesel due to their usually anti-copro views and current political climate towards certain tajar radicalist groups
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    name: ghost-role-information-biesel-assistant-reinforcement-name
+    description: ghost-role-information-biesel-assistant-reinforcement-description
+    requirements:
+    - !type:CharacterOverallTimeRequirement
+      time: 18000 #5 hours
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [ BieselRepSecretary ]
+  - type: RandomMetadata # maybe add species name but i feel like it makes interesting flavor having biesel xeno politicians take on "bieselized" names or something?
+    nameSegments:
+    - names_first
+    - names_last
+
 
 - type: entity
   id: RandomHumanoidSpawnerBieselBodygaurd
@@ -265,6 +298,13 @@
   - type: RandomHumanoidSpawner
     settings: BieselBodyguard
 
+- type: entity
+  id: RandomHumanoidSpawnerBieselSecretary
+  categories: [HideSpawnMenu]
+  name: Biesel Secretary
+  components:
+  - type: RandomHumanoidSpawner
+    settings: BieselSecretary
 
 #PRA // slightly different than other ones i just wanna consolidate this shit tbh
 - type: entity
@@ -295,6 +335,37 @@
     nameSegments:
     - names_tajaran_first
     - names_tajaran_last
+#assistant
+- type: entity
+  categories: [HideSpawnMenu]
+  parent: MobTajaran
+  id: PRASecretary
+  name: PRA secretary
+  components:
+  - type: MindShield
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    name: ghost-role-information-pra-assistant-reinforcement-name
+    description: ghost-role-information-pra-assistant-reinforcement-description
+    requirements:
+    - !type:CharacterOverallTimeRequirement
+      time: 18000 #5 hours
+    - !type:CharacterDepartmentTimeRequirement
+      department: Medical
+      time: 7200 #2 hours
+    - !type:CharacterDepartmentTimeRequirement
+      department: Security
+      time: 7200 #2 hours
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [ PRASecretary ]
+  - type: RandomMetadata
+    nameSegments:
+    - names_tajaran_first
+    - names_tajaran_last
+
+
 
 # SOL
 
@@ -329,6 +400,38 @@
   - type: RandomMetadata
     nameSegments:
     - NamesFirstMilitary
+    - names_last
+  - type: LanguageKnowledge
+    speaks:
+    - SolCommon # Intentionally does not include Tau-Ceti Basic, so they can only communicate with Humans on the station.
+    understands:
+    - SolCommon
+
+- type: entity
+  categories: [HideSpawnMenu]
+  parent: MobHuman
+  id: SANSecretary
+  name: ASSN Department of State Jr. Secretary
+  components:
+  - type: MindShield
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    name: ghost-role-information-sol-assistant-reinforcement-name
+    description: ghost-role-information-sol-assistant-reinforcement-description
+    requirements:
+    - !type:CharacterOverallTimeRequirement
+      time: 18000 #5 hours
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [ SANSecretary ]
+  - type: NpcFactionMember
+    factions:
+    - SAN
+    - NanoTrasen
+  - type: RandomMetadata
+    nameSegments:
+    - names_first
     - names_last
   - type: LanguageKnowledge
     speaks:
@@ -374,6 +477,37 @@
     - Elyran # they are directly from the EAF so rlly theyd have no reason to learn other languages
     understands:
     - Elyran
+#assistant
+- type: entity
+  categories: [HideSpawnMenu]
+  parent: MobHuman
+  id: ElyraSecretary
+  name: Elyran Department of State assistant-secretary
+  components:
+  - type: MindShield
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    name: ghost-role-information-elyra-assistant-reinforcement-name
+    description: ghost-role-information-elyra-assistant-reinforcement-description
+    requirements:
+    - !type:CharacterOverallTimeRequirement
+      time: 18000 #5 hours
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [ ElyraRepSecretary ]
+  - type: NpcFactionMember
+    factions:
+    - NanoTrasen
+  - type: RandomMetadata
+    nameSegments:
+    - names_first
+    - names_last
+  - type: LanguageKnowledge
+    speaks:
+    - Elyran # they are directly from the EAF so rlly theyd have no reason to learn other languages
+    understands:
+    - Elyran
 
 # GOLDEN DEEP
 
@@ -406,9 +540,35 @@
     nameSegments:
     - IpcFirst
     - IpcLast
+#assistant
+- type: entity
+  categories: [HideSpawnMenu]
+  parent: MobIPC
+  id: GoldenDeepSecretary
+  name: Midas Collective secretary
+  components:
+  - type: MindShield
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: GhostRole
+    name: ghost-role-information-goldendeep-assistant-reinforcement-name
+    description: ghost-role-information-goldendeep-assistant-reinforcement-description
+    rules: ghost-role-information-consulate-bodyguard-rules
+    requirements:
+    - !type:CharacterOverallTimeRequirement
+      time: 18000 #5 hours
+  - type: GhostTakeoverAvailable
+  - type: Loadout
+    prototypes: [ GoldenDeepAssistant ]
+  - type: RandomMetadata
+    nameSegments:
+    - IpcFirst
+    - IpcLast
+
 
 #CONSULATE GEAR
 
+#BODYGUARD
 - type: startingGear # make this less military maybe idkk - alternatively have a special warvet CO only one that sends in a guy like this?
   id: BieselRepBodyguard
   equipment:
@@ -518,14 +678,78 @@
     - Stunbaton
     - SyringeCaseFilled
 
-# ASSISTANTS
+# ASSISTANTS # add special faction assistant wear maybe? idk. miiight be sprite bloat tbh unless were going hrp lol (plsplspls say yes)
 
 # biesel
 
+- type: startingGear
+  id: BieselRepSecretary
+  equipment:
+    id: ConsularAssistantPDA
+    ears: ClothingHeadsetCentCom
+    neck: BieselLanyard
+    jumpsuit: ClothingUniformJumpsuitAdminAssistant
+    shoes: ClothingShoesLeather
+    eyes: ClothingEyesGlasses
+    gloves: ClothingHandsBieselArmband
+    pocket1: RubberStampNotary
+    pocket2: BoxFolderClipboard
+
+
 # sol
+
+- type: startingGear
+  id: SANSecretary
+  equipment:
+    head: ClothingHeadHatSANArmyGarrison
+    id: ConsularAssistantPDA
+    ears: ClothingHeadsetCentCom
+    neck: SANIdCard
+    jumpsuit: ClothingUniformJumpsuitSolServiceWhite
+    shoes: ClothingShoesLeather
+    eyes: ClothingEyesGlasses
+    pocket1: RubberStampNotary
+    pocket2: BoxFolderClipboard
 
 # pra
 
+- type: startingGear
+  id: PRASecretary
+  equipment:
+    head: ClothingHeadHatPRAFieldBeret
+    id: ConsularAssistantPDA
+    ears: ClothingHeadsetCentCom
+    neck: PRALanyard
+    jumpsuit: ClothingUniformJumpsuitPRAStriped
+    outerClothing: ClothingOuterCoatPRAService
+    shoes: ClothingShoesLeather
+    eyes: ClothingEyesGlasses
+    pocket1: RubberStampNotary
+    pocket2: BoxFolderClipboard
+
 # golden deep
 
+- type: startingGear
+  id: GoldenDeepAssistant
+  equipment:
+    id: ConsularAssistantPDA
+    ears: ClothingHeadsetCentCom
+    gloves: GoldenDeepRingID
+    jumpsuit: ClothingUniformJumpsuitAdminAssistant
+    shoes: ClothingShoesLeather
+    pocket1: RubberStampNotary
+    pocket2: BoxFolderClipboard
+
 # elyra
+
+- type: startingGear
+  id: ElyraRepSecretary
+  equipment:
+    id: ConsularAssistantPDA
+    ears: ClothingHeadsetCentCom
+    neck: ElyraLanyard
+    jumpsuit: ClothingUniformJumpsuitAdminAssistant
+    shoes: ClothingShoesLeather
+    eyes: ClothingEyesGlasses
+    pocket1: RubberStampNotary
+    pocket2: BoxFolderClipboard

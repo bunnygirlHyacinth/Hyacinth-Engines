@@ -12,3 +12,6 @@
 
 - type: playTimeTracker
   id: JobDiplomatBodyguard
+
+- type: playTimeTracker
+  id: JobDiplomatSecretary

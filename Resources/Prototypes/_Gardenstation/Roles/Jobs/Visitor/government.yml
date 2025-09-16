@@ -18,3 +18,23 @@
     charges: 10
   - !type:ModifyEnvirohelmSpecial
     powerCell: PowerCellHigh
+
+- type: job
+  id: ConsularAssistant
+  name: Diplomatic Secretary
+  description: "Do what your consular asks of you, copy papers, spill coffee on the consular's brand new slacks."
+  playTimeTracker: JobDiplomatSecretary
+  setPreference: false
+  startingGear: AdminAssistantGear
+  icon: "JobIconVisitor"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  access:
+  - CentralCommand
+  - ConsularOfficer
+  - Service # basic sec access maybe? we might wanna take this one off tbh idk
+  afterLoadoutSpecial:
+  - !type:ModifyEnvirosuitSpecial
+    charges: 10
+  - !type:ModifyEnvirohelmSpecial
+    powerCell: PowerCellHigh
