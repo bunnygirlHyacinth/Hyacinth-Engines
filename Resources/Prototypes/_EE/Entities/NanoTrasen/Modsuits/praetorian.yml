@@ -21,6 +21,8 @@
           whitelist:
             components:
               - PowerCell
+    - type: PowerCellDraw # gds tweak suitdraw
+      drawRate: 0.3
     - type: Storage
       maxItemSize: Huge
       grid:
@@ -130,6 +132,8 @@
         - NonEnergy
     - type: StaminaDamageResistance
       coefficient: 0.5 # 50%
+    - type: ClothingModifyStunTime # bso should be badass im sorry idk abt balance
+      modifier: 0.5
     - type: PressureProtection
       highPressureMultiplier: 0.45
       lowPressureMultiplier: 1000

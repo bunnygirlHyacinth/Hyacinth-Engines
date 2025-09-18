@@ -89,6 +89,8 @@
         Slash: 0.7
         Piercing: 0.6 # more bulletproof
         Heat: 0.7
+  - type: StaminaDamageResistance
+    coefficient: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.9
 

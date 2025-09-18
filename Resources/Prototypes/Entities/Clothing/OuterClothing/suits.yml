@@ -18,6 +18,8 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.75
+  - type: StaminaDamageResistance
+    coefficient: 0.65 #shitter bait lole
   - type: ExplosionResistance
     damageCoefficient: 0.15
   - type: GroupExamine
@@ -76,6 +78,8 @@
         Slash: 0.9
         Heat: 0.8
         Cold: 0.8
+  - type: StaminaDamageResistance
+    coefficient: 0.75
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.7
@@ -112,6 +116,8 @@
         Slash: 0.9
         Heat: 0.8
         Cold: 0.8
+  - type: StaminaDamageResistance
+    coefficient: 0.75
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
@@ -138,6 +144,8 @@
       coefficients:
         Heat: 0.90
         Radiation: 0.001
+  - type: StaminaDamageResistance
+    coefficient: 0.85
   - type: Clothing
     sprite: Clothing/OuterClothing/Suits/rad.rsi
   - type: GroupExamine
@@ -179,6 +187,8 @@
         Slash: 0.8
         Piercing: 0.8
         Heat: 0.8
+  - type: StaminaDamageResistance
+    coefficient: 0.75
   # phase cloak
   - type: ToggleClothing
     action: ActionTogglePhaseCloak
@@ -316,6 +326,8 @@
     coolingCoefficient: 0.01
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCarp
+  - type: StaminaDamageResistance
+    coefficient: 0.75
 
 - type: entity # From Upstream
   parent: ClothingOuterBase

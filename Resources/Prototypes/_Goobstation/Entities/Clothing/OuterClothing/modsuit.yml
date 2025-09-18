@@ -37,6 +37,8 @@
         Piercing: 0.85
         Heat: 0.85
         Radiation: 0.6
+  - type: StaminaDamageResistance
+    coefficient: 0.85 # standard plate is doody
   - type: ComponentToggler
     components:
     - type: PressureProtection

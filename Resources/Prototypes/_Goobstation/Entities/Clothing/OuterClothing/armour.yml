@@ -16,6 +16,8 @@
         Slash: 0.60
         Piercing: 0.65
         Heat: 0.70
+  - type: StaminaDamageResistance
+    coefficient: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.8
 
@@ -64,6 +66,8 @@
         Slash: 0.60
         Piercing: 0.65
         Heat: 0.70
+  - type: StaminaDamageResistance
+    coefficient: 0.75
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1

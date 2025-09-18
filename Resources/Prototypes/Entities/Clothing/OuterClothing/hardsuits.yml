@@ -27,6 +27,8 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitBasic
+  - type: StaminaDamageResistance
+    coefficient: 0.65
 
 #Atmospherics Hardsuit
 - type: entity
@@ -70,6 +72,8 @@
     clothingPrototype: ClothingHeadHelmetHardsuitAtmos
   - type: GuideHelp
     guides: [ HephaestusIndustries ]
+  - type: StaminaDamageResistance
+    coefficient: 0.65
 
 #Engineering Hardsuit
 - type: entity
@@ -89,6 +93,8 @@
         shader: unshaded
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitEngineeringUnpainted
+  - type: StaminaDamageResistance
+    coefficient: 0.75 # 25%
 
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseIntegratedMagboot]
@@ -157,6 +163,8 @@
         Piercing: 0.9
         Radiation: 0.3 #salv is supposed to have radiation hazards in the future
         Caustic: 0.8
+  - type: StaminaDamageResistance
+    coefficient: 0.75 #
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.8
@@ -195,6 +203,8 @@
         Piercing: 0.5
         Radiation: 0.3
         Caustic: 0.7
+  - type: StaminaDamageResistance
+    coefficient: 0.75 #
   - type: ClothingSpeedModifier
     walkModifier: 0.75
     sprintModifier: 0.75
@@ -229,6 +239,8 @@
         Heat: 0.7 #Goliath hide gets grilled instead of you
         Radiation: 0.3
         Caustic: 0.8
+  - type: StaminaDamageResistance
+    coefficient: 0.65 #its fancy so its better idk
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
@@ -264,6 +276,8 @@
         Piercing: 0.5
         Heat: 0.3
         Radiation: 0.1
+  - type: StaminaDamageResistance
+    coefficient: 0.65 #its fancy so its better. bite my hip.
   - type: ExplosionResistance
     damageCoefficient: 0.2
   - type: TemperatureProtection
@@ -304,6 +318,8 @@
         Caustic: 0.5
   - type: StealTarget
     stealGroup: ClothingOuterHardsuitVoidParamed
+  - type: StaminaDamageResistance
+    coefficient: 0.75 # parameds need protection too idk. the modsuit will do more and have better armor in exchange for more slowdown
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -542,6 +558,8 @@
     modifiers:
       coefficients:
         Caustic: 0.1
+  - type: StaminaDamageResistance
+    coefficient: 0.75 #
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.95
@@ -665,6 +683,8 @@
     clothingPrototype: ClothingHeadHelmetHardsuitLuxury
   - type: GuideHelp
     guides: [ HephaestusIndustries ]
+  - type: StaminaDamageResistance
+    coefficient: 0.7
 
 #ANTAG HARDSUITS
 #Blood-red Hardsuit
@@ -944,6 +964,9 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
+  - type: ClothingGrantComponent #wizards uhm uhm uhm they uhm they make the crystal or something in their tower idk
+    component:
+    - type: SupermatterImmune
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitWizard
@@ -973,6 +996,8 @@
         Slash: 0.95
         Piercing: 1
         Heat: 0.5
+  - type: StaminaDamageResistance
+    coefficient: 0.65 #
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
@@ -1003,6 +1028,8 @@
         Piercing: 0.9
         Heat: 0.4
         Caustic: 0.75
+  - type: StaminaDamageResistance
+    coefficient: 0.75 # 25%
   - type: ClothingSpeedModifier
     walkModifier: 0.6
     sprintModifier: 0.6
@@ -1045,7 +1072,7 @@
   - type: StaticPrice
     price: 0
   - type: StaminaDamageResistance
-    coefficient: 0.75 # 25%
+    coefficient: 0.6 # higher than the shitter pirate
 
 #CENTCOMM / ERT HARDSUITS
 #ERT Leader Hardsuit
@@ -1222,6 +1249,8 @@
         Shock: 0.1
         Radiation: 0.1
         Caustic: 0.1
+  - type: StaminaDamageResistance
+    coefficient: 0.5 # 50%
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
@@ -1230,7 +1259,7 @@
     clothingPrototype: ClothingHeadHelmetCBURN
 
 #MISC. HARDSUITS
-#Clown Hardsuit
+#Clown Hardsuit // dont ever give this stun resist
 - type: entity
   parent: ClothingOuterHardsuitBase
   id: ClothingOuterHardsuitClown
@@ -1263,7 +1292,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitClown
 
-#Mime Hardsuit
+#Mime Hardsuit // or this one
 - type: entity
   parent: ClothingOuterHardsuitClown
   id: ClothingOuterHardsuitMime
@@ -1303,6 +1332,8 @@
         Slash: 0.9
         Piercing: 0.85
         Caustic: 0.8
+  - type: StaminaDamageResistance
+    coefficient: 0.5 # 50% // HOHOHO!!!
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9

@@ -16,6 +16,8 @@
         Slash: 0.6
         Piercing: 0.3
         Heat: 0.9
+  - type: StaminaDamageResistance
+    coefficient: 0.85
   - type: ExplosionResistance
     damageCoefficient: 0.9
 
@@ -37,6 +39,8 @@
         Slash: 0.7
         Piercing: 0.5
         Heat: 0.9
+  - type: StaminaDamageResistance
+    coefficient: 0.85
   - type: ExplosionResistance
     damageCoefficient: 0.9
 
@@ -58,6 +62,8 @@
         Slash: 0.70
         Piercing: 0.70 #Can save you, but bullets will still hurt. Will take about 10 shots from a Viper before critting, as opposed to 7 while unarmored and 16~ with a bulletproof vest.
         Heat: 0.80
+  - type: StaminaDamageResistance
+    coefficient: 0.85
   - type: ExplosionResistance
     damageCoefficient: 0.90
 

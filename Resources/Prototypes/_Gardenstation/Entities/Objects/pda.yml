@@ -19,6 +19,13 @@
     state: pda-justicar
   - type: PdaBorderColor
     borderColor: "#333333"
+  - type: UnpoweredFlashlight
+  - type: PointLight
+    enabled: false
+    radius: 1.5
+    softness: 5
+    autoRot: true
+    color: Red
   - type: CartridgeLoader
     preinstalled:
     - CrewManifestCartridge

@@ -16,8 +16,10 @@
         Blunt: 0.70
         Slash: 0.70
         Piercing: 0.70
-        Heat: 0.75 # parity with 13 :) 
+        Heat: 0.75 # parity with 13 :)
         Caustic: 0.50
+  - type: StaminaDamageResistance # gds
+    coefficient: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.50
   - type: ContainerContainer
@@ -26,6 +28,9 @@
   - type: ToggleableClothing
     clothingPrototypes:
       head: LavalandEquipmentExplorerHood
+  - type: PressureProtection #
+    highPressureMultiplier: 0.9
+    lowPressureMultiplier: 750
   - type: Construction
     graph: ExplorerSuit
     node: start
@@ -56,8 +61,11 @@
         Blunt: 0.90
         Slash: 0.90
         Piercing: 0.90
-        Heat: 0.70 # parity with 13 :) 
+        Heat: 0.70 # parity with 13 :)
         Caustic: 0.90
+  - type: PressureProtection # idk man
+    highPressureMultiplier: 0.9
+    lowPressureMultiplier: 350
 
 - type: entity
   parent: LavalandEquipmentExplorerSuit
@@ -74,6 +82,8 @@
         Piercing: 0.70
         Heat: 0.75
         Caustic: 0.50
+  - type: StaminaDamageResistance # gds
+    coefficient: 0.6
   - type: Sprite
     sprite: _Lavaland/Equipment/explorer_suit.rsi
     state: reinforced1-icon
@@ -130,6 +140,8 @@
         Piercing: 0.70
         Heat: 0.75
         Caustic: 0.50
+  - type: StaminaDamageResistance # gds
+    coefficient: 0.65
   - type: ToggleableClothing
     clothingPrototypes:
       head: LavalandEquipmentExplorerHoodReinforced2
@@ -180,6 +192,11 @@
         Piercing: 0.70
         Heat: 0.75
         Caustic: 0.50
+  - type: StaminaDamageResistance #gds
+    coefficient: 0.5
+  - type: PressureProtection # full upgrade exp suit should be spacefaring idk
+    highPressureMultiplier: 0.09
+    lowPressureMultiplier: 1000
   - type: ToggleableClothing
     clothingPrototypes:
       head: LavalandEquipmentExplorerHoodReinforced3
@@ -208,3 +225,6 @@
         Piercing: 0.90
         Heat: 0.70
         Caustic: 0.90
+  - type: PressureProtection #see base
+    highPressureMultiplier: 0.1
+    lowPressureMultiplier: 1000

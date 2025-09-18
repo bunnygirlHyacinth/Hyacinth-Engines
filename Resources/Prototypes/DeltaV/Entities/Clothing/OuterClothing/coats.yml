@@ -16,6 +16,8 @@
         Slash: 0.8
         Piercing: 0.8
         Heat: 0.8
+  - type: StaminaDamageResistance # gds
+    coefficient: 0.75
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -34,6 +36,8 @@
         Slash: 0.8
         Piercing: 0.8
         Heat: 0.8
+  - type: StaminaDamageResistance # gds
+    coefficient: 0.75
   - type: AllowSuitStorage
 
 - type: entity
@@ -54,6 +58,8 @@
       coefficients:
         Slash: 0.9
         Heat: 0.75
+  - type: StaminaDamageResistance # gds
+    coefficient: 0.95
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -75,6 +81,8 @@
         Slash: 0.85
         Piercing: 0.85
         Heat: 0.75
+  - type: StaminaDamageResistance # gds
+    coefficient: 0.75
   - type: AllowSuitStorage
 
 - type: entity
@@ -95,6 +103,8 @@
       coefficients:
         Slash: 0.9
         Heat: 0.75
+  - type: StaminaDamageResistance # gds
+    coefficient: 0.95
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -116,6 +126,8 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.75
+  - type: StaminaDamageResistance # go go gadget self-antag // gds
+    coefficient: 0.8
   - type: AllowSuitStorage #Syndicate Windbreaker, so gun.
 
 - type: entity
@@ -159,6 +171,8 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+  - type: StaminaDamageResistance # gds
+    coefficient: 0.85
 
 - type: entity
   parent: ClothingOuterStorageBase

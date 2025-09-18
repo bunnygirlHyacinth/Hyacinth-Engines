@@ -49,6 +49,8 @@
     - type: TemperatureProtection
       heatingCoefficient: 0.1
       coolingCoefficient: 0.1
+  - type: StaminaDamageResistance
+    coefficient: 0.45
 
 # sec suit
 
@@ -85,11 +87,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.8
-        Heat: 0.8
-        Radiation: 0.6
+        Blunt: 0.75
+        Slash: 0.75
+        Piercing: 0.6
+        Caustic: 0.7
+        Heat: 0.7
   - type: ComponentToggler
     components:
     - type: PressureProtection
@@ -102,6 +104,8 @@
     damageCoefficient: 0.65
   - type: FireProtection
     reduction: 0.5
+  - type: StaminaDamageResistance
+    coefficient: 0.75
 
 - type: entity
   parent: ClothingModsuitChestplateStandard
@@ -140,7 +144,7 @@
         Slash: 0.5
         Piercing: 0.5
         Radiation: 0.6
-        Caustic: 0.6
+        Caustic: 0.5
         Heat: 0.6
   - type: ComponentToggler
     components:
@@ -152,3 +156,5 @@
       coolingCoefficient: 0.1
   - type: FireProtection
     reduction: 0.5
+  - type: StaminaDamageResistance
+    coefficient: 0.5

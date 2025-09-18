@@ -85,6 +85,8 @@
         Slash: 0.7
         Piercing: 0.6 # made for bullets - solarians use antiquated weapons because theyre weird conservatives and think lead is a cultural export or some shit
         Heat: 0.8 # i lied because actually i think solarian shitlasers would be really funny. they shoot green beams or something idk
+  - type: StaminaDamageResistance
+    coefficient: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.9
 

@@ -18,6 +18,8 @@
         Slash: 0.70
         Piercing: 0.70 #Can save you, but bullets will still hurt. Will take about 10 shots from a Viper before critting, as opposed to 7 while unarmored and 16~ with a bulletproof vest.
         Heat: 0.80
+  - type: StaminaDamageResistance
+    coefficient: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.90
   - type: Fixtures
@@ -63,6 +65,8 @@
         Piercing: 0.7
         Heat: 0.9
         Caustic: 0.9
+  - type: StaminaDamageResistance
+    coefficient: 0.65
   - type: ExplosionResistance
     damageCoefficient: 0.9
   - type: GroupExamine
@@ -89,6 +93,8 @@
         Heat: 0.85
         Radiation: 0.75
         Caustic: 0.85
+  - type: StaminaDamageResistance
+    coefficient: 0.65
   - type: ExplosionResistance
     damageCoefficient: 0.50
   - type: ClothingSpeedModifier # Burdensome for running, but perfect for speedy gliding, even though running is still probably better
@@ -115,6 +121,8 @@
         Slash: 0.95
         Piercing: 0.5
         Heat: 0.95
+  - type: StaminaDamageResistance
+    coefficient: 0.75 #still armor even if its bunk against other stuff, its nonconductive too so stunbatons probably wouldnt do much on the ceramic plates
 
 - type: entity
   parent: ClothingOuterArmorBasic
@@ -135,6 +143,8 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.7
+  - type: StaminaDamageResistance
+    coefficient: 0.75
   - type: Reflect
     reflectProb: 0.33
     innate: true # armor grants a passive shield that does not require concentration to maintain
@@ -164,6 +174,8 @@
         Piercing: 0.35
         Heat: 0.35
         Caustic: 0.5
+  - type: StaminaDamageResistance
+    coefficient: 0.55 # RIDE THE LIGHTNING
   - type: ExplosionResistance
     damageCoefficient: 0.35
   - type: ClothingSpeedModifier
@@ -230,6 +242,8 @@
         Slash: 0.5
         Piercing: 0.6
         Heat: 0.5
+  - type: StaminaDamageResistance
+    coefficient: 0.75
   - type: GroupExamine
 
 - type: entity
@@ -251,6 +265,8 @@
         Heat: 0.5
         Radiation: 0
         Caustic: 0.75
+  - type: StaminaDamageResistance
+    coefficient: 0.55 # big armor heavy. uhm . thing
   - type: GroupExamine
   - type: ProtectedFromStepTriggers
     slots: WITHOUT_POCKET
@@ -276,6 +292,8 @@
         Piercing: 0.65
         Heat: 0.65
         Caustic: 0.75
+  - type: StaminaDamageResistance
+    coefficient: 0.6 # is good ya
   - type: GroupExamine
   - type: ProtectedFromStepTriggers
     slots: WITHOUT_POCKET
@@ -352,6 +370,9 @@
   - type: ExplosionResistance
     damageCoefficient: 0.65
   - type: GroupExamine
+  - type: StaminaDamageResistance
+    coefficient: 0.6 #not as good as the tengri but still decent for walking around. fuck stun meta
+
 
 - type: entity
   parent: [ ClothingOuterBaseLarge, BaseMajorContraband, AllowSuitStorageClothing ]
@@ -371,6 +392,8 @@
         Piercing: 0.5
         Heat: 0.9
         Radiation: 0.8
+  - type: StaminaDamageResistance
+    coefficient: 0.75 # hardsuit basically
   - type: ClothingSpeedModifier
     walkModifier: 0.7
     sprintModifier: 0.65
@@ -400,6 +423,8 @@
         Blunt: 0.6
         Slash: 0.8
         Piercing: 0.4
+  - type: StaminaDamageResistance
+    coefficient: 0.65 # bone is nonconductive to shock. stun batons would not do as much probably
   - type: ClothingSpeedModifier
     walkModifier: 0.8
   - type: HeldSpeedModifier
@@ -429,6 +454,8 @@
         Slash: 0.5
         Piercing: 0.6
         Heat: 0.5
+  - type: StaminaDamageResistance
+    coefficient: 0.5 # i would love to get shot out of a pod from low orbit
   - type: GroupExamine
   - type: ProtectedFromStepTriggers
     slots: WITHOUT_POCKET
@@ -451,6 +478,8 @@
         Piercing: 0.6
         Heat: 0.5
         Caustic: 0.9
+  - type: StaminaDamageResistance
+    coefficient: 0.6
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
