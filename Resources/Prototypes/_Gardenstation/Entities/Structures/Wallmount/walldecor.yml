@@ -9,6 +9,9 @@
   - type: Sprite
     sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
     state: bieselflag
+  - type: Construction
+    graph: BieselBanner
+    node: bieselbannerfull
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Wood
@@ -30,6 +33,9 @@
   - type: Sprite
     sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
     state: solflag
+  - type: Construction
+    graph: SolBanner
+    node: solbannerfull
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Wood
@@ -51,6 +57,9 @@
   - type: Sprite
     sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
     state: elyraflag
+  - type: Construction
+    graph: ElyraBanner
+    node: elyrabannerfull
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Wood
@@ -72,6 +81,9 @@
   - type: Sprite
     sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
     state: praflag
+  - type: Construction
+    graph: PRABanner
+    node: prabannerfull
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Wood
@@ -93,6 +105,9 @@
   - type: Sprite
     sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
     state: goldendeepflag
+  - type: Construction
+    graph: GoldenDeepBanner
+    node: goldendeepbannerfull
   - type: Damageable
     damageContainer: Inorganic
     damageModifierSet: Wood

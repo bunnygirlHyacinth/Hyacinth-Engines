@@ -81,5 +81,7 @@
         Piercing: 0.85
         Radiation: 0.85
         Caustic: 0.25
+  - type: StaminaDamageResistance # gds
+    coefficient: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.85

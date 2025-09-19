@@ -36,6 +36,8 @@
           Piercing: 0.5
           Heat: 0.5
           Caustic: 0.5
+    - type: StaminaDamageResistance
+      coefficient: 0.4
     - type: ExplosionResistance
       damageCoefficient: 0.35
     - type: Reflect
@@ -67,6 +69,10 @@
           Slash: 0.80
           Piercing: 0.50
           Heat: 0.80
+    - type: StaminaDamageResistance # GDS
+      coefficient: 0.75
+    - type: ClothingModifyStunTime
+      modifier: 0.5 # LEMME SEE YOUR WAR FACE GRAAARRGH!!!
     - type: ClothingSpeedModifier
       walkModifier: 0.90
       sprintModifier: 0.90
@@ -101,3 +107,5 @@
     - type: TemperatureProtection
       heatingCoefficient: 0.1
       coolingCoefficient: 0.1
+    - type: StaminaDamageResistance # GDS
+      coefficient: 0.75

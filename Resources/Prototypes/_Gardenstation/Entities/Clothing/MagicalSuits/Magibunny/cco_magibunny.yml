@@ -98,6 +98,10 @@
   - type: ClothingSpeedModifier
     walkModifier: 1.2
     sprintModifier: 1.2
+  - type: StaminaDamageResistance
+    coefficient: 0.5
+  - type: ClothingModifyStunTime # teehee
+    modifier: 0.3
   - type: Armor
     modifiers:
       coefficients:

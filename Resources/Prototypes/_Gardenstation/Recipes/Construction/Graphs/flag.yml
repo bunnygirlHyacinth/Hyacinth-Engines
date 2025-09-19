@@ -1,0 +1,135 @@
+﻿#biesel
+- type: constructionGraph
+  id: BieselBanner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: bieselbannerfull
+      steps:
+      - material: Cloth
+        amount: 4
+        doAfter: 2
+  - node: bieselbannerfull
+    entity: Ar13WallFlagBiesel
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 3 #returns 1 less as one breaks
+      - !type:DeleteEntity {}
+      conditions:
+      - !type:EntityAnchored
+        anchored: true
+      steps:
+      - tool: Cutting
+        doAfter: 2
+#sol
+- type: constructionGraph
+  id: SolBanner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: solbannerfull
+      steps:
+      - material: Cloth
+        amount: 4
+        doAfter: 3
+  - node: solbannerfull
+    entity: Ar13WallFlagSol
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 3 #returns 1 less as one breaks
+      - !type:DeleteEntity {}
+      conditions:
+      - !type:EntityAnchored
+        anchored: true
+      steps:
+      - tool: Cutting
+        doAfter: 2
+#pra
+- type: constructionGraph
+  id: PRABanner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: prabannerfull
+      steps:
+      - material: Cloth
+        amount: 4
+        doAfter: 3
+  - node: prabannerfull
+    entity: Ar13WallFlagPRA
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 3 #returns 1 less as one breaks
+      - !type:DeleteEntity {}
+      conditions:
+      - !type:EntityAnchored
+        anchored: true
+      steps:
+      - tool: Cutting
+        doAfter: 2
+#elyra
+- type: constructionGraph
+  id: ElyraBanner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: elyrabannerfull
+      steps:
+      - material: Cloth
+        amount: 4
+        doAfter: 3
+  - node: elyrabannerfull
+    entity: Ar13WallFlagElyra
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 3 #returns 1 less as one breaks
+      - !type:DeleteEntity {}
+      conditions:
+      - !type:EntityAnchored
+        anchored: true
+      steps:
+      - tool: Cutting
+        doAfter: 2
+#goldendeep
+- type: constructionGraph
+  id: GoldenDeepBanner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: goldendeepbannerfull
+      steps:
+      - material: Cloth
+        amount: 4
+        doAfter: 3
+  - node: goldendeepbannerfull
+    entity: Ar13WallFlagGoldenDeep
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 3 #returns 1 less as one breaks
+      - !type:DeleteEntity {}
+      conditions:
+      - !type:EntityAnchored
+        anchored: true
+      steps:
+      - tool: Cutting
+        doAfter: 2

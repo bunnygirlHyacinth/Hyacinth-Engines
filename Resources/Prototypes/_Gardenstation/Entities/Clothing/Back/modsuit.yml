@@ -16,6 +16,16 @@
       gloves: ClothingModsuitHandsSquire
       outerClothing: ClothingModsuitChestSquire
       shoes: ClothingModsuitSquireBoots
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHigh
+        whitelist:
+          components:
+            - PowerCell
+  - type: PowerCellDraw
+    drawRate: 0.3
   - type: SealableClothingVisuals
     visualLayers:
       back:
@@ -43,6 +53,16 @@
       gloves: ClothingModsuitHandsHOS
       outerClothing: ClothingModsuitChestHOS
       shoes: ClothingModsuitHOSboots
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellHigh
+        whitelist:
+          components:
+          - PowerCell
+  - type: PowerCellDraw
+    drawRate: 0.3
   - type: SealableClothingVisuals
     visualLayers:
       back:

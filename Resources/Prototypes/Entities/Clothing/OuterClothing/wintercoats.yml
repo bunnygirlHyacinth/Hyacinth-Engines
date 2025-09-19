@@ -125,6 +125,8 @@
         Slash: 0.75
         Piercing: 0.75
         Heat: 0.75
+  - type: StaminaDamageResistance
+    coefficient: 0.65
 
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
@@ -244,6 +246,8 @@
         Heat: 0.90
         Caustic: 0.75
     priceMultiplier: 0.15
+  - type: StaminaDamageResistance
+    coefficient: 0.8
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterChem
 
@@ -274,6 +278,8 @@
         Heat: 0.90
         Caustic: 0.75
     priceMultiplier: 0.15
+  - type: StaminaDamageResistance
+    coefficient: 0.8
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterCMO
 
@@ -337,6 +343,8 @@
         Heat: 0.90
         Caustic: 0.9
     priceMultiplier: 0.15
+  - type: StaminaDamageResistance
+    coefficient: 0.8
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterSci
 
@@ -409,6 +417,8 @@
         Piercing: 0.75
         Heat: 0.75
         Caustic: 0.75 #not the full 90% from ss13 because of the head
+  - type: StaminaDamageResistance
+    coefficient: 0.65
 
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
@@ -460,6 +470,8 @@
         Heat: 0.9
         Caustic: 0.9
     priceMultiplier: 0.15
+  - type: StaminaDamageResistance
+    coefficient: 0.95
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterJani
 
@@ -490,6 +502,8 @@
         Heat: 0.90
         Caustic: 0.9
     priceMultiplier: 0.15
+  - type: StaminaDamageResistance
+    coefficient: 0.95
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterMed
 
@@ -566,6 +580,8 @@
         Heat: 0.75
         Caustic: 0.9
     priceMultiplier: 0.15
+  - type: StaminaDamageResistance
+    coefficient: 0.85
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterPara
 
@@ -620,6 +636,8 @@
         Heat: 0.90
         Caustic: 0.9
     priceMultiplier: 0.15
+  - type: StaminaDamageResistance
+    coefficient: 0.85
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterRD
 
@@ -674,6 +692,8 @@
         Heat: 0.90
         Caustic: 0.9
     priceMultiplier: 0.15
+  - type: StaminaDamageResistance
+    coefficient: 0.95
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterSci
 
@@ -706,6 +726,8 @@
         Slash: 0.85
         Piercing: 0.85 #Can save you, but bullets will still hurt. Will take about 10 shots from a Viper before critting, as opposed to 7 while unarmored and 16~ with a bulletproof vest.
         Heat: 0.75
+  - type: StaminaDamageResistance
+    coefficient: 0.85
 
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
@@ -734,6 +756,8 @@
         Heat: 0.90
         Caustic: 0.9
     priceMultiplier: 0.15
+  - type: StaminaDamageResistance
+    coefficient: 0.85
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterSci
 
@@ -775,6 +799,8 @@
       - state: WARD-equipped-OUTERCLOTHING
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodWinterWarden
+  - type: StaminaDamageResistance
+    coefficient: 0.95
 
 - type: entity
   parent: [ClothingOuterWinterCoatToggleable, BaseSyndicateContraband]

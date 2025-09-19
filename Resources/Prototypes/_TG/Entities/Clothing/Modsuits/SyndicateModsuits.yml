@@ -101,6 +101,8 @@
     - type: TemperatureProtection
       heatingCoefficient: 0.01
       coolingCoefficient: 0.01
+    - type: StaminaDamageResistance # gds
+      coefficient: 0.5
     - type: ClothingModifyStunTime
       modifier: 0.5
     - type: Reflect
@@ -245,6 +247,8 @@
     - type: TemperatureProtection
       heatingCoefficient: 0.01
       coolingCoefficient: 0.01
+    - type: StaminaDamageResistance # gds
+      coefficient: 0.55
     - type: ClothingModifyStunTime
       modifier: 0.5
     - type: Reflect

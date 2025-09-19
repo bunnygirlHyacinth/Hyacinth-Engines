@@ -61,6 +61,8 @@
     sprite: Clothing/OuterClothing/Bio/security.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Bio/security.rsi
+  - type: StaminaDamageResistance
+    coefficient: 0.75
 
 - type: entity
   parent: ClothingOuterBioGeneral

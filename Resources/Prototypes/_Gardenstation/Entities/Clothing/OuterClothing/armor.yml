@@ -21,6 +21,8 @@
         Holy: 0.97 # someone forgot to charge their crystal lole - see you in the badplace BUDDY
   - type: ExplosionResistance
     damageCoefficient: 0.80
+  - type: StaminaDamageResistance
+    coefficient: 0.7 # carapace is europan plasteel plus like weird psychic bullshit lol
 
 - type: entity
   parent: [ClothingOuterArmorBasic, BaseRestrictedContraband]
@@ -37,7 +39,9 @@
       coefficients:
         Blunt: 0.75
         Slash: 0.8
-        Piercing: 0.65 # more bulletproof than normal kevlar/flak vests - shell armor
+        Piercing: 0.65 # its just straight up made of metal idk man
         Heat: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0.80
+  - type: StaminaDamageResistance
+    coefficient: 0.7

@@ -1,0 +1,33 @@
+﻿# mantle
+
+- type: latheRecipe
+  id: ClothingNeckMantleBsoParadeMantle
+  result: ClothingNeckMantleBsoParadeMantle
+  completetime: 3
+  materials:
+    Cloth: 250
+    Durathread: 350 # its got a lotta durathread idk
+
+- type: latheRecipe
+  id: ClothingNeckMantleBieselFlag # HAVE A CUPPAH LIBER-TEAAA!!!!!!
+  result: ClothingNeckMantleBieselFlag
+  completetime: 3
+  materials:
+    Cloth: 250
+
+# suits
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitBSOParadeUniform
+  result: ClothingUniformJumpsuitBSOParadeUniform
+  completetime: 4.3
+  materials:
+    Cloth: 420 # ruffles have ridges
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitConsularBlackSuit
+  result: ClothingUniformJumpsuitConsularBlackSuit
+  completetime: 4
+  materials:
+    Cloth: 300 # only the un-associated diplomat suit should be allowed to be printed, otherwise everyone will be impersonating government officials lmao
+

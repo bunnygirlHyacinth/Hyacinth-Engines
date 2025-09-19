@@ -23,6 +23,8 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+  - type: StaminaDamageResistance
+    coefficient: 0.7
 
 - type: entity
   parent: [ClothingOuterCoatCapTrench]
@@ -52,6 +54,8 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+  - type: StaminaDamageResistance
+    coefficient: 0.7
 
 - type: entity
   parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, ClothingOuterStorageBase]
@@ -139,6 +143,8 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+  - type: StaminaDamageResistance
+    coefficient: 0.8
 
 - type: entity
   parent: [ClothingOuterBaseMedium, AllowSuitStorageClothing, ClothingOuterStorageBase]
@@ -169,6 +175,8 @@
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
+  - type: StaminaDamageResistance
+    coefficient: 0.8
 
 - type: entity
   parent: [ ClothingOuterCoatCapTrench, ClothingOuterStorageFoldableBase, ClothingNeckBase ]
@@ -186,11 +194,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
+        Blunt: 0.5
         Slash: 0.5
-        Piercing: 0.5 # lined with durathread, kevlar inlay. Generals should try to not get assassinated probably?
+        Piercing: 0.6
         Heat: 0.5
-        Caustic: 0.6
+        Caustic: 0.9
   - type: ClothingSpeedModifier
     walkModifier: 1.0
     sprintModifier: 1.0
@@ -220,14 +228,14 @@
     sprite: _Gardenstation/Clothing/OuterClothing/Coats/cco_trech.rsi
   - type: Clothing
     sprite: _Gardenstation/Clothing/OuterClothing/Coats/cco_trech.rsi
-  - type: Armor # not as robust cause cco ghostrole might have it at some point idfk
+  - type: Armor # its just captain coat armorval
     modifiers:
       coefficients:
-        Blunt: 0.4
-        Slash: 0.4
-        Piercing: 0.4
-        Heat: 0.45
-        Caustic: 0.6
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.6
+        Heat: 0.5
+        Caustic: 0.9
         Psionic: 0.7 # they know
   - type: ClothingSpeedModifier
     walkModifier: 1.0

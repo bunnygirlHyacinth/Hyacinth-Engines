@@ -63,6 +63,16 @@
       sprite: Nyanotrasen/Clothing/OuterClothing/WinterCoats/mantis_winter_coat.rsi
     - type: Clothing
       sprite: Nyanotrasen/Clothing/OuterClothing/WinterCoats/mantis_winter_coat.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.8
+          Heat: 0.8
+          Psionic: 0.8 # GDS // GO MY PSIONIC WARRIOR!!!
+    - type: StaminaDamageResistance
+      coefficient: 0.75
 
 - type: entity
   parent: ClothingOuterWinterRD

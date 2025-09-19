@@ -1,0 +1,94 @@
+﻿#hats
+
+- type: latheRecipe
+  id: ClothingHeadHatBellhopHD
+  result: ClothingHeadHatBellhopHD
+  completetime: 3.2
+  materials:
+    Cloth: 200
+
+# mantle
+
+- type: latheRecipe
+  id: ClothingNeckMantleHD
+  result: ClothingNeckMantleHD
+  completetime: 3
+  materials:
+    Cloth: 250
+
+# wintercoat
+
+- type: latheRecipe
+  id: ClothingOuterWinterHD
+  result: ClothingOuterWinterHD
+  completetime: 3.2
+  materials:
+    Cloth: 500
+    Durathread: 200
+
+# skirts
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtHD
+  result: ClothingUniformJumpskirtHD
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtHDTurtle
+  result: ClothingUniformJumpskirtHDTurtle
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtHospitalityDirectorBartender
+  result: ClothingUniformJumpskirtHospitalityDirectorBartender
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpskirtHospitalityDirectorJanitor
+  result: ClothingUniformJumpskirtHospitalityDirectorJanitor
+  completetime: 4
+  materials:
+    Cloth: 300
+
+# suits
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitHD
+  result: ClothingUniformJumpsuitHD
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitHDTurtle
+  result: ClothingUniformJumpsuitHDTurtle
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitHospitalityDirectorBartender
+  result: ClothingUniformJumpsuitHospitalityDirectorBartender
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitHospitalityDirectorBotany
+  result: ClothingUniformJumpsuitHospitalityDirectorBotany
+  completetime: 4
+  materials:
+    Cloth: 300
+
+- type: latheRecipe
+  id: ClothingUniformJumpsuitHospitalityDirectorJanitor
+  result: ClothingUniformJumpsuitHospitalityDirectorJanitor
+  completetime: 4
+  materials:
+    Cloth: 300

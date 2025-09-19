@@ -15,6 +15,8 @@
         Slash: 0.7
         Piercing: 0.4 #Stronger than the warden's armored jacket, because shenanigans and CC spends alot of money.
         Heat: 0.75
+  - type: StaminaDamageResistance
+    coefficient: 0.6 # built CCO tough
   - type: AllowSuitStorage
 
 - type: entity
@@ -27,7 +29,7 @@
     sprite: DeltaV/Clothing/OuterClothing/WinterCoats/corpo_jacket.rsi
   - type: Clothing
     sprite: DeltaV/Clothing/OuterClothing/WinterCoats/corpo_jacket.rsi
-    
+
 - type: entity
   parent: ClothingOuterWinterCoat
   id: ClothingOuterDenimJacket
@@ -56,4 +58,6 @@
         Slash: 0.85
         Piercing: 0.85
         Heat: 0.75
+  - type: StaminaDamageResistance
+    coefficient: 0.75
   - type: AllowSuitStorage

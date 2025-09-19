@@ -16,6 +16,8 @@
           Slash: 0.95
           Piercing: 0.95
           Heat: 0.85
+    - type: StaminaDamageResistance
+      coefficient: 0.75 # gds
     - type: TemperatureProtection
       heatingCoefficient: 0.1
       coolingCoefficient: 0.1
@@ -38,6 +40,8 @@
           Slash: 0.95
           Piercing: 0.95
           Heat: 0.85
+    - type: StaminaDamageResistance
+      coefficient: 0.75 # gds
     - type: TemperatureProtection
       heatingCoefficient: 0.1
       coolingCoefficient: 0.1
@@ -60,6 +64,8 @@
           Slash: 0.95
           Piercing: 0.95
           Heat: 0.85
+    - type: StaminaDamageResistance
+      coefficient: 0.75 # gds
     - type: TemperatureProtection
       heatingCoefficient: 0.1
       coolingCoefficient: 0.1

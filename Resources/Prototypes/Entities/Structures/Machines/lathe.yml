@@ -1457,6 +1457,15 @@
     - ClothingUniformJumpsuitWardenGrey # DeltaV - alternate sec uniforms
     - ClothingUniformJumpskirtWardenGrey # DeltaV - alternate sec uniforms
     - ClothingHeadHatParamedicsoft
+    - ClothingUniformJumpsuitHD
+    - ClothingUniformJumpsuitHDTurtle
+    - ClothingUniformJumpsuitHospitalityDirectorBartender
+    - ClothingUniformJumpsuitHospitalityDirectorBotany
+    - ClothingUniformJumpsuitHospitalityDirectorJanitor
+    - ClothingUniformJumpskirtHD
+    - ClothingUniformJumpskirtHDTurtle
+    - ClothingUniformJumpskirtHospitalityDirectorBartender
+    - ClothingUniformJumpskirtHospitalityDirectorJanitor
     # Winter outfits
     - ClothingOuterWinterCap
     - ClothingOuterWinterCE
@@ -1487,9 +1496,11 @@
     - ClothingOuterWinterSci
     - ClothingOuterWinterRobo
     - ClothingOuterWinterSec
+    - ClothingOuterWinterHD
     # Ties
     - ClothingNeckTieRed
     - ClothingNeckTieDet
+    - ClothingNeckMantleHD
     - ClothingNeckTieSci
     # Scarfs - All scarfs avaible in winterdrobe
     - ClothingNeckScarfStripedGreen
@@ -1500,6 +1511,8 @@
     - ClothingNeckScarfStripedOrange
     - ClothingNeckScarfStripedBlack
     - ClothingNeckScarfStripedPurple
+    # Hats
+    - ClothingHeadHatBellhopHD
     # Carpets
     - Carpet
     - CarpetBlack

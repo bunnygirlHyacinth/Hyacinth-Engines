@@ -24,6 +24,9 @@
     - Hair
   - type: StaminaDamageResistance
     coefficient: 0.95 # 5% stamdgm resist?
+  - type: TemperatureProtection # just to make sure they can go in space and stuff
+    heatingCoefficient: 0.1
+    coolingCoefficient: 0.1
 - type: entity
   parent: ClothingMaskBase
   id: ClothingMaskLoGimp
