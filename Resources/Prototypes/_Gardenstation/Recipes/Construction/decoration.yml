@@ -1,0 +1,88 @@
+﻿#flags
+
+#biesel
+- type: construction
+  name: Republic of Biesel flag
+  id: BieselWallBanner
+  graph: BieselBanner
+  startNode: start
+  targetNode: bieselbannerfull
+  category: construction-category-furniture
+  description: Sweet liberty- its BEAUTIFUL!!
+  icon:
+    sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
+    state: bieselflag
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  conditions:
+  - !type:WallmountCondition
+
+#sol
+- type: construction
+  name: Sol Alliance flag
+  id: SolWallBanner
+  graph: SolBanner
+  startNode: start
+  targetNode: solbannerfull
+  category: construction-category-furniture
+  description: The icon of the Sol Alliance! Quite rare to see this far into the spur nowadays...
+  icon:
+    sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
+    state: solflag
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  conditions:
+  - !type:WallmountCondition
+#pra
+- type: construction
+  name: The People's Republic of Adhomai flag
+  id: PRAWallBanner
+  graph: PRABanner
+  startNode: start
+  targetNode: prabannerfull
+  category: construction-category-furniture
+  description: On adhomai you can find one of these in every PRA citizen's home.
+  icon:
+    sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
+    state: praflag
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  conditions:
+  - !type:WallmountCondition
+#elyra
+- type: construction
+  name: banner of The Serene Republic of Elyra
+  id: ElyraWallBanner
+  graph: ElyraBanner
+  startNode: start
+  targetNode: elyrabannerfull
+  category: construction-category-furniture
+  description: A banner with the the Elyran falcon on it. A shockingly rare sight outside of its home planet...
+  icon:
+    sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
+    state: elyraflag
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  conditions:
+  - !type:WallmountCondition
+#goldendeep
+- type: construction
+  name: Golden Deep flag
+  id: GoldenDeepWallBanner
+  graph: GoldenDeepBanner
+  startNode: start
+  targetNode: goldendeepbannerfull
+  category: construction-category-furniture
+  description: The tradeseal of the Midas Collective, emblazoned on a flag.
+  icon:
+    sprite: _Gardenstation/Structures/Wallmounts/wallmounts.rsi
+    state: goldendeepflag
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: true
+  conditions:
+  - !type:WallmountCondition

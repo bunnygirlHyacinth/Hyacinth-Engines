@@ -68,3 +68,8 @@
   - !type:CharacterNationalityRequirement
     nationalities:
     - GoldenDeep
+  - !type:CharacterLifepathRequirement
+    lifepaths:
+    - GdGrandMerchant
+    - GdMerchant
+    - GdThesian
