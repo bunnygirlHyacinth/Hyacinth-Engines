@@ -8,7 +8,7 @@
   - type: TranslatorImplant
     understood:
     - Eckeckyik
-#    spoken:  // the language is based mostly on subsonic frequency and weird acoustic bs so in theory only like. harpy could ever hope to even come close to speaking it.
-#    - Eckeckyik
+    spoken:  #maybe just the base ecke translator can do it later when those are fixed idk
+    - Eckeckyik
     requires:
     - TauCetiBasic

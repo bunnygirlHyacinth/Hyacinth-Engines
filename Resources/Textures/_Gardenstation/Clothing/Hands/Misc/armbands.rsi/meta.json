@@ -21,6 +21,21 @@
         {
             "name": "biesel-inhand-right",
             "directions": 4
+        },
+        {
+            "name": "pra-icon"
+        },
+        {
+            "name": "pra-equipped-HAND",
+            "directions": 4
+        },
+        {
+            "name": "pra-inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "pra-inhand-right",
+            "directions": 4
         }
     ]
 }

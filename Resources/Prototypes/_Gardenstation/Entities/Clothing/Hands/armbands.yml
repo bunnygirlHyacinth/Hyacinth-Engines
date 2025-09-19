@@ -12,3 +12,18 @@
     equippedPrefix: biesel
   - type: Item
     heldPrefix: biesel
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsPRAArmband
+  name: People's Republic of Adhomai armband
+  description: An armband fashioned after the flag of the People's Republic.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Clothing/Hands/Misc/armbands.rsi
+    state: pra-icon
+  - type: Clothing
+    sprite: _Gardenstation/Clothing/Hands/Misc/armbands.rsi
+    equippedPrefix: pra
+  - type: Item
+    heldPrefix: pra
