@@ -32,7 +32,7 @@
   access:
   - CentralCommand
   - ConsularOfficer
-  - Service # basic sec access maybe? we might wanna take this one off tbh idk
+  - Service # get coffee for your guy
   afterLoadoutSpecial:
   - !type:ModifyEnvirosuitSpecial
     charges: 10
