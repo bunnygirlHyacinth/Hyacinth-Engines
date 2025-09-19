@@ -16,6 +16,7 @@
     - id: SpaceCash5000
     - id: RubberStampBieselRep
     - id: ReinforcementRadioBiesel
+    - id: ReinforcementRadioBieselSecretary
 
 
 - type: entity
@@ -39,6 +40,7 @@
     - id: RubberStampSolRep
     - id: SpyCameraBug # "diplomacy"
     - id: ReinforcementRadioSAN
+    - id: ReinforcementRadioSolSecretary
 
 - type: entity
   id: LockerPRARepFilled
@@ -55,8 +57,8 @@
       amount: 2
     - id: PRALanyard # one spare and two party memberships
       amount: 3
-    #- id: ClothingHandsBieselArmband # adhomian flag already looks sus enough, please be very careful with how we go about this one
-      #amount: 2 # for handing out and stuff like that
+    - id: ClothingHandsPRAArmband
+      amount: 3
     # Diplomacy tools
     - id: SpaceCash1000 # the adhomian knuckle is worth like NOTHING - in knuckles this would be like an absurd amount of walking around cash
     - id: RubberStampPRARep
@@ -64,6 +66,7 @@
       amount: 2
     - id: PRAFieldKnife #might be fucking crazy to give them but idk i think its cool
     - id: ReinforcementRadioPRA
+    - id: ReinforcementRadioPRASecretary
 
 - type: entity
   id: LockerGoldenDeepRepFilled
@@ -84,6 +87,7 @@
     - id: RubberStampTrader
     - id: EncryptionKeyBinary #might be wild for antags but iiiidk it just kinda makes sense
     - id: ReinforcementRadioGoldenDeep
+    - id: ReinforcementRadioGoldenDeepSecretary
 
 - type: entity
   id: LockerElyraRepFilled
@@ -103,3 +107,4 @@
     - id: ResearchDisk5000
     - id: BorgModuleMusique #just for fun
     - id: ReinforcementRadioElyra
+    - id: ReinforcementRadioElyraSecretary

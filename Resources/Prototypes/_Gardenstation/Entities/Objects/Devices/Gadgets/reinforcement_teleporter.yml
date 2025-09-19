@@ -15,7 +15,7 @@
         type: GhostRoleRadioBoundUserInterface
   - type: ActivatableUI
     key: enum.GhostRoleRadioUiKey.Key
-
+#bodyguards // the current ghostrole thingy doesnt let you make like 3 guys at once which is annoying. we split them up instead for better selection by the consul.
 - type: entity
   parent: ConsulateRadio
   id: ReinforcementRadioBiesel
@@ -49,8 +49,6 @@
       settings: default
   - type: GhostRoleMobSpawner
     prototype: PRABodyguard
-
-
 
 - type: entity
   parent: ConsulateRadio
@@ -105,3 +103,109 @@
   - type: GhostRoleMobSpawner
     prototype: ElyraBodyguard
 
+#assistant
+
+- type: entity
+  parent: ConsulateRadio
+  id: ReinforcementRadioBieselSecretary
+  name: Biesel Department of State intern alert button
+  description: Bluespace in an intern from the DoS. Whatever they were doing before probably isn't that important.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Devices/remotes.rsi
+    layers:
+    - state: clicker
+  - type: GhostRole
+    name: ghost-role-information-biesel-assistant-reinforcement-name
+    description: ghost-role-information-biesel-assistant-reinforcement-description
+    rules: ghost-role-information-consulate-assistant-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: RandomHumanoidSpawnerBieselSecretary
+
+- type: entity
+  parent: ConsulateRadio
+  id: ReinforcementRadioSolSecretary
+  name: ASSN Department of State intern alert button
+  description: Bluespace in an intern from the DoS. Whatever they were doing before probably isn't that important.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Devices/remotes.rsi
+    layers:
+    - state: clicker
+  - type: GhostRole
+    name: ghost-role-information-sol-assistant-reinforcement-name
+    description: ghost-role-information-sol-assistant-reinforcement-description
+    rules: ghost-role-information-consulate-assistant-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: SANSecretary
+
+- type: entity
+  parent: ConsulateRadio
+  id: ReinforcementRadioPRASecretary
+  name: People's Republic of Adhomai consular assistant signaler
+  description: Bluespace in a loyal party secretary from the nearest stationed republican vessel.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Devices/remotes.rsi
+    layers:
+    - state: clicker
+  - type: GhostRole
+    name: ghost-role-information-pra-assistant-reinforcement-name
+    description: ghost-role-information-pra-assistant-reinforcement-description
+    rules: ghost-role-information-consulate-assistant-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: PRASecretary
+
+- type: entity
+  parent: ConsulateRadio
+  id: ReinforcementRadioElyraSecretary
+  name: Elyran Department of State consular assistant signaler
+  description: Bluespace in an intern from the DoS. Ready to bring a slice of home to this strange and unfamiliar place.
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Devices/remotes.rsi
+    layers:
+    - state: clicker
+  - type: GhostRole
+    name: ghost-role-information-elyra-assistant-reinforcement-name
+    description: ghost-role-information-elyra-assistant-reinforcement-description
+    rules: ghost-role-information-consulate-assistant-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: ElyraSecretary
+
+- type: entity
+  parent: ConsulateRadio
+  id: ReinforcementRadioGoldenDeepSecretary
+  name: Midas Collective consular assistant signaler
+  description: Rent out an assistant from Midas Control. Only 1500 spesos an hour!
+  components:
+  - type: Sprite
+    sprite: _Gardenstation/Objects/Devices/remotes.rsi
+    layers:
+    - state: clicker
+  - type: GhostRole
+    name: ghost-role-information-goldendeep-assistant-reinforcement-name
+    description: ghost-role-information-goldendeep-assistant-reinforcement-description
+    rules: ghost-role-information-consulate-assistant-rules
+    mindRoles:
+    - MindRoleGhostRoleFamiliar
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: GoldenDeepSecretary

@@ -722,6 +722,7 @@
     neck: PRALanyard
     jumpsuit: ClothingUniformJumpsuitPRAStriped
     outerClothing: ClothingOuterCoatPRAService
+    gloves: ClothingHandsPRAArmband
     shoes: ClothingShoesLeather
     eyes: ClothingEyesGlasses
     pocket1: RubberStampNotary
